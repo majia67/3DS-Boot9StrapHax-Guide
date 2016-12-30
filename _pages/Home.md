@@ -1,9 +1,10 @@
 ---
 layout: splash
 permalink: /
+title: "Guide"
 header:
   overlay_color: "#5e616c"
-  overlay_image: home-page-feature.jpg
+  overlay_image: images/home-page-feature.jpg
   overlay_filter: 0.5
   cta_label: "Get Started"
   cta_url: "/get-started"
@@ -11,10 +12,17 @@ header:
 excerpt: 'A complete guide to 3DS custom firmware, <br /> from stock to arm9loaderhax.<br />'
 ---
 
-**This guide needs *your* help to seed [these](https://github.com/Plailect/Guide/archive/master.zip) ([rss](https://plailect.github.io/Guide/rss.xml)) torrents!**
+{% capture notice-home %}
+**This guide is for retail (consumer purchased; not from the Nintendo Developer Program) consoles _only_!    
+If you have a developer ("PANDA" or "SNAKE") console, check out [devGuide](https://dev.3ds.guide)**
+{% endcapture %}
+
+<div class="notice--danger">{{ notice-home | markdownify }}</div>
+
+**This guide needs *your* help to seed [these](https://github.com/Plailect/Guide/archive/master.zip) ([rss](https://3ds.guide/rss.xml)) torrents!**
 {: .notice--info}
 
-**To use the [torrent](https://en.wikipedia.org/wiki/Torrent_file) files in this guide, you will need a torrent client like [Transmission](https://sourceforge.net/projects/trqtw/files/latest/download)**
+**To use the [magnet](https://en.wikipedia.org/wiki/Magnet_URI_scheme) links in this guide, you will need a torrent client like [Deluge](http://dev.deluge-torrent.org/wiki/Download)**
 {: .notice--info}
 
 **Read all of the introductory pages before proceeding.**
@@ -64,5 +72,5 @@ The benefits of arm9loaderhax over other Custom Firmware launch methods are nume
 + A large part of this guide is lengthy NAND dumps and downgrades, so the entire process can take *several* hours thanks to the 3DS's slow processor.
 + **Keep the device plugged in and charged throughout the entire process to avoid data loss or damage from an unexpected power-off!**
 + Your SD card should be [MBR, not GPT](http://www.howtogeek.com/245610/) (the SD card that comes with the device will be MBR by default).
-+ If you need to format a brand new SD card, you can use [`guiformat`](torrents/guiformat.torrent) - <code class="highlighterrouge"><a href="magnet:?xt=urn:btih:e7c03f28a16790e64a2d67c5554441ea4e969fcf"><i class="fa fa-magnet" aria-hidden="true"></i></a></code> and set to an Allocation Unit Size of 32K.
++ If you need to format a brand new SD card, you can use [`guiformat`](http://www.ridgecrop.demon.co.uk/index.htm?guiformat.htm) and set to an Allocation Unit Size of 32K.
 + The 2DS is essentially identical to the Old 3DS in terms of software, and that any steps which say "Old 3DS" also apply to 2DS.
