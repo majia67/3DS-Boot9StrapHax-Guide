@@ -1,11 +1,11 @@
 ---
-title: "Get Started (New 3DS)"
+title: "开始教程（新3DS）"
 permalink: /get-started-(new-3ds).html
 ---
 
-Click the image of your device region to take you to the appropriate page.
+请点击你机器区域所对应的图片，进入相应教程。
 {: .notice--primary}
 
-| EUR | JPN | USA |
+| 欧版 | 日版 | 美版 |
 |:-:|:-:|:-:|
-| [![EUR](images/eu.png)](get-started-(new-3ds-eur)) | [![JPN](images/jp.png)](get-started-(new-3ds-jpn)) | [![USA](images/us.png)](get-started-(new-3ds-usa)) |
+| [![欧版](images/eu.png)](get-started-(new-3ds-eur)) | [![日版](images/jp.png)](get-started-(new-3ds-jpn)) | [![美版](images/us.png)](get-started-(new-3ds-usa)) |
