@@ -1,34 +1,34 @@
 ---
-title: "Homebrew Launcher (SoundHax)"
+title: "自制程序启动器（声音破解）"
 permalink: /homebrew-launcher-(soundhax).html
 ---
 
-The Homebrew Launcher has many different entrypoints, or methods of launching.
+Homebrew Launcher（自制程序启动器，HBL）有很多进入或启动方法。
 {: .notice}
 
-SoundHax is compatible with versions 9.0.0 through 11.2.0 in the EUR, JPN, and USA regions *(more regions coming soon)*.
+声音破解（SoundHax）支持欧版、日版和美版系统版本9.0.0至11.2.0的机器*（即将支持更多区域）*.
 {: .notice--info}
 
-#### What you need
+#### 你需要
 
-+ The Homebrew [Starter Kit](http://smealum.github.io/ninjhax2/starter.zip)
-+ The latest release of [SoundHax](http://soundhax.com/) *(for your device and region)*
-+ The [otherapp payload](https://smealum.github.io/3ds/#otherapp) *(for your version and region)*
++ 自制程序[新手包](http://smealum.github.io/ninjhax2/starter.zip)
++ 最新版的[SoundHax](http://soundhax.com/) *依照你的设备和区域选择对应的文件下载*
++ The [otherapp payload](https://smealum.github.io/3ds/#otherapp) *依照你的设备和区域选择对应的文件下载*
 
-#### Instructions
+#### 操作指南
 
-1. Copy _the contents of_ the `starter.zip` to the root of your SD card
-2. Copy the SoundHax `.m4a` to the root of your SD card
-3. Copy the otherapp payload to the root of your SD card and rename it to `otherapp.bin`
-4. Reinsert your SD card into your 3DS
-5. Launch Nintendo 3DS Sound
-6. Go through all of the bird tips, then close the app normally and reopen it
-  + Launching SoundHax immediately would cause these tips to appear on every launch of the Nintendo 3DS Sound until this is done
-6. Play the SoundHax `.m4a`
-7. Your console should load the homebrew menu
+1. 将`starter.zip`压缩包中的`starter`文件夹下的所有文件拷贝到你SD卡的根目录中
+2. 将SoundHax的`.m4a`文件拷贝到你SD卡的根目录中
+3. 将the otherapp payload拷贝到你SD卡的根目录中，并重命名为`otherapp.bin`
+4. 将SD卡插回你的3DS
+5. 运行Nintendo 3DS Sound（任天堂3DS声音）
+6. 跳过所有的小鸟提示，正常关闭程序，再重新打开它
+  + 如果立刻运行SoundHax，会造成每次打开Nintendo 3DS Sound都会有小鸟提示
+6. 运行SoundHax的`.m4a`文件
+7. 你的3DS应该开始加载自制程序菜单了
 
-If you are above the version 9.2.0, continue to [9.2.0 Downgrade](9.2.0-downgrade)
+如果你的系统版本在9.2.0以上，下一步请进行[降级到9.2.0](9.2.0-downgrade)
 {: .notice--primary}
 
-If you are on the version 9.2.0 or below, continue to [Decrypt9 (Homebrew Launcher)](decrypt9-(homebrew-launcher))
+如果你的系统版本在9.2.0及以下，下一步请进行[Decrypt9（自制程序启动器）](decrypt9-(homebrew-launcher))
 {: .notice--primary}
