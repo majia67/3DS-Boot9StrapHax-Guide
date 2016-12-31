@@ -6,15 +6,15 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Guide"
+locale                   : "zh-CN"
+title                    : "教程"
 title_separator          : "-"
-name                     : "Plailect"
-description              : "Full arm9loaderhax CFW Guide"
-url                      : "https://3ds.guide" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-enforce_ssl              : "3ds.guide"
+name                     : "majia67"
+description              : "利用arm9loaderhax实现3DS运行自制固件的完整教程"
+url                      : "https://majia67.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+enforce_ssl              : "majia67.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "Plailect/Guide" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "majia67/3DS-ARM9LoaderHax-Guide" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
