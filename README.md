@@ -1,6 +1,6 @@
-# See https://3ds.guide/
+# [点击此处进入教程](https://majia67.github.io/3DS-ARM9LoaderHax-Guide/)
 
-## Licensing
+##以下是原教程版权信息
 
 In accordance with the [minimal-mistakes](https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt) project, all files that substantially or wholly were created for that project are licensed under the [MIT License](https://github.com/Plailect/Guide/blob/master/LICENSE.txt).
 
