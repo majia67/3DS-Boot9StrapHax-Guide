@@ -1,11 +1,11 @@
 ---
-title: "Get Started (Old 3DS)"
+title: "开始教程（老3DS）"
 permalink: /get-started-(old-3ds).html
 ---
 
-Click the image of your device region to take you to the appropriate page.
+请点击你机器区域所对应的图片，进入相应教程。
 {: .notice--primary}
 
-| EUR | JPN | KOR | USA |
+| 欧版 | 日版 | 韩版 | 美版 |
 |:-:|:-:|:-:|:-:|
-| [![EUR](images/eu.png)](get-started-(old-3ds-eur)) | [![JPN](images/jp.png)](get-started-(old-3ds-jpn)) | [![KOR](images/kr.png)](get-started-(old-3ds-kor)) | [![USA](images/us.png)](get-started-(old-3ds-usa)) |
+| [![欧版](images/eu.png)](get-started-(old-3ds-eur)) | [![日版](images/jp.png)](get-started-(old-3ds-jpn)) | [![韩版](images/kr.png)](get-started-(old-3ds-kor)) | [![美版](images/us.png)](get-started-(old-3ds-usa)) |

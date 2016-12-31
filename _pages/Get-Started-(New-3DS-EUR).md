@@ -16,8 +16,7 @@ permalink: /get-started-(new-3ds-eur).html
 
 <div class="notice--info">{{ notice-1 | markdownify }}</div>
 
-所有系统版本都可以进行[卡带升级](Cart-Update)到更高版本，并按照其所在列进行相应教程。
-For all versions you can [Cart Update](cart-update) to a higher version in the same column to follow its instructions instead.
+所有系统版本都可以进行[卡带升级](cart-update)到更高版本，并按照其所在列进行相应教程。
 {: .notice--warning}
 
 如果你是从包含9.9.0或以上的游戏卡带升级而来*(这说明你的系统已经是9.9.0或以上版本，但你的浏览器还是以-25或更低结尾，比方说10.2.0-24)*, 你的浏览器已经被删除了，请看“无浏览器”列。
