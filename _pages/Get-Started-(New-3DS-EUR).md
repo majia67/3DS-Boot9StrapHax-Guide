@@ -27,5 +27,5 @@ permalink: /get-started-(new-3ds-eur).html
 
 | 从 | 到 | 无浏览器 | 有浏览器 |
 |:-:|:-:|:-:|:-:|
-| 9.0.0 | 10.7.0 | [Homebrew Launcher (SoundHax)](homebrew-launcher-(soundhax)) | [Homebrew Launcher (SoundHax)](homebrew-launcher-(soundhax)) |
+| 9.0.0 | 10.7.0 | [自制程序启动器（声音破解）](homebrew-launcher-(soundhax)) | [自制程序启动器（声音破解）](homebrew-launcher-(soundhax)) |
 | 11.0.0 | 11.2.0 | [固件降级](nfirm-downgrade) | [固件降级](nfirm-downgrade) |
