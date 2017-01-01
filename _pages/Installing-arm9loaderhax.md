@@ -79,17 +79,17 @@ permalink: /installing-arm9loaderhax.html
 13. 在你SD卡的根目录创建一个叫 `luma` 的文件夹
 14. 在SD卡的`luma` 文件夹里创建 `payloads` 文件夹
 15. 将Hourglass9压缩包的 `Hourglass9.bin` 复制到你SD卡的 `/luma/payloads/` 目录下，并重命名 `Hourglass9.bin` 为 `start_Hourglass9.bin`
-16. 解压`GodMode9`压缩包，并复制`GodMode9.bin`到你SD卡的`/luma/payloads`目录下，并重命名`GodMode9.bin`为`up_GodMode9.bin`
+16. 解压`GodMode9`压缩包，复制`GodMode9.bin`到你SD卡的`/luma/payloads`目录下，并重命名`GodMode9.bin`为`up_GodMode9.bin`
 16. 复制 `aeskeydb.bin` 到你SD卡的 `/files9/` 目录
 17. 复制 `DspDump.3dsx` 到你SD卡的 `/3ds/` 目录
 18. 解压缩`fbi-2.4.2-injectable.zip`，并复制其中的文件到你SD卡的`/files9/`文件夹下
 19. 进入SD卡的`/Nintendo 3DS/(32 字符 ID)/(32 字符 ID)/extdata/00000000/`目录以清除主界面菜单的extdata
-    + 欧版: 删除 `00000098` 
-    + 日版: 删除 `00000082`
-    + 美版: 删除 `0000008f`
+    + 欧版：删除 `00000098` 
+    + 日版：删除 `00000082`
+    + 美版：删除 `0000008f`
     + 神游：删除 `000000A1`
-    + 韩版: 删除 `000000A9`
-    + 台版: 删除 `000000B1`
+    + 韩版：删除 `000000A9`
+    + 台版：删除 `000000B1`
 
 ##### 第二部分 - 安装 arm9loaderhax
 
