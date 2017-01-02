@@ -115,7 +115,7 @@ permalink: /installing-arm9loaderhax.html
   + **"Use SysNAND FIRM if booting with R"**
   + **"Show NAND or user string in System Settings"**
 3. 如果你的设备是**新3DS**，你*还*应该启用如下设置：
-  + **New 3DS CPU"选项，请移动光标到"Clock+L2(x)"**
+  + **"New 3DS CPU"选项，请移动光标到"Clock+L2(x)"**
     + 这将提升许多游戏的帧率，但可能会造成某些游戏的不稳定
     + 如果有部分游戏不能正常运行，关闭这个选项并重试
 4. 按下Start键保存设置并重启
@@ -183,7 +183,7 @@ permalink: /installing-arm9loaderhax.html
 16. 使用方向键和A键来启用以下设置：     
   + **"Show NAND or user string in System Settings"**
 3. 如果你的设备是**新3DS**，你*还*应该启用如下设置：
-  + **New 3DS CPU"选项，请移动光标到"Clock+L2(x)"**
+  + **"New 3DS CPU"选项，请移动光标到"Clock+L2(x)"**
     + 这将提升许多游戏的帧率，但可能会造成某些游戏的不稳定
     + 如果有部分游戏不能正常运行，关闭这个选项并重试
 14. 将SD卡插回3DS，按下Start键保存设置并重启！
