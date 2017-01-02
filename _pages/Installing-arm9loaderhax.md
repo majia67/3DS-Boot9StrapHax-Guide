@@ -83,7 +83,7 @@ permalink: /installing-arm9loaderhax.html
 16. 复制 `aeskeydb.bin` 到你SD卡的 `/files9/` 目录
 17. 复制 `DspDump.3dsx` 到你SD卡的 `/3ds/` 目录
 18. 解压缩`fbi-2.4.2-injectable.zip`，并复制其中的文件到你SD卡的`/files9/`文件夹下
-19. 进入SD卡的`/Nintendo 3DS/(32 字符 ID)/(32 字符 ID)/extdata/00000000/`目录以清除主界面菜单的extdata
+19. 进入SD卡的`/Nintendo 3DS/(32位ID)/(32位ID)/extdata/00000000/`目录以清除主界面菜单的extdata
     + 欧版：删除 `00000098` 
     + 日版：删除 `00000082`
     + 美版：删除 `0000008f`

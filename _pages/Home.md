@@ -1,7 +1,7 @@
 ---
 layout: splash
 permalink: /
-title: "教程"
+title: "教程首页"
 header:
   overlay_color: "#5e616c"
   overlay_image: images/home-page-feature.jpg
