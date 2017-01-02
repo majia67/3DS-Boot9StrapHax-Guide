@@ -1,5 +1,5 @@
 ---
-title: "Move EmuNAND"
+title: "转移EmuNAND"
 permalink: /move-emunand.html
 ---
 

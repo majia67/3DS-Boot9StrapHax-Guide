@@ -29,4 +29,4 @@ permalink: /get-started-(new-3ds-jpn).html
 |:-:|:-:|:-:|:-:|
 | 8.1.0 | 8.1.0 | [NTR和立体忍者](ntr-and-cubic-ninja) | [自制程序启动器（浏览器）](homebrew-launcher-(browser)) |
 | 9.0.0 | 10.7.0 | [自制程序启动器（声音破解）](homebrew-launcher-(soundhax)) | [自制程序启动器（声音破解）](homebrew-launcher-(soundhax)) |
-| 11.0.0 | 11.2.0 | [固件降级](nfirm-downgrade) | [固件降级](nfirm-downgrade) |
+| 11.0.0 | 11.2.0 | [NFIRM降级](nfirm-downgrade) | [NFIRM降级](nfirm-downgrade) |

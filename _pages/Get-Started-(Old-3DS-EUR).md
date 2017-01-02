@@ -35,4 +35,4 @@ permalink: /get-started-(old-3ds-eur).html
 | 6.0.0 | 6.3.0 | [Decrypt9（系统设置）](decrypt9-(mset)) | [Decrypt9（浏览器）](decrypt9-(browser)) |
 | 7.0.0 | 8.1.0 | [卡带升级](cart-update) | [Decrypt9（浏览器）](decrypt9-(browser)) |
 | 9.0.0 | 10.7.0 | [自制程序启动器（声音破解）](homebrew-launcher-(soundhax)) | [自制程序启动器（声音破解）](homebrew-launcher-(soundhax)) |
-| 11.0.0 | 11.2.0 | [固件降级](nfirm-downgrade) | [固件降级](nfirm-downgrade) |
+| 11.0.0 | 11.2.0 | [NFIRM降级](nfirm-downgrade) | [NFIRM降级](nfirm-downgrade) |

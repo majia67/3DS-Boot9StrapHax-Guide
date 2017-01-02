@@ -1,5 +1,5 @@
 ---
-title: "OTP信息"
+title: "OTP相关信息"
 permalink: /otp-info.html
 ---
 

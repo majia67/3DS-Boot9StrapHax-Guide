@@ -37,4 +37,4 @@ permalink: /get-started-(old-3ds-kor).html
 | 9.3.0 | 9.5.0 | [卡带升级](cart-update) | [卡带升级](cart-update) |
 | 9.6.0 | 10.6.0 | [自制程序启动器（无浏览器）](homebrew-launcher-(no-browser)) | [自制程序启动器（浏览器）](homebrew-launcher-(browser)) |
 | 10.7.0 | 10.7.0 | [自制程序启动器（无浏览器）](homebrew-launcher-(no-browser))| [自制程序启动器（无浏览器）](homebrew-launcher-(no-browser))|
-| 11.0.0 | 11.2.0 | [固件降级](nfirm-downgrade) | [固件降级](nfirm-downgrade) |
+| 11.0.0 | 11.2.0 | [NFIRM降级](nfirm-downgrade) | [NFIRM降级](nfirm-downgrade) |
