@@ -1,18 +1,18 @@
 ---
-title: "OTP Info"
+title: "OTP信息"
 permalink: /otp-info.html
 ---
 
-The OTP is a 0x100 byte region of seemingly random data at address 0x10012000. It is presumed that console unique keys are derived from this region, although it is currently unknown exactly how. The region is likely the console unique data store which is decrypted by the bootrom, but we don't know how that is done until somebody dumps the full protected bootrom. It is unknown at this time if anyone has successfully dumped the protected bootrom.
+OTP是一个在0x10012000位置长度为0x100字节的区域，其内容似乎是一些随机数。据推测，设备唯一号（console unique keys）源自于这片区域，虽然到目前为止我们还不确切的知道它是如何计算出来的。这片区域有可能是被启动rom加密的设备唯一数据（console unique data）的存储地，但是我们并不知道它是如何完成的，除非有人导出了整个受保护的启动rom。在有人成功导出了受保护的启动rom之前，一切都是未知的。
 
-Prior to version 3.0.0-X, the 0x10012000-region (the OTP) was left unprotected and could be dumped by an attacker with sufficient permissions (arm9 code execution).
+在3.0.0-X版本之前，0x10012000-区域（OTP）是不被保护的，可以通过一些有了必要权限（arm9代码执行权限）的攻击程序导出。
 
-After version 3.0.0-X, Nintendo switched to locking this region using the register CFG_SYSPROT9, which also locks the bootloader and is set extremely early in boot, long before we are able to gain code execution. This register can be set exactly once, and cannot be switched off until the unit is fully powered off, and therefore it is impossible to dump the full OTP without a version below 3.0.0-X.
+在3.0.0-X之后，任天堂使用CFG_SYSPROT9寄存器对这片区域加锁，同时也锁住了启动引导器（bootloader），并且在我们通过漏洞获得代码执行权限之前就被设置好了。这个寄存器只能被设置一次，并且在关机之前不能被关掉，因此不使用3.0.0-X以下版本，是不可能导出整个OTP数据的。
 
-There is, however, a method to dump the hash of the OTP on version 9.6.0-X. Because Kernel9Loader does not clear the SHA_HASH register after it has been used, dumping the SHA_HASH will give the hash of the OTP which was handed over to Kernel9 from Kernel9Loader. In addition, there is a long standing vulnerability where an MCU reboot caused by the i2c will not clear RAM like it's supposed to.
+但是，还是有一个办法可以在9.6.0-X版本上导出OTP的哈希值（Hash）。因为Kernel9Loader在使用SHA\_HASH寄存器后并不会清除该数据，导出的SHA\_HASH可以提供从Kernel9Loader递交给Kernel9的OTP哈希数据。此外有一个由来已久的漏洞——由i2c引发的MCU重启不会清除RAM数据，就像我们期望的那样。
 
-This allows for a hardware based attack where arbitrary data is written to nand_sector96+0x10 in a SysNAND backup and flashed to the device. Afterwards we wire the i2c to MCU reboot on our command, write a payload (which will write 0x1000A040 - 0x1000A060 to a file on the SD card) to arm9 memory somewhere, fill all memory with a NOP sled followed by a JMP instruction pointing to the payload. We can then MCU reboot repeatedly (incrementing nand_sector96+0x10 by 1 each time) until the Kernel9Loader jumps to the payload by random chance.
+这使得一种基于硬件的攻击成为可能。把一些数据写入备份的SysNAND的nand\_sector96+0x10的位置并刷入设备。然后用我们的命令让MCU重启，写一个payload（把0x1000A040 - 0x1000A060数据写到sd卡）放在arm9内存的某个地方，将内存填满NOP指令紧接着写一个跳转（JMP）指令指向payload所在位置。然后我们不停地让MCU重启（每次让nand\_sector96+0x10的数值加1）直到Kernel9Loader跳转到我们写的payload。
 
-Because of the complexity and extra hardware involved in the method described above, I have decided to limit the scope of this guide strictly to the software based approach of downgrading to a version below 3.0.0-X. Version 2.1.0-X was selected because it is the only version below 3.0.0-X that contains a fully exploitable browser version (2.0.0-X has a partially exploitable browser, but it won't work for other reasons).
+考虑到上述方法的复杂性和需要额外的硬件，我（原作者）决定限制本教程的范围，只针对降级到3.0.0-X以下版本的方法。选择2.1.0-X的原因是因为它是唯一的在3.0.0-X版本以下并且完全支持浏览器漏洞的版本（2.0.0-X也有部分可利用漏洞的浏览器，但是由于其他的原因，并不能完成OTP提取）
 
-This process involves flashing your CTRNAND to 2.1.0-4. This is accomplished by installing a premade CTRNAND image containing 2.1.0, copying your console specific files (such as `moveable.sed` and `SecureInfo_A`) to it, then fixing the title database CMACS. On New 3DS, it also swaps CTRNAND's encryption slot and installs an Old 3DS NCSD header to NAND, allowing it to boot the Old 3DS only 2.1.0 software.
+这个过程包括将你的CTRNAND刷到2.1.0-4版本。这样的操作由安装一个预处理过的包含2.1.0版本的镜像，拷贝你的机器特有的文件（像是`moveable.sed`和`SecureInfo_A`），然后修复title数据库的CMACs这几个步骤组成。对于新3DS，CTRNAND的加密方式会被替换并加上老3DS的NCSD文件头，让新3DS可以使用只有老3DS才能用的2.1.0固件。
