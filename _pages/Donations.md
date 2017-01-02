@@ -8,7 +8,7 @@ layout: single-no-ads
 {: .text-center}
 {: .notice--success}
 
-想要打赏英文教程原作者？请参见原教程[Donations](https://3ds.guide/donations)页面
+想要打赏英文教程作者？参见[Donations](https://3ds.guide/donations)
 {: .text-center}
 {: .notice--success}
 
