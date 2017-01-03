@@ -49,8 +49,8 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 
 # SEO Related
-google_site_verification : IzU3K8_0o_n4KY_o0Azr6DK7M4aRlZMzrWKr4iyXyrs
-bing_site_verification   : F3532011519E308583A0A2CAF2DD69E8
+google_site_verification : 
+bing_site_verification   : 
 alexa_site_verification  :
 yandex_site_verification :
 
@@ -73,15 +73,15 @@ social:
 analytics:
   provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : "UA-86465881-1"
+    tracking_id          : "UA-82285436-1"
 
 
 # Site Author
 author:
   name             : "majia67"
-  avatar           : "bio-photo.png"
-  bio              : "3DS Hacker"
-  location         : "Nullsec"
+  avatar           : 
+  bio              : 
+  location         : 
   email            : "majiadomain@gmail.com"
   uri              :
   bitbucket        :
