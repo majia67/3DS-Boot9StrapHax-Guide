@@ -3,13 +3,13 @@ title: "F3 (Linux)"
 permalink: /f3-(linux).html
 ---
 
-本页将带你使用F3检查SD卡错误。
+本节教程将带你使用F3检查SD卡错误。
 {: .notice}
 
 本节操作可能需要数小时的时间，取决于你的SD卡大小和你电脑的速度！
 {: .notice--info}
 
-本节操作仅限Linux用户。如果你的操作系统不是Linux，参见[H2testw (windows)](h2testw-(windows))或[F3X (mac)](f3x-(mac))页面。
+本节教程仅限Linux用户。如果你的操作系统不是Linux，参见[H2testw (windows)](h2testw-(windows))或[F3X (mac)](f3x-(mac))页面。
 {: .notice--info}
 
 #### 你需要
