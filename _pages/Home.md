@@ -25,6 +25,9 @@ excerpt: '利用arm9loaderhax实现3DS运行自制固件的完整教程。<br />
 **请先阅读完本页面再开始操作。**
 {: .notice--warning}
 
+点击[这里](https://3ds.guide/)阅读Plailect的英文教程。
+{: .notice--info}
+
 ## 什么是自制程序？
 
 [**Homebrew（自制程序）**](https://en.wikipedia.org/wiki/List_of_homebrew_video_games) 通常指未经任天堂授权的软件。它能让你运行自制游戏，使用像编辑和备份存档的工具，以及运行模拟器。

@@ -1,7 +1,16 @@
-# [点击此处进入教程](https://majia67.github.io/3DS-ARM9LoaderHax-Guide/)
+# [点击此处进入教程](http://3dshax.cn)
 
-##以下是原教程版权信息
+# [Click here to enter Plailect's Guide](https://3ds.guide)
 
-In accordance with the [minimal-mistakes](https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt) project, all files that substantially or wholly were created for that project are licensed under the [MIT License](https://github.com/Plailect/Guide/blob/master/LICENSE.txt).
+## 版权信息
 
-Files that are not licensed or owned by the creator of the [minimal-mistakes](https://github.com/mmistakes/minimal-mistakes/) project *(including but not limited to the contents of the `_pages` directory)* are the sole property of their owner and **may not** be used without permission.
+本中文版教程版权归majia67所有，翻译所依照的英文版教程版权归Plailect所有，
+
+本着共享和帮助他人、降低知识获取难度的原则，本教程允许自由转载，但须遵守以下约定
+
++ 在文末附上[致谢](http://3dshax.cn/credits)部分的全部内容
++ 附上本教程的网址：http://3dshax.cn
+
+如需将本教程用于商业化目的（包括但不限于：发表在杂志、网站，书籍出版，微信公众号、知乎、微博等公众平台转发等），必须联系我获得授权。
+
+违反上述版权条例的行为都将视为侵权，我将保留法律追诉的权利。
