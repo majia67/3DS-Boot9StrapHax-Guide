@@ -50,7 +50,7 @@ permalink: /troubleshooting.html
 
 #### 操作指南
 
-1. 解压`GodMode9`压缩包，复制`GodMode9.bin`到你SD卡的`/luma/payloads`目录下，并重命名`GodMode9.bin`为`up_GodMode9.bin`
+1. 解压`GodMode9`压缩包，复制`GodMode9.bin`到你SD卡的`/luma/payloads/`目录下，并重命名`GodMode9.bin`为`up_GodMode9.bin`
 6. 按住(方向上)键启动机器，进入arm9loaderhax GodMode9
 14. 依次选择进入`SYSNAND CTRNAND` -> `data` -> (32位用户ID) -> `sysdata` -> `00010038`
 15. 在`00000000`上，按住(R)键的同时按下(X)键，以重命名这个文件
@@ -69,7 +69,7 @@ permalink: /troubleshooting.html
 
 #### 操作指南
 
-1. 解压`GodMode9`压缩包，复制`GodMode9.bin`到你SD卡的`/luma/payloads`目录下，并重命名`GodMode9.bin`为`up_GodMode9.bin`
+1. 解压`GodMode9`压缩包，复制`GodMode9.bin`到你SD卡的`/luma/payloads/`目录下，并重命名`GodMode9.bin`为`up_GodMode9.bin`
 2. 将SD卡插回3DS
 5. 按住(方向上)键启动机器，进入arm9loaderhax GodMode9
 2. 依次选择`SYSNAND CTRNAND` -> `title` -> `00040010`
@@ -159,9 +159,7 @@ permalink: /troubleshooting.html
     + 欧版：删除 `00000098` 
     + 日版：删除 `00000082`
     + 美版：删除 `0000008f`
-    + 神游：删除 `000000A1`
     + 韩版：删除 `000000A9`
-    + 台版：删除 `000000B1`
 1. 尝试拔掉卡带（包括闪存卡带）开机
 2. 如果你可以hardmod（硬改），并且有NAND备份，尝试将NAND备份写入SysNAND。
 3. 尝试启动到恢复模式并升级你的系统 
@@ -180,21 +178,14 @@ permalink: /troubleshooting.html
    1. 删除SD卡上的`/luma/config.bin`文件
    2. 启动Luma3DS后重新设置
 3. 尝试启动Hourglass9
-   1. 在启动到Luma3DS时按住Start键
+   1. 在Luma3DS上，按住(Start)键开机
 4. 尝试删除桌面菜单的extdata
     1. 定位到sd卡的`/Nintendo 3DS/(32位ID)/(32位ID)/extdata/00000000/`
         + 欧版: 删除 `00000098`
         + 日版: 删除 `00000082`
         + 美版: 删除 `0000008f`
-        + 神游: 删除 `000000A1`
         + 韩版: 删除 `000000A9`
-        + 台版: 删除 `000000B1`
 5. 尝试拔掉卡带（包括闪存卡带）开机
-7. 尝试这个[测试版payload](https://mega.nz/#!YxMiGDhB!VZLv2XPSqFFzEhf4kGMXAdQtSpIGvnp2vu2W1j4o7cc/) .
-   1. 将SD卡根目录的`arm9loaderhax.bin`文件重命名（如果有该文件的话）。
-   2. 将新下载的`arm9loaderhax.bin`拷贝到你的SD卡根目录。
-   3. 将SD卡插回3DS，按下电源键开机。
-   4. 按(A)键。你的3DS应该会关机。这表示arm9loaderhax能正常工作，其它文件有损坏。你的机器**没有**变砖。
 8. 如果你以前用Gateway降过级，确保你使用的是最新版的Luma3DS（版本号在v6.2.3及以上）
 9. 如果你的系统版本在3.0.0到4.5.0之间，进行如下操作：
    + 确保你使用的是最新版的Luma3DS（版本号在v6.6及以上）

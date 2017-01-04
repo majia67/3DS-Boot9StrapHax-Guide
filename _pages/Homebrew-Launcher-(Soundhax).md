@@ -6,7 +6,7 @@ permalink: /homebrew-launcher-(soundhax).html
 Homebrew Launcher（自制程序启动器，HBL）有很多进入或启动方法。
 {: .notice}
 
-声音破解（SoundHax）支持欧版、日版和美版系统版本9.0.0至11.2.0的机器*（即将支持更多区域）*.
+声音破解（SoundHax）支持欧版、日版、美版和韩版，系统版本9.0.0至11.2.0的机器。
 {: .notice--info}
 
 #### 你需要
@@ -27,8 +27,5 @@ Homebrew Launcher（自制程序启动器，HBL）有很多进入或启动方法
 6. 运行SoundHax的`.m4a`文件
 7. 你的3DS应该开始加载自制程序菜单了
 
-如果你的系统版本在9.2.0以上，下一步请进行[降级到9.2.0](9.2.0-downgrade)
-{: .notice--primary}
-
-如果你的系统版本在9.2.0及以下，下一步请进行[Decrypt9（自制程序启动器）](decrypt9-(homebrew-launcher))
+进入[Decrypt9（自制程序启动器）](decrypt9-(homebrew-launcher))继续教程
 {: .notice--primary}

@@ -34,7 +34,7 @@ permalink: /dsiware-downgrade-(app-injection-and-second-3ds).html
 两台3DS必须属于同一区域。
 {: .notice--warning}
 
-**_目标3DS_上的所有数据都将被清除！**
+**目标3DS上的所有数据都将被清除！**
 {: .notice--danger}
 
 来源3DS的NNID会被迁移到目标3DS上，除非你再迁移回来，或者联系任天堂（教程中会有具体细节）！

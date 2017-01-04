@@ -19,7 +19,7 @@ permalink: /move-emunand.html
 
 #### 操作指南
 
-1. 解压`GodMode9`压缩包，复制`GodMode9.bin`到你SD卡的`/luma/payloads`目录下，并重命名`GodMode9.bin`为`up_GodMode9.bin`
+1. 解压`GodMode9`压缩包，复制`GodMode9.bin`到你SD卡的`/luma/payloads/`目录下，并重命名`GodMode9.bin`为`up_GodMode9.bin`
 2. 将SD卡插回你的3DS
 3. 按住(Start)键开机，进入Hourglass9
 4. 进入"EmuNAND Backup/Restore"，选择"EmuNAND Backup"，将你的EmuNAND备份到`NANDmin_emu.bin`

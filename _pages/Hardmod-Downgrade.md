@@ -50,7 +50,7 @@ permalink: /hardmod-downgrade.html
 
 1. 解压缩3DSident压缩包，复制其中的`3ds`文件夹，与你设备SD卡上的对应文件夹合并。
 2. 将SD卡插回3DS
-3. 使用[自制程序启动器（无浏览器）](homebrew-launcher-(no-browser))一节的方法，在你的设备上运行自制程序启动器
+3. 使用[自制程序启动器（声音破解）](homebrew-launcher-(soundhax))一节的方法，在你的设备上运行自制程序启动器
 4. 运行3DSident
 5. 验证以下信息是否正确：
   + **Kernel version（内核版本）**: 2.50-11
@@ -60,8 +60,5 @@ permalink: /hardmod-downgrade.html
 你的设备在系统设置中的版本号*不会*变更。
 {: .notice--info}
 
-如果你的系统版本是11.0.0（但你的设备不是日版的），继续进行[自制程序启动器（浏览器）](homebrew-launcher-(browser))。
-{: .notice--primary}
-
-否则，继续进行[自制程序启动器（无浏览器）](homebrew-launcher-(no-browser)).
+进入[Decrypt9（自制程序启动器）](decrypt9-(homebrew-launcher))继续教程
 {: .notice--primary}

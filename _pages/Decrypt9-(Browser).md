@@ -19,11 +19,12 @@ permalink: /decrypt9-(browser).html
 2. 复制Decrypt9WIP压缩包的`Launcher.dat`和`Decrypt9WIP.dat`到你SD卡的根目录
 3. 将SD卡重新插入你的3DS
 4. 在3DS上打开浏览器然后进入到下面任意一个连接
-    + `https://dukesrg.github.io/?Decrypt9WIP.dat`
-    + `http://go.gateway-3ds.com/`
-    + `http://www.reboot.ms/3ds/load.html?Launcher.dat`
-    + `http://dukesrg.dynu.net/3ds/rop?GW17567.dat&Launcher.dat`
-    + 如果出现错误，参见[问题排查](Troubleshooting#ts_browser)
+  + `https://dukesrg.github.io/?Decrypt9WIP.dat`
+  + `http://go.gateway-3ds.com/`
+  + `http://www.reboot.ms/3ds/load.html?Launcher.dat`
+  + `http://dukesrg.dynu.net/3ds/rop?GW17567.dat&Launcher.dat`
+  + 如果第一个网址用不了，把剩下的都试一下（有些机器用不了第一个网址，有些用不了后三个）
+  + 如果出现错误，参见[问题排查](Troubleshooting#ts_browser)
 5. 如果漏洞利用成功，Decrypt9将会启动
 
 继续进行[2.1.0 ctr迁移](2.1.0-ctrtransfer)

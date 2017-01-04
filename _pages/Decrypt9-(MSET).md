@@ -23,8 +23,8 @@ permalink: /decrypt9-(mset).html
 5. 用你的3DS运行烧录卡
 6. 使用你的烧录卡启动`Decrypt9.nds`
 7. 正确选择你系统的版本
-    + 4.X.X -> "4.x Decrypt9WIP"
-    + 6.X.X -> "6.x Decrypt9WIP"
+  + 4.X.X -> "4.x Decrypt9WIP"
+  + 6.X.X -> "6.x Decrypt9WIP"
 8. 重启，然后进入系统设置（System Settings），然后“其它选项”（"Other Settings"），然后"Profile"，最后"Nintendo DS Profile"（译者注：没错，就是传说中的414）
 9. 如果漏洞利用成功，Decrypt9将会启动
 

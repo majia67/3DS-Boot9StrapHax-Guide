@@ -41,9 +41,9 @@ data_input的版本是指为了适配不同安装程序版本而修改的`.zip`�
 1. 删除你SD卡根目录下的`aeskeydb.bin`文件
 4. 如果在你SD卡的根目录下存在`a9lh`目录，请删除
 2. 将`aeskeydb.bin`文件复制到SD卡的`/files9/`目录下
-3. 将Hourglass9 zip下的`Hourglass9.bin`解压到SD卡 `/luma/payloads` 目录下，并把 `Hourglass9.bin` 重命名为 `start_Hourglass9.bin`
-5. 将SafeA9LHInstaller zip中的 `arm9loaderhax.bin` 解压到SD卡 `/luma/payloads` 目录下
-6. 将 `/luma/payloads` 目录下的 `arm9loaderhax.bin` 重命名成 `down_safea9lhinstaller.bin`
+3. 将Hourglass9 zip下的`Hourglass9.bin`解压到SD卡 `/luma/payloads/` 目录下，并把 `Hourglass9.bin` 重命名为 `start_Hourglass9.bin`
+5. 将SafeA9LHInstaller zip中的 `arm9loaderhax.bin` 解压到SD卡 `/luma/payloads/` 目录下
+6. 将 `/luma/payloads/` 目录下的 `arm9loaderhax.bin` 重命名成 `down_safea9lhinstaller.bin`
 7. 将 `data_input_v4.zip` 压缩包中的 `a9lh` 文件夹解压到SD卡的根目录下
 7. 解压arm9loaderhax压缩包，并复制解压的文件到SD卡的 `a9lh` 目录下
 8. 解压Luma3DS.zip压缩包，复制`arm9loaderhax.bin`文件到SD卡根目录下，覆盖已有文件
@@ -55,7 +55,7 @@ data_input的版本是指为了适配不同安装程序版本而修改的`.zip`�
 11. 按(select)键更新arm9loaderhax
 12. 关机并将SD卡插入你的电脑
 13. 删除SD卡根目录下的 `a9lh` 目录
-14. 将 `down_safea9lhinstaller.bin` 从 `/luma/payloads` 目录删除
+14. 将`down_safea9lhinstaller.bin`从`/luma/payloads/`目录中删除
 
 ##### 第三部分 - 配置Luma3DS
 

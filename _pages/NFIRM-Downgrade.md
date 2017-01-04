@@ -16,6 +16,7 @@ redirect_from: "/dsiware-downgrade"
 ---
 
 + 参见[这里](hardmod-downgrade)，使用[硬改](https://gbatemp.net/threads/414498/)降级你的NFIRM
-+ 参见[这里](dsiware-downgrade-(app-injection-and-second-3ds))，使用DSiWare，和第二台已经装有自制系统的3DS降级你的NFIRM
 + 参见[这里](dsiware-downgrade-(save-injection)) ，使用DSiware，四个所列游戏之一，和一个自制程序启动器进入点降级你的NFIRM *（仅限11.0.0和11.1.0）*
-+ 参见[这里](dsiware-downgrade-(save-injection-and-second-3ds))，使用DSiWare，四个所列游戏之一，和第二台已经装有自制系统的3DS降级你的NFIRM
++ 参见[这里](dsiware-downgrade-(app-injection-and-second-3ds))，使用DSiWare，和第二台已经装有自制系统的3DS降级你的NFIRM
+
+

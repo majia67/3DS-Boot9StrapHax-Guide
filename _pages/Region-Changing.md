@@ -43,7 +43,7 @@ permalink: /region-changing.html
 
 ##### 第一部分 - 准备工作
 
-1. 提取GodMode9压缩包中的`GodMode9.bin`文件，复制到SD卡的`/luma/payloads`目录下，并将`GodMode9.bin`重命名为`up_GodMode9.bin`
+1. 提取GodMode9压缩包中的`GodMode9.bin`文件，复制到SD卡的`/luma/payloads/`目录下，并将`GodMode9.bin`重命名为`up_GodMode9.bin`
 2. 复制`Decrypt9WIP.bin`文件到SD卡的`/luma/payloads/`文件夹，并将`Decrypt9WIP.bin`重命名为`x_Decrypt9WIP.bin`
 3. 从ctrtransfer压缩包中提取9.2.0 ctrtransfer文件`.bin`和`.bin.sha`，复制到SD卡的`/files9/` 目录
 4. 将SD卡插回3DS

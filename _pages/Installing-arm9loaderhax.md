@@ -79,7 +79,7 @@ permalink: /installing-arm9loaderhax.html
 13. 在你SD卡的根目录创建一个叫 `luma` 的文件夹
 14. 在SD卡的`luma` 文件夹里创建 `payloads` 文件夹
 15. 将Hourglass9压缩包的 `Hourglass9.bin` 复制到你SD卡的 `/luma/payloads/` 目录下，并重命名 `Hourglass9.bin` 为 `start_Hourglass9.bin`
-16. 解压`GodMode9`压缩包，复制`GodMode9.bin`到你SD卡的`/luma/payloads`目录下，并重命名`GodMode9.bin`为`up_GodMode9.bin`
+16. 解压`GodMode9`压缩包，复制`GodMode9.bin`到你SD卡的`/luma/payloads/`目录下，并重命名`GodMode9.bin`为`up_GodMode9.bin`
 16. 复制 `aeskeydb.bin` 到你SD卡的 `/files9/` 目录
 17. 复制 `DspDump.3dsx` 到你SD卡的 `/3ds/` 目录
 18. 解压缩`fbi-2.4.2-injectable.zip`，并复制其中的文件到你SD卡的`/files9/`文件夹下
@@ -87,9 +87,7 @@ permalink: /installing-arm9loaderhax.html
     + 欧版：删除 `00000098` 
     + 日版：删除 `00000082`
     + 美版：删除 `0000008f`
-    + 神游：删除 `000000A1`
     + 韩版：删除 `000000A9`
-    + 台版：删除 `000000B1`
 
 ##### 第二部分 - 安装 arm9loaderhax
 
@@ -211,22 +209,6 @@ permalink: /installing-arm9loaderhax.html
 7. 按(A)键确认
 8. 按(B)键放弃从CDN安装tickets
 9. 按home键退出
-
-##### 第八部分 - 恢复nim存档
-
-本部分操作仅适用于进行了[降级到9.2.0](9.2.0 Dowgnrade)操作的设备。
-{: .notice--info}
-
-1. 按住(方向上)键并开机，从arm9loaderhax进入GodMode9
-2. 移动到`SDCARD`
-3. 在`nimsavegame.bin`文件上按(Y)键
-4. 按(B)键返回主菜单
-5. 依次选择`SYSNAND CTRNAND` -> `data` -> (32位ID) -> `sysdata` -> `0001002c`
-7. 在`00000000`上按(A)键
-8. 选择"Inject data @offset"
-9. 按(A)键选择offset（位移）`00000000`
-10. 按(A)键解锁SysNAND写入，并输入提示的按键组合
-11. 按(Start)键重启
 
 ___
 
