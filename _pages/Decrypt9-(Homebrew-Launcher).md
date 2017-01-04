@@ -4,7 +4,6 @@ permalink: /decrypt9-(homebrew-launcher).html
 ---
 
 因为有一个bug，safehax需要一个能正常工作的卡带（3ds，nds，闪存卡带，等等）插入机器才能成功。作为一个临时解决方案，系统版本在9.2.0及以下的用户可以无需卡带，直接拷贝`Decrypt9WIP.3dsx`到`/3ds/`下，无需破解即可运行。
-Due to a bug, safehax currently requires a functioning cartridge of some kind (3ds, nds, flashcart, etc) to be inserted in order to complete successfully. As a temporary workaround, users less than or equal to 9.2.0 who do not own any cartridges can copy `Decrypt9WIP.3dsx` to `/3ds/` and run it directly without any hax.
 {: .notice--info}
 
 #### 你需要
