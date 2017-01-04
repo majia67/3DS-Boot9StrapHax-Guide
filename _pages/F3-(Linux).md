@@ -3,28 +3,28 @@ title: "F3 (Linux)"
 permalink: /f3-(linux).html
 ---
 
-This page will walk you through the process of checking your SD card for errors using F3.
+本页将带你使用F3检查SD卡错误。
 {: .notice}
 
-Depending on the size of your SD card and the speed of your computer, this process can take up to several hours!
+本节操作可能需要数小时的时间，取决于你的SD卡大小和你电脑的速度！
 {: .notice--info}
 
-This page is for Linux users only. If you are not on Linux, check out the [H2testw (windows)](h2testw-(windows)) or [F3X (mac)](f3x-(mac)) pages.
+本节操作仅限Linux用户。如果你的操作系统不是Linux，参见[H2testw (windows)](h2testw-(windows))或[F3X (mac)](f3x-(mac))页面。
 {: .notice--info}
 
-#### What you need
+#### 你需要
 
-* The latest version of [F3](https://github.com/AltraMayor/f3/archive/v6.0.zip)
+* 最新版的[F3](https://github.com/AltraMayor/f3/archive/v6.0.zip)
 
-#### Instructions
+#### 操作指南
 
-1. Unzip the f3 `.zip` file
-2. `cd` into the f3 directory
-3. Run `make` to compile F3
-4. Insert your SD card into your computer
-5. Mount your SD card
-6. Run `./f3write <your sd card mount point>`
-7. Wait until the process is complete. See below for an example output.
+1. 解压缩f3的压缩包
+2. `cd`进入f3的文件夹
+3. 在terminal中执行`make`命令，编译F3
+4. 将SD卡插入电脑
+5. 加载你的SD卡
+6. 执行：`./f3write <your sd card mount point>` （译者注：sd card mount point即sd卡挂载的位置）
+7. 等待执行结束。下面是一个执行结果样例。
 
 		$ ./f3write /media/michel/6135-3363/
 		Free space: 29.71 GB
@@ -34,8 +34,8 @@ This page is for Linux users only. If you are not on Linux, check out the [H2tes
 		Free space: 0.00 Byte
 		Average Writing speed: 4.90 MB/s
 
-8. Run `./f3read <your sd card mount point>`
-9. Wait until the process is complete. See below for an example output.
+8. 执行：`./f3read <your sd card mount point>`
+9. 等待执行结束。下面是一个执行结果样例。
 
 		$ ./f3read /media/michel/6135-3363/
 		                  SECTORS      ok/corrupted/changed/overwritten
@@ -51,11 +51,11 @@ This page is for Linux users only. If you are not on Linux, check out the [H2tes
 		Average Reading speed: 9.42 MB/s
 
 
-If the test shows the result `Data LOST: 0.00 Byte (0 sectors)` your SD card is good and you can delete all `.h2w` files on the SD card
+如果测试结果为`Data LOST: 0.00 Byte (0 sectors)`，你的SD卡是好的，删除你SD卡上所有的`.h2w`文件
 {: .notice--success}
 
-If the test shows any other results, your SD card may be corrupted or damaged and you may have to replace it!
+如果测试结果为其它内容，你的SD卡可能已损坏，你可能得换一张了！
 {: .notice--danger}
 
-Return to [Get Started](get-started)
+返回到[开始教程](get-started)
 {: .notice--primary}

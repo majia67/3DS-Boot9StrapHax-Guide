@@ -9,7 +9,7 @@ permalink: /dsiware-downgrade-(app-injection-and-second-3ds).html
 如果你的两台3DS中有系统版本低于11.2.0的，你需要在每台系统版本低于11.2.0的3DS上执行ctr-httpwn步骤（当提示时），使你能在它们上面进行系统迁移。
 {: .notice--info}
 
-本方法利用了一个设计上的缺陷，能让DSiWare titles在固件的任何地方读写。
+本方法利用了一个设计上的缺陷，能让DSiWare titles在NAND的任意位置进行读写。
 {: .notice--info}
 
 本方法是"FIRM partitions known-plaintext"漏洞的一种目前有效的实现。详情参见[这里](https://www.3dbrew.org/wiki/3DS_System_Flaws)。
@@ -202,9 +202,9 @@ permalink: /dsiware-downgrade-(app-injection-and-second-3ds).html
 
 ##### 第七部分 - 备份目标3DS的NFIRM
 
-1. 复制dgTool `boot.nds`到**目标3DS**的SD卡根目录
+1. 复制dgTool的`boot.nds`文件到**目标3DS**的SD卡根目录
 1. 在**目标3DS**的SD卡根目录新建一个名为`dgTool`的文件夹，如果它还不存在的话
-3. 解压缩NFIRM的压缩包，复制文件到**目标3DS**SD卡的o`dgTool`文件夹下
+3. 解压缩NFIRM的压缩包，复制文件到**目标3DS**SD卡的`dgTool`文件夹下
 3. 在**目标3DS**上运行你的DSiWare游戏
 4. 开始你的DSiWare游戏，运行dgTool
   + 如果游戏没有运行dgTool，[参见这个问题排查](troubleshooting#ts_dsiware)
@@ -221,6 +221,7 @@ permalink: /dsiware-downgrade-(app-injection-and-second-3ds).html
 ##### 第八部分 - 向目标3DS刷入NFIRM
 
 **永远不要在一个已经安装了arm9loaderhax的设备上使用dgTool进行降级，否则你的设备将变砖！**
+{: .notice--danger}
 
 1. 在**目标3DS**上运行你的DSiWare游戏
 2. 开始你的DSiWare游戏，运行dgTool

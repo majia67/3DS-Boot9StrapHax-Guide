@@ -9,6 +9,21 @@ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
+Copyright (c) 2017 Plailect
+
+Files that are not licensed or owned by the creator of the minimal-mistakes
+(https://github.com/mmistakes/minimal-mistakes/) project (including but not
+limited to the contents of the `_pages` directory) are the sole property of
+their owner and may not be used without permission.
+
+Copyright (c) 2017 majia67
+
+All Chinese-translated version of the guides as well as the modified version
+of the files from the above sources on this site are the sole property of 
+majia67 and may not be used without permission.
+本网站上的中文翻译版教程及所有从以上来源修改后的文件，均属于majia67，
+未经授权不得使用。
+
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 

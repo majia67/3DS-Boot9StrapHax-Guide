@@ -1,132 +1,131 @@
 ---
-title: "DSiWare Downgrade (Save Injection)"
+title: "DSiWare降级（存档注入）"
 permalink: /dsiware-downgrade-(save-injection).html
 ---
 
-If you are on version 11.0.0 or 11.1.0, you must follow this guide to downgrade your NATIVE_FIRM using DSiWare
+如果你的系统版本是11.0.0或11.1.0，你必须参照本节教程，使用DSiWare降级你的NATIVE_FIRM
 {: .notice}
 
-This takes advantage of an oversight which allows DSiWare titles to read and write anywhere in NAND.
+本方法利用了一个设计上的缺陷，能让DSiWare titles在NAND的任意位置进行读写。
 {: .notice--info}
 
-Be prepared to wait 20 minutes (New 3DS) to an hour (Old 3DS). Slowhax (waithax) is named so for a reason.
+做好准备等20分钟（新3DS）至一小时（老3DS）。Slowhax (waithax) 的名字不是白起的（译者注：slowhax意即'慢破解'，是英文教程作者的一个调侃）。
 {: .notice--info}
 
-This is a currently working implementation of the "FIRM partitions known-plaintext" exploit detailed [here](https://www.3dbrew.org/wiki/3DS_System_Flaws).
+本方法是"FIRM partitions known-plaintext"漏洞的一种目前有效的实现。详情参见[这里](https://www.3dbrew.org/wiki/3DS_System_Flaws)。
 {: .notice--info}
 
-Your DSiWare's save will be backed up before getting replaced by the hacked save.
+你的DSiWare的存档在被替换为破解存档前会进行备份。
 {: .notice--info}
 
-#### What you need
+#### 你需要
 
-* Already own (and install) one of the following exploitable DSiWare games installed on your 3DS *(you must have already installed one; they have all been pulled from the eShop)*
+* 你的3DS上已经拥有（并且已经安装了）以下可以破解的DSiWare游戏中的一个*（你必须已经安装过它们。它们都已经在eShop上被下架）*
   + **Fieldrunners**
   + **Legends of Exidia**
   + **Guitar Rock Tour**  
   + **The Legend of Zelda: Four Swords (Anniversary Edition)**  
-* An entrypoint from [Homebrew Launcher (SoundHax)](homebrew-launcher-(soundhax)) or [Homebrew Launcher (No Browser)](homebrew-launcher-(no-browser))
+* 自制程序启动器进入点，参见[自制程序启动器（声音破解）](homebrew-launcher-(soundhax))或[自制程序启动器（无浏览器）](homebrew-launcher-(no-browser))
 * [`4B51394A.zip`](images/4B51394A.zip)
-* The latest release of [3ds_dsiwarehax_installer](https://github.com/yellows8/3ds_dsiwarehax_installer/releases/latest)
-* The latest release of [waithax](https://github.com/Mrrraou/waithax/releases/latest)
-* The latest release of [3DSident](https://github.com/joel16/3DSident/releases/latest)
-* The latest release of [dgTool](https://github.com/Plailect/dgTool/releases/latest)
-* The Homebrew [Starter Kit](http://smealum.github.io/ninjhax2/starter.zip)
-* The NFIRM `.zip` corresponding to the device and version of **the target 3DS**:
-  + [New 3DS 11.0.0](magnet:?xt=urn:btih:2d13a5ea1570f911bd5c6423e0c30e51d548837a&dn=11.0.0%5Fto%5F10.4.0%5Fn3ds.zip&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce)
-  + [Old 3DS 11.0.0](magnet:?xt=urn:btih:72393bbd99bc285db84a9cabf39d9b3200058d6a&dn=11.0.0%5Fto%5F10.4.0%5Fo3ds.zip&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce)     
+* 最新版的[3ds_dsiwarehax_installer](https://github.com/yellows8/3ds_dsiwarehax_installer/releases/latest)
+* 最新版的[waithax](https://github.com/Mrrraou/waithax/releases/latest)
+* 最新版的[3DSident](https://github.com/joel16/3DSident/releases/latest)
+* 最新版的[dgTool](https://github.com/Plailect/dgTool/releases/latest)
+* 自制程序[新手包](http://smealum.github.io/ninjhax2/starter.zip)
+* 适合你3DS版本的NFIRM压缩包
+  + [新3DS 11.0.0](magnet:?xt=urn:btih:2d13a5ea1570f911bd5c6423e0c30e51d548837a&dn=11.0.0%5Fto%5F10.4.0%5Fn3ds.zip&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce)
+  + [老3DS 11.0.0](magnet:?xt=urn:btih:72393bbd99bc285db84a9cabf39d9b3200058d6a&dn=11.0.0%5Fto%5F10.4.0%5Fo3ds.zip&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce)     
   ~    
-  + [New 3DS 11.1.0](magnet:?xt=urn:btih:d7d60c27c18f53bd8508a194656a465f6448bedf&dn=11.1.0%5Fto%5F10.4.0%5Fn3ds.zip&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce)     
-  + [Old 3DS 11.1.0](magnet:?xt=urn:btih:0caf9a948a2d8bf23606d641f6628e2baeb983bb&dn=11.1.0%5Fto%5F10.4.0%5Fo3ds.zip&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce)     
+  + [新3DS 11.1.0](magnet:?xt=urn:btih:d7d60c27c18f53bd8508a194656a465f6448bedf&dn=11.1.0%5Fto%5F10.4.0%5Fn3ds.zip&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce)     
+  + [老3DS 11.1.0](magnet:?xt=urn:btih:0caf9a948a2d8bf23606d641f6628e2baeb983bb&dn=11.1.0%5Fto%5F10.4.0%5Fo3ds.zip&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce)     
 
-#### Instructions
+#### 操作指南
 
-##### Section I - Prep Work
+##### 第一部分 - 准备工作
 
-1. Copy _the contents of_ the `starter.zip` to the root of your SD card, replace existing files
-  + This will ensure that the Homebrew Launcher is up to date; older versions will freeze when your try to launch 3ds_dsiwarehax_installer
-4. Copy and merge the `3ds` folder from the 3ds_dsiwarehax_installer `.zip` to the root of your SD card
-4. Copy the `4B51394A` folder from `4B51394A.zip` to the `/3ds/3ds_dsiwarehax_installer/dsiware/` folder on your SD card.
-5. Copy and merge the `3ds` folder from the 3DSident `.zip` to your SD card
-5. Copy `waithax.3dsx` to the `/3ds/` folder on your SD card
-6. Copy the dgTool `boot.nds` to the root of your SD card
-1. Create a folder named `dgTool` on the root of your SD card if it does not already exist
-3. Copy the contents of the NFIRM `.zip` to the `dgTool` folder on the root of your SD card
-4. Reinsert your SD card into your 3DS
+1. 解压缩`starter.zip`压缩包，复制其中的文件到你的SD卡根目录，覆盖已有文件
+  + 这将确保自制程序启动器是最新版本；老版本会造成运行3ds_dsiwarehax_installer的时候卡死
+4. 解压缩3ds_dsiwarehax_installer的压缩包，复制`3ds`文件夹，并覆盖到你的SD卡根目录下
+4. 解压缩`4B51394A.zip`压缩包，复制`4B51394A`文件夹到你SD卡的`/3ds/3ds_dsiwarehax_installer/dsiware/`目录下
+5. 解压缩3DSident压缩包，复制其中的`3ds`文件夹，与你**目标3DS**SD卡上的对应文件夹合并。
+5. 复制`waithax.3dsx`到你SD卡的`/3ds/`文件夹下
+6. 复制dgTool的`boot.nds`文件到你的SD卡根目录下
+1. 在SD卡根目录新建一个名为`dgTool`的文件夹，如果它还不存在的话
+3. 解压缩NFIRM的压缩包，复制文件到SD卡的`dgTool`文件夹下
+4. 将SD卡插回你的3DS
 
-##### Section II - Backup DSiWare
+##### 第二部分 - 备份DSiWare
 
-After completing the entire guide, you can use this backup to restore your DSiWare saves by deleting the DSiWare from your System Memory and copying it from your SD Card.
+完成整个教程后，你可以通过从系统内存中删除DSiWare，再从SD卡中恢复备份文件，恢复你的DSiWare存档
 {: .notice--info}
 
-This backup can only be used on this NAND. If you format your 3DS or restore another NAND (specifically if `movable.sed` is ever modified), it will become unusable.
+备份文件仅能用于当前的NAND。如果你格式化了你的3DS，或者从NAND备份中恢复（特别是如果`movable.sed`曾被修改过），它将不再可用。
 {: .notice--info}
 
-1. Go to System Settings, then "Data Management", then "DSiWare"
-3. Copy the DSiWare game you intend to use to the SD Card
-4. Exit System Settings
+1. 进入系统设置，选择"Data Management"（数据管理），然后选"DSiWare"
+3. 将你想使用的DSiWare游戏复制到SD卡
+4. 退出系统设置
 
-##### Section III - waithax
+##### 第三部分 - waithax
 
-1. Get into the Homebrew Launcher using your entrypoint
-2. Launch waithax
-3. Wait
-  + On New 3DS, this will take about 20 minutes (due to a bug, this can take the same time as an Old 3DS for some systems)
-  + On Old 3DS, this will take about an hour
-4. Once it's done, press (Start) to exit
-5. Launch 3ds_dsiwarehax_installer
-6. Select the DSiWare game you want to install the exploit on
-7. Once it's done, press (A) to exit
-8. Press (Start) to open the homebrew launcher exit menu
-9. Press (A) to exit
+1. 使用你的进入点，进入自制程序启动器
+2. 运行waithax
+3. 等待
+  + 在新3DS上，大概要花20分钟的时间（由于某个bug，在某些系统上可能会花和老3DS同样长的时间）
+  + 在老3DS上，大概要花一个小时的时间
+4. 完成后，按(Start)键退出
+5. 运行3ds_dsiwarehax_installer
+6. 选择你想安装漏洞的DSiWare游戏
+7. 完成后，按(A)键退出
+8. 按(Start)键打开自制程序启动器的退出菜单
+9. 按(A)键退出
 
-##### Section IV - Backing up NFIRM
+##### 第四部分 - 备份NFIRM
 
-3. Launch your DSiWare game
-4. Launch dgTool using your DSiWare game
-  + **Fieldrunners**: Touch the 'Scores' button at the main menu
-  + **Legends of Exidia**: After pressing (A) or (Start) at the two title screens, select the first save slot and press continue
-  + **Guitar Rock Tour**: Scroll down and go to High-Scores -> Drums -> Easy
-  + **The Legend of Zelda: Four Swords (Anniversary Edition)**: Just start the game
-  + If your game does not have the hacked save file installed, restart from the beginning
-5. Select "Dump f0f1" to backup your NFIRM
-  + This will take a while
-6. Make note of the NFIRM backup's location
-7. Exit dgTool
-  + You may have to force power off by holding the power button
-8. Put your SD card in your computer, then copy `F0F1_N3DS.bin` or `F0F1_O3DS.bin` (depending on your device) to a safe location
-  + Make backups in multiple locations
-  + This backup will save you from a brick if anything goes wrong in the future
+3. 运行你的DSiWare游戏
+4. 开始你的DSiWare游戏，运行dgTool
+  + **Fieldrunners**：点击主菜单的'Scores'（得分）按钮
+  + **Legends of Exidia**：在两个标题界面按(A)键或(Start)键，选择第一个存档并点继续
+  + **Guitar Rock Tour**: 将页面下拉，依次进入High-Scores（高分榜） -> Drums（鼓） -> Easy（简单）
+  + **The Legend of Zelda: Four Swords (Anniversary Edition)**：开始游戏
+  + 如果你的游戏没有安装上破解的存档文件，请从头开始（译者注：这里不太确定，应该是重启一次游戏再试，或者从第三部分运行3ds_dsiwarehax_installer处开始再装一次破解存档，而不是从教程开头开始）
+5. 选择"Dump f0f1"，备份你的NFIRM
+  + 这一步需要一些时间
+6. 记下NFIRM的备份位置
+7. 退出dgTool
+  + 你可能需要按电源键强制关机
+8. 将SD卡插回你的电脑，复制`F0F1_N3DS.bin`或`F0F1_O3DS.bin`（取决于你的设备）到一个安全的地方
+  + 在多个位置进行备份
+  + 备份文件可以在将来出现错误时将你的机器救砖
 
-##### Section V - Flashing NFIRM
+##### 第五部分 - 刷入NFIRM
 
-**Never downgrade with dgTool on a device that already has arm9loaderhax installed or you will BRICK!**
+**永远不要在一个已经安装了arm9loaderhax的设备上使用dgTool进行降级，否则你的设备将变砖！**
 {: .notice--danger}
 
-1. Launch your DSiWare game on
-4. Launch dgTool using your DSiWare game
-  + **Fieldrunners**: Touch the 'Scores' button at the main menu
-  + **Legends of Exidia**: After pressing (A) or (Start) at the two title screens, select the first save slot and press continue
-  + **Guitar Rock Tour**: Scroll down and go to High-Scores -> Drums -> Easy
-  + **The Legend of Zelda: Four Swords (Anniversary Edition)**: Just start the game
-3. Select "Downgrade FIRM to 10.4" and confirm to flash the 10.4.0 NFIRM bin
-4. Exit dgTool
-  + You may have to force power off by holding the power button
-5. Reboot
+1. 运行你的DSiWare游戏
+2. 开始你的DSiWare游戏，运行dgTool
+  + **Fieldrunners**：点击主菜单的'Scores'（得分）按钮
+  + **Legends of Exidia**：在两个标题界面按(A)键或(Start)键，选择第一个存档并点继续
+  + **Guitar Rock Tour**: 将页面下拉，依次进入High-Scores（高分榜） -> Drums（鼓） -> Easy（简单）
+  + **The Legend of Zelda: Four Swords (Anniversary Edition)**：开始游戏
+3. 选择"Downgrade FIRM to 10.4"并确认，将10.4.0 NFIRM bin刷入**目标3DS**
+4. 退出dgTool
+  + 你可能需要按电源键强制关机
+5. 重启
 
-##### Section VI - Exploit verification
+##### 第六部分 - Exploit verification
 
-2. Reinsert your SD card into your 3DS
-3. Launch the homebrew launcher on using your entrypoint
-4. Launch 3DSident
-5. Verify that the following:
-  + **Kernel version**: 2.50-11
-  + **FIRM version**: 2.50-11
-  + If either of these do not display the versions above, make sure you used the correct NFIRM zip and try flashing NFIRM again
-5. Press any button to exit back to the Homebrew Launcher
+2. 将SD卡插回3DS
+3. 使用你的进入点，进入自制程序启动器
+4. 运行3DSident
+5. 验证以下信息是否正确：
+  + **Kernel version（内核版本）**: 2.50-11
+  + **FIRM version（固件版本）**: 2.50-11
+  + 如果其中任何一个没有显示如上所示的版本号，确保你使用的是正确的NFIRM压缩包，然后尝试重新刷入NFIRM
 
-Your version number will *not* have changed in the settings.
+你的设备在系统设置中的版本号*不会*变更。
 {: .notice--info}
 
-Continue to [9.2.0 Downgrade](9.2.0-downgrade)
+进入[Decrypt9（自制程序启动器）](decrypt9-(homebrew-launcher))继续教程
 {: .notice--primary}
