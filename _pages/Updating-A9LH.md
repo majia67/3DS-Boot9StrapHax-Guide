@@ -20,7 +20,7 @@ arm9loaderhax的安装实际上就是把一些payload文件安装到了你设备
 data_input的版本是指为了适配不同安装程序版本而修改的`.zip`压缩包版本，*并非*所更新的a9lh（payload文件）本身的版本。这个版本号只在安装阶段有实际意义。
 {: .notice--info}
 
-本节的操作同时也会更新其它payloads和AES秘钥数据库。
+本节的操作同时也会更新其它payloads和AES密钥数据库。
 {: .notice--success}
 
 #### 你需要
