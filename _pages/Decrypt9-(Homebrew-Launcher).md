@@ -3,7 +3,7 @@ title: "Decrypt9（自制程序启动器）"
 permalink: /decrypt9-(homebrew-launcher).html
 ---
 
-因为有一个bug，safehax需要一个能正常工作的卡带（3ds，nds，闪存卡带，等等）插入机器才能成功。作为一个临时解决方案，系统版本在9.2.0及以下的用户可以无需卡带，直接拷贝`Decrypt9WIP.3dsx`到`/3ds/`下，无需破解即可运行。
+因为有一个bug，safehax需要一个能正常工作的卡带（3ds，nds，烧录卡，等等）插入机器才能成功。作为一个临时解决方案，系统版本在9.2.0及以下的用户可以无需卡带，直接拷贝`Decrypt9WIP.3dsx`到`/3ds/`下，无需破解即可运行。
 {: .notice--info}
 
 #### 你需要
