@@ -231,7 +231,7 @@ ___
 
 <div class="notice--info">{{ notice-6 | markdownify }}</div>
 
-你可以参照[升级arm9loaderhax](updating-a9lh)页面的指南，升级你的arm9loaderhax。
+如果你以后想升级你的arm9loaderhax，请参见[升级A9LH](updating-a9lh)页面。
 {: .notice--info}
 
 如果要使用[NTR CFW](https://github.com/44670/BootNTR/)，从[这里](https://github.com/44670/BootNTR/releases)选择合适的zip压缩包并提取`ntr.bin`文件，把这个文件复制到你SD卡的根目录下，然后从[这里](https://github.com/astronautlevel2/BootNTR/releases/latest)下载安装`BootNTR.cia`。
@@ -261,7 +261,7 @@ ___
 要想了解如何变更你的设备到另一个区域，参见[区域变更](region-changing)页面。
 {: .notice--success}
 
-要想了解如何保持你安装的A9LH是最新版，参见[升级A9LH](updating-a9lh)页面。
+要想了解如何升级你的arm9loaderhax，参见[升级A9LH](updating-a9lh)页面。
 {: .notice--success}
 
 要想了解如何使用Luma3DS的各种功能，参见[这个wiki](https://github.com/AuroraWright/Luma3DS/wiki/Options-and-usage).
