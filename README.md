@@ -1,4 +1,4 @@
-# [点击此处进入教程](http://3dshax.cn)
+# [点击此处进入教程](https://3dshax.cn)
 
 # [Click here to enter Plailect's Guide](https://3ds.guide)
 
@@ -8,8 +8,8 @@
 
 本着共享和帮助他人、降低知识获取难度的原则，本教程允许自由转载，但须遵守以下约定
 
-+ 在文末附上[致谢](http://3dshax.cn/credits)部分的全部内容
-+ 附上本教程的网址：http://3dshax.cn
++ 在文末附上[致谢](https://3dshax.cn/credits)部分的全部内容
++ 附上本教程的网址：https://3dshax.cn
 
 如需将本教程用于商业化目的（包括但不限于：发表在杂志、网站，书籍出版，微信公众号、知乎、微博等公众平台转发等），必须联系我获得授权。
 
