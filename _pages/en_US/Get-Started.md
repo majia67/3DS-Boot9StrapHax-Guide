@@ -1,6 +1,8 @@
 ---
 title: "开始教程"
 permalink: /get-started.html
+lang: en_US
+ref: get-started
 ---
 
 图片中机器的颜色可能会不同，但是请特别关注按键的布局和每台机器的特点，确保你选择了正确的机型。

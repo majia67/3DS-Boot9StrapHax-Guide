@@ -2,6 +2,8 @@
 title: "NFIRM降级"
 permalink: /nfirm-downgrade.html
 redirect_from: "/dsiware-downgrade"
+lang: en_US
+ref: nfirm-downgrade
 ---
 
 如果你的系统版本在11.0.0至11.2.0之间，你必须参照本节教程，使用下面的其中一种方法导出并恢复你的NAND，降级你的NFIRM。

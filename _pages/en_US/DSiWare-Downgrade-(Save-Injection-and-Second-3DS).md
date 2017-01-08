@@ -1,6 +1,8 @@
 ---
 title: "DSiWare Downgrade (Save Injection and Second 3DS)"
 permalink: /dsiware-downgrade-(save-injection-and-second-3ds).html
+lang: en_US
+ref: dsiware-downgrade-(save-injection-and-second-3ds)
 ---
 
 **They are only useful if you already own "Fieldrunners", "Legends of Exidia", "Guitar Rock Tour", or "The Legend of Zelda: Four Swords (Anniversary Edition)" on the source 3DS. Each game has been pulled from the eShop; you must have already gotten them.**

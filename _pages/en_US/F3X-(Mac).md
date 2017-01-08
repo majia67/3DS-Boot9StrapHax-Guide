@@ -1,6 +1,8 @@
 ---
 title: "F3X (Mac)"
 permalink: /f3x-(mac).html
+lang: en_US
+ref: f3x-(mac)
 ---
 
 本节教程将带你使用F3X检查SD卡错误。

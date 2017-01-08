@@ -1,6 +1,8 @@
 ---
 title: "致谢"
 permalink: /credits.html
+lang: en_US
+ref: credits
 ---
 
 点击[这里](https://3ds.guide/credits)查看英文版教程的致谢名单

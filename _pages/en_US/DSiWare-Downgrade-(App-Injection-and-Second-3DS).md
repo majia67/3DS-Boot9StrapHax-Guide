@@ -1,6 +1,8 @@
 ---
 title: "DSiWare降级（App注入和第二台3DS）"
 permalink: /dsiware-downgrade-(app-injection-and-second-3ds).html
+lang: en_US
+ref: dsiware-downgrade-(app-injection-and-second-3ds)
 ---
 
 如果你的系统版本在11.0.0至11.2.0，你可以参照本节教程，使用DSiWare和第二台已经装有自制固件的3DS降级你的NATIVE_FIRM。第二台3DS用来导出和恢复你的系统固件（NAND）。

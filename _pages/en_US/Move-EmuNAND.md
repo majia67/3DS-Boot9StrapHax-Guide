@@ -1,6 +1,8 @@
 ---
 title: "迁移EmuNAND数据"
 permalink: /move-emunand.html
+lang: en_US
+ref: move-emunand
 ---
 
 本节是附加章节，将你的EmuNAND的数据迁移到新的SysNAND自制系统中，然后删除EmuNAND分区。注意EmuNAND和RedNAND是[同一概念](http://3dbrew.org/wiki/NAND_Redirection)的两种略微不同的实现。

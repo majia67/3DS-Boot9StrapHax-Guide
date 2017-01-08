@@ -1,6 +1,8 @@
 ---
 title: "DSiWare列表"
 permalink: /dsiware-list.html
+lang: en_US
+ref: dsiware-list
 ---
 
 下表是用自动化脚本生成的所有适合[DSiWare降级（App注入和第二台3DS）](dsiware-downgrade-(app-injection-and-second-3ds)) 的游戏列表。

@@ -1,6 +1,8 @@
 ---
 title: "NTR和立体忍者"
 permalink: /ntr-and-cubic-ninja.html
+lang: en_US
+ref: ntr-and-cubic-ninja
 ---
 
 **NTR立体忍者仅在日版的新3DS上有效！**

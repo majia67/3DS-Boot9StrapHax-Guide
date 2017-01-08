@@ -1,6 +1,8 @@
 ---
 title: "F3 (Linux)"
 permalink: /f3-(linux).html
+lang: en_US
+ref: f3-(linux)
 ---
 
 本节教程将带你使用F3检查SD卡错误。

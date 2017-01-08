@@ -2,6 +2,8 @@
 title: "打赏"
 permalink: /donations.html
 layout: single-no-ads
+lang: en_US
+ref: donations
 ---
 
 ## 译者在翻译与更新该教程时投入了大量的心血，如果你支持我的工作，请给我打赏～

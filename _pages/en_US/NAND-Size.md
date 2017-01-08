@@ -1,6 +1,8 @@
 ---
 title: "NAND大小"
 permalink: /nand-size.html
+lang: en_US
+ref: nand-size
 ---
 
 在大多数情况下，一个有效的NAND备份文件大小应该是下面列举的其中一个。

@@ -1,6 +1,8 @@
 ---
 title: "OTP相关信息"
 permalink: /otp-info.html
+lang: en_US
+ref: otp-info
 ---
 
 OTP是一个在0x10012000位置长度为0x100字节的区域，其内容似乎是一些随机数。据推测，设备唯一号（console unique keys）源自于这片区域，虽然到目前为止我们还不确切的知道它是如何计算出来的。这片区域有可能是被启动rom加密的设备唯一数据（console unique data）的存储地，但是我们并不知道它是如何完成的，除非有人导出了整个受保护的启动rom。在有人成功导出了受保护的启动rom之前，一切都是未知的。

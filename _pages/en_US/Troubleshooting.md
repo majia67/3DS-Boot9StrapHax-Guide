@@ -1,6 +1,8 @@
 ---
 title: "问题排查"
 permalink: /troubleshooting.html
+lang: en_US
+ref: troubleshooting
 ---
 
 如果你启动不了你的3DS，请参阅本页面中的相关章节，并按照教程执行。问题解决后，便可回到主教程继续进行。

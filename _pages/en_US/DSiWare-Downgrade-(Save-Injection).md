@@ -1,6 +1,8 @@
 ---
 title: "DSiWare降级（存档注入）"
 permalink: /dsiware-downgrade-(save-injection).html
+lang: en_US
+ref: dsiware-downgrade-(save-injection)
 ---
 
 如果你的系统版本是11.0.0或11.1.0，你必须参照本节教程，使用DSiWare降级你的NATIVE_FIRM

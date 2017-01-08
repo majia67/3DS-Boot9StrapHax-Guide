@@ -1,6 +1,8 @@
 ---
 title: "Decrypt9（浏览器）"
 permalink: /decrypt9-(browser).html
+lang: en_US
+ref: decrypt9-(browser)
 ---
 
 本教程要做的第一件事就是让你运行Decrypt9，它是一个多用途的工具，可以允许我们安装包含漏洞的2.1.0版本的固件。我们需要这一漏洞以便完成后续的破解。

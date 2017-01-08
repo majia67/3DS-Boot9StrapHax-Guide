@@ -9,6 +9,7 @@ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
+<<<<<<< HEAD
 Copyright (c) 2017 Plailect
 
 <<<<<<< HEAD
@@ -31,6 +32,8 @@ the `_pages` directory) are the sole property of their owner and may not
 be used without express written permission.
 >>>>>>> b142f6b33abf4074d8253d810a898879b0869b07
 
+=======
+>>>>>>> db7b55acb4ec564c6722acfefe09e780ab69bad2
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 

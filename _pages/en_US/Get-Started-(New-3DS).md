@@ -1,6 +1,8 @@
 ---
 title: "开始教程（新3DS）"
 permalink: /get-started-(new-3ds).html
+lang: en_US
+ref: get-started-(new-3ds)
 ---
 
 请在下表中按照你的系统版本选择对应的页面。

@@ -1,6 +1,8 @@
 ---
 title: "升级A9LH"
 permalink: /updating-a9lh.html
+lang: en_US
+ref: updating-a9lh
 ---
 
 ### 最后更新：2016年11月3日
