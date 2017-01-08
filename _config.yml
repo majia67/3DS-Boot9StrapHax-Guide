@@ -112,6 +112,7 @@ author:
 include:
   - .htaccess
   - _pages
+  - _pages/zh-CN
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
