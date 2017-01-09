@@ -104,9 +104,9 @@ ref: installing-arm9loaderhax
 
 1. 在启动时按下select键，进入Luma3DS的菜单
     + 请确保按电源键之前按住select
-  + 如果黑屏，[参见这个问题排查](troubleshooting#ts_sys_a9lh)   
+  + 如果黑屏，[参见这个问题排查](troubleshooting#ts_sys_a9lh)
   + 如果你进入了SafeA9LHInstaller，[参见这个问题排查](troubleshooting#ts_safe_a9lh)
-2. 通过方向键和A键来启用以下设置：  
+2. 通过方向键和A键来启用以下设置：
   + **"Autoboot SysNAND"**
   + **"Use SysNAND FIRM if booting with R"**
   + **"Show NAND or user string in System Settings"**
@@ -115,8 +115,8 @@ ref: installing-arm9loaderhax
     + 这将提升许多游戏的帧率，但可能会造成某些游戏的不稳定
     + 如果有部分游戏不能正常运行，关闭这个选项并重试
 4. 按下Start键保存设置并重启
-  + 如果出现黑屏，请照常进行接下来的教程   
-  + 如果出现"Failed to mount CTRNAND"错误，请照常进行接下来的教程     
+  + 如果出现黑屏，请照常进行接下来的教程
+  + 如果出现"Failed to mount CTRNAND"错误，请照常进行接下来的教程
 
 ##### 第四部分 - 恢复系统
 
@@ -125,7 +125,7 @@ ref: installing-arm9loaderhax
 
 1. 按住(Start)键开机，通过arm9loaderhax进入Hourglass9
 2. 选择 "SysNAND Backup/Restore"
-3. 从`NANDmin.bin`恢复
+3. 选择 "SysNAND Restore (keep a9lh)"，从`NANDmin.bin`文件中恢复原系统的备份文件
 4. 按(Start)键重启
   + 如果出现黑屏，参见[9.2.0 ctr转移](9.2.0-ctrtransfer)
 5. 如果你的备份文件系统版本在3.0.0到4.5.0，除非你下载所需的固件，否则你的设备将无法开机：
@@ -174,7 +174,7 @@ ref: installing-arm9loaderhax
 15. 在主菜单中，按(Select)键弹出你的SD卡
 15. 按(Start)键，在没有SD卡的情况下重启
   + 在没有SD卡的情况下至少开启一次你的机器，可以使你配置基于CTRNAND的luma
-16. 使用方向键和A键来启用以下设置：     
+16. 使用方向键和A键来启用以下设置：
   + **"Show NAND or user string in System Settings"**
 3. 如果你的设备是**新3DS**，你*还*应该启用如下设置：
   + **"New 3DS CPU"选项，请移动光标到"Clock+L2(x)"**
@@ -188,17 +188,17 @@ ___
 {: .notice--warning}
 
 {% capture notice-10 %}
-你现在可以使用Luma3DS Updater来更新你的Luma3DS到最新版，只需运行该程序并按下(A)键。     
-这和系统升级不是一回事；它只会下载并提取最新的Luma3DS文件。Luma3DS Updater只会升级SD卡上的文件。    
-这只会升级SD卡上的Luma3DS文件。如果你在没有SD卡的情况下开机，它会使用你放在CTR NAND上的版本。    
+你现在可以使用Luma3DS Updater来更新你的Luma3DS到最新版，只需运行该程序并按下(A)键。
+这和系统升级不是一回事；它只会下载并提取最新的Luma3DS文件。Luma3DS Updater只会升级SD卡上的文件。
+这只会升级SD卡上的Luma3DS文件。如果你在没有SD卡的情况下开机，它会使用你放在CTR NAND上的版本。
 {% endcapture %}
 
 <div class="notice--info">{{ notice-10 | markdownify }}</div>
 
-{% capture notice-6 %}   
-现在你将默认启动到一个自制的SysNAND系统。    
-你可以在启动时按下Select键，进入Luma3DS的设置菜单。    
-你可以在启动时按下Start键运行Hourglass9，它是一个在arm9loaderhax环境下安全的NAND和卡带管理工具。    
+{% capture notice-6 %}
+现在你将默认启动到一个自制的SysNAND系统。
+你可以在启动时按下Select键，进入Luma3DS的设置菜单。
+你可以在启动时按下Start键运行Hourglass9，它是一个在arm9loaderhax环境下安全的NAND和卡带管理工具。
 {% endcapture %}
 
 <div class="notice--info">{{ notice-6 | markdownify }}</div>
