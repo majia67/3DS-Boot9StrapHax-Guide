@@ -66,14 +66,14 @@ ref: installing-arm9loaderhax
 
 1. **如果你SD卡上已经存在`/files9/`目录，请复制改文件夹到你电脑上一个安全的地方，并进行多位置备份（比如放到网盘里面）；当你的系统崩溃时，这里面的文件可以将你从所有数据丢失中挽救回来**
 2. 在SD卡创建 `cias` 文件夹，如果已经存在，则不用创建
-4. **如果SD卡根目录下存在`a9lh`文件夹，请删除**
+3. **如果SD卡根目录下存在`a9lh`文件夹，请删除**
   + **如果你意外地使用了别的设备的OTP安装arm9loaderhax，你的设备将变砖！**
-3. 删除SD卡的 `3ds` 文件夹，如果存在的话
-4. **解压`starter.zip` 并复制`starter`文件夹下的所有_内容_到你SD卡的根目录(不是starter文件夹)**
+4. 删除SD卡的 `3ds` 文件夹，如果存在的话
+5. **解压`starter.zip`，并复制`starter`文件夹下的所有文件到你SD卡的根目录(不是starter文件夹)**
    + 本操作将一个新的`3DS`文件夹替换你刚刚删除的的`3DS`文件夹
-5. 解压`SafeA9LHInstaller.7z`，并复制解压后的文件到你SD卡的根目录
-6. **从`data_input`压缩包中解压并复制`a9lh`文件夹到SD卡的根目录**
-7. **解压arm9loaderhax的压缩包，并复制其中的内容到你SD卡下的`a9lh`文件夹中**
+6. 解压`SafeA9LHInstaller.7z`，并复制解压后的文件到你SD卡的根目录
+7. **从`data_input`压缩包中解压并复制`a9lh`文件夹到SD卡的根目录**
+8. **解压arm9loaderhax的压缩包，并复制其中的内容到你SD卡下的`a9lh`文件夹中**
 9. 解压`hblauncher_loader`压缩包，并复制 `hblauncher_loader.cia` 到你SD卡的 `/cias/` 目录
 10. 解压Luma3DS Updater压缩包，并复制 `lumaupdater.cia` 到你SD卡 `/cias/` 目录
 11. 解压FBI压缩包，并复制`FBI.cia` 到你SD卡的 `/cias/` 目录
@@ -82,9 +82,9 @@ ref: installing-arm9loaderhax
 14. 在SD卡的`luma` 文件夹里创建 `payloads` 文件夹
 15. 将Hourglass9压缩包的 `Hourglass9.bin` 复制到你SD卡的 `/luma/payloads/` 目录下，并重命名 `Hourglass9.bin` 为 `start_Hourglass9.bin`
 16. 解压`GodMode9`压缩包，复制`GodMode9.bin`到你SD卡的`/luma/payloads/`目录下，并重命名`GodMode9.bin`为`up_GodMode9.bin`
-16. 复制 `aeskeydb.bin` 到你SD卡的 `/files9/` 目录
-17. 复制 `DspDump.3dsx` 到你SD卡的 `/3ds/` 目录
-18. 解压缩`fbi-2.4.2-injectable.zip`，并复制其中的文件到你SD卡的`/files9/`文件夹下
+17. 复制 `aeskeydb.bin` 到你SD卡的 `/files9/` 目录
+18. 复制 `DspDump.3dsx` 到你SD卡的 `/3ds/` 目录
+19. 解压缩`fbi-2.4.2-injectable.zip`，并复制其中的文件到你SD卡的`/files9/`文件夹下
 
 ##### 第二部分 - 安装 arm9loaderhax
 
@@ -95,6 +95,7 @@ ref: installing-arm9loaderhax
     + 如果出现错误：“当前服务在你的区域不可用”，请使用系统设置修改你的设备所在的国家，匹配你安装的2.1.0 ctr转移镜像所对应的NAND区域
     + 如果出现错误，[参见这个问题排查](troubleshooting#ts_browser)
     + 如果出现花屏，[参见这个问题排查](troubleshooting#ts_safe_a9lh_screen)
+    + 如果你没有打开wifi，将你的3DS断开充电器，并取下电池等几秒钟，即可重新开启wifi
   + 按（Select）选择Full Install
   + 安装程序将在你的设备上安装arm9loaderhax（速度很快）
   + 关机，有必要的话长按电源按钮强制关机
@@ -102,8 +103,8 @@ ref: installing-arm9loaderhax
 
 ##### 第三部分 - 设置 Luma3DS
 
-1. 在启动时按下select键，进入Luma3DS的菜单
-    + 请确保按电源键之前按住select
+1. 按住(select)键开机，进入Luma3DS的菜单
+  + 请确保按电源键之前就按住(select)键
   + 如果黑屏，[参见这个问题排查](troubleshooting#ts_sys_a9lh)
   + 如果你进入了SafeA9LHInstaller，[参见这个问题排查](troubleshooting#ts_safe_a9lh)
 2. 通过方向键和A键来启用以下设置：
@@ -114,7 +115,7 @@ ref: installing-arm9loaderhax
   + **"New 3DS CPU"选项，请移动光标到"Clock+L2(x)"**
     + 这将提升许多游戏的帧率，但可能会造成某些游戏的不稳定
     + 如果有部分游戏不能正常运行，关闭这个选项并重试
-4. 按下Start键保存设置并重启
+4. 按下(Start)键保存设置并重启
   + 如果出现黑屏，请照常进行接下来的教程
   + 如果出现"Failed to mount CTRNAND"错误，请照常进行接下来的教程
 
@@ -133,7 +134,7 @@ ref: installing-arm9loaderhax
   + 下载[这个文件](http://nus.cdn.c.shop.nintendowifi.net/ccs/download/0004013800000002/cetk)
   + 复制`firmware.bin`和`cetk`到SD卡的`/luma/`文件夹下
   + 在你的3DS升级完成后，删除这两个文件
-2. 进入"System Settings"（系统设置）、"Other Settings"（其它设置），移动到最右边一页，选择"System Update"（系统升级），将你的3DS系统升级到最新版本
+6. 进入"System Settings"（系统设置）、"Other Settings"（其它设置），移动到最右边一页，选择"System Update"（系统升级），将你的3DS系统升级到最新版本
   + 使用A9LH + Luma（或者其它自制系统）进行系统升级很安全，请不要再问这个问题。
   + 之前关于新3DS不能在2.1.0系统版本下进行升级的警告不适用于恢复了你的NAND备份之后（译者注：因为已经不是2.1.0系统了）
   + 如果出现错误，将你的DNS设置改为"auto"（自动）模式
@@ -145,42 +146,42 @@ ref: installing-arm9loaderhax
 1. 按住(Start)键并开机，通过arm9loaderhax进入Hourglass9
 2. 选择 "SysNAND Backup/Restore"，然后选择"Health&Safety Dump"，导出Health & Safety（健康与安全）应用到`hs.app` **(你可以按十字键上下/左右来改名字)**
 3. 按(B)键，选择"Health&Safety Inject"
-8. 依照你的区域，选择可以注入的FBI`.app`文件
-4. 按(A)键确认，进行注入
-9. 按(Start)键重启
-10. 如果你依然进入的是系统内置的Health & Safety应用，并且之前曾经用Gateway进行过降级，参见这个[问题排查](troubleshooting#gw_fbi)
+4. 依照你的区域，选择可以注入的FBI`.app`文件
+5. 按(A)键确认，进行注入
+6. 按(Start)键重启
+7. 如果你依然进入的是系统内置的Health & Safety应用，并且之前曾经用Gateway进行过降级，参见这个[问题排查](troubleshooting#gw_fbi)
 
 ##### 第六部分 - 最终设置
 
-2. 打开Health and Safety应用（健康与安全，现在应该是FBI）
-3. 选择"SD"
-4. 选择"cias"
-5. 选择`FBI.cia`文件，按(A)键安装
-6. 选择`hblauncher_loader.cia`文件，按(A)键安装
-7. 选择`lumaupdater.cia`文件，按(A)键安装
-8. 按(B)键返回SD卡目录
+1. 打开Health and Safety应用（健康与安全，现在应该是FBI）
+2. 选择"SD"
+3. 选择"cias"
+4. 选择`FBI.cia`文件，按(A)键安装
+5. 选择`hblauncher_loader.cia`文件，按(A)键安装
+6. 选择`lumaupdater.cia`文件，按(A)键安装
+7. 按(B)键返回SD卡目录
 8. 选择`arm9loaderhax.bin`文件，按(A)键并选择“复制”选项
 9. 按(B)键返回FBI主菜单
 10. 选择"CTR NAND"
 11. 选择"\<current directory>"
 12. 选择"Paste"选项，并按(A)键确认
-8. 按home键退出
-9. 从桌面菜单中运行Homebrew Launcher（自制程序启动器）
-10. 选择"DSP Dump"
-11. 按照提示，按(Start)键退出
-12. 重启，并按住(Start)键开机，进入Hourglass9
-13. 选择"SysNAND Backup/Restore"，然后选择"Health&Safety Inject"
-14. 选择 `hs.app` (原来那个并不包含FBI的版本)，然后按(A)键确认注入
-15. 在主菜单中，按(Select)键弹出你的SD卡
-15. 按(Start)键，在没有SD卡的情况下重启
+13. 按home键退出
+14. 从桌面菜单中运行Homebrew Launcher（自制程序启动器）
+15. 选择"DSP Dump"
+16. 按照提示，按(Start)键退出
+17. 重启，并按住(Start)键开机，进入Hourglass9
+18. 选择"SysNAND Backup/Restore"，然后选择"Health&Safety Inject"
+19. 选择 `hs.app` (原来那个并不包含FBI的版本)，然后按(A)键确认注入
+20. 在主菜单中，按(Select)键弹出你的SD卡
+21. 按(Start)键，在没有SD卡的情况下重启
   + 在没有SD卡的情况下至少开启一次你的机器，可以使你配置基于CTRNAND的luma
-16. 使用方向键和A键来启用以下设置：
+22. 使用方向键和A键来启用以下设置：
   + **"Show NAND or user string in System Settings"**
-3. 如果你的设备是**新3DS**，你*还*应该启用如下设置：
+23. 如果你的设备是**新3DS**，你*还*应该启用如下设置：
   + **"New 3DS CPU"选项，请移动光标到"Clock+L2(x)"**
     + 这将提升许多游戏的帧率，但可能会造成某些游戏的不稳定
     + 如果有部分游戏不能正常运行，关闭这个选项并重试
-14. 将SD卡插回3DS，按下Start键保存设置并重启！
+24. 将SD卡插回3DS，按下(Start)键保存设置并重启！
 
 ___
 

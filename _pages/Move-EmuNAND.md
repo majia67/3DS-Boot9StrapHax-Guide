@@ -43,11 +43,11 @@ ref: move-emunand
 17. 选择"Auto"
 18. 输入屏幕提示的组合键以确定
 19. 格式化完成后，同时按(R)键和(B)键，弹出你的SD卡
-16. 将SD卡插入电脑，然后将所有文件重新复制回SD卡
+20. 将SD卡插入电脑，然后将所有文件重新复制回SD卡
   + 确保你使用备份的`arm9loaderhax.bin`文件替换了SD卡上已有的文件
-18. 将你的SD卡插回你的3DS
-19. 按(A)键重新加载你的SD卡
-20. 按(Start)键重启
-19. 如果出现黑屏，[参见这个问题排查](troubleshooting#ts_sys_down)
+21. 将你的SD卡插回你的3DS
+22. 按(A)键重新加载你的SD卡
+23. 按(Start)键重启
+24. 如果出现黑屏，[参见这个问题排查](troubleshooting#ts_sys_down)
 
 返回到[安装arm9loaderhax](installing-arm9loaderhax)继续操作。

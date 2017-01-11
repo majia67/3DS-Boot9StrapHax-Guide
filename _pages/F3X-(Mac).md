@@ -22,10 +22,10 @@ ref: f3x-(mac)
 
 1. 解压缩F3X的压缩包
 2. 将SD卡插入你的电脑
-2. 运行F3X App
+3. 运行F3X App
 4. 选择你的SD卡
 5. 点击"Start Test"（开始测试）
-5. 等待测试完成
+6. 等待测试完成
 
 如果测试结果显示`Success! Your card is ok!`（成功！你的SD卡没问题！），你的SD卡是好的，删除你SD卡上所有的`.h2w`文件
 {: .notice--success}

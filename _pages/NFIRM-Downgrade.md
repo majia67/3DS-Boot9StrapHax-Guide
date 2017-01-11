@@ -1,0 +1,14 @@
+---
+title: "NFIRM降级"
+permalink: /nfirm-downgrade.html
+redirect_from: "/dsiware-downgrade"
+lang: zh_CN
+ref: nfirm-downgrade
+---
+
+以下方法均是"FIRM partitions known-plaintext"漏洞的有效实现。详情参见[这里](https://www.3dbrew.org/wiki/3DS_System_Flaws)。
+{: .notice--info}
+
++ 参见[这里](hardmod-downgrade)，使用[硬改](https://gbatemp.net/threads/414498/)降级你的NFIRM
+
+

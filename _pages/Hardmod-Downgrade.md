@@ -38,9 +38,9 @@ ref: hardmod-downgrade
 3. 解压缩NFIRM压缩包，并复制解压后的文件到`/autofirm/source/firmwares/`文件夹下
 4. 运行`autofirm.bat`，选择NAND备份文件所对应的设备和系统版本
 5. 等待脚本执行结束
-6. 如果一切顺利，你原先的NAND会被重命名为`backup_nand.bin`，而你现在的`nand.bin`文件已经包含了10.4.0 NATIVE\_FIRM
-  + 保留`backup_nand.bin`，稍后会用到
-7. 硬改你的3DS，将`nand.bin`刷回
+6. 如果一切顺利，你原先的NAND会被重命名为`nand.bin`，而你现在的`nand_patched.bin`文件已经包含了10.4.0 NATIVE_FIRM
+  + 保留`nand.bin`文件，稍后会用到
+7. 硬改你的3DS，将`nand_patched.bin`刷回
 
 ##### 第二部分 - 漏洞确认
 

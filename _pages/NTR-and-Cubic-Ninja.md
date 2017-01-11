@@ -35,13 +35,13 @@ ref: ntr-and-cubic-ninja
 7. 在`C:\wamp\www\updates`目录下，拖动`CdnCiaUnpack.js`到`node.exe`程序上，获得`GetSystemUpdate.partial.xml`
 8. 将`node.exe`和`CdnCiaUnpack.js`移动回`C:\wamp\www\`
 9. 复制`GetSystemUpdate.partial.xml`到`C:\wamp\www\`（这样`C:\wamp\www\updates`和`C:\wamp\www\`下会有两份拷贝）
-9. 单击系统状态栏上的WAMP图标，选择"Put Online"
-10. 在CMD中输入"ipconfig"命令，获取你的电脑的IPv4地址。你很快会用到
-11. 复制`ntr.bin`到你的SD卡根目录
-12. 在你的SD卡根目录新建一个名为`files9`的文件夹，如果还不存在的话
-1. 解压缩`starter.zip`，复制解压后的文件到SD卡根目录
-2. 解压缩Decrypt9WIP的压缩包，复制`Decrypt9WIP`文件夹到SD卡的`/3ds/`目录下
-3. 把SD卡插回3DS
+10. 单击系统状态栏上的WAMP图标，选择"Put Online"
+11. 在CMD中输入`ipconfig`命令，获取你的电脑的IPv4地址。你很快会用到
+12. 复制`ntr.bin`到你的SD卡根目录
+13. 在你的SD卡根目录新建一个名为`files9`的文件夹，如果还不存在的话
+14. 解压缩`starter.zip`，将`starter`文件夹下的所有文件拷贝到你SD卡的根目录中
+15. 解压缩Decrypt9WIP的压缩包，复制`Decrypt9WIP`文件夹到SD卡的`/3ds/`目录下
+16. 把SD卡插回3DS
 
 ##### 第二部分 - 升级
 

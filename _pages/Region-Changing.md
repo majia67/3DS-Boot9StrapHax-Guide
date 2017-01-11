@@ -52,27 +52,27 @@ ref: region-changing
 
 ##### 第二部分 - 备份tickets和config save
 
-5. 按住(X)键开机，进入Decrypt9
-6. 进入"Ticket/Titlekey Options"，选择"Ticket Dump (SysNAND)"
-7. 按(Select)键弹出你的SD卡，并把SD卡插入电脑
-8. 删除所有`/files9/`文件夹中**不以**"00-"开头的`.tik`文件
-9. 将所有以"00-"开头的`.tik`文件留在文件夹中
-10. 重新将SD卡插入你的3DS，并按(B)键返回到主菜单
-11. 选择"SysNAND Options"，然后选"System Save Dump"，然后选"Dump configsave.bin"
+1. 按住(X)键开机，进入Decrypt9
+2. 进入"Ticket/Titlekey Options"，选择"Ticket Dump (SysNAND)"
+3. 按(Select)键弹出你的SD卡，并把SD卡插入电脑
+4. 删除所有`/files9/`文件夹中**不以**"00-"开头的`.tik`文件
+5. 将所有以"00-"开头的`.tik`文件留在文件夹中
+6. 重新将SD卡插入你的3DS，并按(B)键返回到主菜单
+7. 选择"SysNAND Options"，然后选"System Save Dump"，然后选"Dump configsave.bin"
 
 ##### 第三部分 - ctr转移
 
-6. 进入"SysNAND Options"，选择"CTRNAND Transfer"，然后选"Auto CTRNAND Transfer"
-7. 按照提示，按(A)键选择9.2.0 ctrtransfer镜像
-8. 如果你还没有进行过NAND备份，**按(A)键备份SysNAND到`NANDmin.bin`**
-9. 让迁移过程自动完成，这将耗费一些时间
-10. 当迁移过程完成，按(select)键弹出你的SD卡
-11. 将SD卡插入电脑，复制`/files9/`文件夹下的`NANDmin.bin`和`NANDmin.bin.sha`文件到一个安全的位置
+1. 进入"SysNAND Options"，选择"CTRNAND Transfer"，然后选"Auto CTRNAND Transfer"
+2. 按照提示，按(A)键选择9.2.0 ctrtransfer镜像
+3. 如果你还没有进行过NAND备份，**按(A)键备份SysNAND到`NANDmin.bin`**
+4. 让迁移过程自动完成，这将耗费一些时间
+5. 当迁移过程完成，按(select)键弹出你的SD卡
+6. 将SD卡插入电脑，复制`/files9/`文件夹下的`NANDmin.bin`和`NANDmin.bin.sha`文件到一个安全的位置
   + 在多个位置进行备份
   + 备份文件可以在将来出现错误时将你的机器救砖
   + **你的备份文件应该符合[这个](nand-size)页面上列出的大小。如果不是，你应该删除它并重新做一次！**
-12. 删除SD卡`/files9/`目录下的9.2.0 ctrtransfer镜像文件`.bin`和`.bin.sha`
-13. 将SD卡插回你的3DS
+7. 删除SD卡`/files9/`目录下的9.2.0 ctrtransfer镜像文件`.bin`和`.bin.sha`
+8. 将SD卡插回你的3DS
 
 ##### 第四部分 - 修改SecureInfo
 
