@@ -21,14 +21,17 @@ ref: home
 
 <div class="notice--danger">{{ notice-home | markdownify }}</div>
 
-**本教程需要*你的*帮助给[这些](https://3ds.guide/rss.xml)种子进行做种！**
-{: .notice--info}
-
 **本教程中有大量下载链接是[磁力链](https://zh.wikipedia.org/zh-hans/%E7%A3%81%E5%8A%9B%E9%93%BE%E6%8E%A5)格式。你需要一个能进行BT下载的软件，如[Deluge](http://dev.deluge-torrent.org/wiki/Download)、[aria2](https://aria2.github.io/)或迅雷。**
 {: .notice--info}
 
 **请先阅读完本介绍页面后，再开始操作。**
 {: .notice--warning}
+
+点击[这里](https://3ds.guide/)阅读Plailect的英文教程。
+{: .notice--info}
+
+[Jixun Moe](https://github.com/JixunMoe)写了一个很棒的js脚本，可以实现教程预加载和英文教程直链。喜欢的朋友可以到[这里](https://greasyfork.org/zh-CN/scripts/26309-3ds-guide-streamlined)下载启用。
+{: .notice--info}
 
 ## 什么是自制程序？
 
