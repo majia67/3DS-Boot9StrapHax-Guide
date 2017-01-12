@@ -7,29 +7,9 @@ lang: zh_CN
 ref: site-navigation
 ---
 
-+ [2.1.0 ctrtransfer](2.1.0-ctrtransfer)
-+ [9.2.0 ctrtransfer](9.2.0-ctrtransfer)
-+ [Cart Update](cart-update)
-+ [Credits](credits)
-+ [Decrypt9 (Browser)](decrypt9-(browser))
-+ [Decrypt9 (Homebrew Launcher)](decrypt9-(homebrew-launcher))
-+ [Decrypt9 (MSET)](decrypt9-(mset))
-+ [Donations](donations)
-+ [F3 (Linux)](f3-(linux))
-+ [F3X (Mac)](f3x-(mac))
-+ [FAQ](faq)
-+ [Get Started (New 3DS)](get-started-(new-3ds))
-+ [Get Started (Old 3DS)](get-started-(old-3ds))
-+ [Get Started](get-started)
-+ [H2testw (Windows)](h2testw-(windows))
-+ [Hardmod Downgrade](hardmod-downgrade)
-+ [Home](/)
-+ [Homebrew Launcher (SoundHax)](homebrew-launcher-(soundhax))
-+ [Installing arm9loaderhax](installing-arm9loaderhax)
-+ [Move EmuNAND](move-emunand)
-+ [NAND Size](nand-size)
-+ [NFIRM Downgrade](nfirm-downgrade)
-+ [NTR and Cubic Ninja](ntr-and-cubic-ninja)
-+ [Region Changing](region-changing)
-+ [Troubleshooting](troubleshooting)
-+ [Updating A9LH](updating-a9lh)
+{% assign site_pages = site.pages | sort:"title" %}
+{% for node in site_pages %}
+{% if node.path contains "zh_CN" %}
+  <li><a href="{{node.url}}">{{node.title}}</a></li>
+{% endif %}
+{% endfor %}
