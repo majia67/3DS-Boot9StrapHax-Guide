@@ -41,7 +41,7 @@ ref: installing-arm9loaderhax
 * [`data_input_v3.zip`](magnet:?xt=urn:btih:a1195c9f7ab650fa7c7bf020b51fc19ea8d9440c&dn=data%5Finput%5Fv3.zip&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce)
 * 最新改版的[SafeA9LHInstaller](https://github.com/Plailect/SafeA9LHInstaller/releases/latest) *（`.7z`压缩包）*
 * 最新版的[arm9loaderhax](https://github.com/AuroraWright/arm9loaderhax/releases/latest) *（`.7z`压缩包）*
-* 最新版的[Luma3DS](https://github.com/AuroraWright/Luma3DS/releases/latest) *（`.7z`压缩包）*
+* 最新的[Luma3DS](https://astronautlevel2.github.io/Luma3DS/builds/Luma-1eb18c17.zip)镜像文件 *（`.7z`压缩包）*
 * 最新版的[hblauncher_loader](https://github.com/yellows8/hblauncher_loader/releases/latest)
 * 最新版的[Hourglass9](https://github.com/d0k3/Hourglass9/releases/latest)
 * 最新版的[Luma3DS Updater](https://github.com/Hamcha/lumaupdate/releases/latest)
@@ -77,7 +77,7 @@ ref: installing-arm9loaderhax
 9. 解压`hblauncher_loader`压缩包，并复制 `hblauncher_loader.cia` 到你SD卡的 `/cias/` 目录
 10. 解压Luma3DS Updater压缩包，并复制 `lumaupdater.cia` 到你SD卡 `/cias/` 目录
 11. 解压FBI压缩包，并复制`FBI.cia` 到你SD卡的 `/cias/` 目录
-12. **复制Luma3DS压缩包中的 `arm9loaderhax.bin` 到你SD卡的根目录，覆盖已有的文件**
+12. **解压Luma3DS压缩包，将`out`文件夹中的 `arm9loaderhax.bin`文件复制到你SD卡的根目录，覆盖已有的文件**
 13. 在你SD卡的根目录创建一个叫 `luma` 的文件夹
 14. 在SD卡的`luma` 文件夹里创建 `payloads` 文件夹
 15. 将Hourglass9压缩包的 `Hourglass9.bin` 复制到你SD卡的 `/luma/payloads/` 目录下，并重命名 `Hourglass9.bin` 为 `start_Hourglass9.bin`
