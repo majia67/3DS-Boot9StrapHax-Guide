@@ -27,7 +27,9 @@ Homebrew Launcher（自制程序启动器，HBL）有很多进入或启动方法
 6. 跳过所有的小鸟提示，正常关闭程序，再重新打开它
   + 如果立刻运行SoundHax，会造成每次打开Nintendo 3DS Sound都会有小鸟提示
 7. 运行SoundHax的`.m4a`文件
-8. 你的3DS应该开始加载自制程序菜单了
+  + 可能需要多试几次
+  + 如果画面卡住了，长按电源键强制关机，然后再试一次
+8. 你的3DS应该开始加载自制程序启动器了
 
 进入[Decrypt9（自制程序启动器）](decrypt9-(homebrew-launcher))继续教程
 {: .notice--primary}

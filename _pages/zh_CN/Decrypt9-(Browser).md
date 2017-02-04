@@ -13,12 +13,12 @@ ref: decrypt9-(browser)
 
 #### 你需要
 
-* 最新版本的[Decrypt9WIP](https://github.com/d0k3/Decrypt9WIP/releases/)
+* 最新版本的[Decrypt9WIP](https://github.com/d0k3/Decrypt9WIP/releases/latest)
 
 #### 操作指南
 
-1. 在SD卡根目录下创建`files9`文件夹如果没有的话
-2. 复制Decrypt9WIP压缩包的`Launcher.dat`和`Decrypt9WIP.dat`到你SD卡的根目录
+1. 在SD卡根目录下创建`files9`文件夹（如果没有的话）
+2. 解压缩Decrypt9WIP压缩包，复制其中的`Launcher.dat`和`Decrypt9WIP.dat`文件到你SD卡的根目录
 3. 将SD卡重新插入你的3DS
 4. 在3DS上打开浏览器然后进入到下面任意一个连接
   + `https://dukesrg.github.io/?Decrypt9WIP.dat`

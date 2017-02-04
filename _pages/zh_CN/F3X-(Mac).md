@@ -16,7 +16,7 @@ ref: f3x-(mac)
 
 #### 你需要
 
-* 最新版本的[F3X](https://github.com/insidegui/F3X/releases)
+* 最新版本的[F3X](https://github.com/insidegui/F3X/releases/latest)
 
 #### Instructions
 

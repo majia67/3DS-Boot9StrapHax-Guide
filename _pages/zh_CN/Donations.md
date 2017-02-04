@@ -15,11 +15,11 @@ ref: donations
 {: .notice--success}
 
 ![Alipay](images/alipay-qrcode.jpg){: .align-center}
-支付宝-人民币打赏
+支付宝打赏
 {: .text-center}
 
 
-![Paypal](images/paypal.jpg){: .align-center}
-PayPal-美元打赏 ![Paypal-Account](images/paypal-account.png)
+![Wechat](images/wechat-qrcode.jpg){: .align-center}
+微信打赏
 {: .text-center}
 

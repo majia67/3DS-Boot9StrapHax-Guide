@@ -13,13 +13,13 @@ ref: decrypt9-(mset)
 
 #### 你需要
 
-* 可以在你3DS正常工作的DS烧录卡
-* 最新版本的[Decrypt9WIP](https://github.com/d0k3/Decrypt9WIP/releases/)
+* 可以在你的3DS上正常工作的DS烧录卡
+* 最新版本的[Decrypt9WIP](https://github.com/d0k3/Decrypt9WIP/releases/latest/)
 
 #### 操作指南
 
-1. 在SD卡根目录下创建`files9`文件夹如果没有的话
-2. 复制Decrypt9WIP压缩包的`Launcher.dat`和`Decrypt9WIP.dat`到你SD卡的根目录
+1. 在SD卡根目录下创建`files9`文件夹（如果没有的话）
+2. 解压缩Decrypt9WIP压缩包，复制其中的`Launcher.dat`和`Decrypt9WIP.dat`文件到你SD卡的根目录
 3. 将SD卡重新插入你的3DS
 4. 把Decrypt9压缩包的`Decrypt9.nds`放入你的烧录卡中
 5. 用你的3DS运行烧录卡
@@ -27,7 +27,7 @@ ref: decrypt9-(mset)
 7. 正确选择你系统的版本
   + 4.X.X -> "4.x Decrypt9WIP"
   + 6.X.X -> "6.x Decrypt9WIP"
-8. 重启，然后进入系统设置（System Settings），然后“其它选项”（"Other Settings"），然后"Profile"，最后"Nintendo DS Profile"（译者注：没错，就是传说中的414）
+8. 重启，然后进入系统设置（System Settings）- “其它选项”（"Other Settings"）- “资料”（"Profile"）- "Nintendo DS Profile"（译者注：没错，就是传说中的414）
 9. 如果漏洞利用成功，Decrypt9将会启动
 
 继续进行[2.1.0 ctr迁移](2.1.0-ctrtransfer)

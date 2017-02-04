@@ -16,7 +16,7 @@ ref: f3-(linux)
 
 #### 你需要
 
-* 最新版的[F3](https://github.com/AltraMayor/f3/archive/v6.0.zip)
+* 最新版的[F3](https://github.com/AltraMayor/f3/releases/latest)
 
 #### 操作指南
 
