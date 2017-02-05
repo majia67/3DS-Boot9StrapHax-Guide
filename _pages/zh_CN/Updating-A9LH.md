@@ -25,11 +25,10 @@ data_input的版本是指为了适配不同安装程序版本而修改的`.zip`�
 
 #### 你需要
 
-* [`aeskeydb.bin`](magnet:?xt=urn:btih:18b3a17f78e2376e05feaa150749d9fd689b25dc&dn=aeskeydb.bin&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce)
-* [`data_input_v4.zip`](magnet:?xt=urn:btih:00f03ff69b5961307303d5e4778a2f65a528bf2d&dn=data%5Finput%5Fv4.zip&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce)
-* 最新改版的[SafeA9LHInstaller](https://github.com/Plailect/SafeA9LHInstaller/releases/latest) *(the `.7z` file)*
-* 最新版的[arm9loaderhax](https://github.com/AuroraWright/arm9loaderhax/releases/latest) *(the `.7z` file)*
+* <i class="fa fa-magnet" aria-hidden="true" title="这个下载链接是磁力链格式的。请使用BT种子客户端进行下载。"></i> - [`aeskeydb.bin`](magnet:?xt=urn:btih:18b3a17f78e2376e05feaa150749d9fd689b25dc&dn=aeskeydb.bin&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce)
+* <i class="fa fa-magnet" aria-hidden="true" title="这个下载链接是磁力链格式的。请使用BT种子客户端进行下载。"></i> - [`data_input_v4.zip`](magnet:?xt=urn:btih:00f03ff69b5961307303d5e4778a2f65a528bf2d&dn=data%5Finput%5Fv4.zip&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce)
 * 最新版的[SafeA9LHInstaller](https://github.com/AuroraWright/SafeA9LHInstaller/releases/latest) *(the `.7z` file)*
+* 最新版的[arm9loaderhax](https://github.com/AuroraWright/arm9loaderhax/releases/latest) *(the `.7z` file)*
 * 最新版的[Hourglass9](https://github.com/d0k3/Hourglass9/releases/latest)
 
 #### 操作指南
@@ -38,21 +37,20 @@ data_input的版本是指为了适配不同安装程序版本而修改的`.zip`�
 
 ##### 第一部分 - 准备工作
 
-1. 删除你SD卡根目录下的`aeskeydb.bin`文件
-2. 如果在你SD卡的根目录下存在`a9lh`目录，请删除
+1. 删除SD卡根目录下的`aeskeydb.bin`文件
+2. 如果在SD卡的根目录下存在`a9lh`目录，请删除
 3. 将`aeskeydb.bin`文件复制到SD卡的`/files9/`目录下
-4. 将Hourglass9 zip下的`Hourglass9.bin`解压到SD卡 `/luma/payloads/` 目录下，并把 `Hourglass9.bin` 重命名为 `start_Hourglass9.bin`
-5. 将SafeA9LHInstaller zip中的 `arm9loaderhax.bin` 解压到SD卡 `/luma/payloads/` 目录下
-6. 将 `/luma/payloads/` 目录下的 `arm9loaderhax.bin` 重命名成 `down_safea9lhinstaller.bin`
-7. 将 `data_input_v4.zip` 压缩包中的 `a9lh` 文件夹解压到SD卡的根目录下
-8. 解压arm9loaderhax压缩包，并复制解压的文件到SD卡的 `a9lh` 目录下
-9. 解压Luma3DS.zip压缩包，复制`arm9loaderhax.bin`文件到SD卡根目录下，覆盖已有文件
-10. 将你的SD卡插回3DS
+4. 解压缩Hourglass9`.zip`压缩包，复制`Hourglass9.bin`文件到`/luma/payloads/`目录下，并将其重命名为`start_Hourglass9.bin`
+5. 解压缩SafeA9LHInstaller`.zip`压缩包，复制`arm9loaderhax.bin`文件到SD卡`/luma/payloads/`目录下，并将其重命名为`down_safea9lhinstaller.bin`
+7. 解压缩data_input`.zip`压缩包，将`a9lh`文件夹复制到SD卡的根目录下
+8. 解压缩arm9loaderhax`.7z`压缩包，并复制_解压后的文件_到SD卡的 `\a9lh\` 目录下
+9. 解压缩Luma3DS`.zip`压缩包，复制`arm9loaderhax.bin`文件到SD卡根目录下，覆盖已有文件
+10. 将SD卡插回3DS
 
 ##### 第二部分 - Payload更新
 
-1. 按住(十字下)键启动3DS
-2. 按(select)键更新arm9loaderhax
+1. 按住(Down)键并开机
+2. 按(Select)键更新arm9loaderhax
 3. 关机并将SD卡插入你的电脑
 4. 删除SD卡根目录下的 `a9lh` 目录
 5. 将`down_safea9lhinstaller.bin`从`/luma/payloads/`目录中删除
@@ -64,7 +62,7 @@ data_input的版本是指为了适配不同安装程序版本而修改的`.zip`�
   + **"Autoboot SysNAND"**
   + **"Use SysNAND FIRM if booting with R"**
   + **"Show NAND or user string in System Settings"**
-3. 如果你的设备是**新3DS**，你*还*应该启用如下设置：
+3. 如果你的设备是**新3DS**，你*还*可以启用如下设置：
   + **"New 3DS CPU"选项，请移动光标到"Clock+L2(x)"**
     + 这将提升许多游戏的帧率，但可能会造成某些游戏的不稳定
     + 如果有部分游戏不能正常运行，关闭这个选项并重试
@@ -74,18 +72,18 @@ data_input的版本是指为了适配不同安装程序版本而修改的`.zip`�
 
 1. 打开FBI
 2. 选择"SD"
-3. 选择`arm9loaderhax.bin`文件，按(A)键并选择“复制”选项
+3. 选择`arm9loaderhax.bin`文件，按(A)键并选择“Copy”（复制）选项
 4. 按(B)键返回FBI主菜单
 5. 选择"CTR NAND"
 6. 选择"\<current directory>"
-7. 选择"Paste"选项，并按(A)键确认
+7. 选择"Paste"（粘贴）选项，并按(A)键确认
 8. 按home键退出
 9. 将3DS关机，移除SD卡
 10. 按(Select)键，在没有SD卡的情况下重启
-  + 在没有SD卡的情况下至少开启一次你的机器，可以使你配置基于CTRNAND的luma
+  + 在没有SD卡的情况下至少开启一次你的机器，可以使你配置基于CTRNAND的Luma3DS
 11. 使用方向键和A键来启用以下设置：     
   + **"Show NAND or user string in System Settings"**
-12. 如果你的设备是**新3DS**，你*还*应该启用如下设置：
+12. 如果你的设备是**新3DS**，你*还*可以启用如下设置：
   + **"New 3DS CPU"选项，请移动光标到"Clock+L2(x)"**
     + 这将提升许多游戏的帧率，但可能会造成某些游戏的不稳定
     + 如果有部分游戏不能正常运行，关闭这个选项并重试
