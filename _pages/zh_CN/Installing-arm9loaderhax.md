@@ -85,17 +85,16 @@ ref: installing-arm9loaderhax
 ##### 第二部分 - 安装 arm9loaderhax
 
 1. 将SD卡插回你的3DS
-2. 按照如下步骤安装arm9loaderhax：
-  + 你的系统版本应该在2.1.0
-  + 在3DS的浏览器里打开`http://2xrsa.3ds.guide`网址
-   + 如果出现错误：“当前服务在你的区域不可用”，请使用系统设置修改你的设备所在的国家，匹配你安装的2.1.0 ctr转移镜像所对应的NAND区域
-   + 如果出现错误，[参见这个问题排查](troubleshooting#ts_browser)
-   + 如果出现花屏，[参见这个问题排查](troubleshooting#ts_safe_a9lh_screen)
-   + 如果你的设备是2DS或新3DS，且没有打开wifi，可以断开充电器并取下电池等几秒钟，即可重新开启wifi
-  + 按(Select)键，进行完整安装（Full Install）
-  + 安装程序将在你的设备上安装arm9loaderhax（速度很快）
-  + 按任意键关机
-  + 复制SD卡`/a9lh/`目录下你设备专属的`otp.bin`文件到你电脑上一个安全的地方，并在多个位置进行备份（如网盘），然后将SD卡插回3DS上
+2. 你的系统版本应该在2.1.0
+3. 在3DS的浏览器里打开网址：`http://2xrsa.3ds.guide`
+  + 如果出现错误：“当前服务在你的区域不可用”，请使用系统设置修改你的设备所在的国家，匹配你安装的2.1.0 ctr转移镜像所对应的NAND区域
+  + 如果出现错误，[参见这个问题排查](troubleshooting#ts_browser)
+  + 如果出现花屏，[参见这个问题排查](troubleshooting#ts_safe_a9lh_screen)
+  + 如果你的设备是2DS或新3DS，且没有打开wifi，可以断开充电器并取下电池等几秒钟，即可重新开启wifi
+4. 按(Select)键，进行完整安装（Full Install）
+5. 安装程序将在你的设备上安装arm9loaderhax（速度很快）
+6. 按任意键关机
+7. 复制SD卡`/a9lh/`目录下你设备专属的`otp.bin`文件到你电脑上一个安全的地方，并在多个位置进行备份（如网盘），然后将SD卡插回3DS上
 
 ##### 第三部分 - 设置 Luma3DS
 
@@ -117,20 +116,21 @@ ref: installing-arm9loaderhax
 
 ##### 第四部分 - 恢复系统
 
-如果在进行本教程之前，你已经安装了EmuNAND，并且想将之前EmuNAND中的数据迁移到新的SysNAND自制系统中，请在开始本部分操作之前先按照[迁移EmuNAND数据](move-emunand)一节进行，然后跳过本部分的前四步。
+如果在进行本教程之前，你已经安装了EmuNAND，并且想将之前EmuNAND中的数据迁移到新的SysNAND自制系统中，请在开始本部分操作之前先按照[迁移EmuNAND数据](move-emunand)一节进行，然后跳过本部分的前五步。
 {: .notice--info}
 
 1. 按住(Start)键并开机，通过arm9loaderhax进入Hourglass9
 2. 选择"SysNAND Backup/Restore"
-3. 选择"SysNAND Restore (keep a9lh)"，从`NANDmin.bin`文件中恢复原系统的备份文件
-4. 按(Start)键重启
+3. 选择"SysNAND Restore (keep a9lh)"
+4. 按照提示输入按键组合，然后选择`NANDmin.bin`文件，按(A)键恢复原系统的备份文件
+5. 按(Start)键重启
   + 如果出现黑屏，参见[9.2.0 ctr转移](9.2.0-ctrtransfer)
-5. 如果你的备份文件系统版本在3.0.0到4.5.0，除非你下载所需的固件，否则你的设备将无法开机：
+6. 如果你的备份文件系统版本在3.0.0到4.5.0，除非你下载所需的固件，否则你的设备将无法开机：
   + 下载[这个文件](http://nus.cdn.c.shop.nintendowifi.net/ccs/download/0004013800000002/00000056)并重命名为`firmware.bin`
   + 下载[这个文件](http://nus.cdn.c.shop.nintendowifi.net/ccs/download/0004013800000002/cetk)
   + 复制`firmware.bin`和`cetk`这两个文件到SD卡的`/luma/`目录下
   + 在你的3DS升级完成后，删除这两个文件
-6. 进入"System Settings"（系统设置）、"Other Settings"（其它设置），移动到最右边一页，选择"System Update"（系统升级），将你的3DS系统升级到最新版本
+7. 进入"System Settings"（系统设置）、"Other Settings"（其它设置），移动到最右边一页，选择"System Update"（系统升级），将你的3DS系统升级到最新版本
   + 使用A9LH + Luma（或者其它自制系统）进行系统升级很安全，请不要再问这个问题。
   + 之前关于新3DS不能在2.1.0系统版本下进行升级的警告不适用于恢复了你的NAND备份之后（译者注：因为已经不是2.1.0系统了）
   + 如果出现错误，将你的DNS设置改为"auto"（自动）模式
