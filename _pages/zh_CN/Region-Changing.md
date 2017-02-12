@@ -70,7 +70,6 @@ ref: region-changing
 6. 将SD卡插入电脑，复制`/files9/`文件夹下的`NANDmin.bin`和`NANDmin.bin.sha`文件到一个安全的位置
   + 在多个位置进行备份
   + 备份文件可以在将来出现错误时将你的机器救砖
-  + **你的备份文件应该符合[这个](nand-size)页面上列出的大小。如果不是，你应该删除它并重新做一次！**
 7. 删除SD卡`/files9/`目录下的9.2.0 ctrtransfer镜像文件`.bin`和`.bin.sha`
 8. 将SD卡插回你的3DS
 
@@ -122,6 +121,8 @@ ref: region-changing
 
 1. 按(Start)键，然后按住(X)键，重启进入Decrypt9
 2. 进入"SysNAND Options"，选择"System Save Inject"，然后选"Inject configsave.bin"
+
+---
 
 老3DS/2DS可能需要格式化机器（使用TinyFormat或系统设置）才能玩扩展内存模式的游戏（如怪物猎人，任天堂明星大乱斗，和精灵宝可梦日/月）。
 {: .notice--info}

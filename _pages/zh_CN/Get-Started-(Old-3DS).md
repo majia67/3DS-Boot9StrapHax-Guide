@@ -21,9 +21,6 @@ ref: get-started-(old-3ds)
 所有版本的机器都可以通过[卡带升级](cart-update)，将系统升级到更高版本，然后按照升级后的系统版本选择教程。
 {: .notice--warning}
 
-所有版本的机器也可以通过"系统设置"中的系统升级功能，将系统升级到最新版本，然后按照升级后的系统版本选择教程。
-{: .notice--warning}
-
 如果你是从包含9.9.0或以上的游戏卡带升级而来*(这说明你的系统已经是9.9.0或以上版本，但你的浏览器还是以-25或更低结尾，比方说10.2.0-24)*, 你的浏览器已经被删除了，请看“无浏览器”列。
 {: .notice--warning}
 
@@ -43,18 +40,18 @@ ref: get-started-(old-3ds)
     <tr>
       <td style="text-align: center">1.0.0</td>
       <td style="text-align: center">1.1.0</td>
-      <td style="text-align: center" colspan="2"><a href="cart-update">卡带升级</a></td>
+      <td style="text-align: center" colspan="2">-</td>
     </tr>
     <tr>
       <td style="text-align: center">2.1.0</td>
       <td style="text-align: center">2.1.0</td>
-      <td style="text-align: center"><a href="cart-update">卡带升级</a></td>
+      <td style="text-align: center">-</td>
       <td style="text-align: center"><a href="installing-arm9loaderhax">安装arm9loaderhax</a></td>
     </tr>
     <tr>
       <td style="text-align: center">2.2.0</td>
       <td style="text-align: center">3.1.0</td>
-      <td style="text-align: center" colspan="2"><a href="cart-update">卡带升级</a></td>
+      <td style="text-align: center" colspan="2">-</td>
     </tr>
     <tr>
       <td style="text-align: center">4.0.0</td>
@@ -65,7 +62,7 @@ ref: get-started-(old-3ds)
     <tr>
       <td style="text-align: center">5.0.0</td>
       <td style="text-align: center">5.1.0</td>
-      <td style="text-align: center"><a href="cart-update">卡带升级</a></td>
+      <td style="text-align: center">-</td>
       <td style="text-align: center"><a href="decrypt9-(browser)">Decrypt9（浏览器）</a></td>
     </tr>
     <tr>
@@ -77,13 +74,18 @@ ref: get-started-(old-3ds)
     <tr>
       <td style="text-align: center">7.0.0</td>
       <td style="text-align: center">8.1.0</td>
-      <td style="text-align: center"><a href="cart-update">卡带升级</a></td>
+      <td style="text-align: center">-</td>
       <td style="text-align: center"><a href="decrypt9-(browser)">Decrypt9（浏览器）</a></td>
     </tr>
     <tr>
       <td style="text-align: center">9.0.0</td>
       <td style="text-align: center">11.2.0</td>
       <td style="text-align: center" colspan="2"><a href="homebrew-launcher-(soundhax)">自制程序启动器（声音破解）</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">11.3.0</td>
+      <td style="text-align: center">11.3.0</td>
+      <td style="text-align: center" colspan="2">-</td>
     </tr>
   </tbody>
 </table>

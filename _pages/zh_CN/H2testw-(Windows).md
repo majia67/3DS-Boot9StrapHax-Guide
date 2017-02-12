@@ -30,6 +30,8 @@ ref: h2testw-(windows)
 8. 点击"Write + Verify"
 9. 等待测试完成
 
+---
+
 如果测试结果显示`Test finished without errors`（测试完成，没有错误），你的SD卡是好的，删除你SD卡上所有的`.h2w`文件
 {: .notice--success}
 

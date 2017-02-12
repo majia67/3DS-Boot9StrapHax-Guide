@@ -29,5 +29,7 @@ ref: decrypt9-(browser)
   + 如果出现错误，参见[问题排查](Troubleshooting#ts_browser)
 5. 如果漏洞利用成功，Decrypt9将会启动
 
+---
+
 继续进行[2.1.0 ctr迁移](2.1.0-ctrtransfer)
 {: .notice--primary}

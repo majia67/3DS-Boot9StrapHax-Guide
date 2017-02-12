@@ -110,6 +110,7 @@ ref: installing-arm9loaderhax
   + **"New 3DS CPU"选项，请移动光标到"Clock+L2(x)"**
    + 这将提升许多游戏的帧率，但可能会造成某些游戏的不稳定
    + 如果有部分游戏不能正常运行，关闭这个选项并重试
+   + 如果系统版本是11.3.0，开启这个选项会造成自制程序启动器崩溃！
 4. 按下(Start)键保存设置并重启
   + 如果出现黑屏，请照常进行接下来的教程
   + 如果出现"Failed to mount CTRNAND"错误，请照常进行接下来的教程
@@ -152,20 +153,20 @@ ref: installing-arm9loaderhax
 1. 打开健康与安全（Health & Safety）应用（现在应该是FBI）
 2. 选择"SD"
 3. 选择"cias"
-4. 选择`FBI.cia`文件，按(A)键安装
-5. 选择`hblauncher_loader.cia`文件，按(A)键安装
-6. 选择`lumaupdater.cia`文件，按(A)键安装
-7. 按(B)键返回SD卡目录
-8. 选择`arm9loaderhax.bin`文件，按(A)键并选择`copy`（复制）选项
-9. 按(B)键返回FBI主菜单
-10. 选择"CTR NAND"
-11. 选择"\<current directory>"
-12. 选择`Paste`（粘贴）选项，并按(A)键确认
-13. 按(Home)键退出
-14. 从桌面菜单中运行自制程序启动器（Homebrew Launcher）
-15. 选择"DSP Dump"
-16. 依照提示，按(Start)键退出
-17. 按住(Start)键并开机，进入Hourglass9
+4. 选择"\<current directory>"
+5. 选择"Install all CIAs"（安装所有CIA文件）选项，按(A)键确认
+6. 按(B)键返回SD卡目录
+7. 选择`arm9loaderhax.bin`文件，按(A)键并选择`copy`（复制）选项
+8. 按(B)键返回FBI主菜单
+9. 选择"CTR NAND"
+10. 选择"\<current directory>"
+11. 选择`Paste`（粘贴）选项，并按(A)键确认
+12. 按(Home)键退出
+13. 从桌面菜单中运行自制程序启动器（Homebrew Launcher）
+14. 选择"DSP Dump"
+15. 依照提示，按(Start)键退出
+16. 按(Start)键打开自制程序启动器的退出菜单
+17. 按(A)键的同时按住(Start)键，重启进入Hourglass9
 18. 选择"SysNAND Backup/Restore"，然后选择"Health&Safety Inject"
 19. 选择`hs.app`文件(原来不包含FBI的版本)，然后按(A)键确认注入
 20. 在主菜单中，按(Select)键弹出你的SD卡

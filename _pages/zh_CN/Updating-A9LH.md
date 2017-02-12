@@ -5,6 +5,8 @@ lang: zh_CN
 ref: updating-a9lh
 ---
 
+### arm9loaderhax最后更新时间：2016年11月3日
+
 arm9loaderhax的安装实际上就是把一些payload文件安装到了你设备NAND芯片的NFIRM分区中。而NAND是焊接在设备主板上的。这些payload文件很少更新，它们存在的目的就是为了运行SD卡上的`arm9loaderhax.bin`文件，而这个文件在本教程中是用来启动Luma3DS的。
 {: .notice}
 

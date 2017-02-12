@@ -6,7 +6,7 @@ ref: faq
 ---
 
 <a name="faq_latestfw" />**问：** *我的系统是最新版本，可以破解吗？*    
-**答：** 是的，11.2版本的系统可以通过[自制程序启动器（声音破解）](homebrew-launcher-(soundhax))一节的方法破解。
+**答：** 不能。
 
 <a name="faq_updatecfw" />**问：** *我如何升级Luma3DS？*    
 **答：** 使用Luma3DS升级器（Luma3DS Updater）。

@@ -52,6 +52,7 @@ ref: f3-(linux)
 			     Overwritten: 0.00 Byte (0 sectors)
 		Average Reading speed: 9.42 MB/s
 
+---
 
 如果测试结果为`Data LOST: 0.00 Byte (0 sectors)`，你的SD卡是好的，删除你SD卡上所有的`.h2w`文件
 {: .notice--success}
