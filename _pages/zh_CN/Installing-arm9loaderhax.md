@@ -68,9 +68,9 @@ ref: installing-arm9loaderhax
 3. 删除SD卡的`3ds`文件夹，如果存在的话
 5. 解压`starter.zip`压缩包，并复制`starter`文件夹下的所有文件到你SD卡的根目录
    + 这里面包括一个新的`3ds`文件夹，替换你刚刚删除的`3ds`文件夹
-6. 解压SafeA9LHInstaller`.7z`压缩包，并复制_解压后的文件_到你SD卡的根目录
+6. 解压SafeA9LHInstaller`.7z`压缩包，并复制*解压后的文件*到你SD卡的根目录
 7. 解压data_input`.zip`压缩包，并复制`a9lh`文件夹到SD卡的根目录
-8. 解压arm9loaderhax`.7z`压缩包，并复制_解压后的文件_到SD卡的`a9lh`目录下
+8. 解压arm9loaderhax`.7z`压缩包，并复制*解压后的文件*到SD卡的`a9lh`目录下
 9. 解压hblauncher\_loader`.zip`压缩包，并复制`hblauncher_loader.cia`文件到SD卡的`/cias/`目录下
 10. 解压Luma3DS Updater压缩包，并复制 `lumaupdater.cia` 到SD卡的`/cias/`目录下
 11. 解压FBI压缩包，并复制`FBI.cia` 到SD卡的`/cias/`目录下
@@ -80,7 +80,7 @@ ref: installing-arm9loaderhax
 15. 解压Hourglass9`.zip`压缩包，复制`Hourglass9.bin`文件到SD卡的`/luma/payloads/`目录下，并重命名`Hourglass9.bin`为 `start_Hourglass9.bin`
 17. 复制`aeskeydb.bin`文件到SD卡的`/files9/`目录下
 18. 复制`DspDump.3dsx`文件到SD卡的`/3ds/`目录下
-19. 解压缩`fbi-2.4.2-injectable.zip`压缩包，并复制_解压后的文件_到SD卡的`/files9/`目录下
+19. 解压缩`fbi-2.4.2-injectable.zip`压缩包，并复制*解压后的文件*到SD卡的`/files9/`目录下
 
 ##### 第二部分 - 安装 arm9loaderhax
 
@@ -150,7 +150,7 @@ ref: installing-arm9loaderhax
 
 ##### 第六部分 - 最终设置
 
-1. 打开健康与安全（Health & Safety）应用（现在应该是FBI）
+1. 在桌面菜单中运行健康与安全（Health & Safety）应用（现在应该是FBI）
 2. 选择"SD"
 3. 选择"cias"
 4. 选择"\<current directory>"
@@ -162,7 +162,7 @@ ref: installing-arm9loaderhax
 10. 选择"\<current directory>"
 11. 选择`Paste`（粘贴）选项，并按(A)键确认
 12. 按(Home)键退出
-13. 从桌面菜单中运行自制程序启动器（Homebrew Launcher）
+13. 在桌面菜单中运行自制程序启动器（Homebrew Launcher）
 14. 选择"DSP Dump"
 15. 依照提示，按(Start)键退出
 16. 按(Start)键打开自制程序启动器的退出菜单
