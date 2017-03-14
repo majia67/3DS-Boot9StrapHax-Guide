@@ -11,6 +11,9 @@ ref: get-started-(new-3ds)
 设备版本号可以在系统设置中上屏幕的右下方找到。
 {: .notice--success}
 
+所有版本的机器都可以通过[卡带升级](cart-update)，将系统升级到更高版本，然后按照升级后的系统版本选择教程。但同时你需要一个[替代方法](homebrew-launcher-(alternatives))才能进入自制程序启动器，因为无法使用Soundhax。
+{: .notice--warning}
+
 <table>
   <thead>
     <tr>

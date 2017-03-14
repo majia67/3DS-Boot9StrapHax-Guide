@@ -110,7 +110,7 @@ ref: installing-arm9loaderhax
   + **"New 3DS CPU"选项，请移动光标到"Clock+L2(x)"**
    + 这将提升许多游戏的帧率，但可能会造成某些游戏的不稳定
    + 如果有部分游戏不能正常运行，关闭这个选项并重试
-   + 如果系统版本是11.3.0，开启这个选项会造成自制程序启动器崩溃！
+   + **如果系统版本是11.3.0，开启这个选项会造成自制程序启动器崩溃！**
 4. 按下(Start)键保存设置并重启
   + 如果出现黑屏，请照常进行接下来的教程
   + 如果出现"Failed to mount CTRNAND"错误，请照常进行接下来的教程
@@ -143,10 +143,11 @@ ref: installing-arm9loaderhax
 1. 按住(Start)键并开机，通过arm9loaderhax进入Hourglass9
 2. 选择"SysNAND Backup/Restore"，然后选择"Health&Safety Dump"，导出健康与安全（Health & Safety）应用到`hs.app`文件**（你可以通过十字键上下/左右来修改导出的文件名）**
 3. 按(B)键，选择"Health&Safety Inject"
-4. 依照你的设备区域，选择可以注入的FBI`.app`文件
-5. 按(A)键确认，进行注入
-6. 按(Start)键重启
-7. 如果你依然进入的是系统内置的Health & Safety应用，并且之前曾经用Gateway进行过降级，参见这个[问题排查](troubleshooting#gw_fbi)
+4. 按照提示输入按键组合
+5. 依照你的设备区域，选择可以注入的FBI`.app`文件
+6. 按(A)键确认，进行注入
+7. 按(Start)键重启
+8. 如果你依然进入的是系统内置的Health & Safety应用，并且之前曾经用Gateway进行过降级，参见这个[问题排查](troubleshooting#gw_fbi)
 
 ##### 第六部分 - 最终设置
 
@@ -178,6 +179,7 @@ ref: installing-arm9loaderhax
   + **"New 3DS CPU"选项，请移动光标到"Clock+L2(x)"**
     + 这将提升许多游戏的帧率，但可能会造成某些游戏的不稳定
     + 如果有部分游戏不能正常运行，关闭这个选项并重试
+    + **如果系统版本是11.3.0，开启这个选项会造成自制程序启动器崩溃！**
 24. 将SD卡插回3DS，按下(Start)键保存设置并重启！
 
 ___
@@ -217,6 +219,7 @@ ___
 **你可以将下表中没有的文件和文件夹从SD卡中删除：**
 
  + 3ds
+ + DCIM
  + files9
  + hblauncherloader
  + luma

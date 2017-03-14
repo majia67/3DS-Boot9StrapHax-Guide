@@ -18,7 +18,7 @@ ref: get-started-(old-3ds)
 
 <div class="notice--info">{{ notice-1 | markdownify }}</div>
 
-所有版本的机器都可以通过[卡带升级](cart-update)，将系统升级到更高版本，然后按照升级后的系统版本选择教程。
+所有版本的机器都可以通过[卡带升级](cart-update)，将系统升级到更高版本，然后按照升级后的系统版本选择教程。但同时你需要一个[替代方法](homebrew-launcher-(alternatives))才能进入自制程序启动器，因为无法使用Soundhax。
 {: .notice--warning}
 
 如果你是从包含9.9.0或以上的游戏卡带升级而来*(这说明你的系统已经是9.9.0或以上版本，但你的浏览器还是以-25或更低结尾，比方说10.2.0-24)*, 你的浏览器已经被删除了，请看“无浏览器”列。

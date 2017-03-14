@@ -59,7 +59,7 @@ data_input的版本是指为了适配不同安装程序版本而修改的`.zip`�
 ##### 第三部分 - 配置Luma3DS
 
 1. 将你的SD卡重新插入3DS，并按住(select)键开机
-2. 通过方向键和A键来启用以下设置：  
+2. 通过方向键和A键来启用以下设置：
   + **"Autoboot SysNAND"**
   + **"Use SysNAND FIRM if booting with R"**
   + **"Show NAND or user string in System Settings"**
@@ -82,10 +82,11 @@ data_input的版本是指为了适配不同安装程序版本而修改的`.zip`�
 9. 将3DS关机，移除SD卡
 10. 按(Select)键，在没有SD卡的情况下重启
   + 在没有SD卡的情况下至少开启一次你的机器，可以使你配置基于CTRNAND的Luma3DS
-11. 使用方向键和A键来启用以下设置：     
+11. 使用方向键和A键来启用以下设置：
   + **"Show NAND or user string in System Settings"**
 12. 如果你的设备是**新3DS**，你*还*可以启用如下设置：
   + **"New 3DS CPU"选项，请移动光标到"Clock+L2(x)"**
     + 这将提升许多游戏的帧率，但可能会造成某些游戏的不稳定
     + 如果有部分游戏不能正常运行，关闭这个选项并重试
+    + **如果系统版本是11.3.0，开启这个选项会造成自制程序启动器崩溃！**
 13. 将SD卡插回3DS，按下Start键保存设置并重启！
