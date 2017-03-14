@@ -8,7 +8,7 @@ ref: credits
 点击[这里](https://3ds.guide/credits)查看英文版教程的致谢名单
 {: .notice--info}
 
-我（[majia67](https://github.com/majia67)）发起做了本教程的翻译，并将负责教程的更新工作。如果发现翻译错误，请在[GitHub Issues](https://github.com/majia67/3DS-ARM9LoaderHax-Guide/issues)中提问，或者邮件联系我（邮件地址请见打赏页面下的PayPal邮箱），我会及时修正。
+我（[majia67](https://github.com/majia67)）发起做了本教程的翻译，并将负责教程的更新工作。如果发现翻译错误，请在[GitHub Issues](https://github.com/majia67/3DS-ARM9LoaderHax-Guide/issues)中提问，或者给我写邮件（![Email](images/email.png)），我会及时修正。
 
 在此特别感谢以下同僚的帮助
 
