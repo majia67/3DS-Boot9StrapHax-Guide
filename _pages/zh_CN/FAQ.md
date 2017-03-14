@@ -11,13 +11,13 @@ ref: faq
 <a name="faq_updatecfw" />**问：** *我如何升级Luma3DS？*    
 **答：** 使用[Luma3DS升级器（Luma3DS Updater）](https://github.com/Hamcha/lumaupdate/releases/latest)。
 
-<a name="faq_gatewaysky" />**问：** *我听说需要购买类似Gateway或Sky3DS这样的烧录卡。我是否真的需要用到？*    
-**A:** 不。arm9loaderhax是一种在启动的早期阶段加载漏洞的高级破解方式，这启用真正的自制系统（即完美破解）提供了可能。
+<a name="faq_gatewaysky" />**问：** *我听说破解需要购买类似Gateway或Sky3DS这样的烧录卡。是否真的需要？*    
+**答 :** 不。arm9loaderhax是一种在启动的早期阶段加载漏洞的高级破解方式，这启用真正的自制系统（即完美破解）提供了可能。
 
 <a name="faq_gatewaysaves" />**问：** *我如何将Gateway中的游戏存档迁移到机器内安装的游戏中？*    
 **答：** 参见[这里](https://gbatemp.net/threads/425743/)。
 
-<a name="faq_need" />**问：** *完成本教程需要哪些东西？*    
+<a name="faq_need" />**问：** *完成本教程需要哪些软件？*    
 **答：** 本教程可以完全使用自由软件（free software）完成。
 
 <a name="faq_risky" />**问：** *破解我的机器风险有多大？*    
@@ -29,7 +29,7 @@ ref: faq
 <a name="faq_regionfree" />**问：** *我可以通过这个破解来玩别的区域的游戏么？*    
 **答：** Luma3DS支持跨区补丁，使得用户可以安装和运行任何区域的游戏，无需额外操作。
 
-<a name="faq_updates" />**问：** *升级CFW SysNAND（自制的系统固件）是否安全？*    
+<a name="faq_updates" />**问：** *升级CFW SysNAND（破解后的真实系统）是否安全？*    
 **答：** 是的，非常安全。不要再怀疑啦！
 
 <a name="faq_support" />**问：** *我应该在哪里获取支持？*    
