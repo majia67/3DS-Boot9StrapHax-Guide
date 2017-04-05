@@ -10,10 +10,9 @@ ref: site-navigation
 {% capture notice-1 %}
 **常用链接**
 
-+ [自制程序启动器（声音破解）](homebrew-launcher-(soundhax))
-+ [Decrypt9（自制程序启动器）](decrypt9-(homebrew-launcher))
-+ [2.1.0 ctr转移](2.1.0-ctrtransfer)
 + [安装arm9loaderhax](installing-arm9loaderhax)
++ [自制程序启动器（声音破解）](homebrew-launcher-(soundhax))
++ [SafeCTRTransfer（自制程序启动器）](safectrtransfer-(homebrew-launcher))
 {% endcapture %}
 <div class="notice--info">{{ notice-1 | markdownify }}</div>
 

@@ -56,26 +56,26 @@ ref: get-started-(old-3ds)
     <tr>
       <td style="text-align: center">4.0.0</td>
       <td style="text-align: center">4.5.0</td>
-      <td style="text-align: center"><a href="decrypt9-(mset)">Decrypt9（系统设置）</a></td>
-      <td style="text-align: center"><a href="decrypt9-(browser)">Decrypt9（浏览器）</a></td>
+      <td style="text-align: center"><a href="safectrtransfer-(mset)">SafeCTRTransfer（系统设置）</a></td>
+      <td style="text-align: center"><a href="safectrtransfer-(browser)">SafeCTRTransfer（浏览器）</a></td>
     </tr>
     <tr>
       <td style="text-align: center">5.0.0</td>
       <td style="text-align: center">5.1.0</td>
       <td style="text-align: center">-</td>
-      <td style="text-align: center"><a href="decrypt9-(browser)">Decrypt9（浏览器）</a></td>
+      <td style="text-align: center"><a href="safectrtransfer-(browser)">SafeCTRTransfer（浏览器）</a></td>
     </tr>
     <tr>
       <td style="text-align: center">6.0.0</td>
       <td style="text-align: center">6.3.0</td>
-      <td style="text-align: center"><a href="decrypt9-(mset)">Decrypt9（系统设置）</a></td>
-      <td style="text-align: center"><a href="decrypt9-(browser)">Decrypt9（浏览器）</a></td>
+      <td style="text-align: center"><a href="safectrtransfer-(mset)">SafeCTRTransfer（系统设置）</a></td>
+      <td style="text-align: center"><a href="safectrtransfer-(browser)">SafeCTRTransfer（浏览器）</a></td>
     </tr>
     <tr>
       <td style="text-align: center">7.0.0</td>
       <td style="text-align: center">8.1.0</td>
       <td style="text-align: center">-</td>
-      <td style="text-align: center"><a href="decrypt9-(browser)">Decrypt9（浏览器）</a></td>
+      <td style="text-align: center"><a href="safectrtransfer-(browser)">SafeCTRTransfer（浏览器）</a></td>
     </tr>
     <tr>
       <td style="text-align: center">9.0.0</td>

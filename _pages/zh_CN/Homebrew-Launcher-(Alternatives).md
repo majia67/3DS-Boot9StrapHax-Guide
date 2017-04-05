@@ -32,5 +32,5 @@ Homebrew Launcher（自制程序启动器，HBL）有很多进入或运行方法
 | <sub>[Ninjhax 2](http://smealum.github.io/ninjhax2/) | <sub>[*立体忍者*](https://amzn.to/2eRI1by) | <sub>eShop/卡带 | <sub>新3DS/老3DS/2DS | <sub>欧版/日版/美版 | <sub>所有 | <sub>9.0.0-X及以上，11.2.0-X及以下 |
 | <sub>[GenHax](https://github.com/svanheulen/genhax_proxy_installer) | <sub>[*怪物猎人X*](http://amzn.to/2gsk6Tk) | <sub>eShop | <sub>新3DS | <sub>日版 | <sub>所有 | <sub>9.9.0-X及以上，11.2.0-X及以下 |
 
-下一步请进入[Decrypt9（自制程序启动器）](decrypt9-(homebrew-launcher))
+下一步请进入[SafeCTRTransfer（自制程序启动器）](safectrtransfer-(homebrew-launcher))
 {: .notice--primary}

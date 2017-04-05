@@ -17,6 +17,9 @@ ref: get-started
 如果你已经破解过你的3DS，并安装了基于EmuNAND的自制系统，请仍然依照SysNAND的版本进行操作。你的数据将会从EmuNAND转移到A9LH破解系统上面。
 {: .notice--info}
 
+**如果你的机器是老3DS或2DS，你的SD卡上需要至少约1.79GB的剩余空间；如果是新3DS，需要至少约2.10GB。**
+{: .notice--info}
+
 开始之前，你可能想检测一下SD卡错误。可以使用[H2testw (Windows)](h2testw-(windows))，[F3 (Linux)](f3-(linux))，[F3X (Mac)](f3x-(mac))。
 {: .notice--warning}
 

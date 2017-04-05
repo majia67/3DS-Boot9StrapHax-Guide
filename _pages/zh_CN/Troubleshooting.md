@@ -5,11 +5,14 @@ lang: zh_CN
 ref: troubleshooting
 ---
 
-如果你启动不了你的3DS，请参阅本页面中的相关章节，并按照教程执行。问题解决后，便可回到主教程继续进行。
+如果你启动不了你的机器，请参阅本页面中的相关章节，并按照教程执行。问题解决后，便可回到主教程继续进行。
 （本页面内容较多，请尝试使用Ctrl+F查找相关内容）
 {: .notice--primary}
 
 **如果尝试了本页面的指导后问题仍未解决，请将SD卡上生成的所有.log文件复制到[Gist](https://gist.github.com/)，然后向我们求助，并附上你对问题的详细描述以及你尝试过的解决方案。**
+{: .notice--info}
+
+**你需要一个能进行BT下载的软件，如[Deluge](http://dev.deluge-torrent.org/wiki/Download)、[aria2](https://aria2.github.io/)或迅雷，才能下载本节教程中的[磁力链接](http://baike.baidu.com/item/%E7%A3%81%E5%8A%9B%E9%93%BE%E6%8E%A5)。**
 {: .notice--info}
 
 ## <a name="twl_broken" />完成本教程后DSi / DS功能失效
@@ -29,20 +32,20 @@ ref: troubleshooting
 ##### 第一部分 - 准备工作
 
 1. 在你的SD卡根目录新建一个叫`cias`的文件夹，如果还不存在的话
-2. 将`TWL Version Data - v0.cia`文件复制到SD卡的`/cias/`目录下
-3. 将`DS Download Play - v1024.cia`文件复制到SD卡的`/cias/`目录下
-4. 将`DS Internet - v2048.cia`文件复制到SD卡的`/cias/`目录下
-5. 将`Nintendo DS Cart Whitelist - v11264.cia`文件复制到SD卡的`/cias/`目录下
-6. 将`New_3DS TWL_FIRM - v9936.cia`或`Old_3DS TWL_FIRM - v8817.cia`文件复制到SD卡的`/cias/`目录下
+1. 将`TWL Version Data - v0.cia`文件复制到SD卡的`/cias/`目录下
+1. 将`DS Download Play - v1024.cia`文件复制到SD卡的`/cias/`目录下
+1. 将`DS Internet - v2048.cia`文件复制到SD卡的`/cias/`目录下
+1. 将`Nintendo DS Cart Whitelist - v11264.cia`文件复制到SD卡的`/cias/`目录下
+1. 将`New_3DS TWL_FIRM - v9936.cia`或`Old_3DS TWL_FIRM - v8817.cia`文件复制到SD卡的`/cias/`目录下
 
 ##### 第二部分 - 安装titles
 
 1. 打开FBI
-2. 选择"SD"
-3. 进入"cias"
-4. 选择"\<current directory>"
-5. 选择"Install and delete all CIAs"
-6. 按home键退出
+1. 选择"SD"
+1. 进入"cias"
+1. 选择"\<current directory>"
+1. 选择"Install and delete all CIAs"
+1. 按home键退出
 
 ## <a name="rm_nnid" />清除NNID而无需格式化设备
 
@@ -53,128 +56,145 @@ ref: troubleshooting
 #### 操作指南
 
 1. 解压`GodMode9`压缩包，复制`GodMode9.bin`到你SD卡的`/luma/payloads/`目录下，并重命名`GodMode9.bin`为`up_GodMode9.bin`
-2. 按住(Up)键启动机器，进入arm9loaderhax GodMode9
-3. 依次选择进入`SYSNAND CTRNAND` -> `data` -> (32位用户ID) -> `sysdata` -> `00010038`
-4. 在`00000000`上，按住(R)键的同时按下(X)键，以重命名这个文件
-5. 按一次(Up)键，将文件名改为`10000000`
-6. 按(A)键保存更改
-7. 按(A)键解锁SysNAND写入，并输入提示的按键组合
-8. 返回到主菜单
-9. 按(Start)键重启
+1. 按住(Up)键启动机器，进入arm9loaderhax GodMode9
+1. 依次选择进入`SYSNAND CTRNAND` -> `data` -> (32位用户ID) -> `sysdata` -> `00010038`
+1. 在`00000000`上，按住(R)键的同时按下(X)键，以重命名这个文件
+1. 按一次(Up)键，将文件名改为`10000000`
+1. 按(A)键保存更改
+1. 按(A)键解锁SysNAND写入，并输入提示的按键组合
+1. 返回到主菜单
+1. 按(Start)键重启
 
 ## <a name="gw_fbi" />在Gateway降级过的设备上无法注入Health & Safety应用
 这一因为Gateway的降级方法非常糟糕，会在系统中留下每个app降级前后的两个版本，其中一个不再使用。这会迷惑Decrypt9，使它注入错误的版本。
 
-#### 你需要
-
-* 最新版的[GodMode9](https://github.com/d0k3/GodMode9/releases/latest)
-
 #### 操作指南
 
-1. 解压`GodMode9`压缩包，复制`GodMode9.bin`到你SD卡的`/luma/payloads/`目录下，并重命名`GodMode9.bin`为`up_GodMode9.bin`
-2. 将SD卡插回3DS
-3. 按住(Up)键启动机器，进入arm9loaderhax GodMode9
-4. 依次选择`SYSNAND CTRNAND` -> `title` -> `00040010`
-5. 移动到你的设备和区域所对应的文件夹：
+1. 按住(Start)键启动机器，进入arm9loaderhax GodMode9
+1. 依次选择`SYSNAND CTRNAND` -> `title` -> `00040010`
+1. 移动到你的设备和区域所对应的文件夹：
   + **老3DS 欧版**: `00022300` -> `content`
   + **老3DS 日版**: `00020300` -> `content`
   + **老3DS 美版**: `00021300` -> `content`
   + **新3DS 欧版**: `20022300` -> `content`
   + **新3DS 日版**: `20020300` -> `content`
   + **新3DS 美版**: `20021300` -> `content`
-6. 注意，文件夹里有两组app和tmd文件，一组带有大写的后缀（`.TMD`和`.APP`），一组带有小写的后缀（`.tmd`和`.app`）
-7. 按住(R)键的同时，按(Y)键新建一个目录
-8. 按(A)键确认目录名为`newdir`（叫什么名字不重要）
-9. 按(A)键解锁SysNAND写入，并输入提示的按键组合
-10. 在每个大写字母后缀（`.TMD`和`.APP`）的文件上按(L)键选中它们
-11. 按(Y)键复制这些文件
-12. 进入`newdir`文件夹
-13. 按(Y)键粘贴这些文件
-14. 选择"Move path(s)"
-15. 大写字母后缀的文件将被移动到`newdir`文件夹下
-16. 按(Start)键重启
-17. 返回到[安装arm9loaderhax](installing-arm9loaderhax)一节，重新尝试FBI注入
-18. 如果还是不能注入， 将大写字母后缀的文件移动回`content`文件夹，然后将小写字母后缀的文件移动到`newdir`文件夹中，再返回到[安装arm9loaderhax](installing-arm9loaderhax)一节，重新尝试FBI注入
+1. 注意，文件夹里有两组app和tmd文件，一组带有大写的后缀（`.TMD`和`.APP`），一组带有小写的后缀（`.tmd`和`.app`）
+1. 按住(R)键的同时，按(Y)键新建一个目录
+1. 按(A)键确认目录名为`newdir`（叫什么名字不重要）
+1. 按(A)键解锁SysNAND写入，并输入提示的按键组合
+1. 在每个大写字母后缀（`.TMD`和`.APP`）的文件上按(L)键选中它们
+1. 按(Y)键复制这些文件
+1. 进入`newdir`文件夹
+1. 按(Y)键粘贴这些文件
+1. 选择"Move path(s)"
+1. 大写字母后缀的文件将被移动到`newdir`文件夹下
+1. 按(Start)键重启
+1. 返回到[安装arm9loaderhax](installing-arm9loaderhax)一节，重新尝试FBI注入
+1. 如果还是不能注入， 将大写字母后缀的文件移动回`content`文件夹，然后将小写字母后缀的文件移动到`newdir`文件夹中，再返回到[安装arm9loaderhax](installing-arm9loaderhax)一节，重新尝试FBI注入
 
 ## <a name="ts_browser" />基于浏览器的漏洞利用失效
 基于浏览器的漏洞利用（例如browserhax和2xrsa）通常不够稳定并经常崩溃，但有时也可以尝试按照下面的步骤修复：
 
 1. 打开浏览器，进入浏览器设置页面
-2. 移动到页面最底端，选择Initialize Savedata（初始化缓存）（有时也会叫做Clear All Save Data，清除所有缓存）
-3. 再次尝试漏洞利用
+1. 移动到页面最底端，选择Initialize Savedata（初始化缓存）（有时也会叫做Clear All Save Data，清除所有缓存）
+1. 再次尝试漏洞利用
 
 ## <a name="ts_safe_a9lh" />系统启动进入了SafeA9LHInstaller
 你将错误的`arm9loaderhax.bin`文件拷贝到SD卡中了（你应该仅将SafeA9LHInstaller压缩包中的`3ds`文件夹和`SafeA9LHInstaller.dat`文件拷贝到SD卡中）
 
 1. 使用正确的`arm9loaderhax.bin`
-2. 将Luma3DS压缩包中的`arm9loaderhax.bin`文件拷贝到你的SD卡根目录
-3. 按住(Select)键重启机器，并继续按照教程进行
+1. 将Luma3DS压缩包中的`arm9loaderhax.bin`文件拷贝到你的SD卡根目录
+1. 按住(Select)键重启机器，并继续按照教程进行
 
 ## <a name="ts_safe_a9lh_screen" />SafeA9LHInstaller中屏幕闪烁
 这种情况偶尔会发生，但原因未知。按键仍能正常工作，但屏幕会一直闪烁。
 
 1. 按照教程正常执行
-2. 按下(Select)键安装arm9loaderhax
-3. 等待几秒钟
-4. 按任意键，关闭你的设备
-
-## <a name="ts_d9_backup" />Decrypt9或Hourglass9不能恢复/找不到我的NAND备份
-
-1. 确保你的SD卡**根目录**没有名叫"Decrypt9"的文件夹
-2. 尝试使用[H2testw (Windows)](h2testw-(windows)), [F3 (Linux)](f3-(linux))，或[F3X (Mac)](f3x-(mac))检查你的SD卡的错误
-3. 尝试备份你的SD卡文件，格式化SD卡并把文件拷贝回去
-4. 换一张SD卡
+1. 按下(Select)键安装arm9loaderhax
+1. 等待几秒钟
+1. 按任意键，关闭你的设备
 
 ## <a name="ts_sys_down" />启动到SysNAND黑屏
 
 1. 尝试将SD卡拿出后启动系统，启动完成后将SD卡插回。
-   1. 长按电源键关闭你的3DS。
-   2. 拔出你的SD卡。
-   3. 启动3DS。
-   4. 桌面菜单出现后，插回SD卡。
-   5. 如果这么做问题解决，你需要进入SD卡的`/Nintendo 3DS/(32位ID)/(32位ID)/extdata/00000000/`目录以清除主界面菜单的extdata
+   1. 长按电源键关机
+   1. 拔出你的SD卡
+   1. 开机
+   4. 桌面菜单出现后，插回SD卡
+   5. 如果问题解决，你需要进入SD卡的`/Nintendo 3DS/(32位ID)/(32位ID)/extdata/00000000/`目录以清除主界面菜单的extdata
     + 欧版：删除 `00000098`
     + 日版：删除 `00000082`
     + 美版：删除 `0000008f`
+    + 神游：删除 `000000A1`
     + 韩版：删除 `000000A9`
-2. 尝试拔掉卡带（包括闪存卡带）开机
-3. 如果你可以hardmod（硬改），并且有NAND备份，尝试将NAND备份写入SysNAND。
-4. 尝试启动到恢复模式并升级你的系统
+    + 台版：删除 `000000B1`
+1. 尝试拔掉卡带（包括闪存卡带）开机
+1. 如果你可以hardmod（硬改），并且有NAND备份，尝试将NAND备份写入SysNAND。
+1. 尝试启动到恢复模式并升级你的系统
    *老3DS降级到2.1.0的系统后，该方法很可能会失效。*
    **新3DS降级到2.1.0后，尝试该方法会变砖。**
    1. 长按电源键关闭你的3DS。
-   2. 按住(L)+(R)+(A)+(Up)键
-   3. 按下电源键开机。
-   4. 如果进入安全模式，*仅当你有最新固件版本进入HBL的方法，并且能进行降级的情况下*，才升级你的3DS，并再次尝试降级。
-5. 你的3DS可能变砖了。请在[GitHub Issues](https://github.com/majia67/3DS-ARM9LoaderHax-Guide/issues)中提问，或者参考[FAQ](faq#faq_support)页面获取帮助。
+   1. 按住(L)+(R)+(A)+(Up)键
+   1. 按下电源键开机。
+   1. 如果进入安全模式，*仅当你有最新固件版本进入HBL的方法，并且能进行降级的情况下*，才升级你的3DS，并再次尝试降级。
+1. 你的3DS可能变砖了。请在[GitHub Issues](https://github.com/majia67/3DS-ARM9LoaderHax-Guide/issues)中提问，或者参考[FAQ](faq#faq_support)页面获取帮助。
 
 ## <a name="ts_sys_a9lh" />安装完arm9loaderhax后启动到SysNAND黑屏
 
 1. 确保你有一个正常工作的payload
    1. 检查你的SD卡根目录有`arm9loaderhax.bin`文件。
-2. 尝试重置Luma3DS的设置
+1. 尝试重置Luma3DS的设置
    1. 删除SD卡上的`/luma/config.bin`文件
-   2. 启动Luma3DS后重新设置
-3. 尝试启动Hourglass9
+   1. 启动Luma3DS后重新设置
+1. 尝试启动GodMode9
    1. 在Luma3DS上，按住(Start)键开机
-4. 尝试删除桌面菜单的extdata
+1. 尝试删除桌面菜单的extdata
     1. 定位到sd卡的`/Nintendo 3DS/(32位ID)/(32位ID)/extdata/00000000/`
-        + 欧版: 删除 `00000098`
-        + 日版: 删除 `00000082`
-        + 美版: 删除 `0000008f`
-        + 韩版: 删除 `000000A9`
-5. 尝试拔掉卡带（包括闪存卡带）开机
-6. 如果你以前用Gateway降过级，确保你使用的是最新版的Luma3DS（版本号在v6.2.3及以上）
-7. 如果你的系统版本在3.0.0到4.5.0之间，进行如下操作：
+      + 欧版：删除 `00000098`
+      + 日版：删除 `00000082`
+      + 美版：删除 `0000008f`
+      + 神游：删除 `000000A1`
+      + 韩版：删除 `000000A9`
+      + 台版：删除 `000000B1`
+1. 尝试拔掉卡带（包括闪存卡带）开机
+1. 如果你以前用Gateway降过级，确保你使用的是最新版的Luma3DS（版本号在v6.2.3及以上）
+1. 如果你的系统版本在3.0.0到4.5.0之间，进行如下操作：
    + 确保你使用的是最新版的Luma3DS（版本号在v6.6及以上）
    + 下载[这个文件](http://nus.cdn.c.shop.nintendowifi.net/ccs/download/0004013800000002/00000056)并重命名为`firmware.bin`
    + 下载[这个文件](http://nus.cdn.c.shop.nintendowifi.net/ccs/download/0004013800000002/cetk)
    + 复制`firmware.bin`和`cetk`到SD卡的`/luma/`文件夹下
    + 在你的3DS升级完成后，删除这两个文件
-8. 尝试按照[9.2.0 ctr迁移](9.2.0-ctrtransfer)进行操作
-9. 请在[GitHub Issues](https://github.com/majia67/3DS-ARM9LoaderHax-Guide/issues)中提问，或者参考[FAQ](faq#faq_support)页面获取帮助。
+1. 尝试按照[9.2.0 ctr迁移](9.2.0-ctrtransfer)进行操作
+1. 请在[GitHub Issues](https://github.com/majia67/3DS-ARM9LoaderHax-Guide/issues)中提问，或者参考[FAQ](faq#faq_support)页面获取帮助。
+
+## <a name="ts_transfer" />进行SafeCTRTransfer时出错
+
+如果在进行SafeCTRTransfer时出现错误，你会被提示运行一个外部的payload来修复你的机器
+
+#### 你需要
+
+* 最新版的[GodMode9](https://github.com/d0k3/GodMode9/releases/)
+
+#### 操作指南
+
+1. 选择"弹出SD卡"
+1. 将SD卡插入电脑
+1. 解压GodMode9`.zip`压缩包，复制`GodMode9.bin`文件到SD卡的`/ctrtransfer/`目录下，并将其重命名为`payload.bin`
+1. 将SD卡插回机器中
+1. 选择"Run 0:/ctrtransfer/payload.bin"
+1. 如果成功，你将进入GodMode9
+1. 进入`SDCARD` -> `ctrtransfer`
+1. 选中`<serialnumber>_nand.bin`（serialnumber是你的设备的序列号）文件，按(A)键并选择"NAND image options..."（NAND镜像选项），然后选择"Restore SysNAND (safe)"
+1. 按(A)键解锁SysNAND写保护，然后按照提示输入按键组合
+  + 这不会覆盖你安装的arm9loaderhax
+1. 按照提示输入按键组合，解锁SysNAND(lvl1)写保护
+  + 该过程可能需要较长时间
+1. 完成后，按(A)键继续
+1. 按(Start)键重启
+1. 请将你遇到的问题反馈到[SafeCTRTransfer Issues Page](https://github.com/d0k3/SafeCTRTransfer/issues)
 
 ## <a name="ts_sys_blue" />启动时蓝屏（bootrom错误）
 
-1. 你的3DS已变砖。
-2. 你需要[硬改](https://gbatemp.net/threads/414498/)或维修/更换你的机器。
+1. 你的机器已变砖。
+1. 你需要[硬改](https://gbatemp.net/threads/414498/)或维修/更换你的机器。

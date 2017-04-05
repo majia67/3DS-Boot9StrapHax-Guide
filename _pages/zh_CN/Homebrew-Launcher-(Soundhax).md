@@ -19,19 +19,22 @@ Homebrew Launcher（自制程序启动器，HBL）有很多进入或启动方法
 
 #### 操作指南
 
-1. 解压缩`starter.zip`，将`starter`文件夹下的所有文件拷贝到你SD卡的根目录中
-2. 将SoundHax的`.m4a`文件拷贝到你SD卡的根目录中
-3. 将the otherapp payload拷贝到你SD卡的根目录中，并重命名为`otherapp.bin`
-4. 将SD卡插回你的3DS
-5. 运行Nintendo 3DS Sound（任天堂3DS声音）
-6. 跳过所有的小鸟提示，正常关闭程序，再重新打开它
+1. 关机
+1. 将SD卡取下，插入电脑
+1. 解压缩`starter.zip`，将`starter`文件夹下的所有文件拷贝到SD卡的根目录中
+1. 将SoundHax的`.m4a`文件拷贝到SD卡的根目录中
+1. 将the otherapp payload拷贝到SD卡的根目录中，并重命名为`otherapp.bin`
+1. 将SD卡插回设备
+1. 开机
+1. 运行Nintendo 3DS Sound（任天堂3DS声音）
+1. 跳过所有的小鸟提示，正常关闭程序，再重新打开它
   + 如果立刻运行SoundHax，会造成每次打开Nintendo 3DS Sound都会有小鸟提示
-7. 进入`/SDCARD`目录，播放"<3 nedwill 2016"
+1. 进入`/SDCARD`目录，播放"<3 nedwill 2016"
   + 可能需要试很多次
   + 如果画面卡住了，长按电源键强制关机，然后再试一次
-8. 你的3DS应该开始加载自制程序启动器了
+1. 你的3DS应该开始加载自制程序启动器了
 
 ---
 
-进入[Decrypt9（自制程序启动器）](decrypt9-(homebrew-launcher))继续教程
+下一步请进入[SafeCTRTransfer（自制程序启动器）](safectrtransfer-(homebrew-launcher))
 {: .notice--primary}
