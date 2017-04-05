@@ -1,8 +1,6 @@
 ---
 title: "安装arm9loaderhax"
 permalink: /installing-arm9loaderhax.html
-lang: zh_CN
-ref: installing-arm9loaderhax
 ---
 
 本教程的最后一步是安装arm9loaderhax和Luma3DS，以便启动机器的数毫秒内就能进入CFW。这要用到[AuroraWright](https://github.com/AuroraWright/)编写的SafeA9LHInstaller。
@@ -14,7 +12,7 @@ ref: installing-arm9loaderhax
 我们还会配置通过arm9loaderhax启动小程序（payloads）的能力，使我们能通过恢复备份，将通常情况下变砖的设备解砖。
 {: .notice--info}
 
-**你需要一个能进行BT下载的软件，如[Deluge](http://dev.deluge-torrent.org/wiki/Download)、[aria2](https://aria2.github.io/)或迅雷，才能下载本节教程中的[磁力链接](http://baike.baidu.com/item/%E7%A3%81%E5%8A%9B%E9%93%BE%E6%8E%A5)。**
+你需要一个能进行BT下载的软件，如[Deluge](http://dev.deluge-torrent.org/wiki/Download)、[aria2](https://aria2.github.io/)或迅雷，才能下载本节教程中的[磁力链接](http://baike.baidu.com/item/%E7%A3%81%E5%8A%9B%E9%93%BE%E6%8E%A5)。
 {: .notice--info}
 
 **请不要使用其它设备的OTP，否则你的设备一定会变砖！**
@@ -149,7 +147,7 @@ ref: installing-arm9loaderhax
 1. 按(Start)键重启
 1. 如果你依然进入的是系统内置的健康与安全应用，并且之前曾经用Gateway进行过降级，参见这个[问题排查](troubleshooting#gw_fbi)
 
-##### 第六部分 - 安装CIA软件
+##### 第六部分 - 安装CIA文件
 
 1. 在桌面菜单中运行健康与安全（Health & Safety）应用（现在应该是FBI）
 2. 进入`SD` -> `cias`

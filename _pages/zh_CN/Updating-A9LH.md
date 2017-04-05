@@ -1,8 +1,6 @@
 ---
 title: "升级A9LH"
 permalink: /updating-a9lh.html
-lang: zh_CN
-ref: updating-a9lh
 ---
 
 ### arm9loaderhax最后更新时间：2016年11月3日

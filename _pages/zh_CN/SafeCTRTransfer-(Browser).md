@@ -87,7 +87,7 @@ lang: zh_CN
   + 如果出现错误，确保SD卡上所有文件都在正确的位置，并且你的SD卡上有足够的剩余空间（参见[开始教程](get-started)页面）
 1. 按照提示输入按键组合，确认进行CTR迁移到2.1.0
   + 该过程可能需要较长时间
-  + 该过程将自动在`/ctrtransfer/'下为你的机器创建系统备份，文件名为`<serialnumber>_nand.bin`（serialnumber是你的设备的序列号）
+  + 该过程将自动在`/ctrtransfer/`下为你的机器创建系统备份，文件名为`<serialnumber>_nand.bin`（serialnumber是你的设备的序列号）
   + 如果出现错误，参见[问题排查](troubleshooting#ts_transfer)
 1. 迁移完成后，将SD卡从机器中取出，然后重启
   + 重启大约需要2秒才能触发
@@ -110,6 +110,6 @@ lang: zh_CN
 
 <div class="notice--danger">{{ notice | markdownify }}</div>
 
-继续进行[安装arm9loaderhax](installing-arm9loaderhax)
+下一步请进入[安装arm9loaderhax](installing-arm9loaderhax)
 {: .notice--primary}
 
