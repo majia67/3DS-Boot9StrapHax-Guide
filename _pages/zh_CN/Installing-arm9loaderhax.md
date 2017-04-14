@@ -150,7 +150,7 @@ permalink: /installing-arm9loaderhax.html
 ##### 第六部分 - 安装CIA文件
 
 1. 在桌面菜单中运行健康与安全（Health & Safety）应用（现在应该是FBI）
-2. 进入`SD` -> `cias`
+1. 进入`SD` -> `cias`
 1. 选择"\<current directory>"
 1. 选择"Install all CIAs"（安装所有CIA文件）选项，按(A)键确认
 1. 按(Home)键退出FBI
@@ -189,7 +189,7 @@ permalink: /installing-arm9loaderhax.html
   + **"New 3DS CPU"选项，请移动光标到"Clock+L2(x)"**
     + 这将提升许多游戏的帧率，但可能会造成某些游戏的不稳定
     + 如果有部分游戏不能正常运行，关闭这个选项并重试
-    + **如果系统版本是11.3.0，开启这个选项会造成自制程序启动器崩溃！**
+    + **如果系统版本是11.3，开启这个选项会造成自制程序启动器崩溃！**
 1. 将SD卡插回3DS
 1. 按下(Start)键保存设置并重启
 
