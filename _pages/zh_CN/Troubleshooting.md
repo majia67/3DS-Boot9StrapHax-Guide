@@ -185,10 +185,14 @@ ref: troubleshooting
 1. 选择"Run 0:/ctrtransfer/payload.bin"
 1. 如果成功，你将进入GodMode9
 1. 进入`SDCARD` -> `ctrtransfer`
-1. 选中`<serialnumber>_nand.bin`（serialnumber是你的设备的序列号）文件，按(A)键并选择"NAND image options..."（NAND镜像选项），然后选择"Restore SysNAND (safe)"
-1. 按(A)键解锁SysNAND写保护，然后按照提示输入按键组合
-  + 这不会覆盖你安装的arm9loaderhax
-1. 按照提示输入按键组合，解锁SysNAND(lvl1)写保护
+1. 选中`<serialnumber>_nand.bin`文件，按(Y)键复制
+1. 按(B)键两次，返回主菜单
+1. 进入`SYSNAND VIRTUAL`
+1. 按(Y)键粘贴`<serialnumber>_nand.bin`文件
+1. 按(A)键确认
+1. 按(A)键注入`nand.bin`
+1. 按(A)键解锁SysNAND覆盖
+1. 按照提示输入按键组合，解锁SysNAND (lvl3)写保护
   + 该过程可能需要较长时间
 1. 完成后，按(A)键继续
 1. 按(Start)键重启

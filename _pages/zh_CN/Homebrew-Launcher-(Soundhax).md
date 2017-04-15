@@ -8,8 +8,17 @@ ref: homebrew-launcher-(soundhax)
 Homebrew Launcher（自制程序启动器，HBL）有很多进入或启动方法。
 {: .notice}
 
-声音破解（SoundHax）支持欧版、日版、美版和韩版，系统版本9.0.0至11.2.0的机器。
+声音破解（SoundHax）支持欧版、日版、韩版和美版，系统版本9.0.0至11.3.0的机器。
 {: .notice--info}
+
+确保你的机器的无线传输（就是Wifi）开关是开启的，因为udsploit（下一步要用到）需要无线模块开启才能生效，且部分机器（新3DS和2DS）不能在自制程序启动器中修改无线传输设置。无线传输设置只要开启就行，无需连接到热点（access point）。
+{: .notice--info}
+
+卡带升级只会更新系统核心组件，如系统设置，桌面菜单，等等。卡带升级不会更新任天堂3DS声音（Nintendo 3DS Sound）和网络相关的组件，如系统迁移，互联网浏览器，StreetPass Mii Plaza，和eShop。
+{: .notice--info}
+
+这意味着从系统版本9.0.0以下进行卡带升级会破坏[Soundhax](homebrew-launcher-(soundhax))！你需要一个[替代方法](homebrew-launcher-(alternatives))进入自制程序启动器！
+{: .notice--warning}
 
 #### 你需要
 

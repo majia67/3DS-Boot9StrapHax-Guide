@@ -7,7 +7,13 @@ lang: zh_CN
 Homebrew Launcher（自制程序启动器，HBL）有很多进入或运行方法。
 {: .notice}
 
-如果你下面的游戏一个也没有，并且也没有另一台能访问自制程序启动器的3DS，最便宜的方案是买一张“任天堂精选”版的[塞尔达传说时之笛3D](https://amzn.to/2fkaKdp)（确保你买的是符合你设备所在区域的版本）和[Powersaves](https://amzn.to/2fb3VY7)（支持所有区域），然后使用下表中的oot3dhax。
+如果你下面的游戏一个也没有，并且也没有另一台能访问自制程序启动器的3DS，最便宜的方案是从eShop免费下载Swapdoodle，然后在网上找一个能给你发送下表中的Doodlebomb的人（试试[这个](https://www.reddit.com/r/3dshacks/comments/64yydp/)）。
+{: .notice--info}
+
+如果你找不到有Doodlebomb的人，下面的游戏一个也没有，并且也没有另一台能访问自制程序启动器的3DS，最便宜的方案是买一张“任天堂精选”版的[塞尔达传说时之笛3D](https://amzn.to/2fkaKdp)（确保你买的是符合你设备所在区域的版本）和[Powersaves](https://amzn.to/2fb3VY7)（支持所有区域），然后使用下表中的oot3dhax。
+{: .notice--info}
+
+确保你的机器的无线传输（就是Wifi）开关是开启的，因为udsploit（下一步要用到）需要无线模块开启才能生效，且部分机器（新3DS和2DS）不能在自制程序启动器中修改无线传输设置。无线传输设置只要开启就行，无需连接到热点（access point）。
 {: .notice--info}
 
 #### 你需要
@@ -21,6 +27,7 @@ Homebrew Launcher（自制程序启动器，HBL）有很多进入或运行方法
 
 | <sub> | <sub>需要 | <sub>发行版本 | <sub>支持设备 | <sub>支持区域 | <sub>游戏版本 | <sub>系统版本 |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| <sub>[Doodlebomb](https://mrnbayoh.github.io/doodlebomb/) | <sub>[*涂鸦交换日记*](http://www.nintendo.com/games/detail/u7CIHWz89ErxhWClm06yJqz3LYcMrhfs) | <sub>eShop | <sub>New, Old, 2DS | <sub>EUR, JPN, USA | <sub>v1.1.1 | <sub>9.0.0-X及以上，包括11.4.0-X |
 | <sub>[oot3dhax](https://github.com/yellows8/oot3dhax) | <sub>[*塞尔达传说时之笛3D*](https://amzn.to/2fkaKdp), <br> 有powersaves，或一台可以进入自制程序启动器的3DS | <sub>卡带 | <sub>新3DS/老3DS/2DS | <sub>欧版/日版/美版 | <sub>所有 | <sub>9.0.0-X及以上，11.2.0-X及以下|
 | <sub>[smashbroshax](https://gbatemp.net/threads/397194/) | <sub>[*任天堂明星大乱斗*](https://amzn.to/2ftGA72) | <sub>卡带/eShop | <sub>新3DS  | <sub>欧版/日版/美版 | <sub><1.1.3, <br> 外包装带有"amiibo"字样的卡带预装游戏版本是v1.1.4 | <sub>9.0.0-X及以上，11.2.0-X及以下 |
 | <sub>[supermysterychunkhax](https://smd.salthax.org/) | <sub>[*口袋妖怪超不可思议迷宫*](https://amzn.to/2ebxZ75), <br> 一台可以进入自制程序启动器的3DS | <sub>卡带 | <sub>新3DS/老3DS/2DS | <sub>欧版/日版/美版 | <sub>所有 | <sub>9.9.0-X(美版/日版) / 10.2.0-X(欧版)以上，11.0.0-X以下 |

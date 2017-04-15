@@ -45,9 +45,7 @@ permalink: /installing-arm9loaderhax.html
 * 最新版的[hblauncher_loader](https://github.com/yellows8/hblauncher_loader/releases/latest)
 * 最新版的[GodMode9](https://github.com/d0k3/GodMode9/releases/)
 * 最新版的[Luma3DS Updater](https://github.com/Hamcha/lumaupdate/releases/latest)
-* 最新版的[DspDump](https://github.com/Cruel/DspDump/releases/latest)
 * 最新版的[FBI](https://github.com/Steveice10/FBI/releases/latest)
-* 自制程序[新手包](http://smealum.github.io/ninjhax2/starter.zip)
 
 #### 操作指南
 
@@ -59,9 +57,6 @@ permalink: /installing-arm9loaderhax.html
   + 当发生系统崩溃时，这里面的文件可以防止你的设备变砖
 1. 在SD卡上创建一个名为`cias`的文件夹（如果不存在的话）
 1. 在SD卡上创建一个名为`files9`的文件夹（如果不存在的话）
-1. 删除SD卡上的`3ds`文件夹（如果存在的话）
-1. 解压`starter.zip`压缩包，并复制`starter`文件夹下的所有文件到你SD卡的根目录
-   + 这里面包括一个新的`3ds`文件夹，替换你刚刚删除的`3ds`文件夹
 1. 解压SafeA9LHInstaller`.7z`压缩包，并复制*解压后的文件*到你SD卡的根目录
 1. 解压data_input`.zip`压缩包，并复制`a9lh`文件夹到SD卡的根目录
 1. 解压arm9loaderhax`.7z`压缩包，并复制*解压后的文件*到SD卡的`a9lh`目录下
@@ -73,7 +68,6 @@ permalink: /installing-arm9loaderhax.html
 1. 在SD卡的`luma`文件夹里，创建名为`payloads`的文件夹
 1. 解压GodMode9`.zip`压缩包，复制`GodMode9.bin`文件到SD卡的`/luma/payloads/`目录下，并将其重命名为`start_GodMode9.bin`
 1. 复制`aeskeydb.bin`文件到SD卡的`/files9/`目录下
-1. 复制`DspDump.3dsx`文件到SD卡的`/3ds/`目录下
 
 ##### 第二部分 - 安装 arm9loaderhax
 
@@ -100,16 +94,11 @@ permalink: /installing-arm9loaderhax.html
   + **"Autoboot SysNAND"**
   + **"Use SysNAND FIRM if booting with R"**
   + **"Show NAND or user string in System Settings"**
-1. 如果你的设备是**新3DS**，你*还*可以启用如下设置：
-  + **"New 3DS CPU"选项，请移动光标到"Clock+L2(x)"**
-   + 这将提升许多游戏的帧率，但可能会造成某些游戏的不稳定
-   + 如果有部分游戏不能正常运行，关闭这个选项并重试
-   + **如果系统版本是11.3.0，开启这个选项会造成自制程序启动器崩溃！**
 1. 按下(Start)键保存设置并重启
   + 如果出现黑屏，请照常进行接下来的教程
   + 如果出现"Failed to mount CTRNAND"错误，请照常进行接下来的教程
 
-##### 第四部分 - 恢复系统
+##### 第四部分 - 恢复系统 
 
 如果在进行本教程之前，你已经安装了EmuNAND，并且想将之前EmuNAND中的数据迁移到新的SysNAND自制系统中，请在开始本部分操作之前先按照[迁移EmuNAND数据](move-emunand)一节进行，然后跳过本部分的前五步。
 {: .notice--info}
@@ -131,7 +120,8 @@ permalink: /installing-arm9loaderhax.html
   + 复制`firmware.bin`和`cetk`这两个文件到SD卡的`/luma/`目录下
   + 在你的机器升级完成后，删除这两个文件
 1. 进入"System Settings"（系统设置）、"Other Settings"（其它设置），移动到最右边一页，选择"System Update"（系统升级），将你的系统升级到最新版本
-  + 使用A9LH + Luma（或者其它自制系统）进行系统升级很安全，请不要再问这个问题。
+  + **请注意，因为11.4.0版本的系统最近刚发布，在上面运行Luma3DS还有一些bug（DS和GBA游戏无法运行）。并且NTR CFW还不与11.4.0版本的系统兼容。你可以先不升级系统，等新版的Luma3DS修复bug后再升级**
+  + 使用A9LH + Luma（或者其它自制系统）进行系统升级很安全
   + 在你恢复了NAND备份后，之前关于新3DS不能在2.1.0系统版本下进行升级的警告就不再适用了（译者注：因为已经不是2.1.0系统了）
   + 如果出现错误，将你的DNS设置改为"auto"（自动）模式
   + 如果仍然出现错误，并且你的固件版本在9.2.0以下，参见[9.2.0 ctr转移](9.2.0-ctrtransfer)
@@ -151,18 +141,11 @@ permalink: /installing-arm9loaderhax.html
 
 1. 在桌面菜单中运行健康与安全（Health & Safety）应用（现在应该是FBI）
 1. 进入`SD` -> `cias`
-1. 选择"\<current directory>"
+1. 选择`\<current directory>`
 1. 选择"Install all CIAs"（安装所有CIA文件）选项，按(A)键确认
 1. 按(Home)键退出FBI
 
-##### 第七部分 - 导出DSP
-
-1. 在桌面菜单中运行自制程序启动器（Homebrew Launcher）
-1. 选择"DSP Dump"
-1. 依照提示，按(Start)键退出
-1. 按(Start)键打开自制程序启动器的退出菜单
-
-##### 第八部分 - 恢复“健康与安全”应用
+##### 第七部分 - 恢复“健康与安全”应用
 
 1. 按住(Start)键重启，进入GodMode9
 1. 按(Home)键打开菜单
@@ -170,7 +153,7 @@ permalink: /installing-arm9loaderhax.html
 1. 选择"Restore H&S"（恢复健康与安全应用）
 1. 按(A)键解锁SysNAND(lvl1)写保护，然后按照提示输入按键组合
 
-##### 第九部分 - CTRNAND Luma3DS
+##### 第八部分 - CTRNAND Luma3DS
 
 1. 进入`SDCARD`
 1. 选中`arm9loaderhax.bin`文件，按(Y)键复制
@@ -185,11 +168,6 @@ permalink: /installing-arm9loaderhax.html
   + 在没有SD卡的情况下至少开启一次你的机器，可以使你配置基于CTRNAND的Luma3DS
 1. 使用方向键和(A)键来启用以下设置：
   + **"Show NAND or user string in System Settings"**
-1. 如果你的设备是**新3DS**，你*还*可以启用如下设置：
-  + **"New 3DS CPU"选项，请移动光标到"Clock+L2(x)"**
-    + 这将提升许多游戏的帧率，但可能会造成某些游戏的不稳定
-    + 如果有部分游戏不能正常运行，关闭这个选项并重试
-    + **如果系统版本是11.3，开启这个选项会造成自制程序启动器崩溃！**
 1. 将SD卡插回3DS
 1. 按下(Start)键保存设置并重启
 
@@ -217,13 +195,7 @@ ___
 如果你以后想升级你的arm9loaderhax，请参见[升级A9LH](updating-a9lh)页面。
 {: .notice--info}
 
-如果要使用[NTR CFW](https://github.com/44670/BootNTR/)，从[这里](https://github.com/44670/BootNTR/releases)选择合适的zip压缩包并提取`ntr.bin`文件，把这个文件复制到你SD卡的根目录下，然后从[这里](https://github.com/astronautlevel2/BootNTR/releases/latest)下载安装`BootNTR.cia`。
-{: .notice--info}
-
 保留好你的`<serialnumber>_nand.bin`（serialnumber是你的设备的序列号）文件，以便以后使用GodMode9恢复NAND救砖。
-{: .notice--info}
-
-只要你在其他安全的地方有备份，你就可以从`/files9/`文件夹删除NAND备份文件。
 {: .notice--info}
 
 {% capture notice-7 %}
