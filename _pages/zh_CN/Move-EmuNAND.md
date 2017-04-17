@@ -23,7 +23,7 @@ ref: move-emunand
 
 1. 关机
 1. 取下SD卡，插入电脑中
-1. 解压`GodMode9`压缩包，复制`GodMode9.bin`到SD卡的`/luma/payloads/`目录下，并重命名`GodMode9.bin`为`start_GodMode9.bin`
+1. 解压`GodMode9`压缩包，复制`GodMode9.bin`到SD卡的`/luma/payloads/`目录下
 1. 将SD卡插回你的机器
 
 ##### 第二部分 - 备份SysNAND DSiWare存档
@@ -31,7 +31,8 @@ ref: move-emunand
 如果你没有DSiWare游戏，或者无需备份存档，可以跳过这一节。
 {: .notice--info}
 
-1. 按住(Start)键开机，进入GodMode9
+1. 按住(Start)键重启，进入Luma3DS启动器菜单
+1. 按(A)键进入GodMode9
 1. 进入`SYSNAND TWLN` -> `title`
 1. 选中`00030004`目录，按住(R)键的同时按(A)键，然后选择"Copy to 0:/gm9out"
   + 如果你有很多DSiWare游戏，这一步可能需要较长时间
@@ -61,7 +62,8 @@ ref: move-emunand
   + 进入你为该GBA VC游戏创建的文件夹中
   + 按(Y)键粘贴`gbavc.sav`文件
   + 按(Start)键重启机器
-1. 按住(Start)键的同时重启机器，运行GodMode9
+1. 按住(Start)键重启，进入Luma3DS启动器菜单
+1. 按(A)键进入GodMode9
 
 ##### 第四部分 - 复制EmuNAND到SysNAND
 
@@ -109,7 +111,8 @@ ref: move-emunand
   + 按(Y)键粘贴`gbavc.sav`文件
   + 按(A)键确认
   + 按(Start)键重启机器
-1. 按住(Start)键的同时重启机器，运行GodMode9
+1. 按住(Start)键重启，进入Luma3DS启动器菜单
+1. 按(A)键进入GodMode9
 
 ##### 第七部分 - 备份SysNAND
 

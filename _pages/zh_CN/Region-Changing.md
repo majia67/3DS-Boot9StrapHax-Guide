@@ -52,14 +52,15 @@ ref: region-changing
 1. 关机
 1. 取出SD卡，将SD卡插入电脑
 1. 在SD卡根目录创建名为`cias`的文件夹（如果不存在的话）
-1. 解压缩GodMode9压缩包，复制`GodMode9.bin`文件到SD卡的`/luma/payloads/`目录下，并将`GodMode9.bin`重命名为`start_GodMode9.bin`
+1. 解压缩GodMode9压缩包，复制`GodMode9.bin`文件到SD卡的`/luma/payloads/`目录下
 1. 从CTRTransfer压缩包中提取9.2.0 CTRTransfer镜像`.bin`文件，复制到SD卡的`/files9/`目录下
 1. 解压缩FBI`.zip`压缩包，复制`FBI.cia`文件到SD卡的`/cias`目录下
 1. 将SD卡插回你的机器
 
 ##### 第二部分 - CTRTransfer
 
-1. 按住(Start)键开机，进入GodMode9
+1. 按住(Start)键开机，进入Luma3DS启动器菜单
+1. 按(A)键进入GodMode9
 1. 进入`SDCARD` -> `files9`
 1. 选中CTRTransfer`.bin`文件，然后按(A)键
 1. 选择"CTRNAND options..."
@@ -80,13 +81,13 @@ ref: region-changing
   + 完成后，按(A)键继续
 1. 按(Start)键重启你的机器
 1. 进入"System Settings"（系统设置）、"Other Settings"（其它设置），移动到最右边一页，选择"System Update"（系统升级），将你的系统升级到最新版本
-  + **请注意，因为11.4.0版本的系统最近刚发布，在上面运行Luma3DS还有一些bug（DS和GBA游戏无法运行）。并且NTR CFW还不与11.4.0版本的系统兼容。你可以先不升级系统，等新版的Luma3DS修复bug后再升级**
   + 使用A9LH + Luma（或者其它自制系统）进行系统升级很安全
   + 如果出现错误，将你的DNS设置改为"auto"（自动）模式
 
 ##### 第三部分 - 注入FBI
 
-1. 按住(Start)键重启，进入GodMode9
+1. 按住(Start)键重启，进入Luma3DS启动器菜单
+1. 按(A)键进入GodMode9
 1. 进入`SDCARD` -> `cias`
 1. 选中`FBI.cia`文件，按(A)键，并选择"CIA image options..."（CIA镜像选项），然后选择"Mount image to drive"（将镜像挂载到驱动器）
 1. 选中`.app`文件，按(A)键，然后选择"NCCH image options"，并选择"Inject to H&S"
@@ -126,7 +127,8 @@ ref: region-changing
 
 ##### 第六部分 - 恢复“健康与安全”应用
 
-1. 按住(Start)键重启，进入GodMode9
+1. 按住(Start)键重启，进入Luma3DS启动器菜单
+1. 按(A)键进入GodMode9
 1. 按(Home)键打开菜单
 1. 选择"More..."
 1. 选择"Restore H&S"（恢复健康与安全应用）

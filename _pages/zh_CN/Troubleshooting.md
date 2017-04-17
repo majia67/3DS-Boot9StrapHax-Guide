@@ -55,8 +55,9 @@ ref: troubleshooting
 
 #### 操作指南
 
-1. 解压`GodMode9`压缩包，复制`GodMode9.bin`到你SD卡的`/luma/payloads/`目录下，并重命名`GodMode9.bin`为`up_GodMode9.bin`
-1. 按住(Up)键启动机器，进入arm9loaderhax GodMode9
+1. 解压`GodMode9`压缩包，复制`GodMode9.bin`到你SD卡的`/luma/payloads/`目录下
+1. 按住(Start)键重启，进入Luma3DS启动器菜单
+1. 按(A)键进入GodMode9
 1. 依次选择进入`SYSNAND CTRNAND` -> `data` -> (32位用户ID) -> `sysdata` -> `00010038`
 1. 在`00000000`上，按住(R)键的同时按下(X)键，以重命名这个文件
 1. 按一次(Up)键，将文件名改为`10000000`
@@ -70,7 +71,8 @@ ref: troubleshooting
 
 #### 操作指南
 
-1. 按住(Start)键启动机器，进入arm9loaderhax GodMode9
+1. 按住(Start)键开机，进入Luma3DS启动器菜单
+1. 按(A)键进入GodMode9
 1. 依次选择`SYSNAND CTRNAND` -> `title` -> `00040010`
 1. 移动到你的设备和区域所对应的文件夹：
   + **老3DS 欧版**: `00022300` -> `content`
