@@ -53,7 +53,7 @@ lang: zh_CN
 
 * 最新版本的[SafeCTRTransfer](https://github.com/d0k3/SafeCTRTransfer/releases/latest)
 * 最新版本的[safehax](https://github.com/TiniVi/safehax/releases/)
-* **(译者注：如果最新版的safehax不能成功加载SafeCTRTransfer，请尝试旧版的safehax)**
+**(译者注：如果最新版的safehax不能成功加载SafeCTRTransfer，请尝试旧版的safehax)**
 * 最新版本的[udsploit](https://github.com/smealum/udsploit/releases/latest)
 * 对应你设备和区域的 2.1.0 ctr转移文件（请注意下载链接为磁力链）
 *（如果你的设备不在下面的区域中，请随便选一个）*:
