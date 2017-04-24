@@ -31,7 +31,7 @@ ref: move-emunand
 如果你没有DSiWare游戏，或者无需备份存档，可以跳过这一节。
 {: .notice--info}
 
-1. 按住(Start)键重启，进入Luma3DS启动器菜单
+1. 按住(Start)键开机，进入Luma3DS启动器菜单
 1. 按(A)键进入GodMode9
 1. 进入`SYSNAND TWLN` -> `title`
 1. 选中`00030004`目录，按住(R)键的同时按(A)键，然后选择"Copy to 0:/gm9out"
@@ -54,16 +54,17 @@ ref: move-emunand
 1. 为每一个你想备份存档的GBA VC游戏执行如下操作：
   + 在SysNAND中运行该GBA VC游戏
   + 退出该GBA VC游戏
-  + 按住(Start)键重启，运行GodMode9
-  + 进入`SYSNAND VIRTUAL`
+  + 关机，按住(Start)键开机，进入Luma3DS启动器菜单
+  + 按(A)键运行GodMode9
+  + 进入`[S:] SYSNAND VIRTUAL`
   + 选中`gbavc.sav`文件，按(Y)键复制该文件
   + 按(B)键返回主菜单
-  + 进入`SDCARD` -> `files9`
+  + 进入`[0:] SDCARD` -> `files9`
   + 进入你为该GBA VC游戏创建的文件夹中
   + 按(Y)键粘贴`gbavc.sav`文件
   + 按(Start)键重启机器
-1. 按住(Start)键重启，进入Luma3DS启动器菜单
-1. 按(A)键进入GodMode9
+1. 关机，按住(Start)键开机，进入Luma3DS启动器菜单
+1. 按(A)键运行GodMode9
 
 ##### 第四部分 - 复制EmuNAND到SysNAND
 
@@ -81,7 +82,7 @@ ref: move-emunand
 如果你之前没有备份DSiWare存档，跳过这一节
 {: .notice--info}
 
-1. 进入`SDCARD` -> `gm9out`
+1. 进入`[0:] SDCARD` -> `gm9out`
 1. 选中`00030004`目录，按(Y)键复制
 1. 按(B)键两次返回主菜单
 1. 进入`SYSNAND TWLN` -> `title`
@@ -102,12 +103,13 @@ ref: move-emunand
 1. 为每一个你想恢复存档的GBA VC游戏执行如下操作：
   + 在SysNAND中运行该GBA VC游戏
   + 退出该GBA VC游戏
-  + 按住(Start)键重启，运行GodMode9
-  + 进入`SDCARD` -> `files9`
+  + 关机，按住(Start)键开机，进入Luma3DS启动器菜单
+  + 按(A)键运行GodMode9
+  + 进入`[0:] SDCARD` -> `files9`
   + 进入你为该GBA VC游戏创建的文件夹中
   + 选中`gbavc.sav`文件，按(Y)键复制该文件
   + 按(B)键返回主菜单
-  + 进入`SYSNAND VIRTUAL`
+  + 进入`[S:] SYSNAND VIRTUAL`
   + 按(Y)键粘贴`gbavc.sav`文件
   + 按(A)键确认
   + 按(Start)键重启机器
@@ -121,8 +123,9 @@ ref: move-emunand
 1. 选择"Backup NAND"（备份系统）
 1. 按(A)键继续
 1. 按住(R)键的同时按(B)键，弹出SD卡
-1. 将SD卡插入你的电脑，然后复制`/gm9out`目录下的`nand.bin`文件到你电脑上的一个安全的位置
-  + 如果你之前使用了SafeCTRTransfer，并且创建了名为`<serialnumber>_nand.bin`（serialnumber是你的设备的序列号）的系统备份，将其替换为现在的文件（将`nand.bin`重命名为`<serialnumber>_nand.bin`）
+1. 将SD卡插入电脑
+1. 复制`/gm9out`目录下的`nand.bin`文件到电脑上的一个安全的位置
+  + 如果你之前使用了SafeCTRTransfer，并且创建了名为`<serialnumber>_nand.bin`（serialnumber是你的机器序列号）的系统备份，将其替换为现在的文件（将`nand.bin`重命名为`<serialnumber>_nand.bin`）
   + 在备份文件复制到多个位置（比如网盘）
   + 如果以后系统出现问题，该备份文件可以防止你的机器变砖
 1. 复制结束后，删除`/gm9out`目录下的`nand.bin`文件
@@ -137,9 +140,12 @@ ref: move-emunand
 1. 按(A)键确认
 1. 选择"No EmuNAND"
 1. 选择"Auto"
+1. 按(A)键接受`GM9SD`标签
+  + 或者你也可以为SD卡输入一个自定义的名字
 1. 按照提示输入按键组合继续
 1. 格式化完成后，按住(R)键的同时按(B)键，弹出你的SD卡
-1. 将SD卡插入电脑，然后将之前备份的文件复制回SD卡
+1. 将SD卡插入电脑
+1. 将之前备份的文件复制回SD卡
   + 确保你使用备份的`arm9loaderhax.bin`文件替换了SD卡上已有的文件
 1. 将SD卡插回你的机器
 1. 按(A)键重新加载你的SD卡

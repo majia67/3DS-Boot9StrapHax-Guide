@@ -79,10 +79,10 @@ data_input的版本是指为了适配不同安装程序版本而修改的`.zip`�
 
 1. 按住(Start)键重启，进入Luma3DS启动器菜单
 1. 按(A)键进入GodMode9
-1. 进入`SDCARD`
+1. 进入`[0:] SDCARD`
 1. 选中`arm9loaderhax.bin`文件，按(Y)键复制
 1. 按(B)键返回到主菜单
-1. 进入`SYSNAND CTRNAND`
+1. 进入`[1:] SYSNAND CTRNAND`
 1. 按(Y)键粘贴`arm9loaderhax.bin`文件
 1. 选择"Copy path(s)"（复制路径）
   + 如果出现提示，覆盖任何已有的`arm9loaderhax.bin`文件

@@ -61,7 +61,7 @@ ref: region-changing
 
 1. 按住(Start)键开机，进入Luma3DS启动器菜单
 1. 按(A)键进入GodMode9
-1. 进入`SDCARD` -> `files9`
+1. 进入`[0:] SDCARD` -> `files9`
 1. 选中CTRTransfer`.bin`文件，然后按(A)键
 1. 选择"CTRNAND options..."
 1. 选择"Transfer image to CTRNAND"（转移镜像到CTRNAND）
@@ -71,8 +71,8 @@ ref: region-changing
   + 这一步需要较长时间
 1. 完成后，按(A)键继续
 1. 按(B)键两次返回主菜单
-1. 进入`SYSNAND CTRNAND` -> `dbs`
-1. 选择`ticket.bak`文件，按(A)键选中，然后选择"Mount as ticket.db"
+1. 进入`[1:] SYSNAND CTRNAND` -> `dbs`
+1. 选择`ticket.bak`文件，按(A)键选中，选择"Ticket.db options..."，然后选择"Mount image to drive"
 1. 如果存在`eshop`文件夹，按住(R)键的同时按(A)键选中，然后选择"Copy to 0:/gm9out"
   + 如果你有许多tickets，这一步可能需要较长时间
   + 完成后，按(A)键继续
@@ -88,7 +88,7 @@ ref: region-changing
 
 1. 按住(Start)键重启，进入Luma3DS启动器菜单
 1. 按(A)键进入GodMode9
-1. 进入`SDCARD` -> `cias`
+1. 进入`[0:] SDCARD` -> `cias`
 1. 选中`FBI.cia`文件，按(A)键，并选择"CIA image options..."（CIA镜像选项），然后选择"Mount image to drive"（将镜像挂载到驱动器）
 1. 选中`.app`文件，按(A)键，然后选择"NCCH image options"，并选择"Inject to H&S"
 1. 按(A)键解锁SysNAND(lvl1)写保护，然后按照提示输入按键组合
@@ -102,7 +102,7 @@ ref: region-changing
 {: .notice--info}
 
 1. 在桌面菜单中运行健康与安全（Health & Safety）应用（现在应该是FBI）
-1. 进入`SD` -> `cias`
+1. 进入`[0:] SD` -> `cias`
 1. 选择`FBI.cia`
 1. 选择"Install"（安装）选项，然后按(A)键确认
 1. 按(B)键返回SD卡根目录
@@ -136,7 +136,7 @@ ref: region-changing
 
 ##### 第七部分 - 移除CTR转移镜像
 
-1. 进入`SDCARD` -> `files9`
+1. 进入`[0:] SDCARD` -> `files9`
 1. 选中CTR转移镜像`.bin`文件，按(X)键删除
 1. 按(A)键确认
 1. 按(Start)键重启

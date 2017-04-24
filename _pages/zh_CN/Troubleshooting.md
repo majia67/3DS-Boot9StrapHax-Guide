@@ -58,7 +58,7 @@ ref: troubleshooting
 1. 解压`GodMode9`压缩包，复制`GodMode9.bin`到你SD卡的`/luma/payloads/`目录下
 1. 按住(Start)键重启，进入Luma3DS启动器菜单
 1. 按(A)键进入GodMode9
-1. 依次选择进入`SYSNAND CTRNAND` -> `data` -> (32位用户ID) -> `sysdata` -> `00010038`
+1. 依次选择进入`[1:] SYSNAND CTRNAND` -> `data` -> (32位用户ID) -> `sysdata` -> `00010038`
 1. 在`00000000`上，按住(R)键的同时按下(X)键，以重命名这个文件
 1. 按一次(Up)键，将文件名改为`10000000`
 1. 按(A)键保存更改
@@ -73,7 +73,7 @@ ref: troubleshooting
 
 1. 按住(Start)键开机，进入Luma3DS启动器菜单
 1. 按(A)键进入GodMode9
-1. 依次选择`SYSNAND CTRNAND` -> `title` -> `00040010`
+1. 依次选择`[1:] SYSNAND CTRNAND` -> `title` -> `00040010`
 1. 移动到你的设备和区域所对应的文件夹：
   + **老3DS 欧版**: `00022300` -> `content`
   + **老3DS 日版**: `00020300` -> `content`
@@ -186,10 +186,10 @@ ref: troubleshooting
 1. 将SD卡插回机器中
 1. 选择"Run 0:/ctrtransfer/payload.bin"
 1. 如果成功，你将进入GodMode9
-1. 进入`SDCARD` -> `ctrtransfer`
+1. 进入`[0:] SDCARD` -> `ctrtransfer`
 1. 选中`<serialnumber>_nand.bin`文件，按(Y)键复制
 1. 按(B)键两次，返回主菜单
-1. 进入`SYSNAND VIRTUAL`
+1. 进入`[S:] SYSNAND VIRTUAL`
 1. 按(Y)键粘贴`<serialnumber>_nand.bin`文件
 1. 按(A)键确认
 1. 按(A)键注入`nand.bin`
