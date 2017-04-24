@@ -25,8 +25,8 @@ lang: zh_CN
 **在进行2.1.0 ctr转移之前，请确保你已禁用了家长控制（parental control）。如果你不知道密码，参见[这里](https://mkey.salthax.org/)。如果绑定的NNID是13岁以下儿童，无法禁用家长控制，你也可以将所有家长控制选项设为“无限制”（"do not restrict"）。**
 {: .notice--warning}
 
-**进行ctr转移会删除所有已安装的游戏，直到恢复备份后才能复原。**		
-{: .notice--danger}		
+**进行ctr转移会删除所有已安装的游戏，直到恢复备份后才能复原。**
+{: .notice--danger}
 
 **永远不要在低于6.0.0版本的2DS上进行格式化，否则你将无法完成初始化步骤，导致变砖！**
 {: .notice--danger}
@@ -35,10 +35,10 @@ lang: zh_CN
 {: .notice--danger}
 
 {% capture notice %}
-**将2.1.0系统版本的新3DS留在睡眠模式下，会导致不可恢复的变砖！**    
-**仅在开机合盖时会发生这种情况。关机状态下合盖不受影响。**    
-**3DS只有在合盖时才会进入睡眠模式，不会出现开盖下定时进入睡眠模式或者类似的情况。**    
-**一旦系统版本降级到2.1.0后，你应该立刻进行下一步的操作，避免这种情况的发生！**    
+**将2.1.0系统版本的新3DS留在睡眠模式下，会导致不可恢复的变砖！**
+**仅在开机合盖时会发生这种情况。关机状态下合盖不受影响。**
+**3DS只有在合盖时才会进入睡眠模式，不会出现开盖下定时进入睡眠模式或者类似的情况。**
+**一旦系统版本降级到2.1.0后，你应该立刻进行下一步的操作，避免这种情况的发生！**
 {% endcapture %}
 
 <div class="notice--danger">{{ notice | markdownify }}</div>
@@ -52,7 +52,8 @@ lang: zh_CN
 #### 你需要
 
 * 最新版本的[SafeCTRTransfer](https://github.com/d0k3/SafeCTRTransfer/releases/latest)
-* 最新版本的[safehax](https://github.com/TiniVi/safehax/releases/latest)
+* 最新版本的[safehax](https://github.com/TiniVi/safehax/releases/)
+* **(译者注：如果最新版的safehax不能成功加载SafeCTRTransfer，请尝试旧版的safehax)**
 * 最新版本的[udsploit](https://github.com/smealum/udsploit/releases/latest)
 * 对应你设备和区域的 2.1.0 ctr转移文件（请注意下载链接为磁力链）
 *（如果你的设备不在下面的区域中，请随便选一个）*:
@@ -105,10 +106,10 @@ lang: zh_CN
 {: .notice--info}
 
 {% capture notice %}
-**将2.1.0系统版本的新3DS留在睡眠模式下，会导致不可恢复的变砖！**    
-**仅在开机合盖时会发生这种情况。关机状态下合盖不受影响。**    
-**你的机器只有在合盖时才会进入睡眠模式，不会出现开盖下定时进入睡眠模式或者类似的情况。**    
-**你应该立刻进行下一步的操作，避免这种情况的发生！**    
+**将2.1.0系统版本的新3DS留在睡眠模式下，会导致不可恢复的变砖！**
+**仅在开机合盖时会发生这种情况。关机状态下合盖不受影响。**
+**你的机器只有在合盖时才会进入睡眠模式，不会出现开盖下定时进入睡眠模式或者类似的情况。**
+**你应该立刻进行下一步的操作，避免这种情况的发生！**
 {% endcapture %}
 
 <div class="notice--danger">{{ notice | markdownify }}</div>
