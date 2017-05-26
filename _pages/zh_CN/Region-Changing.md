@@ -2,16 +2,18 @@
 title: "区域变更"
 permalink: /region-changing.html
 lang: zh_CN
-ref: region-changing
 ---
 
-本节是关于变更arm9loaderhax自制系统SysNAND所在区域的附加章节。通过安装对应区域的9.2.0 CTRTransfer image（CTR迁移镜像），你可以将机器变更到你想要的区域。
+本节是关于变更自制系统SysNAND所在区域的附加章节。通过安装对应区域的9.2.0 CTRTransfer image（CTR迁移镜像），你可以将机器变更到你想要的区域。
 {: .notice--primary}
 
 **Luma3DS已经支持跨区游戏和独立的[title区域模拟](https://github.com/AuroraWright/Luma3DS/wiki/Options-and-usage)，区域变更已经变得几乎没有必要。**
 {: .notice--info}
 
 你需要一个能进行BT下载的软件，如[Deluge](http://dev.deluge-torrent.org/wiki/Download)、[aria2](https://aria2.github.io/)或迅雷，才能下载本节教程中的[磁力链接](http://baike.baidu.com/item/%E7%A3%81%E5%8A%9B%E9%93%BE%E6%8E%A5)。
+{: .notice--success}
+
+请注意：某些版本的Luma3DS只会在检测到多于一个payload时显示Luma3DS启动器菜单。如果只检测到一个payload，按住(Start)键启动将直接运行GodMode9。
 {: .notice--info}
 
 本过程将解绑你的NNID和你的系统，因为它们不再兼容。NNID在创建后就会被锁定为当前机器所在的区域，除非经过[一个非常复杂和进阶的流程](https://gist.githubusercontent.com/yifanlu/e80db121d38aceb8cca0e03cefd5853b/raw/3c4dd89869156ca0f945a2791e699acfdb32b510/gistfile1.txt)不能在区域间迁移。
@@ -26,10 +28,10 @@ ref: region-changing
 同样请注意，有时候eShop在某些本不应该能访问的设备上莫名其妙地可以正常访问（如某些新3DS）。造成该情况的原因目前未知。
 {: .notice--warning}
 
-使用CTRTransfer进行区域变更（本节教程使用的就是此法）似乎会造成重启补丁失效，原因未知。老3DS用户将无法运行扩展内存模式的游戏（如怪物猎人，任天堂明星大乱斗，和精灵宝可梦日/月），除非进行系统格式化（详情见本节教程最后）。
+使用CTRTransfer进行区域变更（本节教程使用的就是此法）似乎会造成重启补丁失效，原因未知。老3DS用户将无法运行扩展内存模式的游戏（如怪物猎人，任天堂明星大乱斗，和精灵宝可梦日/月），除非进行系统格式化。
 {: .notice--warning}
 
-**你必须已经安装了arm9loaderhax + Luma3DS才能进行本节操作。**
+**你必须已经安装了Luma3DS + boot9strap或arm9loaderhax中的一个，才能进行本节操作。**
 {: .notice--danger}
 
 #### 你需要
@@ -52,7 +54,8 @@ ref: region-changing
 1. 关机
 1. 取出SD卡，将SD卡插入电脑
 1. 在SD卡根目录创建名为`cias`的文件夹（如果不存在的话）
-1. 解压缩GodMode9压缩包，复制`GodMode9.bin`文件到SD卡的`/luma/payloads/`目录下
+1. 在SD卡根目录创建名为 `files9`的文件夹（如果不存在的话）
+1. 解压`GodMode9`压缩包，复制`GodMode9.firm`文件（arm9loaderhax用户请使用`GodMode9.bin`文件）到SD卡的`/luma/payloads/`目录下
 1. 从CTRTransfer压缩包中提取9.2.0 CTRTransfer镜像`.bin`文件，复制到SD卡的`/files9/`目录下
 1. 解压缩FBI`.zip`压缩包，复制`FBI.cia`文件到SD卡的`/cias`目录下
 1. 将SD卡插回你的机器
@@ -81,7 +84,7 @@ ref: region-changing
   + 完成后，按(A)键继续
 1. 按(Start)键重启你的机器
 1. 进入"System Settings"（系统设置）、"Other Settings"（其它设置），移动到最右边一页，选择"System Update"（系统升级），将你的系统升级到最新版本
-  + 使用A9LH + Luma（或者其它自制系统）进行系统升级很安全
+  + 使用B9S + Luma（或者其它自制系统）进行系统升级很安全
   + 如果出现错误，将你的DNS设置改为"auto"（自动）模式
 
 ##### 第三部分 - 注入FBI
@@ -143,5 +146,5 @@ ref: region-changing
 
 ---
 
-老3DS/2DS可能需要格式化机器（使用TinyFormat或系统设置）才能玩扩展内存模式的游戏（如怪物猎人，任天堂明星大乱斗，和精灵宝可梦日/月）。
+老3DS/2DS用户需要格式化机器（使用TinyFormat或系统设置）才能玩扩展内存模式的游戏（如怪物猎人，任天堂明星大乱斗，和精灵宝可梦日/月）。
 {: .notice--info}

@@ -5,8 +5,8 @@ lang: zh_CN
 ref: f3x-(mac)
 ---
 
-本节教程将带你使用F3X检查SD卡错误。
-{: .notice}
+本节是一个附加章节，将指导你使用F3X检查SD卡错误。
+{: .notice--info}
 
 本节操作可能需要数小时的时间，取决于你的SD卡大小和你电脑的速度！
 {: .notice--info}

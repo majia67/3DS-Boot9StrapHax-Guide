@@ -12,8 +12,8 @@ ref: troubleshooting
 **如果尝试了本页面的指导后问题仍未解决，请将SD卡上生成的所有.log文件复制到[Gist](https://gist.github.com/)，然后向我们求助，并附上你对问题的详细描述以及你尝试过的解决方案。**
 {: .notice--info}
 
-**你需要一个能进行BT下载的软件，如[Deluge](http://dev.deluge-torrent.org/wiki/Download)、[aria2](https://aria2.github.io/)或迅雷，才能下载本节教程中的[磁力链接](http://baike.baidu.com/item/%E7%A3%81%E5%8A%9B%E9%93%BE%E6%8E%A5)。**
-{: .notice--info}
+你需要一个能进行BT下载的软件，如[Deluge](http://dev.deluge-torrent.org/wiki/Download)、[aria2](https://aria2.github.io/)或迅雷，才能下载本节教程中的[磁力链接](http://baike.baidu.com/item/%E7%A3%81%E5%8A%9B%E9%93%BE%E6%8E%A5)。
+{: .notice--success}
 
 ## <a name="twl_broken" />完成本教程后DSi / DS功能失效
 
@@ -67,7 +67,10 @@ ref: troubleshooting
 1. 按(Start)键重启
 
 ## <a name="gw_fbi" />在Gateway降级过的设备上无法注入Health & Safety应用
-这一因为Gateway的降级方法非常糟糕，会在系统中留下每个app降级前后的两个版本，其中一个不再使用。这会迷惑Decrypt9，使它注入错误的版本。
+这一因为Gateway的降级方法非常糟糕，会在系统中留下每个app降级前后的两个版本，其中一个不再使用。这会迷惑H&S注入程序，使它注入到错误的版本中。
+
+请注意：某些版本的Luma3DS只会在检测到多于一个payload时显示Luma3DS启动器菜单。如果只检测到一个payload，按住(Start)键启动将直接运行GodMode9。
+{: .notice--info}
 
 #### 操作指南
 
@@ -92,7 +95,7 @@ ref: troubleshooting
 1. 选择"Move path(s)"
 1. 大写字母后缀的文件将被移动到`newdir`文件夹下
 1. 按(Start)键重启
-1. 返回到[安装arm9loaderhax](installing-arm9loaderhax)一节，重新尝试FBI注入
+1. 返回到[收尾工作](finalizing-setup)一节，重新尝试FBI注入
 1. 如果还是不能注入， 将大写字母后缀的文件移动回`content`文件夹，然后将小写字母后缀的文件移动到`newdir`文件夹中，再返回到[安装arm9loaderhax](installing-arm9loaderhax)一节，重新尝试FBI注入
 
 ## <a name="ts_browser" />基于浏览器的漏洞利用失效
@@ -101,21 +104,6 @@ ref: troubleshooting
 1. 打开浏览器，进入浏览器设置页面
 1. 移动到页面最底端，选择Initialize Savedata（初始化缓存）（有时也会叫做Clear All Save Data，清除所有缓存）
 1. 再次尝试漏洞利用
-
-## <a name="ts_safe_a9lh" />系统启动进入了SafeA9LHInstaller
-你将错误的`arm9loaderhax.bin`文件拷贝到SD卡中了（你应该仅将SafeA9LHInstaller压缩包中的`3ds`文件夹和`SafeA9LHInstaller.dat`文件拷贝到SD卡中）
-
-1. 使用正确的`arm9loaderhax.bin`
-1. 将Luma3DS压缩包中的`arm9loaderhax.bin`文件拷贝到你的SD卡根目录
-1. 按住(Select)键重启机器，并继续按照教程进行
-
-## <a name="ts_safe_a9lh_screen" />SafeA9LHInstaller中屏幕闪烁
-这种情况偶尔会发生，但原因未知。按键仍能正常工作，但屏幕会一直闪烁。
-
-1. 按照教程正常执行
-1. 按下(Select)键安装arm9loaderhax
-1. 等待几秒钟
-1. 按任意键，关闭你的设备
 
 ## <a name="ts_sys_down" />启动到SysNAND黑屏
 
@@ -137,7 +125,7 @@ ref: troubleshooting
    *老3DS降级到2.1.0的系统后，该方法很可能会失效。*
    **新3DS降级到2.1.0后，尝试该方法会变砖。**
    1. 长按电源键关闭你的3DS。
-   1. 按住(L)+(R)+(A)+(Up)键
+   1. 按住(L) + (R) + (A) + (Up)键
    1. 按下电源键开机。
    1. 如果进入安全模式，*仅当你有最新固件版本进入HBL的方法，并且能进行降级的情况下*，才升级你的3DS，并再次尝试降级。
 1. 你的3DS可能变砖了。请在[GitHub Issues](https://github.com/majia67/3DS-ARM9LoaderHax-Guide/issues)中提问，或者参考[FAQ](faq#faq_support)页面获取帮助。
@@ -145,7 +133,7 @@ ref: troubleshooting
 ## <a name="ts_sys_a9lh" />安装完arm9loaderhax后启动到SysNAND黑屏
 
 1. 确保你有一个正常工作的payload
-   1. 检查你的SD卡根目录有`arm9loaderhax.bin`文件。
+   1. 检查你的SD卡根目录有`boot.firm`文件。
 1. 尝试重置Luma3DS的设置
    1. 删除SD卡上的`/luma/config.bin`文件
    1. 启动Luma3DS后重新设置
@@ -170,7 +158,7 @@ ref: troubleshooting
 1. 尝试按照[9.2.0 ctr迁移](9.2.0-ctrtransfer)进行操作
 1. 请在[GitHub Issues](https://github.com/majia67/3DS-ARM9LoaderHax-Guide/issues)中提问，或者参考[FAQ](faq#faq_support)页面获取帮助。
 
-## <a name="ts_transfer" />进行SafeCTRTransfer时出错
+## <a name="ts_transfer" />进行SafeB9STransfer时出错
 
 如果在进行SafeCTRTransfer时出现错误，你会被提示运行一个外部的payload来修复你的机器
 
@@ -182,23 +170,23 @@ ref: troubleshooting
 
 1. 选择"弹出SD卡"
 1. 将SD卡插入电脑
-1. 解压GodMode9`.zip`压缩包，复制`GodMode9.bin`文件到SD卡的`/ctrtransfer/`目录下，并将其重命名为`payload.bin`
+1. 解压GodMode9`.zip`压缩包，复制`GodMode9.bin`文件到SD卡的`/boot9strap/`目录下，并将其重命名为`payload.bin`
 1. 将SD卡插回机器中
-1. 选择"Run 0:/ctrtransfer/payload.bin"
+1. 选择"Run 0:/boot9strap/payload.bin"
 1. 如果成功，你将进入GodMode9
-1. 进入`[0:] SDCARD` -> `ctrtransfer`
-1. 选中`<serialnumber>_nand.bin`文件，按(Y)键复制
+1. 进入`[0:] SDCARD` -> `boot9strap`
+1. 在`firm0firm1.bak`和`sector0x96.bak`文件上按(L)键标记它们
+1. 按(Y)键复制文件
 1. 按(B)键两次，返回主菜单
 1. 进入`[S:] SYSNAND VIRTUAL`
-1. 按(Y)键粘贴`<serialnumber>_nand.bin`文件
+1. 按(Y)键粘贴文件
 1. 按(A)键确认
-1. 按(A)键注入`nand.bin`
+1. 按(A)键注入文件
 1. 按(A)键解锁SysNAND覆盖
 1. 按照提示输入按键组合，解锁SysNAND (lvl3)写保护
-  + 该过程可能需要较长时间
 1. 完成后，按(A)键继续
 1. 按(Start)键重启
-1. 请将你遇到的问题反馈到[SafeCTRTransfer Issues Page](https://github.com/d0k3/SafeCTRTransfer/issues)
+1. 请将你遇到的问题反馈到[SafeB9SInstaller Issues Page](https://github.com/d0k3/SafeB9SInstaller/issues)
 
 ## <a name="ts_sys_blue" />启动时蓝屏（bootrom错误）
 
