@@ -11,8 +11,10 @@ header:
   caption:
 excerpt: '利用boot9strap实现3DS运行自制固件的完整教程。<br />'
 lang: zh_CN
-ref: home
 ---
+
+点击进入[原arm9loaderhax教程](https://a9lh.3dshax.cn)。
+{: .notice--info}
 
 {% capture notice-home %}
 本教程仅适用于零售版的3DS (自行购买，而不是来自Nintendo Developer Program) ！
