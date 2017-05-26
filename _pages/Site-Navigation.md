@@ -10,9 +10,10 @@ ref: site-navigation
 {% capture notice-1 %}
 **常用链接**
 
-+ [安装arm9loaderhax](installing-arm9loaderhax)
++ [升级至boot9strap](updating-to-boot9strap)
 + [自制程序启动器（声音破解）](homebrew-launcher-(soundhax))
-+ [SafeCTRTransfer（自制程序启动器）](safectrtransfer-(homebrew-launcher))
++ [安装Boot9Strap（自制程序启动器）](installing-boot9strap-(homebrew-launcher))
++ [收尾工作](finalizing-setup)
 {% endcapture %}
 <div class="notice--info">{{ notice-1 | markdownify }}</div>
 
