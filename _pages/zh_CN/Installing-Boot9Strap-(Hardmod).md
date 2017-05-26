@@ -1,5 +1,5 @@
 ---
-title: "Installing boot9strap (Hardmod)" #
+title: "安装Boot9Strap（硬改）"
 lang: zh_CN
 permalink: /installing-boot9strap-(hardmod).html
 ---

@@ -15,6 +15,25 @@ lang: zh_CN
 ##### Windows 10 / 8.1 / 8
 
 1. 打开任意文件夹以启动文件管理器，如你的SD卡根目录
-1. 点击菜单栏中的“显示”选项
+1. 点击菜单栏中的“查看”选项卡
 1. 勾选标有“文件扩展名”的选项
 
+    ![]({{ base_path }}/images/screenshots/windows-10-file-extensions.png)
+    {: .notice--info}
+
+##### Windows 7
+
+1. 点击按钮，或者按下Windows键，打开开始菜单
+1. 搜索"文件夹选项"，然后选择对应的结果
+
+    ![]({{ base_path }}/images/screenshots/windows-7-folder-options-start-menu.png)
+    {: .notice--info}
+
+1. 点击文件夹选项菜单顶部的"查看"选项
+1. 取消勾选"隐藏已知文件扩展名"选项
+
+    ![]({{ base_path }}/images/screenshots/windows-7-folder-options.png)
+    {: .notice--info}
+
+返回[开始教程](get-started)
+{: .notice--primary}
