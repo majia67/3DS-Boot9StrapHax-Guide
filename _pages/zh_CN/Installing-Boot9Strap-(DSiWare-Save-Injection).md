@@ -1,179 +1,181 @@
 ---
-title: "Installing boot9strap (DSiWare Save Injection)" #
-lang: en
+title: "安装boot9strap（DSiWare存档注入）"
 permalink: /installing-boot9strap-(dsiware-save-injection).html
+lang: zh_CN
 ---
 
-Note that, on some versions of Luma3DS, the Luma3DS chainloader menu is only displayed if there is more than one payload detected. If there is only one payload detected, holding (Start) on boot will directly launch GodMode9.
+请注意：某些版本的Luma3DS只会在检测到多于一个payload时显示Luma3DS启动器菜单。如果只检测到一个payload，按住(Start)键启动将直接运行GodMode9。
 {: .notice--info}
 
-To use the [magnet](https://en.wikipedia.org/wiki/Magnet_URI_scheme) links on this page, you will need a torrent client like [Deluge](http://dev.deluge-torrent.org/wiki/Download)
+**你需要一个能进行BT下载的软件，如[Deluge](http://dev.deluge-torrent.org/wiki/Download)、[aria2](https://aria2.github.io/)或迅雷，才能下载本节教程中的[磁力链接](http://baike.baidu.com/item/%E7%A3%81%E5%8A%9B%E9%93%BE%E6%8E%A5)。**
 {: .notice--success}
 
-Before proceeding, ensure you have read all of the notices and warnings on [Installing boot9strap (DSiWare)](installing-boot9strap-(dsiware))
+在开始之前，确保你已经阅读了[安装boot9strap (DSiWare)](installing-boot9strap-(dsiware))页面中所有的注意和警告事项。
 {: .notice--danger}
 
-If you do not use the correct `.firm` corresponding to the target 3DS, you will BRICK! Ensure you download and use the correct one!
+如果你没有使用对应你3DS的`.firm`文件，你的机器会变砖！确保你下载和使用了正确的文件！
 {: .notice--danger}
 
-#### What you need
+#### 你需要
 
-* Two 3DS systems
-  + **The source 3DS**: the 3DS running some kind of custom firmware (such as boot9strap or arm9loaderhax) *on the latest version*
-  + **The target 3DS**: the 3DS on stock firmware *on 11.4.0*
-* Already own one of the following exploitable DSiWare games (a pirated copy of the game will **not** work) on **the source 3DS**
+* 两台3DS
+  + **来源3DS**：运行*最新系统版本*自制固件（boot9strap和arm9loaderhax）的3DS
+  + **目标3DS**：运行原生系统的3DS（版本为*11.4.0*）
+* **来源3DS**上已经有了下列可破解的DSiWare游戏中的一个（盗版游戏**不能**用来破解）：
   + **Fieldrunners**
   + **Legends of Exidia**
-  + **Guitar Rock Tour**  
-  + **The Legend of Zelda: Four Swords**  
-* The latest release of [3ds_dsiwarehax_installer](https://github.com/yellows8/3ds_dsiwarehax_installer/releases)
-* The latest release of [GodMode9](https://github.com/d0k3/GodMode9/releases/latest)
-* The latest release of [b9sTool](https://github.com/Plailect/b9sTool/releases/latest)
-* The latest release of [boot9strap](https://github.com/SciresM/boot9strap/releases/latest)
-* The Homebrew [Starter Kit](http://smealum.github.io/ninjhax2/starter.zip)
-* The 11.4.0 `.firm` corresponding to **the target 3DS**
-  + [`2.54-0_11.4_OLD.firm`](magnet:?xt=urn:btih:0dd89d42ad711f770da899af05ee162ede0d0070&dn=2.54-0_11.4_OLD.firm&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce)
-  + [`2.54-0_11.4_NEW.firm`](magnet:?xt=urn:btih:3b59dd43eec3edb133555f58d1180bfb196acbb4&dn=2.54-0_11.4_NEW.firm&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce)
+  + **Guitar Rock Tour**
+  + **The Legend of Zelda: Four Swords**
+* 最新版的[3ds_dsiwarehax_installer](https://github.com/yellows8/3ds_dsiwarehax_installer/releases)
+* 最新版的[GodMode9](https://github.com/d0k3/GodMode9/releases/latest)
+* 最新版的[b9sTool](https://github.com/Plailect/b9sTool/releases/latest)
+* 最新版的[boot9strap](https://github.com/SciresM/boot9strap/releases/latest)
+* 自制程序[新手包](http://smealum.github.io/ninjhax2/starter.zip)
+* 对应**目标3DS**的11.4.0 `.firm`文件
+  + 老3DS：[`2.54-0_11.4_OLD.firm`](magnet:?xt=urn:btih:0dd89d42ad711f770da899af05ee162ede0d0070&dn=2.54-0_11.4_OLD.firm&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce)
+  + 新3DS：[`2.54-0_11.4_NEW.firm`](magnet:?xt=urn:btih:3b59dd43eec3edb133555f58d1180bfb196acbb4&dn=2.54-0_11.4_NEW.firm&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce)
 
-#### Instructions
+#### 操作指南
 
-##### Section I - Prep Work
+##### 第一部分 - 准备工作
 
-Use a [save manager](https://github.com/J-D-K/JKSM/releases/latest) to backup any saves you care about on *the target 3DS* (it will be formatted!)
+使用一个[存档管理器](https://github.com/J-D-K/JKSM/releases/latest)，备份目标3DS上（它会被格式化！）你觉得重要的存档。
 {: .notice--warning}
 
-1. Copy `GodMode9.firm` (or `GodMode9.bin` for arm9loaderhax users) from the GodMode9 `.zip` to the `/luma/payloads` folder on **the source 3DS**'s SD card
-1. Copy the relevant `public.sav` from the `/dsiware/(8 Character ID)/` folder in the 3ds_dsiwarehax_installer `.zip` to the root of **the source 3DS**'s SD card
-  + **Fieldrunners USA Region**: `4b464445`
-  + **Fieldrunners EUR Region**: `4b464456`
-  + **Legends of Exidia USA Region**: `4b4c4545`
-  + **Legends of Exidia EUR Region**: `4b4c4556`
-  + **Legends of Exidia JPN Region**: `4b4c454a`
-  + **Guitar Rock Tour EUR Region**: `4b475256`
-  + **Guitar Rock Tour USA Region**: `4b475245`
-  + **The Legend of Zelda: Four Swords EUR Region**: `4b513956`   
-  + **The Legend of Zelda: Four Swords USA Region**: `4b513945`  
-1. Reinsert **the source 3DS**'s SD card
-1. Boot **the source 3DS** while holding (Start) to launch the Luma3DS chainloader menu
-1. Launch GodMode9 by pressing (A)
-1. Press (Home) to bring up the action menu
-1. Select "More..."
-1. Select "Backup NAND"
-1. Press (A) to continue
-1. Hold (R) and press (B) at the same time to eject your SD card
-1. Put **the target 3DS**'s SD card into your computer
-1. **Backup every file on both 3DS's SD cards to two separate folders on your computer (keep track of which is which)!**
-1. Reinsert each SD card back into their corresponding 3DS
-1. Press (Start) on **the source 3DS** to reboot
+1. 解压GodMode9 `.zip`压缩包，复制`GodMode9.firm`文件（arm9loaderhax用户选择`GodMode9.bin`文件）到**来源3DS**SD卡的`/luma/payloads/`目录下
+1. 解压缩3ds\_dsiwarehax\_installer `.zip`压缩包，从对应的`/dsiware/(8 Character ID)/`（译者注：(8 Character ID)为下面列表中每个游戏后面的8位字符串）文件夹下复制`public.sav`文件到**来源3DS**的SD根目录下
+  + **Fieldrunners 美版**: `4b464445`
+  + **Fieldrunners 欧版**: `4b464456`
+  + **Legends of Exidia 美版**: `4b4c4545`
+  + **Legends of Exidia 欧版**: `4b4c4556`
+  + **Legends of Exidia 日版**: `4b4c454a`
+  + **Guitar Rock Tour 欧版**: `4b475256`
+  + **Guitar Rock Tour 美版**: `4b475245`
+  + **The Legend of Zelda: Four Swords 欧版**: `4b513956`   
+  + **The Legend of Zelda: Four Swords 美版**: `4b513945`  
+1. 将**来源3DS**的SD卡插回机器
+1. 按住(Start)键启动**来源3DS**，运行Luma3DS启动器菜单
+1. 按(A)键运行GodMode9
+1. 按(Home)键调出行动菜单
+1. 选择"More..."
+1. 选择"Backup NAND"
+1. 按(A)键继续
+1. 按住(R)键的同时按(B)键，弹出SD卡，并插入电脑
+1. 将**目标3DS**的SD卡取出，并插入电脑
+1. **将两台3DS的SD卡上的文件备份到电脑上两个单独的文件夹中（区分清楚哪个文件夹对应哪台3DS）！**
+1. 将两张SD卡分别插回对应的3DS中
+1. 在**来源3DS**上按(Start)键，重启机器
 
-##### Section II - Installing the Save
+##### 第二部分 - 安装存档
 
-1. Boot **the source 3DS** while holding (Start) to launch the Luma3DS chainloader menu
-1. Launch GodMode9 by pressing (A)
-1. Navigate to `SDCARD`
-1. Press (Y) on `public.sav` to copy it
-1. Press (B) to get back to the main menu
-1. Navigate to `SYSNAND TWLN` -> `title` -> `00030004`
-1. Navigate to the folder for your game and region:
-  + **Fieldrunners USA Region**: `4b464445`
-  + **Fieldrunners EUR Region**: `4b464456`
-  + **Legends of Exidia USA Region**: `4b4c4545`
-  + **Legends of Exidia EUR Region**: `4b4c4556`
-  + **Legends of Exidia JPN Region**: `4b4c454a`
-  + **Guitar Rock Tour EUR Region**: `4b475256`
-  + **Guitar Rock Tour USA Region**: `4b475245`
-  + **The Legend of Zelda: Four Swords EUR Region**: `4b513956`   
-  + **The Legend of Zelda: Four Swords USA Region**: `4b513945`   
-1. Navigate to the `data` folder
-1. Press (X) on the existing `public.sav` to delete it
-1. Input the key combo given to unlock SysNAND (lvl1) writing
-1. Press (A) to continue
-1. Press (Y) to paste `public.sav`
-1. Select "Copy path(s)"
-1. Press (Start) to reboot **the source 3DS**
-1. Launch your DSiWare game on **the source 3DS**
-1. Test if the save is functional
-  + **Fieldrunners**: Touch the 'Scores' button at the main menu
-  + **Legends of Exidia**: After pressing (A) or (Start) at the two title screens, select the first save slot and press continue
-  + **Guitar Rock Tour**: Scroll down and go to High-Scores -> Drums -> Easy    
-  + **The Legend of Zelda: Four Swords**: Just start the game
-  + If your game has an error about `boot.nds` or a white screen, **then the exploit has been successful**
-  + If your game behaves normally and does not give you this error, then you should stop and figure out what went wrong
-  + If you get a black screen, [follow this troubleshooting guide](troubleshooting#twl_broken)
+1. 按住(Start)键启动**来源3DS**，运行Luma3DS启动器菜单
+1. 按(A)键运行GodMode9
+1. 进入`SDCARD`
+1. 移动光标到`public.sav`文件上，按(Y)键复制它
+1. 按(B)键返回主菜单
+1. 依次进入`SYSNAND TWLN` -> `title` -> `00030004`
+1. 进入对应你的游戏和区域的文件夹：
+  + **Fieldrunners 美版**: `4b464445`
+  + **Fieldrunners 欧版**: `4b464456`
+  + **Legends of Exidia 美版**: `4b4c4545`
+  + **Legends of Exidia 欧版**: `4b4c4556`
+  + **Legends of Exidia 日版**: `4b4c454a`
+  + **Guitar Rock Tour 欧版**: `4b475256`
+  + **Guitar Rock Tour 美版**: `4b475245`
+  + **The Legend of Zelda: Four Swords 欧版**: `4b513956`   
+  + **The Legend of Zelda: Four Swords 美版**: `4b513945`  
+1. 进入`data`文件夹
+1. 在`public.sav`文件上按(X)键删除它
+1. 输入提示的按键组合，解锁SysNAND (lvl1)写保护
+1. 按(A)键继续
+1. 按(Y)键粘贴`public.sav`文件
+1. 选择"Copy path(s)"
+1. 按(Start)键重启**来源3DS**
+1. 在**来源3DS**上运行你的DSiWare游戏
+1. 检查存档是否有效
+  + **Fieldrunners**：点击主菜单的'Scores'（得分）按钮
+  + **Legends of Exidia**：在两个标题界面按(A)键或(Start)键之后，选择第一个存档并点继续
+  + **Guitar Rock Tour**: 将页面下拉，依次进入High-Scores（高分榜） -> Drums（鼓） -> Easy（简单）
+  + **The Legend of Zelda: Four Swords (Anniversary Edition)**：开始游戏
+  + 如果游戏提示`boot.nds`错误，或者出现白屏，说明**漏洞利用成功**
+  + 如果游戏正常运行，没有出现错误，你应该停下来检查一下哪里出了问题
+  + 如果出现黑屏，[参见这个问题排查](troubleshooting#twl_broken)
 
-##### Section III - System Transfer
+##### 第三部分 - 系统迁移
 
-1. **Backup every file on both 3DS's SD cards to two separate folders on your computer (keep track of which is which)!**
-1. Reinsert each SD card back into their corresponding 3DS
-1. If **the target 3DS** has a Nintendo Network ID on it, you must format the device using System Settings:
-  + Go to the last page of "Other Settings" and select "Format System Memory", then follow all instructions
-1. Read the following:
-  + Your CFW 3DS = the source 3DS = "Source System"
-  + Your Stock 3DS = the target 3DS = "Target System"
-  + **Move DSiWare titles if prompted!**
-  + Do **NOT** delete the source system's SD card contents if prompted
-  + Make sure neither device's battery dies during the transfer
-  + 2DS/Old 3DS (source) to New 3DS (target) only - if asked which method you wish to use to transfer the SD card data:
-    + **Do NOT** choose the "Low-Capacity microSD Card Transfer" or minimal option (option 2), it will only transfer tickets and likely will not transfer the DSiWare save.
-    + Fast Method: If you have the ability to move the data from the SD card (source) to the microSD card (target), when prompted use the "PC-Based Transfer" option (option 3).
-    + Slowest Method: If you don't have the ability to move the data on a PC use the **full** "Wireless Transfer" option (option 1).
-1. Go to [this link](http://en-americas-support.nintendo.com/app/answers/detail/a_id/227/) and follow Nintendo's official instructions for System Transferring from one system to another while keeping in mind what you just read
+1. **将两台3DS的SD卡上的所有文件分别备份到电脑上两个分开的文件夹中（标记好哪个是哪个！）**
+1. 将两张SD卡插回各自对应的3DS
+1. 如果**目标3DS**上已经登录了任天堂网络ID（NNID），你必须在系统设置里面格式化设备：
+  + 选择"Other Settings"（其它设置）里面的最后一页，选择"Format System Memory"（格式化系统内存），然后按提示操作
+1. 请阅读以下注意事项：
+  + 你的自制系统的3DS = 来源3DS = "Source System"（来源系统）
+  + 你的原生系统3DS = 目标3DS = "Target System"（目标系统）
+  + **如果提示，请迁移DSiWare titles！**
+  + 如果提示，**不要**删除来源系统上的SD内容
+  + 确保在进行系统转移的时候，两台3DS的电池都有电
+  + 仅限2DS/老3DS（来源）转移到新3DS（目标）- 如果被问到使用何种方式转移SD卡上的数据：
+    + **不要**选择"Low-Capacity microSD Card Transfer"（低容量microSD卡迁移）或minimal option（最小迁移，选项2），因为这将只转移tickets，可能不会转移DSiWare的存档。
+    + 快速的方法：如果你能自己将来源SD卡的数据移动到目标SD卡，当提示时选择"PC-Based Transfer"（电脑端迁移，选项3）。
+    + 最慢的方法：如果你不能自己在电脑上迁移SD卡数据，选择**full** "Wireless Transfer"（完整无线迁移，选项1）。
+1. 进入[这个链接](http://en-americas-support.nintendo.com/app/answers/detail/a_id/227/)，按照任天堂的官方操作指南进行系统迁移。记住你刚才读的注意事项。
 
-##### Section IV - Restoring the source 3DS
+##### 第四部分 - 恢复来源3DS
 
-1. On **the source 3DS**, complete initial setup
-1. Do one of the following
-    + Do the rest of the sections and then the full guide on **the target 3DS**, then wait one week, then System Transfer from **the target 3DS** back to **the source 3DS** *(remember you cannot transfer back from a New 3DS to an Old 3DS)*
-    + Call Nintendo and tell them you no longer have access to the device that your NNID is linked to (which is **the target 3DS** in this case), and would like it linked to a different device (which is **the source 3DS** in this case)
-    + You can also just [remove the NNID](https://3ds.guide/troubleshooting#rm_nnid) from **the source 3DS** if you'd prefer it remain on **the target 3DS**
-1. Reboot **the source 3DS** while holding (Start) to launch the Luma3DS chainloader menu
-1. Launch GodMode9 by pressing (A)
-1. Navigate to `[0:] SDCARD`
-1. Press (A) on your NAND `.bin` to select it, then select "NAND image options...", then select "Restore SysNAND (safe)"
-1. Press (A) to unlock SysNAND overwriting, then input the key combo given
-  + This will not overwrite your boot9strap installation
-1. Input the key combo given to unlock SysNAND (lvl1) writing
-  + This process will take some time
-1. Once it has completed, press (A) to continue
-1. Press (Start) to reboot **the source 3DS**
+1. 在**来源3DS**上，完成初始化的操作
+2. 在下面的操作中选择一个执行：
+    + 在**目标3DS**上完成本教程剩下的部分，然后等一个礼拜，再从**目标3DS**迁移回**来源3DS** *（请记住，你不能从一个新3DS迁移回一个老3DS）*
+    + 给任天堂打电话，告诉它们你访问不了你当前NNID绑定的设备（也就是**目标3DS**），想把它绑到另一台设备上（也就是**来源3DS**）（译者注：真是对大陆玩家的实力嘲讽）
+    + 你也可以参照[移除NNID](https://3ds.guide/troubleshooting#rm_nnid) 页面，移除**来源3DS**上的NNID，如果你希望它留在**目标3DS**上
+1. 按住(Start)键重启**来源3DS**，运行Luma3DS启动器菜单
+1. 按(A)键运行GodMode9
+1. 进入`[0:] SDCARD`
+1. 移动光标到你的NAND `.bin`文件上，按(A)键选中，然后选择"NAND image options..."，然后选择"Restore SysNAND (safe)"
+1. 按(A)键解锁SysNAND写保护，然后输入提示的按键组合
+  + 这不会覆盖已经安装的boot9strap
+1. 输入提示的按键组合，解锁SysNAND (lvl1)写保护
+  + 这可能需要一些时间
+1. 完成后，按(A)键继续
+1. 按(Start)键重启**来源3DS**
 
-##### Section V - Backing up the target 3DS's FIRM
+##### 第五部分 - 备份目标3DS的FIRM
 
-1. Copy `boot.nds` to the root of **the target 3DS**'s SD card
-1. Create a folder named `boot9strap` on the root of **the target 3DS**'s SD card
-1. Copy the 11.4.0 `.firm` corresponding to **the target 3DS** to the `boot9strap` folder on the root of **the target 3DS**'s SD card
-1. Copy `boot9strap.firm` from the boot9strap `.zip` to the `/boot9strap/` folder on your SD card
-1. Launch your DSiWare game on **the target 3DS**
-1. Launch b9sTool using your DSiWare game
-  + **Fieldrunners**: Touch the 'Scores' button at the main menu
-  + **Legends of Exidia**: After pressing (A) or (Start) at the two title screens, select the first save slot and press continue
-  + **Guitar Rock Tour**: Scroll down and go to High-Scores -> Drums -> Easy
-  + **The Legend of Zelda: Four Swords**: Just start the game
-  + If your game does not have the hacked save file installed, [follow this troubleshooting guide](troubleshooting#ts_dsiware)
-1. Select "Dump F0F1" to backup **the target 3DS**'s FIRM
-1. Make note of the FIRM backup's location
-1. Exit b9sTool
-  + You may have to force power off by holding the power button
-1. Put your SD card in your computer, then copy `F0F1_N3DS.bin` or `F0F1_O3DS.bin` (depending on your device) to a safe location; make backups in multiple locations; this backup will save you from a brick if anything goes wrong
+1. 复制`boot.nds`文件到**目标3DS**的SD根目录
+1. 在**目标3DS**的SD卡根目录新建一个名为`boot9strap`的文件夹
+1. 复制对应**目标3DS**的11.4.0 `.firm`文件到**目标3DS**的SD卡的`boot9strap`目录下
+1. 解压缩boot9strap `.zip`压缩包，复制`boot9strap.firm`文件到**目标3DS**的SD卡的`/boot9strap/`目录下
+1. 在**目标3DS**上运行你的DSiWare游戏
+1. 通过你的DSiWare游戏运行b9sTool
+  + **Fieldrunners**：点击主菜单的'Scores'（得分）按钮
+  + **Legends of Exidia**：在两个标题界面按(A)键或(Start)键之后，选择第一个存档并点继续
+  + **Guitar Rock Tour**: 将页面下拉，依次进入High-Scores（高分榜） -> Drums（鼓） -> Easy（简单）
+  + **The Legend of Zelda: Four Swords (Anniversary Edition)**：开始游戏
+  + 如果你的游戏没有安装破解后的存档文件，[参见这个问题排查](troubleshooting#ts_dsiware)
+1. 选择"Dump F0F1"，备份**目标3DS**的FIRM
+1. 记下FIRM的备份位置
+1. 退出b9sTool
+  + 你可能需要按电源键强制关机
+1. 将SD卡插回你的电脑，复制`F0F1_N3DS.bin`或`F0F1_O3DS.bin`（取决于你的设备）到一个安全的地方
+  + 在多个位置进行备份
+  + 备份文件可以在将来出现错误时将你的机器救砖
 
-##### Section VI - Flashing the target 3DS's FIRM
+##### 第六部分 - 刷入目标3DS的FIRM
 
-**Do NOT use b9sTool on a device that already has arm9loaderhax installed or you will BRICK!**
+**不要在已经安装了arm9loaderhax的设备上使用b9sTool，否则你的设备将变砖！**
 {: .notice--danger}
 
-1. Launch your DSiWare game on **the target 3DS**
-1. Launch b9sTool using your DSiWare game
-  + **Fieldrunners**: Touch the 'Scores' button at the main menu
-  + **Legends of Exidia**: After pressing (A) or (Start) at the two title screens, select the first save slot and press continue
-  + **Guitar Rock Tour**: Scroll down and go to High-Scores -> Drums -> Easy
-  + **The Legend of Zelda: Four Swords**: Just start the game
-1. Select "Install boot9strap" and confirm
-1. Exit b9sTool, then power off your device
-  + You may have to force power off by holding the power button
-1. Your device will boot into boot9strap, then shutdown automatically because it does not yet have a payload to launch
-  + Your device will not boot until you continue with the next page's instructions; do not panic, this is normal
+1. 在**目标3DS**上运行你的DSiWare游戏
+1. 通过你的DSiWare游戏运行b9sTool
+  + **Fieldrunners**：点击主菜单的'Scores'（得分）按钮
+  + **Legends of Exidia**：在两个标题界面按(A)键或(Start)键之后，选择第一个存档并点继续
+  + **Guitar Rock Tour**: 将页面下拉，依次进入High-Scores（高分榜） -> Drums（鼓） -> Easy（简单）
+  + **The Legend of Zelda: Four Swords (Anniversary Edition)**：开始游戏
+1. 选择"Install boot9strap"并确认
+1. 退出b9sTool，然后关机
+  + 你可能需要按电源键强制关机
+1. 你的机器将启动到boot9strap，然后它会自动关机，因为还没有提供payload
+  + 你的机器在继续进行下一页的教程之前不会启动；不要紧张，这是正常现象
 
 ___
 
-Continue to [Finalizing Setup](finalizing-setup)
+继续进行[收尾工作](finalizing-setup)
 {: .notice--primary}

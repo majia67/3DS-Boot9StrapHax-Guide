@@ -4,46 +4,47 @@ lang: en
 permalink: /installing-boot9strap-(dsiware-game-injection-list).html
 ---
 
-This is an automatically generated list of all [Installing boot9strap (DSiWare)](installing-boot9strap-(dsiware)) compatible games.
+下表是用自动化脚本生成的所有适合[安装boot9strap (DSiWare)](installing-boot9strap-(dsiware))教程的游戏列表。
 {: .notice--primary}
 
-The list is sectioned off by region in the order USA, EUR, JPN.
+本列表是按照美版（USA），欧版（EUR），日版（JPN）的顺序分区的。
 {: .notice--info}
 
-Each section is sorted by ascending price.
+每个分区里的游戏按照价格升序排序。
 {: .notice--info}
 
-QR Codes can be scanned by pressing (L + R) on the home menu, then tapping the QR icon on the bottom screen.
+二维码可以通过在桌面菜单中按(L + R)键，然后点击下屏的二维码图标扫描。
 {: .notice--info}
 
-The size requirements are because the injected DSiWare and its hacked save must not modify their respective file sizes in order to system transfer properly, meaning that the donor DSiWare must be large enough to fit the hacked DSiWare.
+因为注入的DSiWare及其破解存档不能修改其对应的文件大小，以便顺利进行系统迁移，所以才会有如下的大小要求。这意味着原DSiWare必须要足够大，以便能容下破解的DSiWare。
 {: .notice--info}
 
 {% capture notice-list %}
 
-    Compatible DSiWare games must meet specific size requirements, which are as follows:
+    适合的DSiWare游戏必须满足如下的大小要求：
 
-    + USA DSiWare
-      + Uses sudokuhax
-      + `.app` size of >= 3,457,024 bytes
+    + 美版DSiWare
+      + 使用sudokuhax
+      + `.app`大小 >= 3,457,024 bytes
       + `public.sav` size of >= 67,584 bytes
 
-    + EUR DSiWare
-      + Uses grtpwn
-      + `.app` size of >= 10,792,960 bytes
-      + `public.sav` size of >= 531,058 bytes
+    + 欧版DSiWare
+      + 使用grtpwn
+      + `.app`大小 >= 10,792,960 bytes
+      + `public.sav` 大小 >= 531,058 bytes
 
-    + JPN DSiWare
-      + Uses 4swordshax
-      + `.app` size of >= 14,131,200 bytes
-      + `public.sav` size of == 16,384 bytes
-      + If `public.sav` is not exactly 16KB, 4swords will delete it
+    + 日版DSiWare
+      + 使用4swordshax
+      + `.app`大小 >= 14,131,200 bytes
+      + `public.sav`大小 == 16,384 bytes
+      + 如果`public.sav`大小不是刚好为16KB，4swords会删除它
 
 {% endcapture %}
 
 <div class="notice--primary">{{ notice-list | markdownify }}</div>
 
-| | Price | 8 Character ID | Region(s) | QR Code |
+美版：
+| | 价格 | 8位ID | 区域 | 二维码 |
 |:-:|:-:|:-:|:-:|:-:|
 | Faceez! Monsters | $1.99 | 4B464D45 | USA | ![qrcode](images/qrcodes/000480044B464D45.png)
 | Faceez | $1.99 | 4B465A45 | USA | ![qrcode](images/qrcodes/000480044B465A45.png)
@@ -106,7 +107,8 @@ The size requirements are because the injected DSiWare and its hacked save must 
 | Rytmik Retrobits | $7.99 | 4B595245 | USA | ![qrcode](images/qrcodes/000480044B595245.png)
 | Rhythm Core Alpha 2™ | $9.99 | 4B593445 | USA | ![qrcode](images/qrcodes/000480044B593445.png)
 
-| | Price | 8 Character ID | Region(s) | QR Code |
+欧版：
+| | 价格 | 8位ID | 区域 | 二维码 |
 |:-:|:-:|:-:|:-:|:-:|
 | Rytmik World Music | 1,99€ | 4B594856 | EUR | ![qrcode](images/qrcodes/000480044B594856.png)
 | A Little Bit of... Dr Kawashima’s Brain Training™ Arts Edition | 7,99€ | 4B4E4456 | EUR | ![qrcode](images/qrcodes/000480044B4E4456.png)
@@ -118,7 +120,8 @@ The size requirements are because the injected DSiWare and its hacked save must 
 | Hip Hop King Rytmik Edition | 7,99€ | 4B525656 | EUR | ![qrcode](images/qrcodes/000480044B525656.png)
 | Rytmik Retrobits | 7,99€ | 4B595256 | EUR | ![qrcode](images/qrcodes/000480044B595256.png)
 
-| | Price | 8 Character ID | Region(s) | QR Code |
+日版：
+| | 价格 | 8位ID | 区域 | 二维码 |
 |:-:|:-:|:-:|:-:|:-:|
 | タッチで漫才! メガミの笑壺DL | 500円 | 4B394C4A | JPN | ![qrcode](images/qrcodes/000480044B394C4A.png)
 | 練熟漢字中学生 | 800円 | 4B4A384A | JPN | ![qrcode](images/qrcodes/000480044B4A384A.png)
