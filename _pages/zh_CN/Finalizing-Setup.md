@@ -56,7 +56,7 @@ boot9strap完成加载NAND之后，会运行'boot.firm'文件。该文件可以�
 1. 解压Luma3DS`.7z`压缩包，复制`boot.firm`文件到你SD卡的根目录，覆盖已有的文件
 1. 在SD卡根目录下，创建名为`luma`的文件夹
 1. 在SD卡的`luma`文件夹里，创建名为`payloads`的文件夹
-1. 解压GodMode9`.zip`压缩包，复制`GodMode9.bin`文件到SD卡的`/luma/payloads/`目录下
+1. 解压GodMode9`.zip`压缩包，复制`GodMode9.firm`文件到SD卡的`/luma/payloads/`目录下
 1. **仅限老3DS和2DS：** 复制对应你的区域的老3DS 11.2.0-35 otherapp负载到SD卡的`/hblauncherloader/`目录下
 1. **仅限老3DS和2DS：** 将刚才复制到SD卡的otherapp负载文件重命名为对应你的区域的名字：
   + **欧版：** `OLD-11-4-0-37-EUR.bin`
