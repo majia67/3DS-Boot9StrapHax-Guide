@@ -1,5 +1,5 @@
 ---
-title: "Installing boot9strap (DSiWare Game Injection List)" #
+title: "安装boot9strap（DSiWare可注入游戏列表）"
 lang: en
 permalink: /installing-boot9strap-(dsiware-game-injection-list).html
 ---
@@ -43,7 +43,6 @@ permalink: /installing-boot9strap-(dsiware-game-injection-list).html
 
 <div class="notice--primary">{{ notice-list | markdownify }}</div>
 
-美版：
 | | 价格 | 8位ID | 区域 | 二维码 |
 |:-:|:-:|:-:|:-:|:-:|
 | Faceez! Monsters | $1.99 | 4B464D45 | USA | ![qrcode](images/qrcodes/000480044B464D45.png)
@@ -107,7 +106,6 @@ permalink: /installing-boot9strap-(dsiware-game-injection-list).html
 | Rytmik Retrobits | $7.99 | 4B595245 | USA | ![qrcode](images/qrcodes/000480044B595245.png)
 | Rhythm Core Alpha 2™ | $9.99 | 4B593445 | USA | ![qrcode](images/qrcodes/000480044B593445.png)
 
-欧版：
 | | 价格 | 8位ID | 区域 | 二维码 |
 |:-:|:-:|:-:|:-:|:-:|
 | Rytmik World Music | 1,99€ | 4B594856 | EUR | ![qrcode](images/qrcodes/000480044B594856.png)
@@ -120,7 +118,6 @@ permalink: /installing-boot9strap-(dsiware-game-injection-list).html
 | Hip Hop King Rytmik Edition | 7,99€ | 4B525656 | EUR | ![qrcode](images/qrcodes/000480044B525656.png)
 | Rytmik Retrobits | 7,99€ | 4B595256 | EUR | ![qrcode](images/qrcodes/000480044B595256.png)
 
-日版：
 | | 价格 | 8位ID | 区域 | 二维码 |
 |:-:|:-:|:-:|:-:|:-:|
 | タッチで漫才! メガミの笑壺DL | 500円 | 4B394C4A | JPN | ![qrcode](images/qrcodes/000480044B394C4A.png)
