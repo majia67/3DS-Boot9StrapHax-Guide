@@ -13,7 +13,7 @@ excerpt: '利用boot9strap实现3DS运行自制固件的完整教程。<br />'
 lang: zh_CN
 ---
 
-点击进入[原arm9loaderhax教程](https://a9lh.3dshax.cn)。
+如果你已经安装了arm9loaderhax，想升级到boot9strap，点击进入[升级到B9S教程](https://3dshax.cn/updating-to-boot9strap)。如果想访问原arm9loaderhax教程，点击进入[原arm9loaderhax教程](https://a9lh.3dshax.cn)。
 {: .notice--info}
 
 {% capture notice-home %}
