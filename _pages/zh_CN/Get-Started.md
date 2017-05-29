@@ -1,8 +1,5 @@
 ---
 title: "开始教程"
-permalink: /get-started.html
-lang: zh_CN
-ref: get-started
 ---
 
 本节教程将指导你在*未破解*的3DS或2DS上安装boot9strap。如果你已经安装了arm9loaderhax，并想升级到boot9strap，参见[升级到boot9strap](updating-to-boot9strap)。
@@ -28,6 +25,25 @@ Windows系统用户在开始之前需要开启[显示文件扩展名](file-exten
 
 开始之前，你可能想检测一下SD卡错误。可以使用[H2testw (Windows)](h2testw-(windows))，[F3 (Linux)](f3-(linux))，[F3X (Mac)](f3x-(mac))。
 {: .notice--warning}
+
+注意，新的[安装boot9strap（硬改）](installing-boot9strap-(hardmod))方法适用于*任何设备、区域和系统版本*！这包括之前无法破解的神游和台版机！
+{: .notice--success}
+
+{% capture notice-1 %}
+我们收到一系列有关使用自制系统被任天堂封号的报告。为了保护你自己，请在开始本破解教程之前执行如下步骤：
+
+1. 依次进入系统设置 -> "Internet Settings" （互联网设置） -> "SpotPass" -> "Sending of System Information"（发送系统信息）
+1. 禁用"Sending of System Information"（发送系统信息）选项
+1. 退出系统设置
+1. 进入你的朋友列表（Home菜单上面一排图标中的笑脸图标）
+  + 如果出现错误并退出了菜单，那么朋友列表设置已经被禁用了
+1. 进入朋友列表设置 -> "Friend Notification Settings"（朋友通知设置） ->  "Show friends what you're playing"（告诉朋友们你在玩什么）
+1. 禁用"Show friends what you're playing"（告诉朋友们你在玩什么）选项
+1. 退出朋友列表
+
+{% endcapture %}
+
+<div class="notice--danger">{{ notice-1 | markdownify }}</div>
 
 | 新3DS | 老3DS 或 2DS |
 |:-:|:-:|

@@ -1,8 +1,5 @@
 ---
 title: "H2testw (Windows)"
-permalink: /h2testw-(windows).html
-lang: zh_CN
-ref: h2testw-(windows)
 ---
 
 本节是一个附加章节，将指导你使用F3X检查SD卡错误。

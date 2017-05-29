@@ -1,7 +1,5 @@
 ---
 title: "自制程序启动器（替代方法）"
-permalink: /homebrew-launcher-(alternatives).html
-lang: zh_CN
 ---
 
 Homebrew Launcher（自制程序启动器，HBL）有很多进入或运行方法。

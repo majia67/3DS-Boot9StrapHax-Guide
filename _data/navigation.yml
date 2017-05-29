@@ -21,6 +21,9 @@ main:
   - title: "网站导航"
     url: /site-navigation
 
+  - title: "GodMode9使用指南"
+    url: /godmode9-usage
+
   - title: "NAND大小"
     url: /nand-size
 

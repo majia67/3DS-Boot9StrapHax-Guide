@@ -1,8 +1,5 @@
 ---
 title: "开始教程（老3DS）"
-permalink: /get-started-(old-3ds).html
-lang: zh_CN
-ref: get-started-(old-3ds)
 ---
 
 请在下表中按照你的系统版本选择对应的页面。
@@ -35,13 +32,15 @@ ref: get-started-(old-3ds)
 系统版本号可以在系统设置中上屏幕的右下方找到。
 {: .notice--success}
 
-注意，新的[安装boot9strap（硬改）](installing-boot9strap-(hardmod))方法适用于*任何设备、区域和系统版本*！这包括之前无法破解的神游和台版机！（译者注：下表仅列出首选方法。首选方法行不通再尝试硬改）
-{: .notice--success}
-
 ![]({{ base_path }}/images/screenshots/system-version.png)
 {: .notice--info}
 
 <table>
+  <colgroup>
+    <col span="1" style="width: 10%;">
+    <col span="1" style="width: 10%;">
+    <col span="1" style="width: 40%;">
+  </colgroup>
   <thead>
     <tr>
       <th style="text-align: center">从</th>
@@ -100,6 +99,10 @@ ref: get-started-(old-3ds)
       <td style="text-align: center">11.4.0</td>
       <td style="text-align: center">11.4.0</td>
       <td style="text-align: center" colspan="2"><a href="installing-boot9strap-(dsiware)">安装boot9strap（DSiWare）</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; font-weight: bold;" colspan="2">任何系统版本<br><sub>（需要拆机！）</sub></td>
+      <td style="text-align: center; font-weight: bold;" colspan="2"><a href="installing-boot9strap-(hardmod)">安装boot9strap（硬改）</a></td>
     </tr>
   </tbody>
 </table>

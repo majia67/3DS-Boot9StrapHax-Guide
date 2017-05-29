@@ -1,7 +1,5 @@
 ---
 title: "文件扩展名（Windows）"
-permalink: /file-extensions-(windows).html
-lang: zh_CN
 ---
 
 本节是一个附加章节，指导你禁用Windows默认隐藏文件扩展名的设置。

@@ -1,8 +1,5 @@
 ---
 title: "自制程序启动器（声音破解）"
-permalink: /homebrew-launcher-(soundhax).html
-lang: zh_CN
-ref: homebrew-launcher-(soundhax)
 ---
 
 Homebrew Launcher（自制程序启动器，HBL）有很多进入或启动方法。

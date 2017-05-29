@@ -1,8 +1,5 @@
 ---
 title: "F3X (Mac)"
-permalink: /f3x-(mac).html
-lang: zh_CN
-ref: f3x-(mac)
 ---
 
 本节是一个附加章节，将指导你使用F3X检查SD卡错误。

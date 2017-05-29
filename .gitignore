@@ -11,5 +11,5 @@ codekit-config.json
 example/_site
 node_modules
 npm-debug.log*
-'vendor
+vendor
 torrents

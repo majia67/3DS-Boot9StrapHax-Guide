@@ -1,8 +1,5 @@
 ---
 title: "F3 (Linux)"
-permalink: /f3-(linux).html
-lang: zh_CN
-ref: f3-(linux)
 ---
 
 本节是一个附加章节，将指导你使用F3检查SD卡错误。

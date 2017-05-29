@@ -1,7 +1,5 @@
 ---
 title: "常见问题"
-permalink: /faq.html
-lang: zh_CN
 ---
 
 <a name="faq_latestfw" />**问：** *我的系统是最新版本，可以破解吗？*
