@@ -1,7 +1,5 @@
 ---
 title: "安装boot9strap（DSiWare可注入游戏列表）"
-lang: en
-permalink: /installing-boot9strap-(dsiware-game-injection-list).html
 ---
 
 下表是用自动化脚本生成的所有适合[安装boot9strap (DSiWare)](installing-boot9strap-(dsiware))教程的游戏列表。

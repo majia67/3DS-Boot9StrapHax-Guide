@@ -1,7 +1,5 @@
 ---
 title: "区域变更"
-permalink: /region-changing.html
-lang: zh_CN
 ---
 
 本节是关于变更自制系统SysNAND所在区域的附加章节。通过安装对应区域的9.2.0 CTRTransfer image（CTR迁移镜像），你可以将机器变更到你想要的区域。

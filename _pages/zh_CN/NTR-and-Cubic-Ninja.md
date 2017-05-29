@@ -1,7 +1,5 @@
 ---
 title: "NTR和立体忍者"
-permalink: /ntr-and-cubic-ninja.html
-lang: zh_CN
 ---
 
 你需要一个能进行BT下载的软件，如[Deluge](http://dev.deluge-torrent.org/wiki/Download)、[aria2](https://aria2.github.io/)或迅雷，才能下载本节教程中的[磁力链接](http://baike.baidu.com/item/%E7%A3%81%E5%8A%9B%E9%93%BE%E6%8E%A5)。

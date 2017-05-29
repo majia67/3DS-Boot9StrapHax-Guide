@@ -1,7 +1,5 @@
 ---
 title: "安装Boot9Strap（DSiWare）"
-permalink: /installing-boot9strap-(dsiware).html
-lang: zh_CN
 ---
 
 在11.4.0的系统版本上有两种使用DSiWare安装boot9strap的方法。

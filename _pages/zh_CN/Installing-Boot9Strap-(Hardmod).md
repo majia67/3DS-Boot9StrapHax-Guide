@@ -1,7 +1,5 @@
 ---
 title: "安装Boot9Strap（硬改）"
-lang: zh_CN
-permalink: /installing-boot9strap-(hardmod).html
 ---
 
 [这里](https://gbatemp.net/threads/414498/)有一个进行硬改的绝佳教程。如果你的设备是新3DS，在开始硬改之前请先阅读[这里](https://github.com/Plailect/Guide/issues/681)。
@@ -19,7 +17,7 @@ permalink: /installing-boot9strap-(hardmod).html
 #### 你需要
 
 * 使用[硬改](https://gbatemp.net/threads/414498/)提取的你的3DS固件镜像（NAND image）
-* 最新版的[boot9strap](https://github.com/SciresM/boot9strap/releases/latest)
+* 最新版的[boot9strap](https://github.com/SciresM/boot9strap/releases/latest) *（标准版boot9strap；不是`dev`版）*
 * 最新版的[hardmod-b9s-installer](https://github.com/ihaveamac/hardmod-b9s-installer/releases/latest)
   + Windows用户可以使用已编译的`.exe`文件，而Mac和Linux用户需要安装[Python 3](https://www.python.org/downloads/)并运行`.py`脚本
 * 对应你机器和系统版本的`.firm`文件：
@@ -61,9 +59,10 @@ permalink: /installing-boot9strap-(hardmod).html
 1. 复制下载后的`.firm`文件到hardmod-b9s-installer文件夹中
 1. 重命名你复制到hardmod-b9s-installer文件夹中的`.firm`文件为`current.firm`
 1. 解压缩boot9strap `.zip`压缩包，复制`boot9strap.firm`和`boot9strap.firm.sha`文件到hardmod-b9s-installer文件夹中
+1. 复制你的NAND导出文件（通过硬改获得）到hardmod-b9s-installer文件夹中，并重命名为`NAND.bin`
 1. 运行hardmod-b9s-installer
-  + Windows用户：运行`.exe`文件
-  + Mac和Linux用户：运行`.py`脚本
+  + Windows用户：运行`install-b9s.exe`文件
+  + Mac和Linux用户：运行`install-b9s.py`脚本
 1. 将生成的`NAND-patched.bin`文件硬改刷入你的机器
   + 你的机器在进行下一节教程之前不会启动。不要紧张，这是正常的。
 

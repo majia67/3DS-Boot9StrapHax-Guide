@@ -2,9 +2,6 @@
 title: "网站导航"
 layout: single-no-ads
 sitemap: false
-permalink: /site-navigation.html
-lang: zh_CN
-ref: site-navigation
 ---
 
 {% capture notice-1 %}

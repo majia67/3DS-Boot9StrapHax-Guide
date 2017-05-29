@@ -1,7 +1,5 @@
 ---
 title: "安装Boot9Strap（系统设置）"
-permalink: /installing-boot9strap-(mset).html
-lang: zh_CN
 ---
 
 如果你的3DS之前已经破解，并安装了基于EmuNAND的自制系统，请务必注意本教程仅适用于SysNAND，教程内的步骤应当应用在你的SysNAND上。注意EmuNAND和RedNAND是[同一概念](http://3dbrew.org/wiki/NAND_Redirection)的两种略微不同的实现。
@@ -13,7 +11,7 @@ lang: zh_CN
 #### 你需要
 
 * 最新版的[SafeB9SInstaller](https://github.com/d0k3/SafeB9SInstaller/releases/latest)
-* 最新版的[boot9strap](https://github.com/SciresM/boot9strap/releases/latest)
+* 最新版的[boot9strap](https://github.com/SciresM/boot9strap/releases/latest) *（标准版boot9strap；不是`dev`版）*
 * 自制程序[新手包](http://smealum.github.io/ninjhax2/starter.zip)
 * 可以在你的3DS上正常工作的DS烧录卡
 
@@ -46,6 +44,7 @@ lang: zh_CN
 1. 按照提示输入按键组合，安装boot9strap
 1. 完成后，按(A)键重启机器
 1. 你的机器将启动到boot9strap，然后它会自动关机，因为还没有提供payload
+  + 你的机器在继续进行下一页的教程之前不会启动；不要紧张，这是正常现象
 
 ___
 

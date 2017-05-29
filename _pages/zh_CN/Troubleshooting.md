@@ -1,8 +1,5 @@
 ---
 title: "问题排查"
-permalink: /troubleshooting.html
-lang: zh_CN
-ref: troubleshooting
 ---
 
 如果你启动不了你的机器，请参阅本页面中的相关章节，并按照教程执行。问题解决后，便可回到主教程继续进行。
@@ -179,7 +176,7 @@ ref: troubleshooting
 1. 按(Y)键复制文件
 1. 按(B)键两次，返回主菜单
 1. 进入`[S:] SYSNAND VIRTUAL`
-1. 按(Y)键粘贴文件
+1. 按(Y)键粘贴一份`firm0firm1.bak`和`sector0x96.bak`文件的副本
 1. 按(A)键确认
 1. 按(A)键注入文件
 1. 按(A)键解锁SysNAND覆盖

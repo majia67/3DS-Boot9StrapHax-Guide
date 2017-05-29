@@ -1,51 +1,51 @@
 ---
-title: "Installing boot9strap (2xrsa)"
+title: "安装boot9strap（2xrsa）"
 ---
 
-To use the [magnet](https://en.wikipedia.org/wiki/Magnet_URI_scheme) links on this page, you will need a torrent client like [Deluge](http://dev.deluge-torrent.org/wiki/Download)
+你需要一个能进行BT下载的软件，如[Deluge](http://dev.deluge-torrent.org/wiki/Download)、[aria2](https://aria2.github.io/)或迅雷，才能下载本节教程中的[磁力链接](http://baike.baidu.com/item/%E7%A3%81%E5%8A%9B%E9%93%BE%E6%8E%A5)。
 {: .notice--success}
 
-#### What you need
+#### 你需要
 
-* The latest release of [SafeB9SInstaller](https://github.com/d0k3/SafeB9SInstaller/releases/latest)
-* The latest release of [boot9strap](https://github.com/SciresM/boot9strap/releases/latest) *(standard boot9strap; not the `dev` file)*
-* The Homebrew [Starter Kit](http://smealum.github.io/ninjhax2/starter.zip)
+* 最新版的[SafeB9SInstaller](https://github.com/d0k3/SafeB9SInstaller/releases/latest)
+* 最新版的[boot9strap](https://github.com/SciresM/boot9strap/releases/latest) *（标准boot9strap；不是`dev`版）*
+* 自制程序[新手包](http://smealum.github.io/ninjhax2/starter.zip)
 
-#### Instructions
+#### 操作指南
 
-##### Section I - Prep Work
+##### 第一部分 - 准备工作
 
-1. Power off your device
-1. Insert your SD card into your computer
-1. Copy _the contents of_ the `starter` folder in `starter.zip` to the root of your SD card
-1. Create a folder named `boot9strap` on the root of your SD card
-1. Copy `boot9strap.firm` and `boot9strap.firm.sha` from the boot9strap `.zip` to the `/boot9strap/` folder on your SD card
-1. Copy `arm9.bin` and `arm11.bin` from the SafeB9SInstaller `.zip` to the root of your SD card
-1. Reinsert your SD card into your device
-1. Power on your device
+1. 关机
+1. 将SD卡插入电脑
+1. 解压缩`starter.zip`压缩包，将*解压后的文件*拷贝到你SD卡的根目录，并将SD卡插回你的机器
+1. 在SD卡根目录创建一个名为`boot9strap`的文件夹
+1. 解压缩boot9strap `.zip`压缩包，复制`boot9strap.firm`和`boot9strap.firm.sha`文件到SD卡的`/boot9strap/`目录下
+1. 解压缩SafeB9SInstaller `.zip`压缩包，复制`arm9.bin`和`arm11.bin`文件到SD卡根目录
+1. 将SD卡插回你的机器
+1. 开机
 
-##### Section II - Launching SafeB9SInstaller
+##### 第二部分 - 运行SafeB9SInstaller
 
-1. Launch the browser and go to the following URL on your device
+1. 打开浏览器，进入以下网址：
   + `http://2xrsa.3ds.guide`
-  + If you are on a 2DS or New 3DS and Wireless Communication is off, you can re-enable the wireless by removing the battery and unplugging the charger for several seconds then booting back up
-  + If you get the error "This service is not available in your region", use the System Settings to set your device's country to match the NAND region you installed with 2.1.0 CTRTransfer
-  + If you forgot to disable parental controls before CTRTransfering or otherwise cannot access wireless settings, note that the device will autoconnect to any network named `attwifi` with no password
-  + If you get another error, [follow this troubleshooting guide](troubleshooting#ts_browser)
-1. If the exploit was successful, you will have booted into SafeB9SInstaller
+  + 如果你的设备是2DS或新3DS，且没有打开wifi，可以断开充电器并取下电池等几秒钟，即可重新开启wifi
+  + 如果出现错误：“当前服务在你的区域不可用”，请使用系统设置修改你的机器所在的国家，匹配你安装的2.1.0 ctr转移镜像所对应的NAND区域
+  + 如果在进行CTR转移之前你忘记关闭了家长控制，或者无法访问无线连接设置，请注意你的机器可以自动连接到任何名为`attwifi`的未加密热点
+  + 如果出现错误，[参见这个问题排查](troubleshooting#ts_browser)
+1. 如果漏洞利用成功，机器将运行SafeB9SInstaller
 
-##### Section III - Installing boot9strap
+##### 第三部分 - 安装boot9strap
 
-1. Wait for all safety checks to complete
-1. When prompted, input the key combo given to install boot9strap
-1. Once it has completed, press (A) to reboot your device
-1. Your device will boot into boot9strap, then shutdown automatically because it does not yet have a payload to launch
-  + Your device will not boot until you continue with the next page's instructions; do not panic, this is normal
+1. 等待所有安全检查完成
+1. 按照提示输入按键组合，安装boot9strap
+1. 完成后，按(A)键重启机器
+1. 你的机器将启动到boot9strap，然后它会自动关机，因为还没有提供payload
+  + 你的机器在继续进行下一页的教程之前不会启动；不要紧张，这是正常现象
 
 ___
 
-Note that *New 3DS* users who ended up on 2.1.0 after a CTRTransfer *must* [restore their NAND backup](godmode9-usage#nand_restore) between "Section II - Configuring Luma3DS" and "Section III - Updating the System" of [Finalizing Setup](finalizing-setup).
+注意*新3DS*用户如果CTR转移到了2.1.0版本的系统后，*必须*在[收尾工作](finalizing-setup)一节的“第二部分 - 设置Luma3DS”和“第三部分 - 升级系统”之间[恢复NAND备份](godmode9-usage#nand_restore)。
 {: .notice--danger}
 
-Continue to [Finalizing Setup](finalizing-setup)
+继续进行[收尾工作](finalizing-setup)
 {: .notice--primary}

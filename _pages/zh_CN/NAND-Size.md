@@ -1,8 +1,5 @@
 ---
 title: "NAND大小"
-permalink: /nand-size.html
-lang: zh_CN
-ref: nand-size
 ---
 
 在大多数情况下，一个有效的NAND备份文件大小应该是下面列举的其中一个。
@@ -20,35 +17,35 @@ ref: nand-size
 **你的备份应该与下面列举的某个文件大小相一致。否则你应该删掉它，再重新做一个！**
 {: .notice--danger}
 
-## 2DS:    
+## 2DS:
 
-    + Toshiba（东芝）NAND:     
-      988.807.168 bytes = 943 MiB    
+    + Toshiba（东芝）NAND:
+      988.807.168 bytes = 943 MiB
 
-    + Toshiba NAND:    
-      1.979.711.488 bytes = 1.84 GiB    
+    + Toshiba NAND:
+      1.979.711.488 bytes = 1.84 GiB
 
-    + Samsung（三星）NAND:    
-      1.000.341.504 bytes = 954 MiB    
+    + Samsung（三星）NAND:
+      1.000.341.504 bytes = 954 MiB
 
-    + Samsung NAND:    
-      1.300.234.240 bytes = 1.21 GiB    
+    + Samsung NAND:
+      1.300.234.240 bytes = 1.21 GiB
 
-## 老3DS:    
+## 老3DS:
 
-    + Toshiba NAND:     
-      988.807.168 bytes = 943 MiB    
+    + Toshiba NAND:
+      988.807.168 bytes = 943 MiB
 
-    + Samsung NAND:    
-      1.000.341.504 bytes = 954 MiB    
+    + Samsung NAND:
+      1.000.341.504 bytes = 954 MiB
 
-## 新3DS:    
+## 新3DS:
 
-    + Toshiba NAND:    
-      1.979.711.488 bytes = 1.84 GiB    
+    + Toshiba NAND:
+      1.979.711.488 bytes = 1.84 GiB
 
-    + Samsung NAND:    
-      1.300.234.240 bytes = 1.21 GiB    
+    + Samsung NAND:
+      1.300.234.240 bytes = 1.21 GiB
 
     + Samsung NAND:
       1.954.545.664 bytes = 1.82 GiB
