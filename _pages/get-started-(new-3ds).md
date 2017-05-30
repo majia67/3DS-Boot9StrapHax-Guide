@@ -35,9 +35,9 @@ title: "开始教程（新3DS）"
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: center; font-weight: bold;">2.1.0</td>
-      <td style="text-align: center; font-weight: bold;">2.1.0</td>
-      <td style="text-align: center; font-weight: bold;"><a href="installing-boot9strap-(2xrsa)">安装boot9strap（2xrsa）</a></td>
+      <td style="text-align: center">2.1.0</td>
+      <td style="text-align: center">2.1.0</td>
+      <td style="text-align: center"><a href="installing-boot9strap-(2xrsa)">安装boot9strap（2xrsa）</a></td>
     </tr>
     <tr>
       <td style="text-align: center">8.1.0</td>
