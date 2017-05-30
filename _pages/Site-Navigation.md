@@ -1,6 +1,7 @@
 ---
 title: "网站导航"
 layout: single-no-ads
+permalink: "site-navigation.html"
 sitemap: false
 ---
 
