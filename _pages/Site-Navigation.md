@@ -20,7 +20,7 @@ sitemap: false
 
 {% assign site_pages = site.pages | sort:"title" %}
 {% for node in site_pages %}
-{% if node.sitemap == null %}
+{% if node.path contains "_pages" && node.sitemap == null %}
 + <a href="{{node.url}}">{{node.title}}</a>
 {% endif %}
 {% endfor %}
