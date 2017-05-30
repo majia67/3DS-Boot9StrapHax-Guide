@@ -286,8 +286,3 @@ defaults:
     values:
       permalink: /:basename:output_ext
       lang: zh_CN
-  - scope:
-      path: "_pages/home.md"
-      type: pages
-    values:
-      permalink: /index:output_ext
