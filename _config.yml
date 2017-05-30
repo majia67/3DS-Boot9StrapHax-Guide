@@ -112,7 +112,6 @@ author:
 include:
   - .htaccess
   - _pages
-  - _pages/zh_CN
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -276,10 +275,14 @@ compress_html:
 defaults:
   # _pages
   - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: false
+  - scope:
       path: "_pages/"
       type: pages
     values:
       permalink: /:basename:output_ext
-      layout: single
-      author_profile: false
       lang: zh_CN
