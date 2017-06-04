@@ -2,7 +2,7 @@
 title: "开始教程"
 ---
 
-本节教程将指导你在*未破解*的3DS或2DS上安装boot9strap。如果你已经安装了arm9loaderhax，并想升级到boot9strap，参见[升级到boot9strap](updating-to-boot9strap)。
+本节教程将指导你在*未破解*的3DS或2DS上安装boot9strap。如果你已经安装了arm9loaderhax，并想升级到boot9strap，参见[从A9LH升级到B9S](a9lh-to-b9s)。
 {: .notice--primary}
 
 图片中机器的颜色可能会不同，但是请特别关注按键的布局和每台机器的特点，确保你选择了正确的机型。

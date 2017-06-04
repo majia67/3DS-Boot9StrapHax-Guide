@@ -20,6 +20,7 @@ title: "安装Boot9Strap（硬改）"
 * 最新版的[boot9strap](https://github.com/SciresM/boot9strap/releases/latest) *（标准版boot9strap；不是`dev`版）*
 * 最新版的[hardmod-b9s-installer](https://github.com/ihaveamac/hardmod-b9s-installer/releases/latest)
   + Windows用户可以使用已编译的`.exe`文件，而Mac和Linux用户需要安装[Python 3](https://www.python.org/downloads/)并运行`.py`脚本
+* 最新版的[Luma3DS](https://github.com/AuroraWright/Luma3DS/releases/latest) *（`.7z`压缩包）*
 * 对应你机器和系统版本的`.firm`文件：
 
 | 系统版本 | 内核版本 | 老3DS | 新3DS |
@@ -55,16 +56,28 @@ title: "安装Boot9Strap（硬改）"
 
 #### 操作指南
 
+##### 第一部分 - 准备工作
+
+1. 解压Luma3DS`.7z`压缩包，复制`boot.firm`文件到你SD卡的根目录
 1. 解压缩hardmod-b9s-installer `.zip`压缩包，复制hardmod-b9s-installer文件夹到你的电脑
 1. 复制下载后的`.firm`文件到hardmod-b9s-installer文件夹中
 1. 重命名你复制到hardmod-b9s-installer文件夹中的`.firm`文件为`current.firm`
 1. 解压缩boot9strap `.zip`压缩包，复制`boot9strap.firm`和`boot9strap.firm.sha`文件到hardmod-b9s-installer文件夹中
 1. 复制你的NAND导出文件（通过硬改获得）到hardmod-b9s-installer文件夹中，并重命名为`NAND.bin`
+
+##### 第二部分 - 安装boot9strap
 1. 运行hardmod-b9s-installer
   + Windows用户：运行`install-b9s.exe`文件
   + Mac和Linux用户：运行`install-b9s.py`脚本
 1. 将生成的`NAND-patched.bin`文件硬改刷入你的机器
-  + 你的机器在进行下一节教程之前不会启动。不要紧张，这是正常的。
+
+##### 第三部分 - 设置Luma3DS
+
+1. 你的机器应该启动到了Luma3DS启动器菜单
+  + 如果黑屏，[参见这个问题排查](troubleshooting#ts_sys_b9s)
+1. 通过方向键和A键来启用以下设置：
+  + **"Show NAND or user string in System Settings"**
+1. 按下(Start)键保存设置并重启
 
 ___
 

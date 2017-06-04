@@ -23,33 +23,31 @@ boot9strap完成加载NAND之后，会运行'boot.firm'文件。该文件可以�
 
 #### 你需要
 
-* 最新版的[Luma3DS](https://github.com/AuroraWright/Luma3DS/releases/latest) *（`.7z`压缩包）*
-+* 最新版的[Themely](https://github.com/ErmanSayin/Themely/releases/latest) *（`.cia` 文件）*
+* 最新版的[Themely](https://github.com/ErmanSayin/Themely/releases/latest) *（`.cia` 文件）*
 * 最新版的[hblauncher_loader](https://github.com/yellows8/hblauncher_loader/releases/latest)
 * 最新版的[GodMode9](https://github.com/d0k3/GodMode9/releases/)
 * 最新版的[DSP1](https://github.com/zoogie/DSP1/releases/latest)
-* 最新版的[FBI](https://github.com/Steveice10/FBI/releases/latest)
-* 最新版的[Luma3DS Updater](https://github.com/Hamcha/lumaupdate/releases/latest)
+* 最新版的[FBI](https://github.com/Steveice10/FBI/releases/latest) *（ `.cia` 文件）*
+* 最新版的[Luma3DS Updater](https://github.com/Hamcha/lumaupdate/releases/latest) *（ `.cia` 文件）*
 * **仅限老3DS和2DS：** 对应你的区域的老3DS 11.2.0-35 [otherapp负载](https://smealum.github.io/3ds/#otherapp)
 
 #### 操作指南
 
 ##### 第一部分 - 准备工作
 
+1. 关机
 1. 将SD卡插入电脑
 1. 在SD卡上创建一个名为`cias`的文件夹（如果不存在的话）
 1. 在SD卡上创建一个名为`hblauncherloader`的文件夹（如果不存在的话）
 1. 解压hblauncher\_loader`.zip`压缩包，并复制`hblauncher_loader.cia`文件到SD卡的`/cias/`目录下
-1. 解压Luma3DS Updater压缩包，并复制 `lumaupdater.cia`文件到SD卡的`/cias/`目录下
-1. 解压FBI压缩包，并复制`FBI.cia`文件到SD卡的`/cias/`目录下
+1. 复制 `lumaupdater.cia`文件到SD卡的`/cias/`目录下
+1. 复制`FBI.cia`文件到SD卡的`/cias/`目录下
 1. 复制`DSP1.cia`文件到SD卡的`/cias/`目录下
 1. 复制`Themely.cia`文件到SD卡的`/cias/`目录下
 
     ![]({{ base_path }}/images/screenshots/cias-file-layout.png)
     {: .notice--info}
 
-1. 解压Luma3DS`.7z`压缩包，复制`boot.firm`文件到你SD卡的根目录，覆盖已有的文件
-1. 在SD卡根目录下，创建名为`luma`的文件夹
 1. 在SD卡的`luma`文件夹里，创建名为`payloads`的文件夹
 1. 解压GodMode9`.zip`压缩包，复制`GodMode9.firm`文件到SD卡的`/luma/payloads/`目录下
 1. **仅限老3DS和2DS：** 复制对应你的区域的老3DS 11.2.0-35 otherapp负载到SD卡的`/hblauncherloader/`目录下
@@ -68,17 +66,9 @@ boot9strap完成加载NAND之后，会运行'boot.firm'文件。该文件可以�
   + 复制`firmware.bin`和`cetk`这两个文件到SD卡的`/luma/`目录下
   + 在你的机器升级完成后，删除这两个文件
 1. 将SD卡插回机器上
+1. 开机
 
-##### 第二部分 - 设置 Luma3DS
-
-1. 按住(Select)键并开机，进入Luma3DS的菜单
-  + 如果黑屏，[参见这个问题排查](troubleshooting#ts_sys_b9s)
-1. 通过方向键和A键来启用以下设置：
-  + **"Show NAND or user string in System Settings"**
-1. 按下(Start)键保存设置并重启
-  + 如果出现黑屏，请照常进行接下来的教程
-
-##### 第三部分 - 升级系统
+##### 第二部分 - 升级系统
 
 如果你按照本教程之前的版本CTR转移过你的*新3DS*到2.1.0版本的系统，请在开始本部分操作之前先[恢复你的NAND备份](godmode9-usage#nand_restore)。
 {: .notice--danger}
@@ -91,7 +81,7 @@ boot9strap完成加载NAND之后，会运行'boot.firm'文件。该文件可以�
   + 如果出现错误，将你的DNS设置改为"auto"（自动）模式
   + 如果仍然出现错误，并且你的固件版本在9.2.0以下，先进行[9.2.0 CTR转移](9.2.0-ctrtransfer)，然后尝试再次升级
 
-##### 第四部分 - 注入FBI
+##### 第三部分 - 注入FBI
 
 1. 关机，按住(Start)键开机，进入GodMode9
 1. 进入`[0:] SDCARD` -> `cias`
@@ -102,7 +92,7 @@ boot9strap完成加载NAND之后，会运行'boot.firm'文件。该文件可以�
 1. 按(Start)键重启
 1. 如果你依然进入的是系统内置的健康与安全应用，并且之前曾经用Gateway进行过降级，参见这个[问题排查](troubleshooting#gw_fbi)
 
-##### 第五部分 - 安装CIA文件
+##### 第四部分 - 安装CIA文件
 
 1. 在桌面菜单中运行健康与安全（Health & Safety）应用（现在应该是FBI）
 1. 进入`SD` -> `cias`
@@ -110,12 +100,12 @@ boot9strap完成加载NAND之后，会运行'boot.firm'文件。该文件可以�
 1. 选择"Install and delete all CIAs"（安装并删除所有CIA文件）选项，按(A)键确认
 1. 按(Home)键退出FBI
 
-##### 第六部分 - 导出DSP
+##### 第五部分 - 导出DSP
 
 1. 运行DSP1
 2. 导出完成后，按(B)键删除DSP1应用，并返回Home菜单
 
-##### 第七部分 - 恢复“健康与安全”应用
+##### 第六部分 - 恢复“健康与安全”应用
 
 1. 关机，按住(Start)键开机，进入GodMode9
 1. 按(Home)键打开行动菜单
@@ -123,24 +113,23 @@ boot9strap完成加载NAND之后，会运行'boot.firm'文件。该文件可以�
 1. 选择"Restore H&S"（恢复健康与安全应用）
 1. 按(A)键解锁SysNAND(lvl1)写保护，然后按照提示输入按键组合
 
-##### 第八部分 - CTRNAND Luma3DS
+##### 第七部分 - CTRNAND Luma3DS
 
-1. 按(B)键返回到主菜单
 1. 进入`[0:] SDCARD`
 1. 移动光标到`boot.firm`文件上，按(Y)键复制
 1. 按(B)键返回到主菜单
 1. 进入`[1:] SYSNAND CTRNAND`
 1. 按(Y)键粘贴`boot.firm`文件
 1. 选择"Copy path(s)"（复制路径）
-1. 按(A)键解锁SysNAND(lvl1)写保护，然后按照提示输入按键组合
 1. 按(B)键返回到主菜单
 1. 进入`[0:] SDCARD`
 1. 移动光标到`luma`文件夹上，按(Y)键复制
 1. 按(B)键返回到主菜单
 1. 依次进入`[1:] SYSNAND CTRNAND` -> `rw`
 1. 按(Y)键粘贴从SD卡复制的`luma`文件夹
+1. 选择"Copy path(s)"（复制路径）
 
-##### 第九部分 - 备份NAND
+##### 第八部分 - 备份NAND
 
 1. 按(B)键两次返回到主菜单
 1. 按(Home)键，打开行动菜单
@@ -149,10 +138,10 @@ boot9strap完成加载NAND之后，会运行'boot.firm'文件。该文件可以�
 1. 按(A)键继续
 1. 按住(R)键的同时按(B)键，弹出SD卡
 1. 将SD卡插入电脑
-1. 复制`/gm9out`目录下的`nand.bin`文件到电脑上的一个安全的位置
+1. 复制`/gm9out`目录下的`nand.bin`和`nand.bin.sha`文件到电脑上的一个安全的位置
   + 在备份文件复制到多个位置（比如网盘）
   + 如果以后系统出现问题，该备份文件可以防止你的机器变砖
-1. 复制结束后，删除`/gm9out`目录下的`nand.bin`文件
+1. 复制结束后，删除`/gm9out`目录下的`nand.bin`和`nand.bin.sha`文件
 1. 将SD卡插回机器
 1. 按下(Start)键保存设置并重启
 

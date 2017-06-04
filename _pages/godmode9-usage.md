@@ -28,11 +28,11 @@ GodMode9威力非常强大。它给你提供了对3DS系统数据进行几乎任
 1. 按(A)键继续
 1. 按住(R)键的同时按(B)键，弹出SD卡
 1. 将SD卡插入电脑
-1. 复制`/gm9out`目录下的`nand.bin`文件到电脑上的一个安全的位置
+1. 复制`/gm9out`目录下的`nand.bin`和`nand.bin.sha`文件到电脑上的一个安全的位置
   + 如果你之前使用了SafeCTRTransfer，并且创建了名为`<serialnumber>_nand.bin`（serialnumber是你的机器序列号）的系统备份，将其替换为现在的文件（将`nand.bin`重命名为`<serialnumber>_nand.bin`）
   + 在备份文件复制到多个位置（比如网盘）
   + 如果以后系统出现问题，该备份文件可以防止你的机器变砖
-1. 复制结束后，删除`/gm9out`目录下的`nand.bin`文件
+1. 复制结束后，删除`/gm9out`目录下的`nand.bin`和`nand.bin.sha`文件
 1. 将SD卡插回机器
 
 ## <a name="nand_restore" /> 恢复NAND备份

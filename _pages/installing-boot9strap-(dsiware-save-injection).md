@@ -28,6 +28,7 @@ title: "安装boot9strap（DSiWare存档注入）"
 * 最新版的[GodMode9](https://github.com/d0k3/GodMode9/releases/latest)
 * 最新版的[b9sTool](https://github.com/Plailect/b9sTool/releases/latest)
 * 最新版的[boot9strap](https://github.com/SciresM/boot9strap/releases/latest) *（标准版boot9strap；不是`dev`版）*
+* 最新版的[Luma3DS](https://github.com/AuroraWright/Luma3DS/releases/latest) *（`.7z`压缩包）*
 * 自制程序[新手包](http://smealum.github.io/ninjhax2/starter.zip)
 * 对应**目标3DS**的11.4.0 `.firm`文件
   + 老3DS：[`2.54-0_11.4_OLD.firm`](magnet:?xt=urn:btih:0dd89d42ad711f770da899af05ee162ede0d0070&dn=2.54-0_11.4_OLD.firm&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce)
@@ -137,6 +138,7 @@ title: "安装boot9strap（DSiWare存档注入）"
 
 ##### 第五部分 - 备份目标3DS的FIRM
 
+1. 解压Luma3DS`.7z`压缩包，复制`boot.firm`文件到你SD卡的根目录
 1. 复制`boot.nds`文件到**目标3DS**的SD根目录
 1. 在**目标3DS**的SD卡根目录新建一个名为`boot9strap`的文件夹
 1. 复制对应**目标3DS**的11.4.0 `.firm`文件到**目标3DS**的SD卡的`boot9strap`目录下
@@ -155,6 +157,7 @@ title: "安装boot9strap（DSiWare存档注入）"
 1. 将SD卡插回你的电脑，复制`F0F1_N3DS.bin`或`F0F1_O3DS.bin`（取决于你的设备）到一个安全的地方
   + 在多个位置进行备份
   + 备份文件可以在将来出现错误时将你的机器救砖
+1. 将SD卡插回**目标3DS**
 
 ##### 第六部分 - 刷入目标3DS的FIRM
 
@@ -170,8 +173,15 @@ title: "安装boot9strap（DSiWare存档注入）"
 1. 选择"Install boot9strap"并确认
 1. 退出b9sTool，然后关机
   + 你可能需要按电源键强制关机
-1. 你的机器将启动到boot9strap，然后它会自动关机，因为还没有提供payload
-  + 你的机器在继续进行下一页的教程之前不会启动；不要紧张，这是正常现象
+1. 开机（**目标3DS**）
+
+##### 第七部分 - 设置Luma3DS
+
+1. 你的机器应该启动到了Luma3DS启动器菜单
+  + 如果黑屏，[参见这个问题排查](troubleshooting#ts_sys_b9s)
+1. 通过方向键和A键来启用以下设置：
+  + **"Show NAND or user string in System Settings"**
+1. 按下(Start)键保存设置并重启
 
 ___
 

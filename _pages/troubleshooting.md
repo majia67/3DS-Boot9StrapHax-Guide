@@ -155,7 +155,7 @@ title: "问题排查"
 1. 尝试按照[9.2.0 ctr迁移](9.2.0-ctrtransfer)进行操作
 1. 请在[GitHub Issues](https://github.com/majia67/3DS-ARM9LoaderHax-Guide/issues)中提问，或者参考[FAQ](faq#faq_support)页面获取帮助。
 
-## <a name="ts_transfer" />进行SafeB9STransfer时出错
+<!--## <a name="ts_transfer" />进行SafeB9STransfer时出错
 
 如果在进行SafeCTRTransfer时出现错误，你会被提示运行一个外部的payload来修复你的机器
 
@@ -183,7 +183,7 @@ title: "问题排查"
 1. 按照提示输入按键组合，解锁SysNAND (lvl3)写保护
 1. 完成后，按(A)键继续
 1. 按(Start)键重启
-1. 请将你遇到的问题反馈到[SafeB9SInstaller Issues Page](https://github.com/d0k3/SafeB9SInstaller/issues)
+1. 请将你遇到的问题反馈到[SafeB9SInstaller Issues Page](https://github.com/d0k3/SafeB9SInstaller/issues)-->
 
 ## <a name="ts_sys_blue" />启动时蓝屏（bootrom错误）
 

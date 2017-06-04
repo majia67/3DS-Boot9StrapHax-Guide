@@ -5,13 +5,11 @@ title: "安装Boot9Strap（系统设置）"
 如果你的3DS之前已经破解，并安装了基于EmuNAND的自制系统，请务必注意本教程仅适用于SysNAND，教程内的步骤应当应用在你的SysNAND上。注意EmuNAND和RedNAND是[同一概念](http://3dbrew.org/wiki/NAND_Redirection)的两种略微不同的实现。
 {: .notice--info}
 
-你需要一个能进行BT下载的软件，如[Deluge](http://dev.deluge-torrent.org/wiki/Download)、[aria2](https://aria2.github.io/)或迅雷，才能下载本节教程中的[磁力链接](http://baike.baidu.com/item/%E7%A3%81%E5%8A%9B%E9%93%BE%E6%8E%A5)。
-{: .notice--info}
-
 #### 你需要
 
 * 最新版的[SafeB9SInstaller](https://github.com/d0k3/SafeB9SInstaller/releases/latest)
 * 最新版的[boot9strap](https://github.com/SciresM/boot9strap/releases/latest) *（标准版boot9strap；不是`dev`版）*
+* 最新版的[Luma3DS](https://github.com/AuroraWright/Luma3DS/releases/latest) *（`.7z`压缩包）*
 * 自制程序[新手包](http://smealum.github.io/ninjhax2/starter.zip)
 * 可以在你的3DS上正常工作的DS烧录卡
 
@@ -21,6 +19,7 @@ title: "安装Boot9Strap（系统设置）"
 
 1. 关机
 1. 将SD卡插入电脑
+1. 解压Luma3DS`.7z`压缩包，复制`boot.firm`文件到你SD卡的根目录
 1. 在SD卡根目录创建名为`boot9strap`的文件夹（如果没有的话）
 1. 解压缩boot9strap `.zip`压缩包，复制`boot9strap.firm`和`boot9strap.firm.sha`文件到SD卡的`/boot9strap/`目录下
 1. 解压缩SafeB9SInstaller `.zip`压缩包，复制`SafeB9SInstaller.dat`文件到你的SD卡根目录
@@ -43,8 +42,14 @@ title: "安装Boot9Strap（系统设置）"
 1. 等待所有安全检查完成
 1. 按照提示输入按键组合，安装boot9strap
 1. 完成后，按(A)键重启机器
-1. 你的机器将启动到boot9strap，然后它会自动关机，因为还没有提供payload
-  + 你的机器在继续进行下一页的教程之前不会启动；不要紧张，这是正常现象
+
+##### 第四部分 - 设置Luma3DS
+
+1. 你的机器应该启动到了Luma3DS启动器菜单
+  + 如果黑屏，[参见这个问题排查](troubleshooting#ts_sys_b9s)
+1. 通过方向键和A键来启用以下设置：
+  + **"Show NAND or user string in System Settings"**
+1. 按下(Start)键保存设置并重启
 
 ___
 
