@@ -171,8 +171,8 @@ sass:
 
 # Plugins
 gems:
-  - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-paginate
   - jekyll-gist
   - jekyll-feed
   - jemoji
