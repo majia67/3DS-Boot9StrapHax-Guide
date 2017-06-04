@@ -12,8 +12,8 @@ main:
   - title: "致谢"
     url: /credits
 
-  - title: "升级到B9S"
-    url: /updating-to-boot9strap
+  - title: "A9LH到B9S"
+    url: /a9lh-to-b9s
 
   - title: "区域变更"
     url: /region-changing
@@ -21,11 +21,5 @@ main:
   - title: "网站导航"
     url: /site-navigation
 
-  - title: "GodMode9使用指南"
+  - title: "GodMode9指南"
     url: /godmode9-usage
-
-  - title: "NAND大小"
-    url: /nand-size
-
-  - title: "OTP相关信息"
-    url: /otp-info

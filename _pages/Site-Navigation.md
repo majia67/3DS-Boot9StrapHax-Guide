@@ -8,7 +8,7 @@ sitemap: false
 {% capture notice-1 %}
 **常用链接**
 
-+ [升级至boot9strap](updating-to-boot9strap)
++ [从A9LH升级到B9S](a9lh-to-b9s)
 + [自制程序启动器（声音破解）](homebrew-launcher-(soundhax))
 + [安装Boot9Strap（自制程序启动器）](installing-boot9strap-(homebrew-launcher))
 + [收尾工作](finalizing-setup)
@@ -20,7 +20,7 @@ sitemap: false
 
 {% assign site_pages = site.pages | sort:"title" %}
 {% for node in site_pages %}
-{% if node.path contains "_pages" && node.sitemap == null %}
+{% if node.path contains "_pages" && node.sitemap != false %}
 + <a href="{{node.url}}">{{node.title}}</a>
 {% endif %}
 {% endfor %}

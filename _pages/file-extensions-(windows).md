@@ -1,5 +1,5 @@
 ---
-title: "文件扩展名（Windows）"
+title: "显示文件扩展名（Windows）"
 ---
 
 本节是一个附加章节，指导你禁用Windows默认隐藏文件扩展名的设置。
