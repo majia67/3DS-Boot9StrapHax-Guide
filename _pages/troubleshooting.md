@@ -93,7 +93,7 @@ title: "问题排查"
 1. 大写字母后缀的文件将被移动到`newdir`文件夹下
 1. 按(Start)键重启
 1. 返回到[收尾工作](finalizing-setup)一节，重新尝试FBI注入
-1. 如果还是不能注入， 将大写字母后缀的文件移动回`content`文件夹，然后将小写字母后缀的文件移动到`newdir`文件夹中，再返回到[安装arm9loaderhax](installing-arm9loaderhax)一节，重新尝试FBI注入
+1. 如果还是不能注入， 将大写字母后缀的文件移动回`content`文件夹，然后将小写字母后缀的文件移动到`newdir`文件夹中，再返回到[收尾工作](finalizing-setup)一节，重新尝试FBI注入
 
 ## <a name="ts_browser" />基于浏览器的漏洞利用失效
 基于浏览器的漏洞利用（例如browserhax和2xrsa）通常不够稳定并经常崩溃，但有时也可以尝试按照下面的步骤修复：
@@ -125,9 +125,9 @@ title: "问题排查"
    1. 按住(L) + (R) + (A) + (Up)键
    1. 按下电源键开机。
    1. 如果进入安全模式，*仅当你有最新固件版本进入HBL的方法，并且能进行降级的情况下*，才升级你的3DS，并再次尝试降级。
-1. 你的3DS可能变砖了。请在[GitHub Issues](https://github.com/majia67/3DS-ARM9LoaderHax-Guide/issues)中提问，或者参考[FAQ](faq#faq_support)页面获取帮助。
+1. 你的3DS可能变砖了。请在[GitHub Issues](https://github.com/majia67/3DS-Boot9StrapHax-Guide/issues)中提问，或者参考[FAQ](faq#faq_support)页面获取帮助。
 
-## <a name="ts_sys_b9s" />安装完arm9loaderhax后启动到SysNAND黑屏
+## <a name="ts_sys_b9s" />安装完boot9strap后启动到SysNAND黑屏
 
 1. 确保你有一个正常工作的payload
    1. 检查你的SD卡根目录有`boot.firm`文件。
@@ -153,7 +153,7 @@ title: "问题排查"
    + 复制`firmware.bin`和`cetk`到SD卡的`/luma/`文件夹下
    + 在你的3DS升级完成后，删除这两个文件
 1. 尝试按照[9.2.0 ctr迁移](9.2.0-ctrtransfer)进行操作
-1. 请在[GitHub Issues](https://github.com/majia67/3DS-ARM9LoaderHax-Guide/issues)中提问，或者参考[FAQ](faq#faq_support)页面获取帮助。
+1. 请在[GitHub Issues](https://github.com/majia67/3DS-Boot9StrapHax-Guide/issues)中提问，或者参考[FAQ](faq#faq_support)页面获取帮助。
 
 <!--## <a name="ts_transfer" />进行SafeB9STransfer时出错
 

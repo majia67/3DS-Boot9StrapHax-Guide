@@ -30,7 +30,7 @@ title: "常见问题"
 **答：** 是的，非常安全。不要再怀疑啦！
 
 <a name="faq_support" />**问：** *我应该在哪里获取支持？*
-**答：** 有关翻译内容的疑问，请在[GitHub Issues](https://github.com/majia67/3DS-ARM9LoaderHax-Guide/issues)中提问（可能需要先注册一个GitHub账号），或者给译者写邮件（![Email](images/email.png)）。有关英文教程的疑问，请参考英文教程的[FAQ](https://3ds.guide/faq)页面。
+**答：** 有关翻译内容的疑问，请在[GitHub Issues](https://github.com/majia67/3DS-Boot9StrapHax-Guide/issues)中提问（可能需要先注册一个GitHub账号），或者给译者写邮件（![Email](images/email.png)）。有关英文教程的疑问，请参考英文教程的[FAQ](https://3ds.guide/faq)页面。
 
 <a name="faq_le4gbsd" />**问：** *我可以使用4GB或更小的SD卡来完成本教程吗？*
 **答：** 可以！
