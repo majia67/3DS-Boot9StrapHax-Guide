@@ -127,7 +127,7 @@ title: "问题排查"
    1. 如果进入安全模式，*仅当你有最新固件版本进入HBL的方法，并且能进行降级的情况下*，才升级你的3DS，并再次尝试降级。
 1. 你的3DS可能变砖了。请在[GitHub Issues](https://github.com/majia67/3DS-ARM9LoaderHax-Guide/issues)中提问，或者参考[FAQ](faq#faq_support)页面获取帮助。
 
-## <a name="ts_sys_a9lh" />安装完arm9loaderhax后启动到SysNAND黑屏
+## <a name="ts_sys_b9s" />安装完arm9loaderhax后启动到SysNAND黑屏
 
 1. 确保你有一个正常工作的payload
    1. 检查你的SD卡根目录有`boot.firm`文件。
