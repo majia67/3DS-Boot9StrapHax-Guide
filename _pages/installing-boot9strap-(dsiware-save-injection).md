@@ -27,7 +27,7 @@ title: "安装boot9strap（DSiWare存档注入）"
 * 最新版的[3ds_dsiwarehax_installer](https://github.com/yellows8/3ds_dsiwarehax_installer/releases)
 * 最新版的[GodMode9](https://github.com/d0k3/GodMode9/releases/latest)
 * 最新版的[b9sTool](https://github.com/Plailect/b9sTool/releases/latest)
-* 最新版的[boot9strap](https://github.com/SciresM/boot9strap/releases/latest) *（标准版boot9strap；不是`dev`版）*
+* 最新版的[boot9strap](https://github.com/SciresM/boot9strap/releases/latest) *（标准版boot9strap；不是`devkit`或`ntr`版）*
 * 最新版的[Luma3DS](https://github.com/AuroraWright/Luma3DS/releases/latest) *（`.7z`压缩包）*
 * 自制程序[新手包](http://smealum.github.io/ninjhax2/starter.zip)
 * 对应**目标3DS**的11.4.0 `.firm`文件
@@ -140,6 +140,7 @@ title: "安装boot9strap（DSiWare存档注入）"
 
 1. 解压Luma3DS`.7z`压缩包，复制`boot.firm`文件到你SD卡的根目录
 1. 复制`boot.nds`文件到**目标3DS**的SD根目录
+1. 解压缩`starter.zip`压缩包，复制`starter`文件夹下的所有文件和文件夹到**目标3DS**的SD卡根目录
 1. 在**目标3DS**的SD卡根目录新建一个名为`boot9strap`的文件夹
 1. 复制对应**目标3DS**的11.4.0 `.firm`文件到**目标3DS**的SD卡的`boot9strap`目录下
 1. 解压缩boot9strap `.zip`压缩包，复制`boot9strap.firm`文件到**目标3DS**的SD卡的`/boot9strap/`目录下
@@ -182,6 +183,7 @@ title: "安装boot9strap（DSiWare存档注入）"
 1. 通过方向键和A键来启用以下设置：
   + **"Show NAND or user string in System Settings"**
 1. 按下(Start)键保存设置并重启
+  + 如果出现错误，请继续进行接下来的教程
 
 ___
 

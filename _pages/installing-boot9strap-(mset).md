@@ -8,7 +8,7 @@ title: "安装Boot9Strap（系统设置）"
 #### 你需要
 
 * 最新版的[SafeB9SInstaller](https://github.com/d0k3/SafeB9SInstaller/releases/latest)
-* 最新版的[boot9strap](https://github.com/SciresM/boot9strap/releases/latest) *（标准版boot9strap；不是`dev`版）*
+* 最新版的[boot9strap](https://github.com/SciresM/boot9strap/releases/latest) *（标准版boot9strap；不是`devkit`或`ntr`版）*
 * 最新版的[Luma3DS](https://github.com/AuroraWright/Luma3DS/releases/latest) *（`.7z`压缩包）*
 * 自制程序[新手包](http://smealum.github.io/ninjhax2/starter.zip)
 * 可以在你的3DS上正常工作的DS烧录卡
@@ -50,6 +50,7 @@ title: "安装Boot9Strap（系统设置）"
 1. 通过方向键和A键来启用以下设置：
   + **"Show NAND or user string in System Settings"**
 1. 按下(Start)键保存设置并重启
+  + 如果出现错误，请继续进行接下来的教程
 
 ___
 

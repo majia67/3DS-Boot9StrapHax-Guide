@@ -148,9 +148,10 @@ title: "问题排查"
 1. 如果你以前用Gateway降过级，确保你使用的是最新版的Luma3DS（版本号在v6.2.3及以上）
 1. 如果你的系统版本在3.0.0到4.5.0之间，进行如下操作：
    + 确保你使用的是最新版的Luma3DS（版本号在v6.6及以上）
-   + 下载[这个文件](http://nus.cdn.c.shop.nintendowifi.net/ccs/download/0004013800000002/00000056)并重命名为`firmware.bin`
+   + 下载[这个文件](http://nus.cdn.c.shop.nintendowifi.net/ccs/download/0004013800000002/00000056)并重命名为`native.firm`
    + 下载[这个文件](http://nus.cdn.c.shop.nintendowifi.net/ccs/download/0004013800000002/cetk)
-   + 复制`firmware.bin`和`cetk`到SD卡的`/luma/`文件夹下
+   + 复制`native.firm`和`cetk`到SD卡的`/luma/`文件夹下
+   + 如果你的Luma3DS版本在7.1及以下，将`native.firm`重命名为`firmware.bin`
    + 在你的3DS升级完成后，删除这两个文件
 1. 尝试按照[9.2.0 ctr迁移](9.2.0-ctrtransfer)进行操作
 1. 请参照[FAQ](faq#faq_support)页面在Github Issues中提问。

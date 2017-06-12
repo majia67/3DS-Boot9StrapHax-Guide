@@ -41,16 +41,21 @@ Luma3DS将来的所有版本将只以`.firm`格式发布，这意味着它将只
 * **仅限新3DS：** <i class="fa fa-magnet" aria-hidden="true" title="这个下载链接是磁力链格式的。请使用BT种子客户端进行下载。"></i> - [`secret_sector.bin`](magnet:?xt=urn:btih:15a3c97acf17d67af98ae8657cc66820cc58f655&dn=secret_sector.bin&tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce&tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce)
 * 最新版的[Luma3DS](https://github.com/AuroraWright/Luma3DS/releases/latest) *（`.7z`压缩包）*
 * 最新版的[SafeB9SInstaller](https://github.com/d0k3/SafeB9SInstaller/releases/latest)
-* 最新版的[boot9strap](https://github.com/SciresM/boot9strap/releases/latest) *（标准版boot9strap；不是`dev`版）*
+* 最新版的[boot9strap](https://github.com/SciresM/boot9strap/releases/latest) *（标准版boot9strap；不是`devkit`或`ntr`版）*
 * 最新版的[GodMode9](https://github.com/d0k3/GodMode9/releases/latest)
+* 最新版的[the Homebrew Launcher](https://github.com/fincs/new-hbmenu/releases/latest)
 * 最新改版的[Luma3DS Updater](https://github.com/KunoichiZ/lumaupdate/releases/latest)
 
 #### 操作指南
 
 ##### 第一部分 - 准备工作
 
+本部分中，复制任何文件到SD卡时，如果SD卡上已有该文件，请选择覆盖。
+{: .notice--info}
+
 1. 关机
 1. 将SD卡取下，插入电脑
+1. 复制`boot.3dsx`文件到SD卡的根目录
 1. 解压缩Luma3DS `.7z`压缩包，复制`boot.firm`文件到SD卡根目录
 1. 在你的SD卡根目录创建名为`cias`的文件夹（如果不存在的话）
 1. 复制`lumaupdater.cia`文件到SD卡的`/cias/`目录下
@@ -133,7 +138,7 @@ ___
 现在你可以删除SD卡上任何与arm9loaderhax相关的文件，如SD卡根目录的`arm9loaderhax.bin`文件和`files9`目录下的`aeskeydb.bin`文件。
 {: .notice--info}
 
-注意`/boot9strap/`目录下的`firm0firm1.bak`和`sector0x96.bak`文件仅在安装boot9strap失败的时候有用。在你安装成功后，你可以删除整个`boot9strap`文件夹。
+注意`/boot9strap/`目录下的`.bak`文件仅在安装boot9strap失败的时候有用。在你安装成功后，你可以删除整个`boot9strap`文件夹。
 {: .notice--info}
 
 这个改版的Luma3DS升级器将下载和提取最新的Luma3DS `boot.firm`文件。
@@ -143,6 +148,7 @@ ___
 你可以按下(Select)键开机，进入Luma3DS的设置菜单。
 你可以按下(Start)键开机，运行Luma启动器菜单（注意只有在Luma3DS检测到多于一个payload的时候才会显示菜单）。
 你可以按下(Start) + (Select) + (X)键开机，导出ARM11 bootrom（`boot11.bin`），ARM9 bootrom（`boot9.bin`），以及你设备独有的OTP(`OTP.bin`)到SD卡的`/boot9strap`目录下（该过程没有任何提示信息）。
+你可以在系统启动时按下(L) + (Down) + (Select)键，打开Luma3DS内置的Rosalina菜单。如果想了解Rosalina的全部特性，参见[Luma3DS v8.0 Release](https://github.com/AuroraWright/Luma3DS/releases/tag/v8.0)。
 {% endcapture %}
 
 <div class="notice--info">{{ notice-6 | markdownify }}</div>

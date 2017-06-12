@@ -26,7 +26,7 @@ Windows系统用户在开始之前需要开启[显示文件扩展名](file-exten
 开始之前，你可能想检测一下SD卡错误。可以使用[H2testw (Windows)](h2testw-(windows))，[F3 (Linux)](f3-(linux))，[F3X (Mac)](f3x-(mac))。
 {: .notice--warning}
 
-注意，新的[安装boot9strap（硬改）](installing-boot9strap-(hardmod))方法适用于*任何设备、区域和系统版本*！这包括之前无法破解的神游和台版机！
+注意，新的[ntrboothax](installing-boot9strap-(ntrboothax))和[硬改](installing-boot9strap-(hardmod))方法适用于*任何设备、区域和系统版本*！这包括之前无法破解的神游和台版机！
 {: .notice--success}
 
 {% capture notice-1 %}

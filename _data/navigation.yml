@@ -3,17 +3,20 @@ main:
   - title: "常见问题"
     url: /faq
 
-  - title: "问题排查"
-    url: /troubleshooting
-
   - title: "打赏"
     url: /donations
 
   - title: "致谢"
     url: /credits
 
+  - title: "升级B9S"
+    url: /updating-b9s
+
   - title: "A9LH到B9S"
     url: /a9lh-to-b9s
+
+  - title: "问题排查"
+    url: /troubleshooting
 
   - title: "区域变更"
     url: /region-changing
