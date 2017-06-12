@@ -2,13 +2,10 @@
 title: "安装boot9strap（2xrsa）"
 ---
 
-你需要一个能进行BT下载的软件，如[Deluge](http://dev.deluge-torrent.org/wiki/Download)、[aria2](https://aria2.github.io/)或迅雷，才能下载本节教程中的[磁力链接](http://baike.baidu.com/item/%E7%A3%81%E5%8A%9B%E9%93%BE%E6%8E%A5)。
-{: .notice--success}
-
 #### 你需要
 
 * 最新版的[SafeB9SInstaller](https://github.com/d0k3/SafeB9SInstaller/releases/latest)
-* 最新版的[boot9strap](https://github.com/SciresM/boot9strap/releases/latest) *（标准boot9strap；不是`dev`版）*
+* 最新版的[boot9strap](https://github.com/SciresM/boot9strap/releases/latest) *（标准boot9strap；不是`devkit`或`ntr`版）*
 * 最新版的[Luma3DS](https://github.com/AuroraWright/Luma3DS/releases/latest) *（`.7z`压缩包）*
 * 自制程序[新手包](http://smealum.github.io/ninjhax2/starter.zip)
 
@@ -49,6 +46,8 @@ title: "安装boot9strap（2xrsa）"
 1. 通过方向键和A键来启用以下设置：
   + **"Show NAND or user string in System Settings"**
 1. 按下(Start)键保存设置并重启
+  + 如果出现错误，请继续进行接下来的教程
+
 ___
 
 注意*新3DS*用户如果CTR转移到了2.1.0版本的系统后，*必须*在[收尾工作](finalizing-setup)一节的“第二部分 - 设置Luma3DS”和“第三部分 - 升级系统”之间[恢复NAND备份](godmode9-usage#nand_restore)。

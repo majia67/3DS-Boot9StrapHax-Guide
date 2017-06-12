@@ -16,6 +16,7 @@ boot9strap完成加载NAND之后，会运行'boot.firm'文件。该文件可以�
 +  **Themely** *(安装自制主题)*
 +  **Luma3DS Updater** *(轻松升级你安装的CFW)*
 +  **GodMode9** *(可以进行NAND和卡带操作的多功能工具)*
++  **Homebrew Launcher Loader** *（可以将自制程序启动器当作常规应用运行）*
 
 {% endcapture %}
 
@@ -27,9 +28,8 @@ boot9strap完成加载NAND之后，会运行'boot.firm'文件。该文件可以�
 * 最新版的[hblauncher_loader](https://github.com/yellows8/hblauncher_loader/releases/latest)
 * 最新版的[GodMode9](https://github.com/d0k3/GodMode9/releases/)
 * 最新版的[DSP1](https://github.com/zoogie/DSP1/releases/latest)
-* 最新版的[FBI](https://github.com/Steveice10/FBI/releases/latest) *（ `.cia` 文件）*
-* 最新版的[Luma3DS Updater](https://github.com/Hamcha/lumaupdate/releases/latest) *（ `.cia` 文件）*
-* **仅限老3DS和2DS：** 对应你的区域的老3DS 11.2.0-35 [otherapp负载](https://smealum.github.io/3ds/#otherapp)
+* 最新版的[FBI](https://github.com/Steveice10/FBI/releases/latest) *（`.cia`和`.3dsx`文件）*
+* 最新版的[Luma3DS Updater](https://github.com/Hamcha/lumaupdate/releases/latest) *（`.cia`文件）*
 
 #### 操作指南
 
@@ -37,6 +37,7 @@ boot9strap完成加载NAND之后，会运行'boot.firm'文件。该文件可以�
 
 1. 关机
 1. 将SD卡插入电脑
+1. 复制`FBI.3dsx`文件到SD卡的`/3ds/`目录下
 1. 在SD卡上创建一个名为`cias`的文件夹（如果不存在的话）
 1. 在SD卡上创建一个名为`hblauncherloader`的文件夹（如果不存在的话）
 1. 解压hblauncher\_loader`.zip`压缩包，并复制`hblauncher_loader.cia`文件到SD卡的`/cias/`目录下
@@ -50,21 +51,17 @@ boot9strap完成加载NAND之后，会运行'boot.firm'文件。该文件可以�
 
 1. 在SD卡的`luma`文件夹里，创建名为`payloads`的文件夹
 1. 解压GodMode9`.zip`压缩包，复制`GodMode9.firm`文件到SD卡的`/luma/payloads/`目录下
-1. **仅限老3DS和2DS：** 复制对应你的区域的老3DS 11.2.0-35 otherapp负载到SD卡的`/hblauncherloader/`目录下
-1. **仅限老3DS和2DS：** 将刚才复制到SD卡的otherapp负载文件重命名为对应你的区域的名字：
-  + **欧版：** `OLD-11-4-0-37-EUR.bin`
-  + **日版：** `OLD-11-4-0-37-JPN.bin`
-  + **韩版：** `OLD-11-4-0-37-KOR.bin`
-  + **美版：** `OLD-11-4-0-37-USA.bin`
 
     ![]({{ base_path }}/images/screenshots/finalizing-setup-file-layout.png)
     {: .notice--info}
 
-1. 如果你的备份文件系统版本在3.0.0到4.5.0，除非你下载所需的固件，否则你的机器将无法开机：
-  + 下载[这个文件](http://nus.cdn.c.shop.nintendowifi.net/ccs/download/0004013800000002/00000056)并重命名为`firmware.bin`
+1. 如果你的系统版本在9.0.0以下，除非使用另一个版本的Luma3DS，你的机器将不能开机：
+  + 下载[老版Luma3DS]({{ base_path }}/luma_legacy/cf0b05e/boot.firm)
+  + 复制`boot.firm`文件到SD卡根目录*（覆盖已有文件）*
+1. 如果你的系统版本在3.0.0到4.5.0之间（包括3.0.0和4.5.0），除非你下载所需的固件，否则你的机器将无法开机：
+  + 下载[这个文件](http://nus.cdn.c.shop.nintendowifi.net/ccs/download/0004013800000002/00000056)并重命名为`native.firm`
   + 下载[这个文件](http://nus.cdn.c.shop.nintendowifi.net/ccs/download/0004013800000002/cetk)
-  + 复制`firmware.bin`和`cetk`这两个文件到SD卡的`/luma/`目录下
-  + 在你的机器升级完成后，删除这两个文件
+  + 复制`native.firm`和`cetk`这两个文件到SD卡的`/luma/`目录下
 1. 将SD卡插回机器上
 1. 开机
 
@@ -79,48 +76,46 @@ boot9strap完成加载NAND之后，会运行'boot.firm'文件。该文件可以�
 1. 进入"System Settings"（系统设置）、"Other Settings"（其它设置），移动到最右边一页，选择"System Update"（系统升级），将你的系统升级到最新版本
   + 使用B9S + Luma（或者其它自制系统）进行系统升级很安全
   + 如果出现错误，将你的DNS设置改为"auto"（自动）模式
-  + 如果仍然出现错误，并且你的固件版本在9.2.0以下，先进行[9.2.0 CTR转移](9.2.0-ctrtransfer)，然后尝试再次升级
+  + 如果仍然出现错误，并且你的系统版本在9.2.0以下，先进行[9.2.0 CTR转移](9.2.0-ctrtransfer)，然后尝试再次升级
+1. 如果你的系统版本在升级系统前是9.0.0以下，下载[最新版的Luma3DS](https://github.com/AuroraWright/Luma3DS/releases/latest)，替换SD卡根目录下的`boot.firm`文件
+1. 如果你的系统版本在在升级系统前是3.0.0到4.5.0之间（包括3.0.0和4.5.0），删除SD卡`/luma/`目录下的`native.firm`和`cetk`文件
 
-##### 第三部分 - 注入FBI
+##### 第三部分 - 运行FBI
 
-1. 关机，按住(Start)键开机，进入GodMode9
-1. 进入`[0:] SDCARD` -> `cias`
-1. 选中`FBI.cia`文件，按(A)键，并选择"CIA image options..."（CIA镜像选项），然后选择"Mount image to drive"（将镜像挂载到驱动器）
-1. 选中`.app`文件，按(A)键，然后选择"NCCH image options"，并选择"Inject to H&S"
-1. 按(A)键解锁SysNAND(lvl1)写保护，然后按照提示输入按键组合
-1. 按(A)键继续
-1. 按(Start)键重启
-1. 如果你依然进入的是系统内置的健康与安全应用，并且之前曾经用Gateway进行过降级，参见这个[问题排查](troubleshooting#gw_fbi)
+1. 运行Download Play应用
+1. 同时按住(L) + (Down) + (Select)键，打开Rosalina菜单
+1. 选择"Miscellaneous options"
+1. 选择"Switch the hb. title to the current app."
+1. 按(B)键继续
+1. 按(B)键返回到Rosalina菜单
+1. 按(B)键退出Rosalina菜单
+1. 按(Home)键，然后关闭Download Play
+1. 运行Download Play应用
+1. 你的机器应该进入了Homebrew Launcher
 
 ##### 第四部分 - 安装CIA文件
 
-1. 在桌面菜单中运行健康与安全（Health & Safety）应用（现在应该是FBI）
+1. 从自制程序列表中，选择运行FBI
 1. 进入`SD` -> `cias`
 1. 选择`\<current directory>`
 1. 选择"Install and delete all CIAs"（安装并删除所有CIA文件）选项，按(A)键确认
-1. 按(Home)键退出FBI
+1. 按(Home)键，然后关闭Download Play
 
 ##### 第五部分 - 导出DSP
 
-1. 运行DSP1
+1. 运行DSP1应用
 2. 导出完成后，按(B)键删除DSP1应用，并返回Home菜单
 
-##### 第六部分 - 恢复“健康与安全”应用
+##### 第六部分 - CTRNAND Luma3DS
 
 1. 关机，按住(Start)键开机，进入GodMode9
-1. 按(Home)键打开行动菜单
-1. 选择"More..."
-1. 选择"Restore H&S"（恢复健康与安全应用）
-1. 按(A)键解锁SysNAND(lvl1)写保护，然后按照提示输入按键组合
-
-##### 第七部分 - CTRNAND Luma3DS
-
 1. 进入`[0:] SDCARD`
 1. 移动光标到`boot.firm`文件上，按(Y)键复制
 1. 按(B)键返回到主菜单
 1. 进入`[1:] SYSNAND CTRNAND`
 1. 按(Y)键粘贴`boot.firm`文件
 1. 选择"Copy path(s)"（复制路径）
+1. 按(A)键解锁SysNAND (lvl1)写保护，然后输入提示的按键组合
 1. 按(B)键返回到主菜单
 1. 进入`[0:] SDCARD`
 1. 移动光标到`luma`文件夹上，按(Y)键复制
@@ -129,7 +124,7 @@ boot9strap完成加载NAND之后，会运行'boot.firm'文件。该文件可以�
 1. 按(Y)键粘贴从SD卡复制的`luma`文件夹
 1. 选择"Copy path(s)"（复制路径）
 
-##### 第八部分 - 备份NAND
+##### 第七部分 - 备份NAND
 
 1. 按(B)键两次返回到主菜单
 1. 按(Home)键，打开行动菜单
@@ -160,12 +155,10 @@ ___
 你可以按下(Select)键开机，进入Luma3DS的设置菜单。
 你可以按下(Start)键开机，运行Luma启动器菜单（注意只有在Luma3DS检测到多于一个payload的时候才会显示菜单）。
 你可以按下(Start) + (Select) + (X)键开机，导出ARM11 bootrom（`boot11.bin`），ARM9 bootrom（`boot9.bin`），以及你设备独有的OTP(`OTP.bin`)到SD卡的`/boot9strap`目录下（该过程没有任何提示信息）。
+你可以在系统启动时按下(L) + (Down) + (Select)键，打开Luma3DS内置的Rosalina菜单。如果想了解Rosalina的全部特性，参见[Luma3DS v8.0 Release](https://github.com/AuroraWright/Luma3DS/releases/tag/v8.0)。
 {% endcapture %}
 
 <div class="notice--info">{{ notice-6 | markdownify }}</div>
-
-如果你以后想升级你的arm9loaderhax，请参见[升级A9LH](updating-a9lh)页面。
-{: .notice--info}
 
 如果要使用[NTR CFW](https://github.com/44670/BootNTR/)，请安装[BootNTR Selector](https://gbatemp.net/threads/432911/)。
 {: .notice--info}
@@ -198,7 +191,7 @@ ___
 想了解如何使用GodMode9的各项功能，参见[GodMode9使用指南](godmode9-usage)页面。
 {: .notice--success}
 
-要想了解如何使用Luma3DS的各种功能，参见[这个wiki](https://github.com/AuroraWright/Luma3DS/wiki/Options-and-usage)。
+要想了解如何使用Luma3DS的各种功能，参见[Luma3DS Wiki](https://github.com/AuroraWright/Luma3DS/wiki/Options-and-usage)。
 {: .notice--success}
 
 要想了解如何安装自制主题、牌子和启动画面，参见[3dsthem.es](https://3dsthem.es/about.php)。

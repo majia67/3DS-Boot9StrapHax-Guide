@@ -31,7 +31,7 @@ Homebrew Launcher（自制程序启动器，HBL）有很多进入或运行方法
 | <sub> | <sub>需要 | <sub>发行版本 | <sub>支持设备 | <sub>支持区域 | <sub>游戏版本 | <sub>系统版本 |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | <sub>[browserhax](https://yls8.mtheall.com/3dsbrowserhax.php) | <sub>无 | <sub>预装 | <sub>新3DS/老3DS/2DS | <sub>欧版/日版/美版 | <sub>所有 | <sub>9.0.0-2及以上，11.0.0-33及以下 |
-| <sub>[oot3dhax](https://github.com/yellows8/oot3dhax) | <sub>[*塞尔达传说时之笛3D*](https://amzn.to/2fkaKdp), <br> 有powersaves，或一台可以进入自制程序启动器的3DS | <sub>卡带 | <sub>新3DS/老3DS/2DS | <sub>欧版/日版/美版 | <sub>所有 | <sub>9.0.0-X及以上，11.3.0-X及以下|
+| <sub>[oot3dhax](https://github.com/yellows8/oot3dhax) | <sub>[*塞尔达传说时之笛3D*](https://amzn.to/2fkaKdp), <br> 有powersaves，或一台可以进入自制程序启动器的3DS | <sub>卡带 | <sub>新3DS/老3DS/2DS | <sub>欧版/日版/美版 | <sub>所有 | <sub>9.0.0-X及以上，11.4.0-X及以下|
 | <sub>[smashbroshax](https://gbatemp.net/threads/397194/) | <sub>[*任天堂明星大乱斗*](https://amzn.to/2ftGA72) | <sub>卡带/eShop | <sub>新3DS  | <sub>欧版/日版/美版 | <sub><1.1.3, <br> 外包装带有"amiibo"字样的卡带预装游戏版本是v1.1.4 | <sub>9.0.0-X及以上，11.2.0-X及以下 |
 | <sub>[supermysterychunkhax](https://smd.salthax.org/) | <sub>[*口袋妖怪超不可思议迷宫*](https://amzn.to/2ebxZ75), <br> 一台可以进入自制程序启动器的3DS | <sub>卡带 | <sub>新3DS/老3DS/2DS | <sub>欧版/日版/美版 | <sub>所有 | <sub>9.9.0-X(美版/日版) / 10.2.0-X(欧版)以上，11.0.0-X以下 |
 | <sub>[freakyhax](http://plutooo.github.io/freakyhax/) | <sub>[*绘图生活*](https://amzn.to/2f6eHO7) | <sub>卡带/eShop | <sub>新3DS/老3DS/2DS | <sub>欧版/日版/美版 | <sub>所有 | <sub>9.0.0-X及以上，11.3.0-X及以下 |
@@ -39,7 +39,7 @@ Homebrew Launcher（自制程序启动器，HBL）有很多进入或运行方法
 | <sub>[BASICSploit](https://mrnbayoh.github.io/basicsploit/) | <sub>[*SmileBASIC*](https://www.nintendo.com/games/detail/eYURHNjVdfyrnA3OJGfmlMYIrJUzgOcv) | <sub>eShop | <sub>新3DS/老3DS/2DS | <sub>美版 | <sub>3.2.1 | <sub>9.0.0-X及以上，11.0.0-X及以下 |
 | <sub>[smilehax](https://plutooo.github.io/smilehax/) | <sub>[*SmileBASIC*](https://www.nintendo.com/games/detail/eYURHNjVdfyrnA3OJGfmlMYIrJUzgOcv) | <sub>eShop | <sub>新3DS/老3DS/2DS | <sub>日版/美版 | <sub>3.3.1 | <sub>9.0.0-X及以上，11.0.0-X及以下 |
 | <sub>[stickerhax](https://github.com/yellows8/stickerhax) | <sub>[*纸片马里奥：贴纸之星*](https://amzn.to/2f6aDx8), <br>和一台可以进入自制程序启动器的3DS | <sub>eShop/卡带 | <sub>新3DS/老3DS/2DS | <sub>欧版/日版/韩版/美版 | <sub>所有 | <sub>9.0.0-X及以上，11.3.0-X及以下 |
-| <sub>[Ninjhax 2](http://smealum.github.io/ninjhax2/) | <sub>[*立体忍者*](https://amzn.to/2eRI1by) | <sub>eShop/卡带 | <sub>新3DS/老3DS/2DS | <sub>欧版/日版/美版 | <sub>所有 | <sub>9.0.0-X及以上，11.3.0-X及以下 |
+| <sub>[Ninjhax 2](http://smealum.github.io/ninjhax2/) | <sub>[*立体忍者*](https://amzn.to/2eRI1by) | <sub>eShop/卡带 | <sub>新3DS/老3DS/2DS | <sub>欧版/日版/美版 | <sub>所有 | <sub>9.0.0-X及以上，11.4.0-X及以下 |
 | <sub>[GenHax](https://github.com/svanheulen/genhax_proxy_installer) | <sub>[*怪物猎人X*](http://amzn.to/2gsk6Tk) | <sub>eShop | <sub>新3DS | <sub>日版 | <sub>所有 | <sub>9.9.0-X及以上，11.2.0-X及以下 |
 {: .notice--info}
 

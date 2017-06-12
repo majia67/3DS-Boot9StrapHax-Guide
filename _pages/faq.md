@@ -9,7 +9,7 @@ title: "常见问题"
 **答：** 使用[Luma3DS升级器（Luma3DS Updater）](https://github.com/Hamcha/lumaupdate/releases/latest)。
 
 <a name="faq_gatewaysky" />**问：** *我听说破解需要购买类似Gateway或Sky3DS这样的烧录卡。是否真的需要？*
-**答 :** 不。boot9strap是一种在启动的早期阶段加载漏洞的高级破解方式，这启用真正的自制系统（即完美破解）提供了可能。
+**答 :** 不。boot9strap是一种在启动的早期阶段加载漏洞的高级破解方式。
 
 <a name="faq_gatewaysaves" />**问：** *我如何将Gateway中的游戏存档迁移到机器内安装的游戏中？*
 **答：** 参见[这里](https://gbatemp.net/threads/425743/)。

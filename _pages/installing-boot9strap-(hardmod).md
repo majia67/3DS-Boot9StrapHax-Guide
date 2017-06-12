@@ -17,10 +17,11 @@ title: "安装Boot9Strap（硬改）"
 #### 你需要
 
 * 使用[硬改](https://gbatemp.net/threads/414498/)提取的你的3DS固件镜像（NAND image）
-* 最新版的[boot9strap](https://github.com/SciresM/boot9strap/releases/latest) *（标准版boot9strap；不是`dev`版）*
+* 最新版的[boot9strap](https://github.com/SciresM/boot9strap/releases/latest) *（标准版boot9strap；不是`devkit`或`ntr`版）*
 * 最新版的[hardmod-b9s-installer](https://github.com/ihaveamac/hardmod-b9s-installer/releases/latest)
   + Windows用户可以使用已编译的`.exe`文件，而Mac和Linux用户需要安装[Python 3](https://www.python.org/downloads/)并运行`.py`脚本
 * 最新版的[Luma3DS](https://github.com/AuroraWright/Luma3DS/releases/latest) *（`.7z`压缩包）*
+* 自制程序[新手包](http://smealum.github.io/ninjhax2/starter.zip)
 * 对应你机器和系统版本的`.firm`文件：
 
 | 系统版本 | 内核版本 | 老3DS | 新3DS |
@@ -59,6 +60,7 @@ title: "安装Boot9Strap（硬改）"
 ##### 第一部分 - 准备工作
 
 1. 解压Luma3DS`.7z`压缩包，复制`boot.firm`文件到你SD卡的根目录
+1. 解压缩`starter.zip`压缩包，复制`starter`文件夹下的所有文件和文件夹到**目标3DS**的SD卡根目录
 1. 解压缩hardmod-b9s-installer `.zip`压缩包，复制hardmod-b9s-installer文件夹到你的电脑
 1. 复制下载后的`.firm`文件到hardmod-b9s-installer文件夹中
 1. 重命名你复制到hardmod-b9s-installer文件夹中的`.firm`文件为`current.firm`
@@ -78,6 +80,7 @@ title: "安装Boot9Strap（硬改）"
 1. 通过方向键和A键来启用以下设置：
   + **"Show NAND or user string in System Settings"**
 1. 按下(Start)键保存设置并重启
+  + 如果出现错误，请继续进行接下来的教程
 
 ___
 
