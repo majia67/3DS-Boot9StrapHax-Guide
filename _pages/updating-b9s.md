@@ -30,7 +30,7 @@ title: "升级B9S"
 * 最新版的[SafeB9SInstaller](https://github.com/d0k3/SafeB9SInstaller/releases/latest)
 * 最新版的[boot9strap](https://github.com/SciresM/boot9strap/releases/latest) *（标准boot9strap；不是`devkit`或`ntr`版）*
 * 最新版的[GodMode9](https://github.com/d0k3/GodMode9/releases/latest)
-* 最新版的[the Homebrew Launcher](https://github.com/fincs/new-hbmenu/releases/latest)
+* 自制程序[新手包](http://smealum.github.io/ninjhax2/starter.zip)
 
 #### 操作指南
 
@@ -42,7 +42,7 @@ title: "升级B9S"
 1. 关机
 1. 将SD卡插入电脑
 1. **保留旧版本（v7.1）的Luma3DS（`boot.firm`文件）。之后会升级它。**
-1. 复制`boot.3dsx`文件到SD卡的根目录
+1. 解压缩`starter.zip`压缩包，复制*解压后的文件和文件夹*到SD卡的根目录
 1. 在SD卡根目录创建`boot9strap`文件夹
 1. 解压缩GodMode9`.zip`压缩包，复制`GodMode9.firm`文件到SD卡的`luma/payloads/`目录下
 1. 解压缩SafeB9SInstaller`.zip`压缩包，复制`SafeB9SInstaller.firm`文件到SD卡的`/luma/payloads/`目录下

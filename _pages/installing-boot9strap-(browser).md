@@ -19,7 +19,7 @@ title: "安装Boot9Strap（浏览器）"
 1. 关机
 1. 将SD卡插入电脑
 1. 解压Luma3DS`.7z`压缩包，复制`boot.firm`文件到你SD卡的根目录
-1. 解压缩`starter.zip`压缩包，将*解压后的文件*拷贝到你SD卡的根目录，并将SD卡插回你的机器
+1. 解压缩`starter.zip`压缩包，复制*其中的文件和文件夹*到SD卡的根目录下
 1. 在SD卡根目录创建一个名为`boot9strap`的文件夹
 1. 解压缩boot9strap `.zip`压缩包，复制`boot9strap.firm`和`boot9strap.firm.sha`文件到SD卡的`/boot9strap/`目录下
 1. 解压缩SafeB9SInstaller `.zip`压缩包，复制`SafeB9SInstaller.dat`和`Launcher.dat`文件到你的SD卡根目录

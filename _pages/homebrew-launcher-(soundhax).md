@@ -8,7 +8,7 @@ Homebrew Launcher（自制程序启动器，HBL）有很多进入或启动方法
 声音破解（SoundHax）支持欧版、日版、韩版和美版，系统版本9.0.0至11.3.0的机器。
 {: .notice--info}
 
-确保你的机器的无线传输（就是Wifi）开关是开启的，因为udsploit（下一步要用到）需要无线模块开启才能生效，且部分机器（新3DS和2DS）不能在自制程序启动器中修改无线传输设置。无线传输设置只要开启就行，无需连接到热点（access point）。
+确保你的机器的无线传输（就是Wifi）开关是开启的，因为udsploit（下一步要用到）需要无线模块开启才能生效，且部分机器（新3DS、新2DS和老2DS）不能在自制程序启动器中修改无线传输设置。无线传输设置只要开启就行，无需连接到热点（access point）。
 {: .notice--info}
 
 {% capture notice-1 %}
@@ -23,13 +23,13 @@ Homebrew Launcher（自制程序启动器，HBL）有很多进入或启动方法
 
 * 自制程序[新手包](http://smealum.github.io/ninjhax2/starter.zip)
 * 最新版的[SoundHax](http://soundhax.com/) *依照你的设备和区域选择对应的文件下载*
-* The [otherapp payload](https://smealum.github.io/3ds/#otherapp) *依照你的设备和区域选择对应的文件下载*
+* [otherapp payload](https://smealum.github.io/3ds/#otherapp) *依照你的设备和区域选择对应的文件下载*
 
 #### 操作指南
 
 1. 关机
 1. 将SD卡取下，插入电脑
-1. 解压缩`starter.zip`，将`starter`文件夹*里面*的所有文件拷贝到SD卡的根目录中
+1. 解压缩`starter.zip`压缩包，复制*解压后的文件和文件夹*到SD卡的根目录下
 1. 将SoundHax的`.m4a`文件拷贝到SD卡的根目录中
 1. 将the otherapp payload拷贝到SD卡的根目录中，并重命名为`otherapp.bin`
 

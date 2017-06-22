@@ -56,7 +56,7 @@ boot9strap完成加载NAND之后，会运行'boot.firm'文件。该文件可以�
     {: .notice--info}
 
 1. 如果你的系统版本在9.0.0以下，除非使用另一个版本的Luma3DS，你的机器将不能开机：
-  + 下载[老版Luma3DS]({{ base_path }}/luma_legacy/cf0b05e/boot.firm)
+  + 下载[老版Luma3DS]({{ base_path }}/luma_legacy/boot.firm)
   + 复制`boot.firm`文件到SD卡根目录*（覆盖已有文件）*
 1. 如果你的系统版本在3.0.0到4.5.0之间（包括3.0.0和4.5.0），除非你下载所需的固件，否则你的机器将无法开机：
   + 下载[这个文件](http://nus.cdn.c.shop.nintendowifi.net/ccs/download/0004013800000002/00000056)并重命名为`native.firm`

@@ -11,7 +11,7 @@ title: "安装Boot9Strap（硬改）"
 你需要一个能进行BT下载的软件，如[Deluge](http://dev.deluge-torrent.org/wiki/Download)、[aria2](https://aria2.github.io/)或迅雷，才能下载本节教程中的[磁力链接](http://baike.baidu.com/item/%E7%A3%81%E5%8A%9B%E9%93%BE%E6%8E%A5)。
 {: .notice--info}
 
-本方法在新3DS、老3DS和2DS的*任何*版本的机器上都有效，只要你有对应的`.firm`文件。
+本方法在新3DS、新2DS、老3DS和老2DS的*任何*版本的机器上都有效，只要你有对应的`.firm`文件。
 {: .notice--success}
 
 #### 你需要
@@ -24,7 +24,7 @@ title: "安装Boot9Strap（硬改）"
 * 自制程序[新手包](http://smealum.github.io/ninjhax2/starter.zip)
 * 对应你机器和系统版本的`.firm`文件：
 
-| 系统版本 | 内核版本 | 老3DS | 新3DS |
+| 系统版本 | 内核版本 | 老3DS或老2DS | 新3DS或新2DS |
 |-|-|:-:|:-:|
 | 1.0.0 | 2.27-0 | [`2.27-0_1.0_OLD.firm`](magnet:?xt=urn:btih:5c86edc67a1827991567b3c326a4182b66647d07&dn=2.27-0_1.0_OLD.firm&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce) | - |
 | 1.1.0 | 2.28-0 | [`2.28-0_1.1_OLD.firm`](magnet:?xt=urn:btih:7c7696ff18e7d83a638b9c80f83052f763fb0fa5&dn=2.28-0_1.1_OLD.firm&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce) | - |
@@ -60,7 +60,7 @@ title: "安装Boot9Strap（硬改）"
 ##### 第一部分 - 准备工作
 
 1. 解压Luma3DS`.7z`压缩包，复制`boot.firm`文件到你SD卡的根目录
-1. 解压缩`starter.zip`压缩包，复制`starter`文件夹下的所有文件和文件夹到**目标3DS**的SD卡根目录
+1. 解压缩`starter.zip`压缩包，复制*解压后的文件和文件夹*到**目标3DS**的SD卡根目录
 1. 解压缩hardmod-b9s-installer `.zip`压缩包，复制hardmod-b9s-installer文件夹到你的电脑
 1. 复制下载后的`.firm`文件到hardmod-b9s-installer文件夹中
 1. 重命名你复制到hardmod-b9s-installer文件夹中的`.firm`文件为`current.firm`

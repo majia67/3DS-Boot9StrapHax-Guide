@@ -22,9 +22,9 @@ title: "安装Boot9Strap（DSiWare）"
 
 {% capture notice-4 %}
 这两种方法都需要你从已破解的3DS[系统迁移](http://en-americas-support.nintendo.com/app/answers/detail/a_id/13996/)至未破解的3DS。系统迁移*仅*支持如下方向的迁移：
-  + 新3DS -> 新3DS
-  + 老3DS或2DS -> 老3DS或2DS
-  + 老3DS或2DS -> 新3DS
+  + 新3DS或新2DS -> 新3DS或新2DS
+  + 老3DS或老2DS -> 老3DS或老2DS
+  + 老3DS或老2DS -> 新3DS或新2DS
 {% endcapture %}
 
 <div class="notice--warning">{{ notice-4 | markdownify }}</div>

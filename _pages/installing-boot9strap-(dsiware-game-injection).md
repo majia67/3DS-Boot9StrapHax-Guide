@@ -108,7 +108,7 @@ title: "安装boot9strap（DSiWare游戏注入）"
   + **如果提示，请迁移DSiWare titles！**
   + 如果提示，**不要**删除来源系统上的SD内容
   + 确保在进行系统转移的时候，两台3DS的电池都有电
-  + 仅限2DS/老3DS（来源）转移到新3DS（目标）- 如果被问到使用何种方式转移SD卡上的数据：
+  + 仅限老3DS/老2DS（来源）转移到新3DS/新2DS（目标）- 如果被问到使用何种方式转移SD卡上的数据：
     + **不要**选择"Low-Capacity microSD Card Transfer"（低容量microSD卡迁移）或minimal option（最小迁移，选项2），因为这将只转移tickets，可能不会转移DSiWare的存档。
     + 快速的方法：如果你能自己将来源SD卡的数据移动到目标SD卡，当提示时选择"PC-Based Transfer"（电脑端迁移，选项3）。
     + 最慢的方法：如果你不能自己在电脑上迁移SD卡数据，选择**full** "Wireless Transfer"（完整无线迁移，选项1）。
@@ -118,8 +118,8 @@ title: "安装boot9strap（DSiWare游戏注入）"
 
 1. 在**来源3DS**上，完成初始化的操作
 2. 在下面的操作中选择一个执行：
-    + 在**目标3DS**上完成本教程剩下的部分，然后等一个礼拜，再从**目标3DS**迁移回**来源3DS** *（请记住，你不能从一个新3DS迁移回一个老3DS）*
-    + 给任天堂打电话，告诉它们你访问不了你当前NNID绑定的设备（也就是**目标3DS**），想把它绑到另一台设备上（也就是**来源3DS**）（译者注：真是对大陆玩家的实力嘲讽）
+    + 在**目标3DS**上完成本教程剩下的部分，然后等一个礼拜，再从**目标3DS**迁移回**来源3DS** *（请记住，你不能从一个新3DS或新2DS上迁移回一个老3DS或老2DS）*
+    + 给任天堂打电话，告诉它们你访问不了你当前NNID绑定的设备（也就是**目标3DS**），想把它绑到另一台设备上（也就是**来源3DS**）
     + 你也可以参照[移除NNID](https://3ds.guide/troubleshooting#rm_nnid) 页面，移除**来源3DS**上的NNID，如果你希望它留在**目标3DS**上
 1. 按住(Start)键重启**来源3DS**，运行Luma3DS启动器菜单
 1. 按(A)键运行GodMode9
@@ -136,7 +136,7 @@ title: "安装boot9strap（DSiWare游戏注入）"
 
 1. 解压Luma3DS`.7z`压缩包，复制`boot.firm`文件到你SD卡的根目录
 1. 复制`boot.nds`文件到**目标3DS**的SD根目录
-1. 解压缩`starter.zip`压缩包，复制`starter`文件夹下的所有文件和文件夹到**目标3DS**的SD卡根目录
+1. 解压缩`starter.zip`压缩包，复制*解压后的文件和文件夹*到**目标3DS**的SD卡根目录
 1. 在**目标3DS**的SD卡根目录新建一个名为`boot9strap`的文件夹
 1. 复制对应**目标3DS**的11.4.0 `.firm`文件到**目标3DS**的SD卡的`boot9strap`目录下
 1. 解压缩boot9strap `.zip`压缩包，复制`boot9strap.firm`文件到**目标3DS**的SD卡的`/boot9strap/`目录下

@@ -43,8 +43,8 @@ Luma3DS将来的所有版本将只以`.firm`格式发布，这意味着它将只
 * 最新版的[SafeB9SInstaller](https://github.com/d0k3/SafeB9SInstaller/releases/latest)
 * 最新版的[boot9strap](https://github.com/SciresM/boot9strap/releases/latest) *（标准版boot9strap；不是`devkit`或`ntr`版）*
 * 最新版的[GodMode9](https://github.com/d0k3/GodMode9/releases/latest)
-* 最新版的[the Homebrew Launcher](https://github.com/fincs/new-hbmenu/releases/latest)
 * 最新改版的[Luma3DS Updater](https://github.com/KunoichiZ/lumaupdate/releases/latest)
+* 自制程序[新手包](http://smealum.github.io/ninjhax2/starter.zip)
 
 #### 操作指南
 
@@ -55,7 +55,7 @@ Luma3DS将来的所有版本将只以`.firm`格式发布，这意味着它将只
 
 1. 关机
 1. 将SD卡取下，插入电脑
-1. 复制`boot.3dsx`文件到SD卡的根目录
+1. 解压缩`starter.zip`压缩包，复制*解压后的文件和文件夹*到SD卡的根目录
 1. 解压缩Luma3DS `.7z`压缩包，复制`boot.firm`文件到SD卡根目录
 1. 在你的SD卡根目录创建名为`cias`的文件夹（如果不存在的话）
 1. 复制`lumaupdater.cia`文件到SD卡的`/cias/`目录下

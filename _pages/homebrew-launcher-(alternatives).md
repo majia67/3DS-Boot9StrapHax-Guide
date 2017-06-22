@@ -8,7 +8,7 @@ Homebrew Launcher（自制程序启动器，HBL）有很多进入或运行方法
 如果你用不了browserhax，下面的游戏一个也没有，并且也没有另一台能访问自制程序启动器的3DS，最便宜的方案是买一张“任天堂精选”版的[塞尔达传说时之笛3D](https://amzn.to/2fkaKdp)（确保你买的是符合你设备所在区域的版本）和[Powersaves](https://amzn.to/2fb3VY7)（支持所有区域），然后使用下表中的oot3dhax。
 {: .notice--info}
 
-确保你的机器的无线传输（就是Wifi）开关是开启的，因为udsploit（下一步要用到）需要无线模块开启才能生效，且部分机器（新3DS和2DS）不能在自制程序启动器中修改无线传输设置。无线传输设置只要开启就行，无需连接到热点（access point）。
+确保你的机器的无线传输（就是Wifi）开关是开启的，因为udsploit（下一步要用到）需要无线模块开启才能生效，且部分机器（新3DS、新2DS和老2DS）不能在自制程序启动器中修改无线传输设置。无线传输设置只要开启就行，无需连接到热点（access point）。
 {: .notice--info}
 
 #### 你需要
@@ -19,7 +19,7 @@ Homebrew Launcher（自制程序启动器，HBL）有很多进入或运行方法
 
 1. 关机
 1. 将SD卡从机器中取出，并插入电脑
-1. 解压缩`starter.zip`压缩包，将*解压后的文件*拷贝到你SD卡的根目录，并将SD卡插回你的3DS
+1. 解压缩`starter.zip`压缩包，复制*解压后的文件和文件夹*到SD卡的根目录下，并将SD卡插回你的3DS
 
     ![]({{ base_path }}/images/screenshots/hb-alt-file-layout.png)
     {: .notice--info}
