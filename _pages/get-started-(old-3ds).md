@@ -102,7 +102,7 @@ title: "开始教程（老3DS）"
     </tr>
     <tr>
       <td style="text-align: center; font-weight: bold;" colspan="2">任何系统版本<br></td>
-      <td style="text-align: center; font-weight: bold;" colspan="2"><p style="display: inline-block; margin-top: 1.3em; width: 47%"><a href="installing-boot9strap-(ntrboothax)">安装boot9strap（ntrboothax）</a><br><sub>（需要兼容的烧录卡带）</sub></p><p style="display: inline-block; margin-top: 1.3em; vertical-align: super; width: 6%">或</p><p style="display: inline-block; margin-top: 1.3em; width: 47%"><a href="installing-boot9strap-(hardmod)">安装boot9strap（硬改）</a><br><sub>（需要拆机）</sub></p></td>
+      <td style="text-align: center; font-weight: bold;" colspan="2"><p style="display: inline-block; margin-top: 1.3em; width: 47%"><a href="installing-boot9strap-(ntrboothax)">安装boot9strap（ntrboothax）</a><br>（需要兼容的烧录卡带）</p><p style="display: inline-block; margin-top: 1.3em; vertical-align: super; width: 6%">或</p><p style="display: inline-block; margin-top: 1.3em; width: 47%"><a href="installing-boot9strap-(hardmod)">安装boot9strap（硬改）</a><br>（需要拆机）</p></td>
     </tr>
   </tbody>
 </table>
