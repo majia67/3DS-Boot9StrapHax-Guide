@@ -109,7 +109,7 @@ title: "安装boot9strap（DSiWare存档注入）"
 1. 请阅读以下注意事项：
   + 你的自制系统的3DS = 来源3DS = "Source System"（来源系统）
   + 你的原生系统3DS = 目标3DS = "Target System"（目标系统）
-  + **如果提示，请迁移DSiWare titles！**
+  + **完成系统迁移后，不要急着在目标3DS上点击下一步。请先将来源3DS的SD卡拔下插入目标3DS上，然后按照提示迁移DSiWare titles！（感谢[heximing](https://github.com/heximing)的提醒）**
   + 如果提示，**不要**删除来源系统上的SD内容
   + 确保在进行系统转移的时候，两台3DS的电池都有电
   + 仅限老3DS/老2DS（来源）转移到新3DS/新2DS（目标）- 如果被问到使用何种方式转移SD卡上的数据：
