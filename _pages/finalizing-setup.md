@@ -55,13 +55,6 @@ boot9strap完成加载NAND之后，会运行'boot.firm'文件。该文件可以�
     ![]({{ base_path }}/images/screenshots/finalizing-setup-file-layout.png)
     {: .notice--info}
 
-1. 如果你的系统版本在9.0.0以下，除非使用另一个版本的Luma3DS，你的机器将不能开机：
-  + 下载[老版Luma3DS]({{ base_path }}/luma_legacy/boot.firm)
-  + 复制`boot.firm`文件到SD卡根目录*（覆盖已有文件）*
-1. 如果你的系统版本在3.0.0到4.5.0之间（包括3.0.0和4.5.0），除非你下载所需的固件，否则你的机器将无法开机：
-  + 下载[这个文件](http://nus.cdn.c.shop.nintendowifi.net/ccs/download/0004013800000002/00000056)并重命名为`native.firm`
-  + 下载[这个文件](http://nus.cdn.c.shop.nintendowifi.net/ccs/download/0004013800000002/cetk)
-  + 复制`native.firm`和`cetk`这两个文件到SD卡的`/luma/`目录下
 1. 将SD卡插回机器上
 1. 开机
 
@@ -77,8 +70,6 @@ boot9strap完成加载NAND之后，会运行'boot.firm'文件。该文件可以�
   + 使用B9S + Luma（或者其它自制系统）进行系统升级很安全
   + 如果出现错误，将你的DNS设置改为"auto"（自动）模式
   + 如果仍然出现错误，并且你的系统版本在9.2.0以下，先进行[9.2.0 CTR转移](9.2.0-ctrtransfer)，然后尝试再次升级
-1. 如果你的系统版本在升级系统前是9.0.0以下，下载[最新版的Luma3DS](https://github.com/AuroraWright/Luma3DS/releases/latest)，替换SD卡根目录下的`boot.firm`文件
-1. 如果你的系统版本在在升级系统前是3.0.0到4.5.0之间（包括3.0.0和4.5.0），删除SD卡`/luma/`目录下的`native.firm`和`cetk`文件
 
 ##### 第三部分 - 运行FBI
 
@@ -164,21 +155,7 @@ ___
 {: .notice--info}
 
 {% capture notice-7 %}
-**你可以将下表中没有的文件和文件夹从SD卡中删除：**
-
- + 3ds
- + DCIM
- + files9
- + hblauncherloader
- + luma
- + Nintendo 3DS
- + arm9loaderhax.bin
- + boot.3dsx
-
-{% endcapture %}
-
-{% capture notice-7 %}
-将下图中**没有**列出的文件和文件夹从你的SD卡中删除：**
+将下图中**没有**列出的文件和文件夹从你的SD卡中删除。`DCIM`文件夹中存放的是用3DS的相机拍摄的照片，如果你的SD卡上有这个文件夹也可以保留。**
 <br><br>
 ![]({{ base_path }}/images/screenshots/final-file-layout.png)
 {% endcapture %}

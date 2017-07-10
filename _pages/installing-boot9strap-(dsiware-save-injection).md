@@ -127,8 +127,8 @@ title: "安装boot9strap（DSiWare存档注入）"
     + 你也可以参照[移除NNID](https://3ds.guide/troubleshooting#rm_nnid) 页面，移除**来源3DS**上的NNID，如果你希望它留在**目标3DS**上
 1. 按住(Start)键重启**来源3DS**，运行Luma3DS启动器菜单
 1. 按(A)键运行GodMode9
-1. 进入`[0:] SDCARD`
-1. 移动光标到你的NAND `.bin`文件上，按(A)键选中，然后选择"NAND image options..."，然后选择"Restore SysNAND (safe)"
+1. 依次进入`[0:] SDCARD` -> `gm9out`
+1. 移动光标到`nand.bin`文件上，按(A)键选中，然后选择"NAND image options..."，然后选择"Restore SysNAND (safe)"
 1. 按(A)键解锁SysNAND写保护，然后输入提示的按键组合
   + 这不会覆盖已经安装的boot9strap
 1. 输入提示的按键组合，解锁SysNAND (lvl1)写保护
@@ -152,10 +152,9 @@ title: "安装boot9strap（DSiWare存档注入）"
   + **The Legend of Zelda: Four Swords (Anniversary Edition)**：开始游戏
   + 如果你的游戏没有安装破解后的存档文件，[参见这个问题排查](troubleshooting#ts_dsiware)
 1. 选择"Dump F0F1"，备份**目标3DS**的FIRM
-1. 记下FIRM的备份位置
 1. 退出b9sTool
   + 你可能需要按电源键强制关机
-1. 将SD卡插回你的电脑，复制`F0F1_N3DS.bin`或`F0F1_O3DS.bin`（取决于你的设备）到一个安全的地方
+1. 将SD卡插回你的电脑，复制`boot9strap`文件夹下的`F0F1_N3DS.bin`或`F0F1_O3DS.bin`（取决于你的设备）到一个安全的地方
   + 在多个位置进行备份
   + 备份文件可以在将来出现错误时将你的机器救砖
 1. 将SD卡插回**目标3DS**

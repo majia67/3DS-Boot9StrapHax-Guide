@@ -125,6 +125,26 @@ title: "问题排查"
    1. 如果进入安全模式，升级你的系统
 1. 请参照[FAQ](faq#faq_support)页面在Github Issues中提问。
 
+## <a name="ts_dsiware" />完成DSiWare转移后，我的破解后的DSiWare不能正常工作
+
+1. 在**来源3DS**上按住(Start)键重启，进入Luma3DS启动器菜单
+1. 按(A)键运行GodMode9
+1. 依次进入`[0:] SDCARD` -> `gm9out`
+1. 移动光标到`nand.bin`文件上，按(A)键选中，然后选择"NAND image options..."，然后选择"Restore SysNAND (safe)"
+1. 按(A)键解锁SysNAND写保护，然后输入提示的按键组合
+  + 这不会覆盖已经安装的boot9strap
+1. 输入提示的按键组合，解锁SysNAND (lvl1)写保护
+  + 这可能需要一些时间
+1. 完成后，按(A)键继续
+1. 如果在**目标3DS**上没有看到对应的游戏，将你用来购买游戏的NNID和**目标3DS**关联，然后重新下载游戏
+  + 你可能必须先从"System Settings"（系统设置）中的"Data Management"（数据管理）菜单删除该游戏
+  + 如果**目标3DS**的系统版本不是最新版，你可能需要运行ctr-httpwn才能访问eShop
+1. 在**来源3DS**上，进行存档注入（如果你使用`.app`页面，也要注入`.app`）
+1. 在**来源3DS**上，依次进入"System Settings"（系统设置） -> "Data Management"（数据管理） -> "DSiWare"，然后复制你的DSiWare游戏到SD卡
+1. 要么将**来源3DS**的SD卡插入**目标3DS**，要么将**目标3DS**SD卡上的`Nintendo 3DS`文件夹重命名，然后复制**来源3DS**SD上的`Nintendo 3DS`文件夹到**目标3DS**的SD卡上
+1. 在**目标3DS**上，依次进入"System Settings"（系统设置） -> "Data Management"（数据管理） -> "DSiWare"，然后复制你的DSiWare游戏到系统中
+1. 将SD卡恢复原状，然后继续进行DSiWare注入
+
 ## <a name="ts_sys_b9s" />安装完boot9strap后启动到SysNAND黑屏
 
 1. 确保你有一个正常工作的payload

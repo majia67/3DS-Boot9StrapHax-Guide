@@ -23,6 +23,11 @@ Homebrew Launcher（自制程序启动器，HBL）有很多进入或启动方法
 
 * 自制程序[新手包](http://smealum.github.io/ninjhax2/starter.zip)
 * 最新版的[SoundHax](http://soundhax.com/) *依照你的设备和区域选择对应的文件下载*
+* 最新版的[SafeB9SInstaller](https://github.com/d0k3/SafeB9SInstaller/releases/latest)
+* 最新版的[boot9strap](https://github.com/SciresM/boot9strap/releases/latest) *（标准版boot9strap；不是`devkit`或`ntr`版）*
+* 最新版的[safehax](https://github.com/TiniVi/safehax/releases/latest)
+* 最新版的[udsploit](https://github.com/smealum/udsploit/releases/latest)
+* 最新版的[Luma3DS](https://github.com/AuroraWright/Luma3DS/releases/latest) *（`.7z`压缩包）*
 * [otherapp payload](https://smealum.github.io/3ds/#otherapp) *依照你的设备和区域选择对应的文件下载*
 
 #### 操作指南
@@ -32,11 +37,17 @@ Homebrew Launcher（自制程序启动器，HBL）有很多进入或启动方法
 1. 解压缩`starter.zip`压缩包，复制*解压后的文件和文件夹*到SD卡的根目录下
 1. 将SoundHax的`.m4a`文件拷贝到SD卡的根目录中
 1. 将the otherapp payload拷贝到SD卡的根目录中，并重命名为`otherapp.bin`
+1. 解压Luma3DS`.7z`压缩包，复制`boot.firm`文件到你SD卡的根目录
+1. 在SD卡根目录下创建`boot9strap`文件夹（如果没有的话）
+1. 解压缩boot9strap `.zip`压缩包，复制`boot9strap.firm`和`boot9strap.firm.sha`文件到SD卡的`/boot9strap/`目录下
+1. 复制`safehax.3dsx`文件到SD卡的`/3ds/`目录下
+1. 复制`udsploit.3dsx`文件到SD卡的`/3ds/`目录下
+1. 解压缩SafeB9SInstaller `.zip`压缩包，复制`SafeB9SInstaller.bin`文件到SD卡根目录，并重命名为`safehaxpayload.bin`
 
-    ![]({{ base_path }}/images/screenshots/soundhax-file-layout.png)
+    ![]({{ base_path }}/images/screenshots/boot9strap-hb-file-layout.png)
     {: .notice--info}
 
-1. 将SD卡插回设备
+1. 将SD卡插回机器
 1. 开机
 1. 运行Nintendo 3DS Sound（任天堂3DS声音）
 
