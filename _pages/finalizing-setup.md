@@ -134,19 +134,19 @@ boot9strap完成加载NAND之后，会运行'boot.firm'文件。该文件可以�
 ___
 
 {% capture notice-10 %}
-你现在可以使用Luma3DS Updater来更新你的Luma3DS到最新版，只需运行该程序并按下(A)键。
-这和系统升级不是一回事；它只会下载并提取最新的Luma3DS文件。
-这只会升级SD卡上的Luma3DS文件。如果你在没有SD卡的情况下开机，它会使用你放在CTRNAND上的版本。
+你现在可以使用Luma3DS Updater来更新你的Luma3DS到最新版，只需运行该程序并按下(A)键。<br>
+这和系统升级不是一回事；它只会下载并提取最新的Luma3DS文件。<br>
+这只会升级SD卡上的Luma3DS文件。如果你在没有SD卡的情况下开机，它会使用你放在CTRNAND上的版本。<br>
 {% endcapture %}
 
 <div class="notice--info">{{ notice-10 | markdownify }}</div>
 
 {% capture notice-6 %}
-现在你将默认启动到Luma3DS自制SysNAND系统。
-你可以按下(Select)键开机，进入Luma3DS的设置菜单。
-你可以按下(Start)键开机，运行Luma启动器菜单（注意只有在Luma3DS检测到多于一个payload的时候才会显示菜单）。
-你可以按下(Start) + (Select) + (X)键开机，导出ARM11 bootrom（`boot11.bin`），ARM9 bootrom（`boot9.bin`），以及你设备独有的OTP(`OTP.bin`)到SD卡的`/boot9strap`目录下（该过程没有任何提示信息）。
-你可以在系统启动时按下(L) + (Down) + (Select)键，打开Luma3DS内置的Rosalina菜单。如果想了解Rosalina的全部特性，参见[Luma3DS v8.0 Release](https://github.com/AuroraWright/Luma3DS/releases/tag/v8.0)。
+现在你将默认启动到Luma3DS自制SysNAND系统。<br>
+你可以按下(Select)键开机，进入Luma3DS的设置菜单。<br>
+你可以按下(Start)键开机，运行Luma启动器菜单（注意只有在Luma3DS检测到多于一个payload的时候才会显示菜单）。<br>
+你可以按下(Start) + (Select) + (X)键开机，导出ARM11 bootrom（`boot11.bin`），ARM9 bootrom（`boot9.bin`），以及你设备独有的OTP(`OTP.bin`)到SD卡的`/boot9strap`目录下（该过程没有任何提示信息）。<br>
+你可以在系统启动时按下(L) + (Down) + (Select)键，打开Luma3DS内置的Rosalina菜单。如果想了解Rosalina的全部特性，参见[Luma3DS v8.0 Release](https://github.com/AuroraWright/Luma3DS/releases/tag/v8.0)。<br>
 {% endcapture %}
 
 <div class="notice--info">{{ notice-6 | markdownify }}</div>
