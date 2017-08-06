@@ -2,13 +2,13 @@
 title: "安装Boot9Strap（DSiWare）"
 ---
 
-在11.4.0的系统版本上有两种使用DSiWare安装boot9strap的方法。
+在11.5.0的系统版本上有两种使用DSiWare安装boot9strap的方法。
 {: .notice--info}
 
 其中一个方法仅能在四种特定的游戏上有效，且这四种游戏都不再在eShop上销售；另一种方法还能在不少游戏上有效，且这些游戏还在eShop上有售。
 {: .notice--info}
 
-这两种方法都需要两台机器。其中一台机器必须已经运行某种自制系统（boot9strap或arm9loaderhax），我们称为*来源3DS*；另一台机器系统版本在11.4.0，我们称为*目标3DS*。
+这两种方法都需要两台机器。其中一台机器必须已经运行某种自制系统（boot9strap或arm9loaderhax），我们称为*来源3DS*；另一台机器系统版本在11.5.0，我们称为*目标3DS*。
 {: .notice--info}
 
 两台3DS必须属于同一区域。

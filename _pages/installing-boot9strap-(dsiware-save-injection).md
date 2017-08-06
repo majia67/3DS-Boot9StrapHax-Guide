@@ -2,7 +2,7 @@
 title: "安装boot9strap（DSiWare存档注入）"
 ---
 
-请注意：某些版本的Luma3DS只会在检测到多于一个payload时显示Luma3DS启动器菜单。如果只检测到一个payload，按住(Start)键启动将直接运行GodMode9。
+请注意，如果在SD卡的`/luma/payloads/`目录下有除了`GodMode9.firm`的其他payload文件，按住(Start)键开机的时候会显示“启动器菜单”，你需要用方向键和(A)键选择"GodMode9"才能继续进行教程中接下来的步骤。
 {: .notice--info}
 
 你需要一个能进行BT下载的软件，如[Deluge](http://dev.deluge-torrent.org/wiki/Download)、[aria2](https://aria2.github.io/)或迅雷，才能下载本节教程中的[磁力链接](http://baike.baidu.com/item/%E7%A3%81%E5%8A%9B%E9%93%BE%E6%8E%A5)。
@@ -18,7 +18,7 @@ title: "安装boot9strap（DSiWare存档注入）"
 
 * 两台3DS
   + **来源3DS**：运行*最新系统版本*自制固件（boot9strap和arm9loaderhax）的3DS
-  + **目标3DS**：运行原生系统的3DS（版本为*11.4.0*）
+  + **目标3DS**：运行原生系统的3DS（版本为*11.5.0*）
 * **来源3DS**上已经有了下列可破解的DSiWare游戏中的一个（盗版游戏**不能**用来破解）：
   + **Fieldrunners**
   + **Legends of Exidia**
@@ -30,7 +30,7 @@ title: "安装boot9strap（DSiWare存档注入）"
 * 最新版的[boot9strap](https://github.com/SciresM/boot9strap/releases/latest) *（标准版boot9strap；不是`devkit`或`ntr`版）*
 * 最新版的[Luma3DS](https://github.com/AuroraWright/Luma3DS/releases/latest) *（`.7z`压缩包）*
 * 自制程序[新手包](http://smealum.github.io/ninjhax2/starter.zip)
-* 对应**目标3DS**的11.4.0 `.firm`文件
+* 对应**目标3DS**的11.4.0 / 11.5.0（两个版本的系统拥有相同的firm版本）`.firm`文件
   + 老3DS：[`2.54-0_11.4_OLD.firm`](magnet:?xt=urn:btih:0dd89d42ad711f770da899af05ee162ede0d0070&dn=2.54-0_11.4_OLD.firm&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce)
   + 新3DS：[`2.54-0_11.4_NEW.firm`](magnet:?xt=urn:btih:3b59dd43eec3edb133555f58d1180bfb196acbb4&dn=2.54-0_11.4_NEW.firm&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce)
 
@@ -41,7 +41,7 @@ title: "安装boot9strap（DSiWare存档注入）"
 使用一个[存档管理器](https://github.com/J-D-K/JKSM/releases/latest)，备份目标3DS上（它会被格式化！）你觉得重要的存档。
 {: .notice--warning}
 
-1. 解压GodMode9 `.zip`压缩包，复制`GodMode9.firm`文件（arm9loaderhax用户选择`GodMode9.bin`文件）到**来源3DS**SD卡的`/luma/payloads/`目录下
+1. 解压GodMode9 `.zip`压缩包，复制`GodMode9.firm`文件（arm9loaderhax用户选择`GodMode9.bin`文件）到**来源3DS**SD卡的`/luma/payloads/`目录下，复制`gm9`文件夹到**来源3DS**的SD卡根目录下
 1. 解压缩3ds\_dsiwarehax\_installer `.zip`压缩包，从对应的`/dsiware/(8 Character ID)/`（译者注：(8 Character ID)为下面列表中每个游戏后面的8位字符串）文件夹下复制`public.sav`文件到**来源3DS**的SD根目录下
   + **Fieldrunners 美版**: `4b464445`
   + **Fieldrunners 欧版**: `4b464456`
@@ -57,9 +57,12 @@ title: "安装boot9strap（DSiWare存档注入）"
 1. 按(A)键运行GodMode9
 1. 按(Home)键调出行动菜单
 1. 选择"More..."
-1. 选择"Backup NAND"
+1. 选择"Backup SysNAND"
+1. 按(A)键确认
+  + 这一步可能需要较长时间
 1. 按(A)键继续
-1. 按住(R)键的同时按(B)键，弹出SD卡，并插入电脑
+1. 按住(R)键的同时按(B)键，弹出**来源3DS**的SD卡，并插入电脑
+1. 将**来源3DS**的SD卡取出，并插入电脑
 1. 将**目标3DS**的SD卡取出，并插入电脑
 1. **将两台3DS的SD卡上的文件备份到电脑上两个单独的文件夹中（区分清楚哪个文件夹对应哪台3DS）！**
 1. 将两张SD卡分别插回对应的3DS中
@@ -67,9 +70,8 @@ title: "安装boot9strap（DSiWare存档注入）"
 
 ##### 第二部分 - 安装存档
 
-1. 按住(Start)键启动**来源3DS**，运行Luma3DS启动器菜单
-1. 按(A)键运行GodMode9
-1. 进入`SDCARD`
+1. 按住(Start)键启动**来源3DS**，运行GodMode9
+1. 进入`[0:] SDCARD`
 1. 移动光标到`public.sav`文件上，按(Y)键复制它
 1. 按(B)键返回主菜单
 1. 依次进入`SYSNAND TWLN` -> `title` -> `00030004`
@@ -87,6 +89,7 @@ title: "安装boot9strap（DSiWare存档注入）"
 1. 在`public.sav`文件上按(X)键删除它
 1. 输入提示的按键组合，解锁SysNAND (lvl1)写保护
 1. 按(A)键继续
+1. 如果出现提示重新加上写保护，按(B)键取消
 1. 按(Y)键粘贴`public.sav`文件
 1. 选择"Copy path(s)"
 1. 按(Start)键重启**来源3DS**
@@ -125,15 +128,16 @@ title: "安装boot9strap（DSiWare存档注入）"
     + 在**目标3DS**上完成本教程剩下的部分，然后等一个礼拜，再从**目标3DS**迁移回**来源3DS** *（请记住，你不能从一个新3DS或新2DS迁移回一个老3DS或老2DS）*
     + 给任天堂打电话，告诉它们你访问不了你当前NNID绑定的设备（也就是**目标3DS**），想把它绑到另一台设备上（也就是**来源3DS**）
     + 你也可以参照[移除NNID](https://3ds.guide/troubleshooting#rm_nnid) 页面，移除**来源3DS**上的NNID，如果你希望它留在**目标3DS**上
-1. 按住(Start)键重启**来源3DS**，运行Luma3DS启动器菜单
-1. 按(A)键运行GodMode9
-1. 依次进入`[0:] SDCARD` -> `gm9out`
-1. 移动光标到`nand.bin`文件上，按(A)键选中，然后选择"NAND image options..."，然后选择"Restore SysNAND (safe)"
+1. 按住(Start)键重启**来源3DS**，运行GodMode9
+1. 如果提示你创建文件备份，按(A)键执行，然后按(A)键继续教程
+1. 依次进入`[0:] SDCARD` -> `gm9` -> `out`
+1. 移动光标到`<serialnumber>_nandmin_###.bin`文件上（serialnumber是你的机器序列号），按(A)键选中，然后选择"NAND image options..."，然后选择"Restore SysNAND (safe)"
 1. 按(A)键解锁SysNAND写保护，然后输入提示的按键组合
   + 这不会覆盖已经安装的boot9strap
 1. 输入提示的按键组合，解锁SysNAND (lvl1)写保护
   + 这可能需要一些时间
 1. 完成后，按(A)键继续
+1. 如果出现提示重新加上写保护，按(A)键确认
 1. 按(Start)键重启**来源3DS**
 
 ##### 第五部分 - 备份目标3DS的FIRM
@@ -142,7 +146,7 @@ title: "安装boot9strap（DSiWare存档注入）"
 1. 复制`boot.nds`文件到**目标3DS**的SD根目录
 1. 解压缩`starter.zip`压缩包，复制*解压后的文件和文件夹*到**目标3DS**的SD卡根目录
 1. 在**目标3DS**的SD卡根目录新建一个名为`boot9strap`的文件夹
-1. 复制对应**目标3DS**的11.4.0 `.firm`文件到**目标3DS**的SD卡的`boot9strap`目录下
+1. 复制对应**目标3DS**的11.5.0 `.firm`文件到**目标3DS**的SD卡的`boot9strap`目录下
 1. 解压缩boot9strap `.zip`压缩包，复制`boot9strap.firm`文件到**目标3DS**的SD卡的`/boot9strap/`目录下
 1. 在**目标3DS**上运行你的DSiWare游戏
 1. 通过你的DSiWare游戏运行b9sTool
@@ -150,7 +154,6 @@ title: "安装boot9strap（DSiWare存档注入）"
   + **Legends of Exidia**：在两个标题界面按(A)键或(Start)键之后，选择第一个存档并点继续
   + **Guitar Rock Tour**: 将页面下拉，依次进入High-Scores（高分榜） -> Drums（鼓） -> Easy（简单）
   + **The Legend of Zelda: Four Swords (Anniversary Edition)**：开始游戏
-  + 如果你的游戏没有安装破解后的存档文件，[参见这个问题排查](troubleshooting#ts_dsiware)
 1. 选择"Dump F0F1"，备份**目标3DS**的FIRM
 1. 退出b9sTool
   + 你可能需要按电源键强制关机

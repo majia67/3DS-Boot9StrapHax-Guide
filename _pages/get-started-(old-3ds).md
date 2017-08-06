@@ -52,7 +52,7 @@ title: "开始教程（老3DS）"
   <tbody>
     <tr>
       <td style="text-align: center">1.0.0</td>
-      <td style="text-align: center">1.1.0</td>
+      <td style="text-align: center">2.0.0</td>
       <td style="text-align: center" colspan="2"><a href="installing-boot9strap-(hardmod)">安装boot9strap（硬改）</a></td>
     </tr>
     <tr>
@@ -98,6 +98,11 @@ title: "开始教程（老3DS）"
     <tr>
       <td style="text-align: center">11.4.0</td>
       <td style="text-align: center">11.4.0</td>
+      <td style="text-align: center; font-weight: bold;" colspan="2"></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; font-weight: bold;">11.5.0</td>
+      <td style="text-align: center; font-weight: bold;">11.5.0</td>
       <td style="text-align: center" colspan="2"><a href="installing-boot9strap-(dsiware)">安装boot9strap（DSiWare）</a></td>
     </tr>
     <tr>

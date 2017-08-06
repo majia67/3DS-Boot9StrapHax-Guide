@@ -31,6 +31,7 @@ title: "升级B9S"
 * 最新版的[boot9strap](https://github.com/SciresM/boot9strap/releases/latest) *（标准boot9strap；不是`devkit`或`ntr`版）*
 * 最新版的[GodMode9](https://github.com/d0k3/GodMode9/releases/latest)
 * 自制程序[新手包](http://smealum.github.io/ninjhax2/starter.zip)
+* [`setup_ctrnand_luma3ds.gm9`]({{ base_path }}/gm9_scripts/setup_ctrnand_luma3ds.gm9)
 
 #### 操作指南
 
@@ -44,7 +45,8 @@ title: "升级B9S"
 1. **保留旧版本（v7.1）的Luma3DS（`boot.firm`文件）。之后会升级它。**
 1. 解压缩`starter.zip`压缩包，复制*解压后的文件和文件夹*到SD卡的根目录
 1. 在SD卡根目录创建`boot9strap`文件夹
-1. 解压缩GodMode9`.zip`压缩包，复制`GodMode9.firm`文件到SD卡的`luma/payloads/`目录下
+1. 解压`GodMode9`压缩包，复制`GodMode9.firm`文件（arm9loaderhax用户请使用`GodMode9.bin`文件）到SD卡的`/luma/payloads/`目录下，复制`gm9`文件夹到SD卡根目录下
+1. 复制`setup_ctrnand_luma3ds.gm9`文件到SD卡的`/gm9/scripts/`目录下
 1. 解压缩SafeB9SInstaller`.zip`压缩包，复制`SafeB9SInstaller.firm`文件到SD卡的`/luma/payloads/`目录下
 1. 解压缩boot9strap`.zip`压缩包，复制`boot9strap.firm`和`boot9strap.firm.sha`文件到SD卡的`/boot9strap/`目录下
 1. 将SD卡插回机器
@@ -76,32 +78,16 @@ title: "升级B9S"
 
 ##### 第五部分 - CTRNAND Luma3DS
 
-1. 关机，按住(Start)键开机，进入Luma3DS启动器菜单
-1. 按(A)键进入GodMode9
-1. 依次进入`[0:] SDCARD` -> `luma` -> `payloads`
-1. 移动光标到`SafeB9SInstaller.firm`文件上，按(X)键删除
-1. 按(A)键确认
-1. 按(B)键，返回`[0:] SDCARD`
-1. 移动光标到`boot.firm`文件上，按(Y)键复制
-1. 按(B)键返回到主菜单
-1. 进入`[1:] SYSNAND CTRNAND`
-1. 按(Y)键粘贴`boot.firm`文件
-1. 选择"Copy path(s)"（复制路径）
+1. 关机，按住(Start)键开机，运行GodMode9
+1. 如果提示你创建文件备份，按(A)键执行，然后按(A)键继续教程
+1. 按(Home)键打开行动菜单
+1. 选择"More..."（更多）
+1. 选择"Scripts..."（脚本）
+1. 选择"setup_ctrnand_luma3ds"
+1. 出现提示时，按(A)键继续
 1. 按(A)键解锁SysNAND (lvl1)写保护，然后输入提示的按键组合
-1. 移动光标到`arm9loaderhax.bin`文件上，按(X)键删除
-  + 如果你没有这个文件，请继续进行接下来的操作
-1. 按(A)键确认
-1. 按(B)键返回到主菜单
-1. 进入`[0:] SDCARD`
-1. 移动光标到`luma`文件夹上，按(Y)键复制
-  + 如果你的`luma`文件夹下有*除了*从本教程以前版本中下载的文件或文件夹（例如LayeredFS文件），你只需要复制`config.bin`和`payloads`文件，方法是分别移动光标到这两个文件上，按(L)键标记，然后按(Y)键复制
-1. 按(B)键返回到主菜单
-1. 依次进入`[1:] SYSNAND CTRNAND` -> `rw`
-1. 在已有的`luma`文件夹上，按(X)键删除
-  + 如果你没有这个文件夹，请继续接下来的教程
-1. 按(A)键确认
-1. 按(Y)键粘贴从SD卡复制的`luma`文件夹
-  + 如果你之前只复制了`config.bin`和`payloads`文件，你只需要手动创建一个`luma`文件夹（按住(R)键的同时按(Y)键，输入名字`luma`，然后按(A)键确认），然后进入`luma`文件夹下，然后按(Y)键粘贴`config.bin`和`payloads`文件
+1. 按(A)键继续
+1. 按(A)键重新加上写保护
 1. 按(Start)键重启
 
 ___

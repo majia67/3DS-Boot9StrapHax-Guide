@@ -23,6 +23,10 @@ title: "安装Boot9Strap（浏览器）"
 1. 在SD卡根目录创建一个名为`boot9strap`的文件夹
 1. 解压缩boot9strap `.zip`压缩包，复制`boot9strap.firm`和`boot9strap.firm.sha`文件到SD卡的`/boot9strap/`目录下
 1. 解压缩SafeB9SInstaller `.zip`压缩包，复制`SafeB9SInstaller.dat`和`Launcher.dat`文件到你的SD卡根目录
+
+    ![]({{ base_path }}/images/screenshots/boot9strap-browser-file-layout.png)
+    {: .notice--info}
+
 1. 将SD卡插回你的机器
 1. 开机
 

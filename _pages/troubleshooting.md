@@ -46,15 +46,10 @@ title: "问题排查"
 
 ## <a name="rm_nnid" />清除NNID而无需格式化设备
 
-#### 你需要
+请注意，如果在SD卡的`/luma/payloads/`目录下有除了`GodMode9.firm`的其他payload文件，按住(Start)键开机的时候会显示“启动器菜单”，你需要用方向键和(A)键选择"GodMode9"才能继续进行教程中接下来的步骤。
+{: .notice--info}
 
-* 最新版的[GodMode9](https://github.com/d0k3/GodMode9/releases/latest)
-
-#### 操作指南
-
-1. 解压`GodMode9`压缩包，复制`GodMode9.bin`到你SD卡的`/luma/payloads/`目录下
-1. 按住(Start)键重启，进入Luma3DS启动器菜单
-1. 按(A)键进入GodMode9
+1. 按住(Start)键开机，运行GodMode9
 1. 依次选择进入`[1:] SYSNAND CTRNAND` -> `data` -> (32位用户ID) -> `sysdata` -> `00010038`
 1. 在`00000000`上，按住(R)键的同时按下(X)键，以重命名这个文件
 1. 按一次(Up)键，将文件名改为`10000000`
@@ -64,15 +59,14 @@ title: "问题排查"
 1. 按(Start)键重启
 
 ## <a name="gw_fbi" />在Gateway降级过的设备上无法注入Health & Safety应用
-这一因为Gateway的降级方法非常糟糕，会在系统中留下每个app降级前后的两个版本，其中一个不再使用。这会迷惑H&S注入程序，使它注入到错误的版本中。
+这是因为Gateway的降级方法非常糟糕，会在系统中留下每个app降级前后的两个版本，其中一个不再使用。这会迷惑H&S注入程序，使它注入到错误的版本中。
 
-请注意：某些版本的Luma3DS只会在检测到多于一个payload时显示Luma3DS启动器菜单。如果只检测到一个payload，按住(Start)键启动将直接运行GodMode9。
+请注意，如果在SD卡的`/luma/payloads/`目录下有除了`GodMode9.firm`的其他payload文件，按住(Start)键开机的时候会显示“启动器菜单”，你需要用方向键和(A)键选择"GodMode9"才能继续进行教程中接下来的步骤。
 {: .notice--info}
 
 #### 操作指南
 
-1. 按住(Start)键开机，进入Luma3DS启动器菜单
-1. 按(A)键进入GodMode9
+1. 按住(Start)键开机，运行GodMode9
 1. 依次选择`[1:] SYSNAND CTRNAND` -> `title` -> `00040010`
 1. 移动到你的设备和区域所对应的文件夹：
   + **老3DS或老2DS 欧版**: `00022300` -> `content`
@@ -84,7 +78,8 @@ title: "问题排查"
 1. 注意，文件夹里有两组app和tmd文件，一组带有大写的后缀（`.TMD`和`.APP`），一组带有小写的后缀（`.tmd`和`.app`）
 1. 按住(R)键的同时，按(Y)键新建一个目录
 1. 按(A)键确认目录名为`newdir`（叫什么名字不重要）
-1. 按(A)键解锁SysNAND写入，并输入提示的按键组合
+1. 按(A)键解锁SysNAND写保护，并输入提示的按键组合
+1. 如果出现提示重新加上写保护，按(B)键取消
 1. 在每个大写字母后缀（`.TMD`和`.APP`）的文件上按(L)键选中它们
 1. 按(Y)键复制这些文件
 1. 进入`newdir`文件夹
@@ -125,7 +120,7 @@ title: "问题排查"
    1. 如果进入安全模式，升级你的系统
 1. 请参照[FAQ](faq#faq_support)页面在Github Issues中提问。
 
-## <a name="ts_dsiware" />完成DSiWare转移后，我的破解后的DSiWare不能正常工作
+<!--## <a name="ts_dsiware" />完成DSiWare转移后，我的破解后的DSiWare不能正常工作
 
 1. 在**来源3DS**上按住(Start)键重启，进入Luma3DS启动器菜单
 1. 按(A)键运行GodMode9
@@ -143,7 +138,7 @@ title: "问题排查"
 1. 在**来源3DS**上，依次进入"System Settings"（系统设置） -> "Data Management"（数据管理） -> "DSiWare"，然后复制你的DSiWare游戏到SD卡
 1. 要么将**来源3DS**的SD卡插入**目标3DS**，要么将**目标3DS**SD卡上的`Nintendo 3DS`文件夹重命名，然后复制**来源3DS**SD上的`Nintendo 3DS`文件夹到**目标3DS**的SD卡上
 1. 在**目标3DS**上，依次进入"System Settings"（系统设置） -> "Data Management"（数据管理） -> "DSiWare"，然后复制你的DSiWare游戏到系统中
-1. 将SD卡恢复原状，然后继续进行DSiWare注入
+1. 将SD卡恢复原状，然后继续进行DSiWare注入-->
 
 ## <a name="ts_sys_b9s" />安装完boot9strap后启动到SysNAND黑屏
 

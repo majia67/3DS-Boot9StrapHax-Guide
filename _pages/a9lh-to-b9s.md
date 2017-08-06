@@ -45,6 +45,7 @@ Luma3DS将来的所有版本将只以`.firm`格式发布，这意味着它将只
 * 最新版的[GodMode9](https://github.com/d0k3/GodMode9/releases/latest)
 * 最新改版的[Luma3DS Updater](https://github.com/KunoichiZ/lumaupdate/releases/latest)
 * 自制程序[新手包](http://smealum.github.io/ninjhax2/starter.zip)
+* [`setup_ctrnand_luma3ds.gm9`]({{ base_path }}/gm9_scripts/setup_ctrnand_luma3ds.gm9)
 
 #### 操作指南
 
@@ -60,8 +61,9 @@ Luma3DS将来的所有版本将只以`.firm`格式发布，这意味着它将只
 1. 在你的SD卡根目录创建名为`cias`的文件夹（如果不存在的话）
 1. 复制`lumaupdater.cia`文件到SD卡的`/cias/`目录下
 1. 在你的SD卡根目录创建名为`boot9strap`的文件夹
-1. 解压缩GodMode9 `.zip`压缩包，复制`GodMode9.firm`文件到SD卡的`/luma/payloads/`目录下
 1. 删除SD卡`/luma/payloads/`目录下的所有`.bin` payloads（负载文件），因为它们和boot9strap版的Luma3DS不兼容
+1. 解压GodMode9`.zip`压缩包，复制`GodMode9.firm`到SD卡的`/luma/payloads/`目录下，复制`gm9`文件夹到SD卡根目录
+1. 复制`setup_ctrnand_luma3ds.gm9`文件到SD卡的`/gm9/scripts/`目录下
 1. 解压缩SafeB9SInstaller `.zip`压缩包，复制`SafeB9SInstaller.bin`文件到SD卡的`/luma/payloads/`目录下
 1. 重命名SD卡`/luma/payloads/`目录下的`SafeB9SInstaller.bin`文件为`start_SafeB9SInstaller.bin`
 1. 解压缩boot9strap `.zip`压缩包，复制`boot9strap.firm`和`boot9strap.firm.sha`文件到SD卡的`/boot9strap/`目录下
@@ -99,30 +101,16 @@ Luma3DS将来的所有版本将只以`.firm`格式发布，这意味着它将只
 如果在进行本教程之前，你已经安装了EmuNAND，并且想将之前EmuNAND中的数据迁移到新的SysNAND自制系统中，请在开始本部分操作之前先按照[迁移EmuNAND数据](move-emunand)一节进行。
 {: .notice--info}
 
-1. 关机，按住(Start)键开机，进入Luma3DS启动器菜单
-1. 按(A)键进入GodMode9
-1. 依次进入`[0:] SDCARD` -> `luma` -> `payloads`
-1. 选中`start_SafeB9SInstaller.bin`文件，按(X)键删除
-1. 按(A)键确认
-1. 进入`[0:] SDCARD`
-1. 选中`boot.firm`文件，按(Y)键复制
-1. 按(B)键返回到主菜单
-1. 进入`[1:] SYSNAND CTRNAND`
-1. 按(Y)键粘贴一份`boot.firm`文件的副本
-1. 选择"Copy path(s)"（复制路径）
+1. 按住(Start)键开机，运行GodMode9
+1. 如果提示你创建文件备份，按(A)键执行，然后按(A)键继续教程
+1. 按(Home)键打开行动菜单
+1. 选择"More..."（更多）
+1. 选择"Scripts..."（脚本）
+1. 选择"ctrtransfer_ticket_copy"
+1. 出现提示时，按(A)键继续
 1. 按(A)键解锁SysNAND(lvl1)写保护，然后按照提示输入按键组合
-1. 选中`arm9loaderhax.bin`文件，按(X)键删除
-  + 如果你没有看到这个文件，继续进行接下来的教程
-1. 按(A)键确认
-1. 按(B)键返回到主菜单
-1. 进入`[0:] SDCARD`
-1. 选中`luma`文件夹，按(Y)键复制
-1. 按(B)键返回到主菜单
-1. 依次进入`[1:] SYSNAND CTRNAND` -> `rw`
-1. 选中`luma`文件夹，按(X)键删除
-  + 如果你没有看到这个文件夹，继续进行接下来的教程
-1. 按(A)键确认
-1. 按(Y)键粘贴之前从SD卡根目录复制的`luma`文件夹
+1. 按(A)键继续
+1. 按(A)键重新加上写保护
 1. 按(Start)键重启
 
 ##### 第五部分 - 安装Luma3DS升级器

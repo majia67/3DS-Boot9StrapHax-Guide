@@ -52,6 +52,11 @@ title: "开始教程（新3DS）"
     <tr>
       <td style="text-align: center">11.4.0</td>
       <td style="text-align: center">11.4.0</td>
+      <td style="text-align: center; font-weight: bold;"></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; font-weight: bold;">11.5.0</td>
+      <td style="text-align: center; font-weight: bold;">11.5.0</td>
       <td style="text-align: center"><a href="installing-boot9strap-(dsiware)">安装boot9strap（DSiWare）</a></td>
     </tr>
     <tr>

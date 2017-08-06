@@ -13,7 +13,6 @@ boot9strap完成加载NAND之后，会运行'boot.firm'文件。该文件可以�
 同时，我们还会安装以下几种程序：
 
 +  **FBI** *(安装CIA格式的游戏和应用)*
-+  **Themely** *(安装自制主题)*
 +  **Luma3DS Updater** *(轻松升级你安装的CFW)*
 +  **GodMode9** *(可以进行NAND和卡带操作的多功能工具)*
 +  **Homebrew Launcher Loader** *（可以将自制程序启动器当作常规应用运行）*
@@ -24,12 +23,12 @@ boot9strap完成加载NAND之后，会运行'boot.firm'文件。该文件可以�
 
 #### 你需要
 
-* 最新版的[Themely](https://github.com/ErmanSayin/Themely/releases/latest) *（`.cia` 文件）*
 * 最新版的[hblauncher_loader](https://github.com/yellows8/hblauncher_loader/releases/latest)
 * 最新版的[GodMode9](https://github.com/d0k3/GodMode9/releases/)
 * 最新版的[DSP1](https://github.com/zoogie/DSP1/releases/latest)
 * 最新版的[FBI](https://github.com/Steveice10/FBI/releases/latest) *（`.cia`和`.3dsx`文件）*
 * 最新版的[Luma3DS Updater](https://github.com/Hamcha/lumaupdate/releases/latest) *（`.cia`文件）*
+* [`setup_ctrnand_luma3ds.gm9`]({{ base_path }}/gm9_scripts/setup_ctrnand_luma3ds.gm9)
 
 #### 操作指南
 
@@ -44,13 +43,13 @@ boot9strap完成加载NAND之后，会运行'boot.firm'文件。该文件可以�
 1. 复制 `lumaupdater.cia`文件到SD卡的`/cias/`目录下
 1. 复制`FBI.cia`文件到SD卡的`/cias/`目录下
 1. 复制`DSP1.cia`文件到SD卡的`/cias/`目录下
-1. 复制`Themely.cia`文件到SD卡的`/cias/`目录下
 
     ![]({{ base_path }}/images/screenshots/cias-file-layout.png)
     {: .notice--info}
 
 1. 在SD卡的`luma`文件夹里，创建名为`payloads`的文件夹
-1. 解压GodMode9`.zip`压缩包，复制`GodMode9.firm`文件到SD卡的`/luma/payloads/`目录下
+1. 解压GodMode9`.zip`压缩包，复制`GodMode9.firm`文件到SD卡的`/luma/payloads/`目录下，复制`gm9`文件夹到SD卡根目录下
+1. 复制`setup_ctrnand_luma3ds.gm9`文件到SD卡的`/gm9/scripts/`目录下
 
     ![]({{ base_path }}/images/screenshots/finalizing-setup-file-layout.png)
     {: .notice--info}
@@ -99,35 +98,32 @@ boot9strap完成加载NAND之后，会运行'boot.firm'文件。该文件可以�
 
 ##### 第六部分 - CTRNAND Luma3DS
 
-1. 关机，按住(Start)键开机，进入GodMode9
-1. 进入`[0:] SDCARD`
-1. 移动光标到`boot.firm`文件上，按(Y)键复制
-1. 按(B)键返回到主菜单
-1. 进入`[1:] SYSNAND CTRNAND`
-1. 按(Y)键粘贴`boot.firm`文件
-1. 选择"Copy path(s)"（复制路径）
+1. 按住(Start)键开机，运行GodMode9
+1. 如果提示你创建文件备份，按(A)键执行，然后按(A)键继续教程
+1. 按(Home)键打开行动菜单
+1. 选择"More..."（更多）
+1. 选择"Scripts..."（脚本）
+1. 选择"setup_ctrnand_luma3ds"
+1. 出现提示时，按(A)键继续
 1. 按(A)键解锁SysNAND (lvl1)写保护，然后输入提示的按键组合
-1. 按(B)键返回到主菜单
-1. 进入`[0:] SDCARD`
-1. 移动光标到`luma`文件夹上，按(Y)键复制
-1. 按(B)键返回到主菜单
-1. 依次进入`[1:] SYSNAND CTRNAND` -> `rw`
-1. 按(Y)键粘贴从SD卡复制的`luma`文件夹
-1. 选择"Copy path(s)"（复制路径）
+1. 按(A)键继续
+1. 按(A)键重新加上写保护
 
-##### 第七部分 - 备份NAND
+##### 第七部分 - 备份SysNAND
 
-1. 按(B)键两次返回到主菜单
 1. 按(Home)键，打开行动菜单
 1. 选择"More..."
-1. 选择"Backup NAND"（备份系统）
+1. 选择"Scripts..."
+1. 选择"Backup SysNAND"
+1. 按(A)键确认
+  + 这一步可能需要较长时间
 1. 按(A)键继续
 1. 按住(R)键的同时按(B)键，弹出SD卡
 1. 将SD卡插入电脑
-1. 复制`/gm9out`目录下的`nand.bin`和`nand.bin.sha`文件到电脑上的一个安全的位置
+1. 复制`/gm9/out`目录下的`<serialnumber>_nandmin_###.bin`（serialnumber是你的机器的序列号）文件到电脑上的一个安全的位置
   + 在备份文件复制到多个位置（比如网盘）
   + 如果以后系统出现问题，该备份文件可以防止你的机器变砖
-1. 复制结束后，删除`/gm9out`目录下的`nand.bin`和`nand.bin.sha`文件
+1. 复制结束后，删除`/gm9/out`目录下的`<serialnumber>_nandmin_###.bin`文件
 1. 将SD卡插回机器
 1. 按下(Start)键保存设置并重启
 

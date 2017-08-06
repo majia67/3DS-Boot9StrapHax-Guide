@@ -24,6 +24,10 @@ title: "安装Boot9Strap（系统设置）"
 1. 在SD卡根目录创建名为`boot9strap`的文件夹（如果没有的话）
 1. 解压缩boot9strap `.zip`压缩包，复制`boot9strap.firm`和`boot9strap.firm.sha`文件到SD卡的`/boot9strap/`目录下
 1. 解压缩SafeB9SInstaller `.zip`压缩包，复制`SafeB9SInstaller.dat`文件到你的SD卡根目录
+
+    ![]({{ base_path }}/images/screenshots/boot9strap-mset-file-layout.png)
+    {: .notice--info}
+
 1. 将SD卡重新插回机器
 1. 复制`SafeB9SInstaller.nds`文件到你的DS烧录卡中
 1. 开机

@@ -5,7 +5,7 @@ title: "GodMode9使用指南"
 GodMode9是任天堂3DS上一个功能完善的文件浏览器，使你能访问你的SD卡，SysNAND和EmuNAND中的FAT分区，等等。除此之外，你还可以复制，删除，重命名文件，以及创建文件夹。
 {: .notice--primary}
 
-请注意：某些版本的Luma3DS只会在检测到多于一个payload时显示Luma3DS启动器菜单。如果只检测到一个payload，按住(Start)键启动将直接运行GodMode9。
+请注意，如果在SD卡的`/luma/payloads/`目录下有除了`GodMode9.firm`的其他payload文件，按住(Start)键开机的时候会显示“启动器菜单”，你需要用方向键和(A)键选择"GodMode9"才能继续进行教程中接下来的步骤。
 {: .notice--info}
 
 {% capture notice %}
@@ -20,11 +20,13 @@ GodMode9威力非常强大。它给你提供了对3DS系统数据进行几乎任
 
 #### 操作指南
 
-1. 按住(Start)键开机，运行Luma3DS启动器菜单
-1. 按(A)键运行GodMode9
+1. 按住(Start)键开机，运行GodMode9
 1. 按(Home)键，打开行动菜单
 1. 选择"More..."
-1. 选择"Backup NAND"（备份系统）
+1. 选择"Scripts..."
+1. 选择"Backup SysNAND"
+1. 按(A)键确认
+  + 这一步可能需要较长时间
 1. 按(A)键继续
 1. 按住(R)键的同时按(B)键，弹出SD卡
 1. 将SD卡插入电脑
@@ -39,8 +41,7 @@ GodMode9威力非常强大。它给你提供了对3DS系统数据进行几乎任
 
 #### 操作指南
 
-1. 按住(Start)键开机，运行Luma3DS启动器菜单
-1. 按(A)键运行GodMode9
+1. 按住(Start)键开机，运行GodMode9
 1. 进入`[0:] SDCARD`
 1. 移动光标到你的NAND `.bin`文件上，按(A)键选中，然后选择"NAND image options..."，然后选择"Restore SysNAND (safe)"
 1. 按(A)键解锁SysNAND写保护，然后输入提示的按键组合
@@ -48,6 +49,7 @@ GodMode9威力非常强大。它给你提供了对3DS系统数据进行几乎任
 1. 输入提示的按键组合，解锁SysNAND (lvl1)写保护
   + 这可能需要一些时间
 1. 完成后，按(A)键继续
+1. 如果出现提示重新加上写保护，按(B)键取消
 
 ## <a name="injectHS" /> 注入任意.CIA应用到Health & Safety（“健康与安全”）应用
 
@@ -58,13 +60,13 @@ GodMode9威力非常强大。它给你提供了对3DS系统数据进行几乎任
 
 #### 操作指南
 
-1. 按住(Start)键开机，运行Luma3DS启动器菜单
-1. 按(A)键运行GodMode9
+1. 按住(Start)键开机，运行GodMode9
 1. 进入`[0:] SDCARD` -> `cias`
 1. 选中你想注入的`.cia`文件，按(A)键，并选择"CIA image options..."（CIA镜像选项），然后选择"Mount image to drive"（将镜像挂载到驱动器）
 1. 选中`.app`文件，按(A)键，然后选择"NCCH image options"，并选择"Inject to H&S"
 1. 按(A)键解锁SysNAND(lvl1)写保护，然后按照提示输入按键组合
 1. 按(A)键继续
+1. 如果出现提示重新加上写保护，按(A)键确认
 
 ## <a name="restore_hs" /> 注入.CIA应用后恢复原始的“健康与安全”应用
 
@@ -73,12 +75,12 @@ GodMode9威力非常强大。它给你提供了对3DS系统数据进行几乎任
 
 #### 操作指南
 
-1. 按住(Start)键开机，运行Luma3DS启动器菜单
-1. 按(A)键运行GodMode9
+1. 按住(Start)键开机，运行GodMode9
 1. 按(Home)键打开行动菜单
 1. 选择"More..."
 1. 选择"Restore H&S"（恢复健康与安全应用）
 1. 按(A)键解锁SysNAND(lvl1)写保护，然后按照提示输入按键组合
+1. 如果出现提示重新加上写保护，按(A)键确认
 
 ## <a name="dump_cart" /> 导出游戏卡带
 
@@ -90,13 +92,12 @@ GodMode9威力非常强大。它给你提供了对3DS系统数据进行几乎任
 
 #### 操作指南
 
-1. 按住(Start)键开机，运行Luma3DS启动器菜单
-1. 按(A)键运行GodMode9
+1. 按住(Start)键开机，运行GodMode9
 1. 进入`[C:] GAMECART`
 1. 选择对应你的游戏卡带的步骤执行：
   + **3DS游戏卡带：**移动光标到`[TitleID].trim.3ds`文件上，按(A)键选中，然后选择"NCSD image options..."，然后选择"Build CIA from file"
-  + **NDS游戏卡带：**移动光标到`[TitleID].trim.nds`文件上，按(A)键选中，然后选择"Copy to 0:/gm9out"
-1. 可安装的`.cia`格式文件或不可安装的`.nds`格式文件会被输出到SD卡的`/gm9out/`目录下
+  + **NDS游戏卡带：**移动光标到`[TitleID].trim.nds`文件上，按(A)键选中，然后选择"Copy to 0:/gm9/out"
+1. 可安装的`.cia`格式文件或不可安装的`.nds`格式文件会被输出到SD卡的`/gm9/out/`目录下
 
 ## <a name="dump_title" /> 导出Title
 
@@ -105,8 +106,7 @@ GodMode9威力非常强大。它给你提供了对3DS系统数据进行几乎任
 
 #### 操作指南
 
-1. 按住(Start)键开机，运行Luma3DS启动器菜单
-1. 按(A)键运行GodMode9
+1. 按住(Start)键开机，运行GodMode9
 1. 根据你想要dump的title类型选择对应的分区进入：
   + **用户安装的Title**：进入`[A:] SYSNAND SD`
   + **系统Title**：进入`[1:] SYSNAND CTRNAND`
@@ -118,7 +118,7 @@ GodMode9威力非常强大。它给你提供了对3DS系统数据进行几乎任
 1. 确保你找到了正确的title
 1. 按(B)键退出title详情页面
 1. 在`.tmd`文件上按(A)键选中，然后选择"TMD file options..."，然后选择"Build CIA (standard)"
-1. 可安装的`.cia`格式文件会被输出到SD卡的`/gm9out/`目录下
+1. 可安装的`.cia`格式文件会被输出到SD卡的`/gm9/out/`目录下
 
 ## <a name="convert_3ds" /> 将.3DS格式文件转换为.CIA格式文件
 
@@ -129,11 +129,10 @@ GodMode9威力非常强大。它给你提供了对3DS系统数据进行几乎任
 
 #### 操作指南
 
-1. 按住(Start)键开机，运行Luma3DS启动器菜单
-1. 按(A)键运行GodMode9
+1. 按住(Start)键开机，运行GodMode9
 1. 进入`[0:] SDCARD` -> `cias`
 1. 移动光标到`.3ds`文件上，按(A)键选中，然后选择"NCSD image options..."，然后选择"Build CIA from file"
-1. 可安装的`.cia`格式文件会被输出到SD卡的`/gm9out/`目录下
+1. 可安装的`.cia`格式文件会被输出到SD卡的`/gm9/out/`目录下
 
 ## <a name="backup_gba" /> 备份GBA VC存档
 
@@ -141,7 +140,7 @@ GodMode9威力非常强大。它给你提供了对3DS系统数据进行几乎任
 
 1. 关机
 1. 取出SD卡，插入电脑中
-1. 在`/files9/`目录下，为每一个你想备份存档的GBA VC游戏创建一个文件夹
+1. 在`/gm9/`目录下，为每一个你想备份存档的GBA VC游戏创建一个文件夹
 1. 将SD卡插回你的机器
 1. 开机
 1. 为每一个你想备份存档的GBA VC游戏执行如下操作：
@@ -152,7 +151,7 @@ GodMode9威力非常强大。它给你提供了对3DS系统数据进行几乎任
   + 进入`[S:] SYSNAND VIRTUAL`
   + 选中`gbavc.sav`文件，按(Y)键复制该文件
   + 按(B)键返回主菜单
-  + 进入`[0:] SDCARD` -> `files9`
+  + 进入`[0:] SDCARD` -> `gm9`
   + 进入你为该GBA VC游戏创建的文件夹中
   + 按(Y)键粘贴`gbavc.sav`文件
   + 按(Start)键重启机器
@@ -161,13 +160,13 @@ GodMode9威力非常强大。它给你提供了对3DS系统数据进行几乎任
 
 #### 操作指南
 
-1. 确保在SD卡的`/files9/`目录下，每一个你想恢复存档的GBA VC游戏都有一个包含存档备份的文件夹
+1. 确保在SD卡的`/gm9/`目录下，每一个你想恢复存档的GBA VC游戏都有一个包含存档备份的文件夹
 1. 为每一个你想恢复存档的GBA VC游戏执行如下操作：
   + 运行该GBA VC游戏
   + 退出该GBA VC游戏
   + 关机，按住(Start)键开机，进入Luma3DS启动器菜单
   + 按(A)键运行GodMode9
-  + 进入`[0:] SDCARD` -> `files9`
+  + 进入`[0:] SDCARD` -> `gm9`
   + 进入你为该GBA VC游戏创建的文件夹中
   + 选中`gbavc.sav`文件，按(Y)键复制该文件
   + 按(B)键返回主菜单
@@ -183,8 +182,7 @@ GodMode9威力非常强大。它给你提供了对3DS系统数据进行几乎任
 
 #### 操作指南
 
-1. 按住(Start)键开机，运行Luma3DS启动器菜单
-1. 按(A)键运行GodMode9
+1. 按住(Start)键开机，运行GodMode9
 1. 按(Home)键，打开行动菜单
 1. 选择"More..."
 1. 选择"SD format menu"（SD格式化菜单）
@@ -204,13 +202,12 @@ GodMode9威力非常强大。它给你提供了对3DS系统数据进行几乎任
 
 #### 操作指南
 
-1. 按住(Start)键开机，运行Luma3DS启动器菜单
-1. 按(A)键运行GodMode9
+1. 按住(Start)键开机，运行GodMode9
 1. 进入`[0:] SDCARD` -> `cias`
 1. 选中你想操作的`.cia`文件，按(A)键，并选择"CIA image options..."（CIA镜像选项）
 1. 选择你想使用的功能：
-    + **加密并将结果保存到0:/gm9out:** 为选定的`.cia`文件创建一个加密后的副本，并保存到SD卡的`/gm9out/`目录下
-    + **解密并将结果保存到0:/gm9out:** 为选定的`.cia`文件创建一个解密后的副本，并保存到SD卡的`/gm9out/`目录下
+    + **加密并将结果保存到0:/gm9/out:** 为选定的`.cia`文件创建一个加密后的副本，并保存到SD卡的`/gm9/out/`目录下
+    + **解密并将结果保存到0:/gm9/out:** 为选定的`.cia`文件创建一个解密后的副本，并保存到SD卡的`/gm9/out/`目录下
     + **加密并替换源文件:** 加密选定的`.cia`文件，并替换源文件
     + **解密并替换源文件:** 解密选定的`.cia`文件，并替换源文件
 1. 你加密/解密后的`.cia`文件会被输出到指定的目录下
