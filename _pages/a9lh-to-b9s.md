@@ -106,7 +106,7 @@ Luma3DS将来的所有版本将只以`.firm`格式发布，这意味着它将只
 1. 按(Home)键打开行动菜单
 1. 选择"More..."（更多）
 1. 选择"Scripts..."（脚本）
-1. 选择"ctrtransfer_ticket_copy"
+1. 选择"setup_ctrnand_luma3ds"
 1. 出现提示时，按(A)键继续
 1. 按(A)键解锁SysNAND(lvl1)写保护，然后按照提示输入按键组合
 1. 按(A)键继续
