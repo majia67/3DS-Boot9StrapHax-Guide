@@ -39,42 +39,23 @@ title: "开始教程（老3DS）"
     <tr>
       <td style="text-align: center">1.0.0</td>
       <td style="text-align: center">2.0.0</td>
-      <td style="text-align: center" colspan="2"><a href="installing-boot9strap-(hardmod)">安装boot9strap（硬改）</a></td>
+      <td style="text-align: center; font-weight: bold;">使用“任何系统版本”中的方法</td>
     </tr>
     <tr>
       <td style="text-align: center">2.1.0</td>
       <td style="text-align: center">2.1.0</td>
-      <td style="text-align: center"><a href="installing-boot9strap-(hardmod)">安装boot9strap（硬改）</a></td>
+      <td style="text-align: center; font-weight: bold;">使用“任何系统版本”中的方法</td>
       <td style="text-align: center"><a href="installing-boot9strap-(2xrsa)">安装boot9strap（2xrsa）</a></td>
     </tr>
     <tr>
       <td style="text-align: center">2.2.0</td>
       <td style="text-align: center">3.1.0</td>
-      <td style="text-align: center" colspan="2"><a href="installing-boot9strap-(hardmod)">安装boot9strap（硬改）</a></td>
+      <td style="text-align: center; font-weight: bold;">使用“任何系统版本”中的方法</td>
     </tr>
     <tr>
       <td style="text-align: center">4.0.0</td>
-      <td style="text-align: center">4.5.0</td>
-      <td style="text-align: center"><a href="installing-boot9strap-(mset)">安装boot9strap（系统设置）</a></td>
-      <td style="text-align: center"><a href="installing-boot9strap-(browser)">安装boot9strap（浏览器）</a></td>
-    </tr>
-    <tr>
-      <td style="text-align: center">5.0.0</td>
-      <td style="text-align: center">5.1.0</td>
-      <td style="text-align: center"><a href="installing-boot9strap-(hardmod)">安装boot9strap（硬改）</a></td>
-      <td style="text-align: center"><a href="installing-boot9strap-(browser)">安装boot9strap（浏览器）</a></td>
-    </tr>
-    <tr>
-      <td style="text-align: center">6.0.0</td>
-      <td style="text-align: center">6.3.0</td>
-      <td style="text-align: center"><a href="installing-boot9strap-(mset)">安装boot9strap（系统设置）</a></td>
-      <td style="text-align: center"><a href="installing-boot9strap-(browser)">安装boot9strap（浏览器）</a></td>
-    </tr>
-    <tr>
-      <td style="text-align: center">7.0.0</td>
       <td style="text-align: center">8.1.0</td>
-      <td style="text-align: center"><a href="installing-boot9strap-(hardmod)">安装boot9strap（硬改）</a></td>
-      <td style="text-align: center"><a href="installing-boot9strap-(browser)">安装boot9strap（浏览器）</a></td>
+      <td style="text-align: center"><a href="installing-boot9strap-(soundhax)">安装boot9strap（Soundhax）</a></td>
     </tr>
     <tr>
       <td style="text-align: center">9.0.0</td>
@@ -83,17 +64,16 @@ title: "开始教程（老3DS）"
     </tr>
     <tr>
       <td style="text-align: center">11.4.0</td>
-      <td style="text-align: center">11.4.0</td>
-      <td style="text-align: center; font-weight: bold;" colspan="2"></td>
-    </tr>
+      <td style="text-align: center">11.5.0</td>
+      <td style="text-align: center; font-weight: bold;">使用“任何系统版本”中的方法</td>
     <tr>
-      <td style="text-align: center; font-weight: bold;">11.5.0</td>
-      <td style="text-align: center; font-weight: bold;">11.5.0</td>
+      <td style="text-align: center; font-weight: bold;">11.6.0</td>
+      <td style="text-align: center; font-weight: bold;">11.6.0</td>
       <td style="text-align: center" colspan="2"><a href="installing-boot9strap-(dsiware)">安装boot9strap（DSiWare）</a></td>
     </tr>
     <tr>
       <td style="text-align: center; font-weight: bold;" colspan="2">任何系统版本<br></td>
-      <td style="text-align: center; font-weight: bold;" colspan="2"><p style="display: inline-block; margin-top: 1.3em; width: 47%"><a href="installing-boot9strap-(ntrboothax)">安装boot9strap（ntrboothax）</a><br>（需要兼容的烧录卡带）</p><p style="display: inline-block; margin-top: 1.3em; vertical-align: super; width: 6%">或</p><p style="display: inline-block; margin-top: 1.3em; width: 47%"><a href="installing-boot9strap-(hardmod)">安装boot9strap（硬改）</a><br>（需要拆机）</p></td>
+      <td style="text-align: center; font-weight: bold;" colspan="2"><p style="display: inline-block; margin-top: 1.3em; width: 47%"><a href="ntrboot">ntrboot</a><br>（需要兼容的烧录卡带）</p><p style="display: inline-block; margin-top: 1.3em; vertical-align: super; width: 6%">或</p><p style="display: inline-block; margin-top: 1.3em; width: 47%"><a href="installing-boot9strap-(hardmod)">安装boot9strap（硬改）</a><br>（需要拆机）</p></td>
     </tr>
   </tbody>
 </table>
