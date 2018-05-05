@@ -6,6 +6,7 @@ header:
   overlay_color: "#5e616c"
   overlay_image: /images/home-page-feature.jpg
   overlay_filter: 0.5
+  caption:
 excerpt: "利用boot9strap实现3DS运行自制固件的完整教程。<br />"
 ---
 
@@ -41,7 +42,7 @@ excerpt: "利用boot9strap实现3DS运行自制固件的完整教程。<br />"
 
 **Custom Firmware（自制系统）** ("CFW") 可以使你进行自制程序无法轻易做到的更高级的破解。 例如，签名补丁可以使你安装未签名的程序，并让它们出现在桌面中。
 
-CFW可以很容易地在系统版本11.5.0及以下的设备上安装。
+CFW可以很容易地在任何机型和任何系统版本上安装（但是如果系统版本大于11.3.0，可能需要额外的工具/配件）。
 
 ## 本教程将安装什么？
 
