@@ -3,7 +3,6 @@ title: "ntrboot"
 ---
 
 如果你已经将ntrboot刷入你的烧录卡带中，或者你的烧录卡已经自带了ntrboot，你可以跳过这一步，直接进入[安装boot9strap（ntrboot）](installing-boot9strap-(ntrboot))进行操作。
-
 {: .notice--success}
 
 ### 教程须知
