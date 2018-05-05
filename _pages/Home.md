@@ -12,21 +12,21 @@ header:
 excerpt: "利用boot9strap实现3DS运行自制固件的完整教程。<br />"
 ---
 
+**请先阅读完本介绍页面后，再开始操作。**
+{: .notice--warning}
+
 如果你已经安装了arm9loaderhax，想升级到boot9strap，点击进入[从A9LH升级到B9S](a9lh-to-b9s)教程。如果想访问原arm9loaderhax教程，点击进入[原arm9loaderhax教程](https://a9lh.3dshax.cn)。
 {: .notice--info}
 
 {% capture notice-home %}
 本教程仅适用于零售版的3DS (自行购买，而不是来自Nintendo Developer Program) ！
-如果你的3DS属于开发机 ("PANDA"或"SNAKE")，请参见[devGuide](https://dev.3ds.guide)
+如果你的3DS属于开发机 ("PANDA"或"SNAKE")，请参见[Panda 3DS Hacks Guide](https://panda.hacks.guide)
 {% endcapture %}
 
 <div class="notice--danger">{{ notice-home | markdownify }}</div>
 
 本教程中有大量下载链接是[磁力链](https://zh.wikipedia.org/zh-hans/%E7%A3%81%E5%8A%9B%E9%93%BE%E6%8E%A5)格式。你需要一个能进行BT下载的软件，如[Deluge](http://dev.deluge-torrent.org/wiki/Download)、[aria2](https://aria2.github.io/)或迅雷。
 {: .notice--info}
-
-**请先阅读完本介绍页面后，再开始操作。**
-{: .notice--warning}
 
 点击[这里](https://3ds.guide/)阅读Plailect的英文教程。
 {: .notice--info}
@@ -54,17 +54,17 @@ boot9strap是一种最新和最好的引导自制系统的方法，只需启动�
 
 相比于其它运行自制系统的方法，boot9strap有许多优势。因此推荐使用本教程，而不是其它依赖已过时软件（例如menuhax + rxTools、arm9loaderhax或者标准的sighax）的教程。
 
-如果想了解boot9strap的原理，请参见[SciresM](https://github.com/SciresM/)的[报告](https://sciresm.github.io/33-and-a-half-c3/)。
+如果想了解boot9strap的原理，请参见[这篇文章](https://arxiv.org/abs/1802.00359)。
 
 如果想查询已算出的sighax签名列表（制作boot9strap的平台），参见[这个gist](https://gist.github.com/SciresM/cdd2266efb80175d37eabbe86f9d8c52)。
 
 ## 我可以在自制系统上做什么？
 
 + 跨区运行所有游戏卡带和eShop游戏
-+ 使用玩家自制的[主题](https://3dsthem.es/)、[卡贴](https://badges.3dsthem.es/)和[开机画面](https://splash.3dsthem.es/)来自定义你的桌面。
++ 使用玩家自制的[主题或开机画面](https://themeplaza.eu/)来自定义你的桌面。
 + 对你已有的游戏进行"ROM hacks"
 + 进行游戏录像和程序截屏
-+ [备份、修改和恢复](https://gbatemp.net/threads/413143/)游戏存档
++ 备份、修改和恢复游戏存档
 + 使用模拟器（如RetroArch或其它独立模拟器）运行老系统的游戏 （在任天堂新3DS上效果最佳）
 + 安装自制程序，并让它们在你的桌面上出现
 + 将游戏卡带的内容导出为可安装的格式，从而可以无需卡带运行游戏
@@ -76,9 +76,14 @@ boot9strap是一种最新和最好的引导自制系统的方法，只需启动�
 
 + **在开始之前，你要知道破解3DS的风险：每次你修改系统的时候，都有可能会使你的3DS不可恢复的变砖。 这种情况很少见，但是仍然存在这样的可能性，所以请确保你完全按照本教程的指导进行操作。**
 + 如果你之前破解过你的3DS并安装了EmuNAND，想将原EmuNAND中的内容迁移到新的SysNAND CFW中，请依操作进行，并在[收尾工作](finalizing-setup)这一步中依照提示还原的你EmuNAND。
-+ 本教程适用于所有区域的新3DS、老3DS、新2DS和老2DS，固件版本在11.5.0及以下。
++ 本教程适用于所有区域的新3DS、老3DS、新2DS和老2DS，固件版本在11.6.0及以下。
 + 如果一切顺利，在安装完自制系统后你不会丢失任何数据（包括游戏、NNID、存档等）。
 + **确保你的设备在操作过程中接上电源线充电，防止因意外关机而造成数据丢失或机器损坏！**
 + 你的SD卡的分区表格式必须是[MBR，而不是GPT](http://www.howtogeek.com/245610/)(机器自带的SD卡的分区表格式默认是MBR)。
 + 如果你需要格式化一张新的SD卡，可以使用[`guiformat`](http://www.ridgecrop.demon.co.uk/index.htm?guiformat.htm)，并将Allocation Unit Size设置为32K。
 + 2DS所需的软件和老3DS一样，因而任何适用于老3DS的步骤也同样适用于2DS。
+
+___
+
+### 下一步，[开始教程](get-started)
+{: .notice--primary}
