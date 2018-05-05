@@ -39,7 +39,7 @@ title: "开始教程（老3DS）"
     <tr>
       <td style="text-align: center">1.0.0</td>
       <td style="text-align: center">2.0.0</td>
-      <td style="text-align: center; font-weight: bold;" colspan="2">Use an "All Versions" Method</td>
+      <td style="text-align: center; font-weight: bold;" colspan="2">使用“任何系统版本”中的方法</td>
     </tr>
     <tr>
       <td style="text-align: center">2.1.0</td>
@@ -50,7 +50,7 @@ title: "开始教程（老3DS）"
     <tr>
       <td style="text-align: center">2.2.0</td>
       <td style="text-align: center">3.1.0</td>
-      <td style="text-align: center; font-weight: bold;" colspan="2">Use an "All Versions" Method</td>
+      <td style="text-align: center; font-weight: bold;" colspan="2">使用“任何系统版本”中的方法</td>
     </tr>
     <tr>
       <td style="text-align: center">4.0.0</td>
