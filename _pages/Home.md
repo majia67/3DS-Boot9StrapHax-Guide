@@ -1,14 +1,10 @@
 ---
 layout: splash
 title: "教程首页"
-permalink: "index.html"
 header:
   overlay_color: "#5e616c"
   overlay_image: /images/home-page-feature.jpg
   overlay_filter: 0.5
-  cta_label: "开始教程"
-  cta_url: "/get-started"
-  caption:
 excerpt: "利用boot9strap实现3DS运行自制固件的完整教程。<br />"
 ---
 
