@@ -39,7 +39,7 @@ title: "开始教程（老3DS）"
     <tr>
       <td style="text-align: center">1.0.0</td>
       <td style="text-align: center">2.0.0</td>
-      <td style="text-align: center; font-weight: bold;">使用“任何系统版本”中的方法</td>
+      <td style="text-align: center; font-weight: bold;" colspan="2">Use an "All Versions" Method</td>
     </tr>
     <tr>
       <td style="text-align: center">2.1.0</td>
@@ -50,12 +50,12 @@ title: "开始教程（老3DS）"
     <tr>
       <td style="text-align: center">2.2.0</td>
       <td style="text-align: center">3.1.0</td>
-      <td style="text-align: center; font-weight: bold;">使用“任何系统版本”中的方法</td>
+      <td style="text-align: center; font-weight: bold;" colspan="2">Use an "All Versions" Method</td>
     </tr>
     <tr>
       <td style="text-align: center">4.0.0</td>
       <td style="text-align: center">8.1.0</td>
-      <td style="text-align: center"><a href="installing-boot9strap-(soundhax)">安装boot9strap（Soundhax）</a></td>
+      <td style="text-align: center" colspan="2"><a href="installing-boot9strap-(soundhax)">安装boot9strap（Soundhax）</a></td>
     </tr>
     <tr>
       <td style="text-align: center">9.0.0</td>
@@ -65,7 +65,7 @@ title: "开始教程（老3DS）"
     <tr>
       <td style="text-align: center">11.4.0</td>
       <td style="text-align: center">11.5.0</td>
-      <td style="text-align: center; font-weight: bold;">使用“任何系统版本”中的方法</td>
+      <td style="text-align: center; font-weight: bold;" colspan="2">使用“任何系统版本”中的方法</td>
     <tr>
       <td style="text-align: center; font-weight: bold;">11.6.0</td>
       <td style="text-align: center; font-weight: bold;">11.6.0</td>
