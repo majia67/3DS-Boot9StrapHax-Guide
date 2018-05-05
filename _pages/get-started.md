@@ -2,7 +2,7 @@
 title: "开始教程"
 ---
 
-### 教程指南
+### 教程须知
 
 不同的机型和系统版本安装boot9strap自制固件的的步骤并不一样。本页面将会帮助你找到合适的方案。
 
@@ -34,6 +34,8 @@ Windows系统用户在开始之前需要开启[显示文件扩展名](file-exten
 {% endcapture %}
 
 <div class="notice--danger">{{ notice-1 | markdownify }}</div>
+
+### 设备列表
 
 <table>
   <colgroup>
