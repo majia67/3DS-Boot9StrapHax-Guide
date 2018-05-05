@@ -60,7 +60,7 @@ title: "开始教程（老3DS）"
     <tr>
       <td style="text-align: center">9.0.0</td>
       <td style="text-align: center">11.3.0</td>
-      <td style="text-align: center" colspan="2"><a href="homebrew-launcher-(soundhax)">自制程序启动器（声音破解）</a></td>
+      <td style="text-align: center" colspan="2"><a href="homebrew-launcher-(soundhax)">自制程序启动器（Soundhax）</a></td>
     </tr>
     <tr>
       <td style="text-align: center">11.4.0</td>
