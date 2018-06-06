@@ -37,7 +37,7 @@ title: "安装boot9strap（2xrsa）"
   + 如果你的设备是新3DS、新2DS或老2DS，且没有打开wifi，可以断开充电器并取下电池等几秒钟，即可重新开启wifi
   + 如果出现错误：“当前服务在你的区域不可用”，请使用系统设置修改你的机器所在的国家，匹配你安装的2.1.0 ctr转移镜像所对应的NAND区域
   + 如果在进行CTR转移之前你忘记关闭了家长控制，或者无法访问无线连接设置，请注意你的机器可以自动连接到任何名为`attwifi`的未加密热点
-  + 如果出现错误，[参见这个问题排查](troubleshooting#ts_browser)
+  + 如果出现错误，[参见这个问题排查](troubleshooting#a-browser-based-exploit-is-not-working)
 1. 如果漏洞利用成功，机器将运行SafeB9SInstaller
 
 ##### 第三部分 - 安装boot9strap
